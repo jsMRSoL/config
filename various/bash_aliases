@@ -1,0 +1,6 @@
+alias r='ranger'
+alias m='ncmpcpp'
+alias rec="avconv -f alsa -ac 2 -ar 48000 -f pulse -i alsa_output.pci-0000_00_1b.0.analog-stereo.monitor -acodec libvorbis -aq 6 $1"
+alias snip='avconv -i "${1}" -ss "${2}" -t "${3}" "${4}"'
+alias fc='vim ~/Data/Computing/Admin/forgettable-commands'
+alias vs='vim ~/Data/Computing/Admin/vim-shortcuts-improved'
