@@ -1,0 +1,291 @@
+Frequently Used                      Playback                            Apple Remote
+                                                                         
+p Pause / playback mode              ctrl++ Increase audio delay         PLAY        Pause / playback
+f Toggle fullscreen                  ctrl+- Decrease audio delay                     mode
+m Mute / unmute audio                [ / ]  Decrease / increase speed    PLAY_HOLD   Quit
+v Subtitle visibility                m      Mute / unmute audio          CENTER      Pause
+s Take a screenshot                  A      Cycle aspect ratio           CENTER_HOLD Quit
+S Take a screenshot without          1 / 2  Decrease / increase          NEXT        Seek +10 seconds
+  subtitles                                 contrast                     NEXT_HOLD   Seek +120 seconds
+Q Quit saving current position to    3 / 4  Decrease / increase          PREV        Seek -10 deconds
+  watch later                               brightness                   PREV_HOLD   Seek -120 seconds
+o Show progress                      5 / 6  Decrease / increase gamma    MENU        Show progress
+O Toggle show progress               7 / 8  Decrease / increase          MENU_HOLD   Mute / unmute audio
+T Toggle video window on top                saturation                   VUP         Increase audio
+                                     9 / 0  Decrease / increase audio                volume
+Navigation                                  volume                       VUP_HOLD    Next chapter
+                                     w / e  Zoom out / in                VDOWN       Decrease audio
+PGUP /      Next / previous          [INS::INS]                                      volume
+PGDWN       chapter                                                      VDOWN_HOLD  Previous chapter
+. / ,       Next / previous frame    Subtitles
+RIGHT /     Seek 5 seconds           
+LEFT                                 v    Show / hide subtitles
+UP / DOWN   Seek 60 seconds          j /  Next / previous subtitle
+                                     J
+                                     z /  Increase / decrease
+                                     x    subtitle delay
+                                     r /  Move subtitles up / down
+                                     t
+
+Download the mpv Media Player Keyboard Shortcuts
+
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+[someone_mpv-media-player]                                                                               
+1 Page
+http://www.cheatography.com/someone/cheat-sheets/mpv-media-player/ //media.cheatography.com/storage/thumb
+/someone_mpv-media-player.750.jpg
+
+PDF (recommended)
+
+  • PDF (1 page)
+
+Alternative Downloads
+
+  • PDF (black and white)
+  • LaTeX
+
+Share This Cheat Sheet!
+
+ 
+
+Cheatographer
+
+            
+            
+SomeoSomeone
+
+Metadata
+
+  • Languages: English
+  • Published: 4th April, 2015
+  • Rated: 4 stars based on 1 ratings
+
+Favourited By
+
+           
+           
+pvmsi xer0.
+
+Comments
+
+No comments yet. Add yours below!
+
+Add a Comment
+
+[http://             ]Your Comment
+
+Please enter your name.
+
+Your Name[                    ]
+
+Please enter your email address
+
+Your Email Address[                    ]
+
+Please enter your Comment.
+
+            [                                                  ]
+            [                                                  ]
+            [                                                  ]
+            [                                                  ]
+Your Comment[                                                  ]
+
+Post Your Comment
+
+Related Cheat Sheets
+
+ 
+EQ tips Cheat Sheet
+Tips for equalization. By frequency, by instrument with a glossary.
+● fredv
+15 Nov 11
+2 Pages
+eq, audio, mix, beginner, equalization, equalizer
+ 
+Resonic Audio Player Keyboard Shortcuts
+^LMC= Left Mouse Click^^RMC= Right Mouse Click^^MW = Mousewheel^^CK = Cursor Key^^[NUM] = Number block on
+the keyboard.^Shortcuts for the fast Resonic audio player and browser. Alpha Release 621 January 25,
+2013.http://resonic.at/home^Version 0.1^
+● graphycheater
+15 Feb 13
+1 Page
+audio, browser, player, alpha
+ 
+mpv Keyboard Shortcuts
+mpv Media Player Tastaturkürzel
+● robrobby
+9 Oct 17
+1 Page
+video, audio, windows, player, media and 2 more ...
+Deutsch (German)
+Please login or register so you can rate this cheat sheet!
+
+Latest Cheat Sheet
+
+ 
+HD CCTV Lens Chart Cheat Sheet
+HD CCTV Lens Chart for 1080p, 720p, AHD, HD-SDI, HD-TVI, IP Cameras
+● Davidpol
+27 Mar 18
+1 Page
+ip, security, 1080p, 720p, ahd and 3 more ...
+
+Most Popular Cheat Sheet
+
+ 
+Regular Expressions Cheat Sheet
+A quick reference guide for regular expressions (regex), including symbols, ranges, grouping, assertions
+and some sample patterns to get you started.
+● DaveChild
+19 Oct 11
+1 Page
+development, regex, regular, expressions, programming
+
+Random Cheat Sheet
+
+ 
+GoLang fmt Printing Cheat Sheet
+Go fmt package verbs to be used with fmt.Printf()
+● gpascual
+17 Nov 16
+1 Page
+go, golang
+
+About Cheatography
+
+Cheatography is a collection of 3955 cheat sheets and quick references in 25 languages for everything
+from travel to business!
+
+10th JuneOn The Blog
+
+5 Ways Cheatography Benefits Your BusinessCheatography Cheat Sheets are a great timesaver for individuals
+- coders, gardeners, musicians, everybody! But businesses can benefit from them as well - read on to find
+out more.
+
+Recent Activity
+
+                                            
+                                            
+David Davidpol published HD CCTV Lens Chart.
+21 mins, 1 sec ago
+                                          
+                                          
+Dunge Dungeon Master published Dungeon #1.
+1 hour 31 mins ago
+                                     
+                                     
+Atomi Atomicsupergeek published Tmux.
+3 hours 52 mins ago
+                                                  
+                                                  
+mrgra mrgrauel published GitLab Flavored Markdown.
+1 day 13 hours ago
+                                                  
+                                                  
+Naeny Naenyn updated Tracktion Waveform Shortcuts.
+1 day 18 hours ago
+
+Behind the Scenes
+
+If you have any problems, or just want to say hi, you can find us right here:
+               
+               
+DaveC DaveChild
+               
+               
+Space SpaceDuck
+                  
+                  
+Cheat Cheatography
+
+Cheatography RSS Feeds
+
+  • Latest Cheat Sheets
+  • Latest Blog Posts
+
+Share Cheatography!
+
+© 2011 - 2018 Cheatography.com   |   CC License   |   Terms   |   Privacy
+Site by Get. Post. Cookie.
+open
+
+Keep Up To Date!
+
+We announce all new cheat sheet releases on our Twitter account. Follow us to make sure you don't miss
+out!
+
+Cheatography
+

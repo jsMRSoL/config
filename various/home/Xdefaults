@@ -1,0 +1,7 @@
+!!URxvt.font: lucidasans-12
+!!URxvt.font: 9x15
+URxvt.font: xft:monospace:size=10
+!!URxvt.font: xft:inconsolata:pixelsize=12:antialias=false:hinting=true, xft:dejavu sans mono:pixelsize=12:antialias=false,hinting=true
+!URxvt.letterSpace: -1
+URxvt.scrollBar: false
+#include "/home/simon/.cache/wal/colors.Xresources"

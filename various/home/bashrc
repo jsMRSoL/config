@@ -37,7 +37,7 @@ fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
-    xterm-color) color_prompt=yes;;
+    xterm-color|*-256color) color_prompt=yes;;
 esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
@@ -78,7 +78,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
-
     #alias grep='grep --color=auto'
     #alias fgrep='fgrep --color=auto'
     #alias egrep='egrep --color=auto'
@@ -117,6 +116,7 @@ set -o vi
 #### My additions
 ###Is this line to support ranger. When did I add it?
 export PATH="${PATH}:${HOME}/.local/bin"
+export DISPLAY=:0.0
 
 RANGER_LOAD_DEFAULT_RC=FALSE
 
@@ -132,11 +132,34 @@ function echotest() {
 		echo "File exists"
 	fi
 	echo "${1}" "${2}" "${3}" "${4}";
-}
 
+}
 ##This ensures the right colours in terminals using wal
 (cat ~/.cache/wal/sequences &)
 ##This gives me screenfetch in non-login shells
 if [ -f /usr/bin/screenfetch ]; then
 	/usr/bin/screenfetch
 fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+## Launch programs from the cmd line
+fzf-dmenu() { 
+	# note: xdg-open has a bug with .desktop files, so we cant use that shit
+	selected="$(ls /usr/share/applications | fzf -e)"
+	nohup `grep '^Exec' "/usr/share/applications/$selected" | tail -1 | sed 's/^Exec=//' | sed 's/%.//'` >/dev/null 2>&1&
+}
+# hotkey to run the function (Ctrl+O)
+bind '"\C-O":"fzf-dmenu\n"'
+
+## Hooks for fasd 
+fasd_cache="$HOME/.fasd-init-bash"
+if [ "$(command -v fasd)" -nt "$fasd_cache" -o ! -s "$fasd_cache" ]; then
+  fasd --init posix-alias bash-hook bash-ccomp bash-ccomp-install >| "$fasd_cache"
+fi
+source "$fasd_cache"
+unset fasd_cache
+
+## Commandlinefu function
+cmdfu() { curl "http://www.commandlinefu.com/commands/matching/$(echo "$@" \
+| sed 's/ /-/g')/$(echo -n $@ | base64)/plaintext" ;}
+

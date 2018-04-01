@@ -1,0 +1,2 @@
+##visual block 
+C-v # allows you to highlight a column. Esc executes the same operation, e.g. inserting a word, in all highlighted places.

@@ -38,3 +38,5 @@ if has("autocmd")
 	augroup END
 endif
 
+"fzf plugin
+set rtp+=~/.fzf

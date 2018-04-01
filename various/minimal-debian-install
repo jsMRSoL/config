@@ -3,7 +3,7 @@
 2. Set up networking
 vi /etc/network/interfaces
 # add custom lines for ethernet
-auto eth0
+auto eth0 #for laptops remove this later, seems to slow start up
 iface eth0 inet dhcp
 
 # make interfaces file more secure
@@ -34,11 +34,19 @@ simon ALL=(ALL) NOPASSWD:/sbin/poweroff,/sbin/reboot,/sbin/shutdown
 4. Install xorg
 
 5. Install minimal gnome desktop environment
-apt-get install –without-recommends gdm3
+apt-get install –without-recommends gdm3 #Not sure about this now. Prob better to avoid gdm3 and go with lightdm instead. So - how to install minimal gnome? Do I need gnome at all. Maybe xfce or lxde would be better. To explore.
 
 6. Install various packages
-apt-get install build-essential alsa-utils ssh git
+apt-get install build-essential alsa-utils ssh git curl urlview screenfetch python3-pip mps-youtube vim ranger mpd mpc ncmpcpp w3m w3m-img compton feh
 
-6. Install dwm
-7. Customize bashrc
-8. Install vim, ranger, mpd, ncmpdpp
+7. Customize bashrc - add screenfetch, wal, path
+9. clone st and dwm and download dmenu and transparency patch for st
+10. For suckless apps, install libx11-dev, install libxft-dev, libxrandr-dev, libxext-dev
+12. compile st
+13. Update session manager 
+sudo update-alternatives --install /usr/bin/x-session-manager x-session-manager /usr/local/bin/dwmstart 60
+sudo dpkg-reconfigure gdm3
+## git clones fzf and fasd and pywal
+git clone https://github.com/junegunn/fzf.git ~/.fzfsrc
+git clone https://github.com/clvv/fasd.git ~/.fasdsrc
+git clone https://github.com/dylanaraps/pywal.git ~/.pywalsrc
