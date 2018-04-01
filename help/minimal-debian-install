@@ -29,7 +29,15 @@ visudo
 # add custom lines
 simon   ALL=(ALL:ALL) ALL
 simon ALL=(ALL) NOPASSWD:/sbin/poweroff,/sbin/reboot,/sbin/shutdown
-
+## Binds for /etc/fstab
+/mnt/data/Desktop	/home/simon/Desktop	none	defaults,bind 0	0
+/mnt/data/Documents	/home/simon/Documents	none	defaults,bind 0	0
+/mnt/data/Downloads	/home/simon/Downloads	none	defaults,bind 0	0
+/mnt/data/Music		/home/simon/Music	none	defaults,bind 0	0
+/mnt/data/Pictures	/home/simon/Pictures	none	defaults,bind 0	0
+/mnt/data/Public	/home/simon/Public	none	defaults,bind 0	0
+/mnt/data/Templates	/home/simon/Templates	none	defaults,bind 0	0
+/mnt/data/Videos	/home/simon/Videos	none	defaults,bind 0	0
 
 4. Install xorg
 
