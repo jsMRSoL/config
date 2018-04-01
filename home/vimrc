@@ -1,3 +1,6 @@
+"Specify location of vim config folder (templates etc)
+let &runtimepath='~/.config/vim'
+
 "Deal with paste and tabs issue
 	nnoremap <F2> :set invpaste paste?<CR>
 	set pastetoggle=<F2>
@@ -32,7 +35,7 @@
 "Templates
 if has("autocmd")
 	augroup templates
-		autocmd BufNewFile *.* silent! execute '0r ~/.vim/templates/skeleton.'.expand("<afile>:e")
+		autocmd BufNewFile *.* silent! execute '0r ~/.config/vim/templates/skeleton.'.expand("<afile>:e")
 		"autocmd BufNewFile *.sh 0r ~/.vim/templates/skeleton.sh
 		"autocmd BufNewFile *.tex 0r ~/.vim/templates/skeleton.tex
 	augroup END
