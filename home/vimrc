@@ -41,5 +41,8 @@ if has("autocmd")
 	augroup END
 endif
 
+"Write to urlview
+	noremap <leader>u :w<Home>silent <End> !urlview<CR>
+
 "fzf plugin
 set rtp+=~/.fzf
