@@ -14,7 +14,7 @@ cp -p $MYHOME/.inputrc $GITVAR/home/inputrc
 
 # configs to start window manager
 cp -p /usr/share/xsessions/dwm.desktop /home/simon/.dotfiles/various/dwm.desktop
-cp -p /usr/local/bin/dwmstart $GITVAR/dwmstart
+cp -p /usr/local/bin/dwmstart $GITVAR/various/dwmstart
 
 # customized source files
 cp -p $MYHOME/.dwmsrc/config.h $GITVAR/dwm/
