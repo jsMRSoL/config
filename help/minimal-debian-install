@@ -29,6 +29,28 @@ visudo
 # add custom lines
 simon   ALL=(ALL:ALL) ALL
 simon ALL=(ALL) NOPASSWD:/sbin/poweroff,/sbin/reboot,/sbin/shutdown
+
+## Install vim
+apt-get install vim
+
+## Install git
+git clone https://github.com/jsMRSoL/config.git ~/.dotfiles
+
+## Install lightdm
+apt-get install lightdm
+
+## Install various packages
+apt-get install build-essential alsa-utils ssh git curl urlview screenfetch python3-pip vim ranger mpd mpc ncmpcpp w3m w3m-img compton feh libx11-dev libxft-dev libxrandr-dev libxext-dev task-spooler imagemagick rtv finch surfraw acpi mupdf tmux nfs-common catdoc atool caca-utils highlight pdftotext mediainfo exiftool odt2txt docx2txt xlsx2csv cups-bsd cups sxiv
+
+## Clone dwm and st and compile
+git clone https://git.suckless.org/dwm ~/.dwmsrc
+git clone https://git.suckless.org/st ~/.stsrc
+# with st clone it, patch it, then copy the custom config.h across, finally compile
+sudo make clean install
+sudo apt-get install dmenu
+sudo update-alternatives --install /usr/bin/x-session-manager x-session-manager /usr/local/bin/dwmstart 60
+sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/local/bin/st 60
+
 ## Binds for /etc/fstab
 /mnt/data/Desktop	/home/simon/Desktop	none	defaults,bind 0	0
 /mnt/data/Documents	/home/simon/Documents	none	defaults,bind 0	0
@@ -39,22 +61,46 @@ simon ALL=(ALL) NOPASSWD:/sbin/poweroff,/sbin/reboot,/sbin/shutdown
 /mnt/data/Templates	/home/simon/Templates	none	defaults,bind 0	0
 /mnt/data/Videos	/home/simon/Videos	none	defaults,bind 0	0
 
-4. Install xorg
-
-5. Install minimal gnome desktop environment
-apt-get install –without-recommends gdm3 #Not sure about this now. Prob better to avoid gdm3 and go with lightdm instead. So - how to install minimal gnome? Do I need gnome at all. Maybe xfce or lxde would be better. To explore.
-
-6. Install various packages
-apt-get install build-essential alsa-utils ssh git curl urlview screenfetch python3-pip mps-youtube vim ranger mpd mpc ncmpcpp w3m w3m-img compton feh
-
-7. Customize bashrc - add screenfetch, wal, path
-9. clone st and dwm and download dmenu and transparency patch for st
-10. For suckless apps, install libx11-dev, install libxft-dev, libxrandr-dev, libxext-dev
-12. compile st
-13. Update session manager 
-sudo update-alternatives --install /usr/bin/x-session-manager x-session-manager /usr/local/bin/dwmstart 60
-sudo dpkg-reconfigure gdm3
 ## git clones fzf and fasd and pywal
 git clone https://github.com/junegunn/fzf.git ~/.fzfsrc
 git clone https://github.com/clvv/fasd.git ~/.fasdsrc
 git clone https://github.com/dylanaraps/pywal.git ~/.pywalsrc
+git clone https://github.com/mps-youtube/mps-youtube ~/.mpsyt
+#make wallpaper directory
+mkdir ~/.wallpaper
+git clone https://github.com/LukeSmithxyz/wallpapers.git ~/.wallpaper
+
+## fonts
+# add contrib to /etc/apt/sources.list
+sudo apt-get install ttf-mscorefonts-installer
+
+## gui apps
+sudo apt-get install gimp firefox-esr libreoffice simple-scan
+
+# ssh keyless login
+# generate keys (accept all defaults)
+ssh-keygen -t rsa
+# copy pub key to remote server's authorized keys file
+ssh-id-copy host@server
+# disable password access on the server /etc/ssh/sshd_config
+PasswordAuthentication no
+sudo systemctl restart ssh
+
+# Printing
+# Cups should already be installed. See above.
+# Check the service is running:
+systemctl status cups
+# Go to the web interface /localhost:631/
+# Attempt to install the (network printer)
+# If the correct printer is not listed, 
+# install lsb
+sudo apt install lsb
+# and the correct driver from www.openprinting.org
+sudo dpkg -i driver.deb
+# add user to lpadmin
+sudo adduser simon lpadmin
+# make lpr (for printing from vim) work with cups by setting default
+lpstat -t # should give queue name
+lpoptions -d queuename # sets default.
+# Test with 
+lpr myfile
