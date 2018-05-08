@@ -32,3 +32,5 @@ cp -p $MYHOME/.config/ranger/rifle.conf $GITVAR/ranger/
 cp -p $MYHOME/.config/ranger/scope.sh $GITVAR/ranger/
 cp -p $MYHOME/.config/mps-youtube/transcode $GITVAR/mps-youtube/
 cp -pr $MYHOME/.config/vim/* $GITVAR/vim/
+
+# here's a test comment
