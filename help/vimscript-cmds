@@ -1,0 +1,27 @@
+Notes from "Learn Vimscript the Hard Way" (Steve Losh)
+
+# Echoing messages
+:echo "string" # echoes string to the bottom of vim window
+:echom "string" # same but also logs to :messages
+
+# Setting options
+
+:set booleanoption and set nobooleanoption set options on and off.
+:set booleanoption! toggles booleanoption.
+:set option? queries state of booleanoption.
+
+:set valueoption=integer
+:set valueoption?
+
+:setlocal nowrap # Set option for current buffer only
+
+# Leaders
+:nnoremap <buffer> <leader>x dd
+
+# Disabling keys
+:inoremap <esc> <nop>
+
+# Autocommands
+:autocmd BufWritePre,BufRead *.html :normal gg=G # Re-indent any html file on reading and before writing.
+:autocmd BufNewFile,BufRead *.html setlocal nowrap
+:autocmd FileType python    nnoremap <buffer> <localleader>c I#<Esc>
