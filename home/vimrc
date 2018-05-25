@@ -1,7 +1,8 @@
+" VUNDLE ----------------------------------------------------{{{
 set nocompatible              " be iMproved, required
 filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
+" set the runtime path to include Vundle and
+" initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
@@ -24,6 +25,16 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ajmwagar/vim-deus'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'tomasiser/vim-code-dark'
+Plugin 'dhruvasagar/vim-table-mode'
+Plugin 'jceb/vim-orgmode'
+Plugin 'mattn/calendar-vim'
+Plugin 'tpope/vim-speeddating'
+Plugin 'tpope/vim-repeat'
+Plugin 'vim-scripts/utl.vim'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'vim-scripts/Tagbar'
+Plugin 'vim-scripts/SyntaxRange'
+Plugin 'chriskempson/base16-vim'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -50,10 +61,8 @@ filetype plugin indent on    " required
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
-
-"Airline tweaks
+" }}}" Put your non-Plugin stuff after this line
+"Airline tweaks----------------------------------------------------{{{
 "   let g:airline_left_sep='>'
 "   let g:airline_right_sep='<'
     let g:airline_detect_modified=1
@@ -62,8 +71,8 @@ filetype plugin indent on    " required
     let g:airline_detect_spelllang=1
     let g:airline_powerline_fonts=1
     let g:airline#extensions#tmuxline#enabled=1
-
-"Tmuxline tweaks
+" }}}
+"Tmuxline tweaks----------------------------------------------------{{{
     let g:tmuxline_powerline_separators=0
     let g:tmuxline_separators = {
         \ 'left' : '',
@@ -71,8 +80,8 @@ filetype plugin indent on    " required
         \ 'right' : '',
         \ 'right_alt' : '<',
         \ 'space' : ' '}
-
-"Ultisnips config
+" }}}
+"Ultisnips config----------------------------------------------------{{{
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
     let g:UltiSnipsExpandTrigger="<tab>"
@@ -81,8 +90,11 @@ filetype plugin indent on    " required
 
 " If you want :UltiSnipsEdit to split your window.
     let g:UltiSnipsEditSplit="vertical"
-
-"fzf plugin
+" }}}
+"myplugindir----------------------------------------------------{{{
+    set rtp+=~/.vim/bundle/uplooker
+" }}}
+"fzf plugin----------------------------------------------------{{{
     set rtp+=~/.fzfsrc
 
 " Customize fzf colors to match your color scheme
@@ -100,11 +112,8 @@ let g:fzf_colors =
    \ 'marker':  ['fg', 'Keyword'],
    \ 'spinner': ['fg', 'Label'],
    \ 'header':  ['fg', 'Comment'] }
-
-"Call fzf
-    nnoremap <leader>f :FZF<CR>
-
-"Basics
+" }}}
+"Basics----------------------------------------------------{{{
     set nocompatible
     set showmode
     set number
@@ -112,34 +121,43 @@ let g:fzf_colors =
     syntax on
     set cursorline
     set nowrap
-
-"Set control keys
+" }}}
+"Set control keys----------------------------------------------------{{{
     let mapleader = ","
     let maplocalleader = "\\"
     inoremap jk <Esc>
+    vnoremap jk <Esc>
+    cnoremap jk <Esc>
     nnoremap <F2> :set invpaste paste?<CR>
     set pastetoggle=<F2>
     nnoremap <F3> :set invnumber<CR>:set invrelativenumber<CR>
     nnoremap <F4> :%s//g<Left><Left>
     map <F6> :setlocal spell! spelllang=en_gb<CR>
-
-"NERDtree bindings
+    set mouse=a
+    let &t_SI = "\<Esc>[6 q"
+    let &t_SR = "\<Esc>[4 q"
+    let &t_EI = "\<Esc>[2 q"
+" }}}
+"Call fzf----------------------------------------------------{{{
+    nnoremap <leader>f :FZF<CR>
+" }}}
+"NERDtree bindings----------------------------------------------------{{{
     nnoremap <C-n> :NERDTreeToggle<CR>
-
-"Source .vimrc
+" }}}
+"Source .vimrc----------------------------------------------------{{{
     nnoremap <leader>sv :source ~/.vimrc<CR>
     nnoremap <leader>ev :tabe ~/.vimrc<CR>
-
-"Folding 
+" }}}
+"Folding ----------------------------------------------------{{{
     nnoremap <space> za
-    
-"Tabs
+" }}}
+"Tabs----------------------------------------------------{{{
     set tabstop=4
     set shiftwidth=4
     set expandtab
     set shiftround 
-
-"Colours
+" }}}
+"Colours----------------------------------------------------{{{
     set t_Co=256
     set t_ut=
     set termguicolors
@@ -147,55 +165,83 @@ let g:fzf_colors =
     let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 "    set background=dark " Setting dark mode
     colorscheme codedark
-
-"Searches
+" }}}
+"Searches----------------------------------------------------{{{
     set ignorecase
     set smartcase
     set incsearch
     set showmatch
     set hlsearch
     nnoremap <leader><space> :noh<CR>
-
-"Splits at bottom and right
+" }}}
+"Splits at bottom and right----------------------------------------------------{{{
     set splitright
     set splitbelow
-
-"Easier line traversing
+" }}}
+"Easier line traversing----------------------------------------------------{{{
     nnoremap H 0
     nnoremap L $
-
-"Marker jumping
+" }}}
+"Marker jumping --------------------------------------------------{{{
     nnoremap <leader>n /<++><Enter>"_c4l
     nnoremap <leader>p ?<++><Enter>"_c4h
     inoremap <leader>n <Esc>/<++><Enter>"_c4l
     inoremap <leader>p <Esc>?<++><Enter>"_c4h
+" }}}
+"Compile latex document----------------------------------{{{ 
+    augroup filetype_tex
+        autocmd!
+        autocmd FileType tex inoremap <F5> <Esc>:!pdflatex<space>%<Enter>a
+        autocmd FileType tex nnoremap <F5> :!pdflatex<space>%<Enter>
+    augroup END
+" }}}
+"Templates ----------------------------------------------------------{{{
+    augroup templates
+        autocmd!
+        autocmd BufNewFile *.* silent! execute '0r ~/.config/vim/templates/skeleton.'.expand("<afile>:e")
+    augroup END
+" }}}
+"Dictionary test ----------------------------------------------------{{{ 
+    augroup mydictionary 
+        autocmd!
+        autocmd FileType * execute 'setlocal dict+=~/.vim/mydictionaries/'.&filetype.'.txt'
+    augroup END
+" }}}
+"Per filetype abbreviations -------------------------------------------{{{
+    augroup filetype_vim
+        autocmd!
+        autocmd FileType vim setlocal foldmethod=marker
+        autocmd FileType vim nnoremap <buffer> <leader>[ A----------------------------------------------------{{{<esc>0
+        autocmd FileType vim nnoremap <buffer> <leader>] I"<space>}}}<esc>
+    augroup END
 
-"Compile latex document
-    autocmd FileType tex inoremap <F5> <Esc>:!pdflatex<space>%<Enter>a
-    autocmd FileType tex nnoremap <F5> :!pdflatex<space>%<Enter>
+    augroup filetype_py
+        autocmd!
+        autocmd FileType python    :iabbrev <buffer> iff if:<left>
+        "mapping to comment out python lines
+        autocmd FileType python    nnoremap <buffer> <localleader>c I#<Esc>
+    augroup END
 
-"Templates
-    if has("autocmd")
-        augroup templates
-            autocmd BufNewFile *.* silent! execute '0r ~/.config/vim/templates/skeleton.'.expand("<afile>:e")
-        augroup END
-    endif
+    augroup filetype_js
+        autocmd!
+        autocmd FileType javascript    :iabbrev <buffer> iff if ()<left>
+    augroup END
 
-"Dictionary test
-    if has ("autocmd")
-        au FileType * execute 'setlocal dict+=~/.vim/mydictionaries/'.&filetype.'.txt'
-    endif
-
-"Write to urlview
+    augroup filetype_latin
+        autocmd!
+        autocmd BufNew,BufRead *.ltn setlocal filetype=latin
+    augroup END
+" }}}
+"Write to urlview----------------------------------------------------{{{
     nnoremap <leader>u :w<Home>silent <End> !urlview<CR>
-
-"Wrap in double-symbols
+" }}}
+"Wrap in double-symbols----------------------------------------------------{{{
     vnoremap <leader>2 di""<Esc>Pf"
     vnoremap <leader>9 di()<Esc>Pf)
     vnoremap <leader>[ di[]<Esc>Pf]
     vnoremap <leader>{ di{}<Esc>Pf}
-
-"Easy pair symbols
+" }}}
+"Easy pair symbols----------------------------------------------------{{{
     inoremap <leader>' ''<Esc>i
     inoremap <leader>" ""<Esc>i
     inoremap <leader>[ []<Esc>i
@@ -204,10 +250,11 @@ let g:fzf_colors =
     inoremap <leader>* **<Esc>i
     inoremap <leader>+ ++<Esc>i
     inoremap <leader>= ==<Esc>i
-
-"Move outside the paired symbols
+" }}}
+"Move outside the paired symbols----------------------------------------------------{{{
     inoremap <leader>l <Esc>la
-
+" }}}
+" Line manipulation ----------------------------------------------------{{{
 "Move lines up and down
     nnoremap <leader><Down> ddjP
     nnoremap <leader><Up> ddkP
@@ -219,17 +266,18 @@ let g:fzf_colors =
 "Delete lines
     nnoremap <leader>do jddk
     nnoremap <leader>dO kdd
-
-"Delete trailing whitespace
+" }}}
+"Delete trailing whitespace----------------------------------------------------{{{
     nnoremap <leader>w :%s/\s\+$//<CR>
-
-"Insert mode text processing
+" }}}
+"Insert mode text processing----------------------------------------------------{{{
     inoremap <c-d> <Esc>ddo
-
-"Yank to system clipboard
+" }}}
+"Yank to system clipboard----------------------------------------------------{{{
     vnoremap <leader>c :w !xsel -b<CR><CR>
     nnoremap <leader>c :.w !xsel -b<CR><CR>
-
+" }}}
+"TYPOS----------------------------------------------------{{{
 "Typo commands
     cmap Q q
 
@@ -237,4 +285,10 @@ let g:fzf_colors =
     iabbrev waht what
     iabbrev tehn then
     iabbrev adn and
-
+" }}}
+" NETRW tweak----------------------------------------------------{{{
+    let g:netrw_liststyle = 3
+    let g:netrw_banner = 0
+    let g:netrw_browse_split = 4
+    let g:netrw_winsize = 25
+" }}}

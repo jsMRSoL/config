@@ -40,7 +40,7 @@ git clone https://github.com/jsMRSoL/config.git ~/.dotfiles
 apt-get install lightdm
 
 ## Install various packages
-apt-get install build-essential alsa-utils ssh git curl urlview screenfetch python3-pip vim ranger mpd mpc ncmpcpp w3m w3m-img compton feh libx11-dev libxft-dev libxrandr-dev libxext-dev task-spooler imagemagick rtv finch surfraw acpi mupdf tmux nfs-common catdoc atool caca-utils highlight pdftotext mediainfo exiftool odt2txt docx2txt xlsx2csv cups-bsd cups sxiv
+apt-get install build-essential alsa-utils ssh git curl urlview screenfetch python3-pip vim ranger mpd mpc ncmpcpp w3m w3m-img compton feh libx11-dev libxft-dev libxrandr-dev libxext-dev task-spooler imagemagick rtv finch surfraw acpi mupdf tmux nfs-common catdoc atool caca-utils highlight pdftotext mediainfo exiftool odt2txt docx2txt xlsx2csv cups-bsd cups sxiv texlive-latex-base pandoc
 
 ## Clone dwm and st and compile
 git clone https://git.suckless.org/dwm ~/.dwmsrc

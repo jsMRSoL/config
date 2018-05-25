@@ -47,6 +47,7 @@ $	End
 )	End of sentence
 d0  Delete/cut to line start
 d$  Delete/cut to line end
+D   Delete/cut to line end
 dd	delete line
 3dd	delete three lines
 d)	delete to the end of sentence.
@@ -55,6 +56,8 @@ WHOLE PARAGRAPH
 ===============
 ap – a paragraph and trailing white space.
 ip – inner paragraph
+{   Start of paragraph
+}   End of paragraph
 
 WHOLE SENTENCE
 ==============
@@ -92,6 +95,7 @@ dtL	Delete up to but not including 'L'.
 c/{term}+Ret	Delete up to and including term and enter edit mode.
 2fe Find the second letter 'e' in this line.
 fe  Find e. ; moves to the next occurrence.
+
 WORD
 ====
 w   Forward one alphanumeric word
@@ -144,7 +148,10 @@ WINDOWS
 :split {file} Create horizontal split {and open file}
 :vsplit	Create vertical split
 C-w C-w	Switch between windows
+C-w h,j,k,l Move between windows.
 C-w q	Close split
+C-w o   Close all other windows
+C-w T   Convert current split to tab
 
 TABS
 ====
@@ -190,6 +197,7 @@ NEXT LEVEL!!
 ============
 xp	swap next two characters around
 G=gg	auto (re)indent entire document
+G<gg    shift all lines left (also >)
 guu	lowercase line
 gUU	uppercase line
 C-O	retrace movements (backward)
@@ -200,11 +208,11 @@ C-I	retrace movements forward
 "0p	paste last yank
 "1p	paste last delete/change
 "2p	paste last but one delete/change
-d/-	delete to "1
-dt-	delete to "-
-x	delete to "-
-dt-	delete up to (not inc) - (to "- reg)
-df-	delete up to and inc - (to "- reg)
+d/-	delete up to (not inc) - 
+dt-	delete up to (not inc) -
+"- dt-	delete up to (not inc) - (to "- reg)
+"- df-	delete up to and inc - (to "- reg)
+Vp  select line and paste over it.
 
 GET OUTPUT FROM SHELL COMMANDS
 ==============================
@@ -221,7 +229,18 @@ GLOBAL COMMAND
 ==============
 :g/one\|two/ list lines containing "one" or "two"
 :v/one\|two/ list lines not containing "one" or "two"
+:v is the same as :g!
 
 INSERT MODE
 ===========
 C-r 1		Paste contents of register 1
+
+VISUAL MODE
+===========
+o   Jump between beginning and end of block
+ALL motions work as normal!
+'<,'>!sort  Sorts visually selected block
+
+REPEAT OPERATOR
+===============
+. can have a number e.g. 3. for 3 repeats.

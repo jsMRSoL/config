@@ -1,0 +1,11 @@
+Variables
+b: local to current buffer
+w: local to current window
+t:                  tab
+g: global
+l:                  function
+s:                  source'ed vim script
+a:                  function argument (only inside a function)
+v: global predefined by vim
+
+
