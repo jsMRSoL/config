@@ -77,6 +77,9 @@ sudo apt-get install ttf-mscorefonts-installer
 ## gui apps
 sudo apt-get install gimp firefox-esr libreoffice simple-scan
 
+## browser
+# waterfox e.g.
+https://storage-waterfox.netdna-ssl.com/releases/linux64/installer/waterfox-56.2.0.en-US.linux-x86_64.tar.bz2
 # ssh keyless login
 # generate keys (accept all defaults)
 ssh-keygen -t rsa

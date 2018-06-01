@@ -1,4 +1,4 @@
-" VUNDLE ----------------------------------------------------{{{
+" VUNDLE {{{
 set nocompatible              " be iMproved, required
 filetype off                  " required
 " set the runtime path to include Vundle and
@@ -64,56 +64,67 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " }}} " Put your non-Plugin stuff after this line
-"Airline tweaks----------------------------------------------------{{{
+"Airline tweaks {{{
 "   let g:airline_left_sep='>'
 "   let g:airline_right_sep='<'
-    let g:airline_detect_modified=1
-    let g:airline_detect_paste=1
-    let g:airline_detect_spell=1
-    let g:airline_detect_spelllang=1
-    let g:airline_powerline_fonts=1
-    let g:airline#extensions#tmuxline#enabled=1
+    let g:airline_detect_modified             = 1
+    let g:airline_detect_paste                = 1
+    let g:airline_detect_spell                = 1
+    let g:airline_detect_spelllang            = 1
+    let g:airline_powerline_fonts             = 1
+    let g:airline#extensions#tmuxline#enabled = 1
 " }}}
-"Tmuxline tweaks----------------------------------------------------{{{
+"Tmuxline tweaks {{{
     let g:tmuxline_powerline_separators=0
     let g:tmuxline_separators = {
-        \ 'left' : '',
-        \ 'left_alt': '>',
-        \ 'right' : '',
+        \ 'left'      : '',
+        \ 'left_alt'  : '>',
+        \ 'right'     : '',
         \ 'right_alt' : '<',
-        \ 'space' : ' '}
+        \ 'space'     : ' '}
 " }}}
-"Ultisnips config----------------------------------------------------{{{
+"Ultisnips config {{{
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
-    let g:UltiSnipsExpandTrigger="<tab>"
-    let g:UltiSnipsJumpForwardTrigger="<c-b>"
-    let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+    let g:UltiSnipsExpandTrigger       = "<tab>"
+    let g:UltiSnipsJumpForwardTrigger  = "<c-b>"
+    let g:UltiSnipsJumpBackwardTrigger = "<c-z>"
 
 " If you want :UltiSnipsEdit to split your window.
-    let g:UltiSnipsEditSplit="vertical"
-    let g:UltisnipsSnippetsDir="/home/simon/.vim/customsnips"
-    let g:UltiSnipsSnippetDirectories=["UltiSnips", "/home/simon/.vim/customsnips"]
+    let g:UltiSnipsEditSplit          = "vertical"
+    let g:UltisnipsSnippetsDir        = "/home/simon/.vim/customsnips"
+    let g:UltiSnipsSnippetDirectories = ["UltiSnips", "/home/simon/.vim/customsnips"]
     cmap USE UltiSnipsEdit
 " }}}
-" orgmode config ----------------------------------------------------{{{
+" orgmode config  {{{
     let g:org_heading_shade_leading_stars = 1
-    let g:org_indent = 1
-    let g:org_aggressive_conceal = 1    |" Should ensure all inline markups are hidden. Experimental!
+    let g:org_indent                      = 1
+    let g:org_aggressive_conceal          = 1    |" Should ensure all inline markups are hidden. Experimental!
 " }}}
-" Vim-markdown config----------------------------------------------------{{{
+" Vim-markdown config {{{
         let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
 " }}}
 " table mode config {{{
     let g:table_mode_corner_corner = '+'
 " }}}
-" NERDTree config ---------------------------------------------------------{{{
+" NERDTree config  {{{
     let g:NERDTreeHijackNetrw = 0
 " "--------------------------------------------------------------------------}}}
-"myplugindir----------------------------------------------------{{{
+" dragvisuals config {{{
+     vmap  <expr>  <LEFT>   DVB_Drag('left') 
+     vmap  <expr>  <RIGHT>  DVB_Drag('right')
+     vmap  <expr>  <DOWN>   DVB_Drag('down') 
+     vmap  <expr>  <UP>     DVB_Drag('up')   
+     vmap  <expr>  D        DVB_Duplicate()  
+" }}}
+" listtrans config {{{
+    nnoremap  <leader>l   :call ListTrans_toggle_format()<CR>
+    vnoremap  <leader>l   :call ListTrans_toggle_format('visual')<CR>
+" }}}
+"myplugindir {{{
     set rtp+=~/.vim/bundle/uplooker
 " }}}
-"fzf plugin----------------------------------------------------{{{
+"fzf plugin {{{
     set rtp+=~/.fzfsrc
 
 " Customize fzf colors to match your color scheme
@@ -132,7 +143,7 @@ let g:fzf_colors =
    \ 'spinner': ['fg', 'Label'],
    \ 'header':  ['fg', 'Comment'] }
 " }}}
-"Basics----------------------------------------------------{{{
+"Basics {{{
     set nocompatible
     set showmode
     set number
@@ -144,7 +155,7 @@ let g:fzf_colors =
     set wildmenu
     set shortmess+=I
 " }}}
-"Set control keys----------------------------------------------------{{{
+"Set control keys {{{
     " Leader keys
     let mapleader = ","
     let maplocalleader = "\\"
@@ -167,17 +178,17 @@ let g:fzf_colors =
     nnoremap <C-k> H        |" Jump to top of viewport
     nnoremap <C-j> L        |" Jump to bottom of viewport
     " Problem keys
-    nnoremap Q q            |" Avoid accidentally going into Ex mode
+    nmap Q  <nop>
     nmap K  <nop>
-    cnoremap <C-a> <Home> |" To allow easy jump to start of command line
-    cnoremap <C-e> <End>  |" Already seems to work but wth.
+    cnoremap <C-a> <Home>   |" To allow easy jump to start of command line
+    cnoremap <C-e> <End>    |" Already seems to work but wth.
     " File navigation
     cmap    BOF    browse oldfiles
-    nmap    ##      :b#<CR>     |" Jump to last open file
-    set switchbuf=usetab    " switch to already open buffer
+    nmap    ##      :b#<CR> |" Jump to last open file
+    set switchbuf=usetab    |" switch to already open buffer
     set hidden              |" enables hiding (as yet) unsaved buffer
 " }}}
-" Manage vim's internal files --------------{{{
+" Manage vim's internal files  {{{
 " Prevent write-permissions errors
 if exists('$SUDO_USER')
     set nobackup
@@ -208,33 +219,34 @@ if exists('$SUDO_USER')
 else
     if isdirectory(expand('~/.vim'))
         " name of viminfo file must be last argument
-        set viminfo='1000,f1,<500,n~/.vim/viminfo
+        set viminfo='1000,f1,<500,n~/.config/vim/viminfo
     endif
 endif
 
-if !empty(glob('~/.vim/viminfo'))
-      if !filereadable(expand('~/.vim/viminfo'))
-            echoerr 'warning: ~/.vim/viminfo exists but is not readable'
+if !empty(glob('~/.config/vim/viminfo'))
+      if !filereadable(expand('~/.config/vim/viminfo'))
+            echoerr 'warning: ~/.config/vim/viminfo exists but is not readable'
       endif
 endif
 "}}}
-" vinaigrette -------------------------------------------------------------{{{
+" vinaigrette  {{{
     nnoremap -  :edit <C-R>=empty(expand('%')) ? '.' : expand('%:p:h')<CR><CR>
 "--------------------------------------------------------------------------}}}
-"Call fzf----------------------------------------------------{{{
-    nnoremap <leader>f :FZF<CR>
+"Call fzf {{{
+    nnoremap <leader>ff :Files ~/<CR>
+    nnoremap <leader>fv :Files ~/.vim/<CR>
 " }}}
-"NERDtree bindings----------------------------------------------------{{{
+"NERDtree bindings {{{
     nnoremap <C-n> :NERDTreeToggle<CR>
 " }}}
-"Source .vimrc----------------------------------------------------{{{
-    nnoremap <leader>sv :source ~/.vimrc<CR>
-    nnoremap <leader>ev :tabe ~/.vimrc<CR>
+"Source .vimrc {{{
+    nnoremap <leader>sv :source ~/.config/vim/vimrc<CR>
+    nnoremap <leader>ev :tabe ~/.config/vim/vimrc<CR>
 " }}}
-"Folding ----------------------------------------------------{{{
+"Folding  {{{
     nnoremap <space> za
 " }}}
-"Tabs / Line breaking/ Format options ----------------------------------------------------{{{
+"Tabs / Line breaking/ Format options  {{{
     "Tabs
     set tabstop=4
     set shiftwidth=4
@@ -272,7 +284,7 @@ endif
     set listchars+=precedes:⁌
     set listchars+=trail:∘
 " }}}
-"Colours----------------------------------------------------{{{
+"Colours {{{
     set t_Co=256
     set t_ut=
     set termguicolors
@@ -296,7 +308,7 @@ endif
     endfunction
     nnoremap <leader>cc :call ToggleColorCol()<CR>
 " }}}
-"Searches----------------------------------------------------{{{
+"Searches {{{
     set ignorecase
     set smartcase
     set incsearch
@@ -304,40 +316,40 @@ endif
     set hlsearch
     nnoremap <leader><space> :noh<CR>
 " }}}
-"Splits at bottom and right----------------------------------------------------{{{
+"Splits at bottom and right {{{
     set splitright  " Moves focus right with split
     set splitbelow  " Moves focus down with split
 " }}}
-"Easier line traversing----------------------------------------------------{{{
+"Easier line traversing {{{
     nnoremap H 0
     nnoremap L $
 " }}}
-"Marker jumping --------------------------------------------------{{{
+"Marker jumping  {{{
     nnoremap <leader>n /<++><Enter>"_c4l
     nnoremap <leader>p ?<++><Enter>"_c4h
     inoremap <leader>n <Esc>/<++><Enter>"_c4l
     inoremap <leader>p <Esc>?<++><Enter>"_c4h
 " }}}
-"Compile latex document----------------------------------{{{
+"Compile latex document {{{
     augroup filetype_tex
         autocmd!
         autocmd FileType tex inoremap <F5> <Esc>:!pdflatex<space>%<Enter>a
         autocmd FileType tex nnoremap <F5> :!pdflatex<space>%<Enter>
     augroup END
 " }}}
-"Templates ----------------------------------------------------------{{{
+"Templates  {{{
     augroup templates
         autocmd!
         autocmd BufNewFile *.* silent! execute '0r ~/.config/vim/templates/skeleton.'.expand("<afile>:e")
     augroup END
 " }}}
-"Dictionary test ----------------------------------------------------{{{
+"Dictionary test  {{{
     augroup mydictionary
         autocmd!
         autocmd FileType * execute 'setlocal dict+=~/.vim/mydictionaries/'.&filetype.'.txt'
     augroup END
 " }}}
-"Per filetype abbreviations -------------------------------------------{{{
+"Per filetype abbreviations  {{{
     augroup filetype_vim
         autocmd!
         autocmd FileType vim setlocal foldmethod=marker
@@ -371,31 +383,12 @@ endif
         autocmd FileType org :imap <buffer> <S-CR>    <Esc><S-CR>
     augroup END
 " }}}
-" Handle links ----------------------------------------------------{{{
+" Handle links  {{{
     " write to urlview
     nnoremap <leader>uv :w<Home>silent <End> !urlview<CR>
     nnoremap <leader>ut :Utl<CR>
 " }}}
-"Wrap in double-symbols----------------------------------------------------{{{
-    vnoremap <leader>2 di""<Esc>Pf"
-    vnoremap <leader>9 di()<Esc>Pf)
-    vnoremap <leader>[ di[]<Esc>Pf]
-    vnoremap <leader>{ di{}<Esc>Pf}
-" }}}
-"Easy pair symbols----------------------------------------------------{{{
-    inoremap <leader>' ''<Esc>i
-    inoremap <leader>" ""<Esc>i
-    inoremap <leader>[ []<Esc>i
-    inoremap <leader>( ()<Esc>i
-    inoremap <leader>{ {}<Esc>i
-    inoremap <leader>* **<Esc>i
-    inoremap <leader>+ ++<Esc>i
-    inoremap <leader>= ==<Esc>i
-" }}}
-"Move outside the paired symbols----------------------------------------------------{{{
-    inoremap <leader>l <Esc>la
-" }}}
-" Line manipulation ----------------------------------------------------{{{
+" Line manipulation  {{{
 "Move lines up and down
     nnoremap <leader><Down> ddp
     nnoremap <leader><Up> ddkP
@@ -408,33 +401,29 @@ endif
     nnoremap <leader>do jddk
     nnoremap <leader>dO kdd
 " }}}
-"Delete trailing whitespace----------------------------------------------------{{{
+"Delete trailing whitespace {{{
     nnoremap <leader>w :%s/\s\+$//<CR>
 " }}}
-"Insert mode text processing----------------------------------------------------{{{
+"Insert mode text processing {{{
     inoremap SS     <Esc>S      |" Clear line
     inoremap II     <Esc>I      |" Move to start of line
     inoremap AA     <Esc>A      |" Move to end of line
 " }}}
-"Yank to system clipboard----------------------------------------------------{{{
+"Yank to system clipboard {{{
     vnoremap <leader>cp :w !xsel -b<CR><CR>
     nnoremap <leader>cp :.w !xsel -b<CR><CR>
 " }}}
-"TYPOS----------------------------------------------------{{{
-"Typo commands
-    cmap Q q
-    cmap W w
-"Typo typos
+"TYPOS {{{
     iabbrev waht what
     iabbrev tehn then
     iabbrev adn and
 " }}}
-" NETRW tweak----------------------------------------------------{{{
-    let g:netrw_liststyle = 0
-    let g:netrw_banner = 0
+" NETRW tweak {{{
+    let g:netrw_liststyle    = 0
+    let g:netrw_banner       = 0
     let g:netrw_browse_split = 0
 " }}}
-" Custom box commenting----------------------------------------------------{{{
+" Custom box commenting {{{
 function! CommentBlock(comment, ...)
     "If 1 or more opt args, first opt arg is
     let introducer = a:0 >= 1 ? a:1 : "#"
@@ -454,15 +443,3 @@ endfunction
 " Python /Shell comment box insertion map
     imap <silent> ###   <C-R>=CommentBlock(input("Enter comment: "),'#','#')<CR>
 
-" Vimrc fold insertion command
-function! FoldBox(comment)
-    " Build the fold box and put the section name inside it...
-    return '" ' . a:comment . " " . repeat("-", 72 - strlen(a:comment)) . "{{{\<CR>"
-    \    . "\<CR>"
-    \    . '"' . repeat("-", 74) . "}}}"
-endfunction
-    imap <silent> vmfld <C-R>=FoldBox(input("Enter name: "))<CR>
-" }}}
-" test section ------------------------------------------------------------{{{
-
-"--------------------------------------------------------------------------}}}

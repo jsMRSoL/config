@@ -1,0 +1,5 @@
+#!/bin/bash
+line=$( cat "$1" | fzf )
+targetlink=$( echo "$line" | awk '{print $1}' )
+youtube-viewer "$targetlink" > /dev/null 2>&1 & disown
+exit 0

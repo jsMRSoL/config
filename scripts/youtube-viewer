@@ -1,0 +1,7 @@
+#!/bin/bash
+    linktarget=$( echo "$1" | sed 's|https://|ytdl://|' )
+    echo "Opening $linktarget..."
+    mpv "$linktarget" --ytdl-format=medium --no-terminal & disown
+    exit 0
+
+

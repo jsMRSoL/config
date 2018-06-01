@@ -128,6 +128,26 @@ N	move to the previous instance of the result
 :1,.3s/original/replacement/g	Replace all occurrences of original in lines 1 and the three after the current line
 :%s/\s\+/ /g	Replace all multiple spaces with single space
 :%/\s\+\$//e	Replace all end-of-line trailing white space (e suppresses errors)
+:/Section 1/+,/Section 2/- y     Yank every line between Section 1 and Section 2  
+:$ normal p     Paste last yank at the end of the file
+:\/             Search for next match of last used search pattern
+:\?             Search for previous match of last used search pattern
+:\&             Search for next match of last used substitution pattern
+:.s:/dir1/dir2/:/dira/dirb:g    Replace strings with slashes without backslashitis
+:.s/\v<vi>/VIM/g            Replace vi at word boundaries with VIM using very magic mode
+:.s/\<vi\>/VIM/g            As previous used backslashing.
+:.s/^vi\>/VIM/g             Replace the word vi at sentence start with VIM
+:.s/vi$/VIM/g               Replace the word vi at sentence end with VIM
+:.s/[Vv]i/VIM/g             Replace Vi or vi with VIM.
+:.s/\v<[Vv]i/VIM/g          Replace the word Vi or vi with VIM using very magic mode
+:.s/\<[Vv]i\>/VIM/g         As above with backslashitis.
+:s/[65]/Dig/g   Replace all 5s and 6s with Dig.
+:s/65/Dig/g     Replace all 65s with Dig.
+:/"[^"]\+"/     Match a " followed by multiple non-"'s and then a ", i.e a quoted string
+:/\.\s\+[a-z]/  Match a sentence starting with a lowercase letter
+                i.e. a period, some whitespace, a lowercase letter.
+:s:\(\w\+\)\(s\+\)\(\w\+\):\3\2\1:  Match a word followed by whitespace and
+                                    another word. Swap the words round.
 
 BOOKMARKS
 =========
@@ -202,6 +222,7 @@ guu	lowercase line
 gUU	uppercase line
 C-O	retrace movements (backward)
 C-I	retrace movements forward
+
 :reg	display contents of all registers
 "*p	paste last text copied with C-c
 "+p	paste last text highlighted with mouse.
