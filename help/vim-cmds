@@ -14,6 +14,8 @@ R	Replace characters instead of inserting them (Replace continous)
 ESC	Command mode
 :	Last line mode
 v	Enter visual mode per character
+;	Repeat last f, t, F, T [count] times
+. 	Repeat last f, t, F, T in opposite direction [count] times
 V	Enter visual mode per line
 C-v	Visual block mode# allows you to highlight a column. Esc executes the same operation, e.g. inserting a word, in all highlighted places.
 >	Shift highlighted text right
@@ -121,6 +123,7 @@ SEARCH AND REPLACE
 ?search_text	search document for search_text going backward
 n	move to the next instance of the result from the search
 N	move to the previous instance of the result
+&	repeat last substitution on the current line
 :%s/original/replacement	Search for the first occurrence of the string “original” and replace it with “replacement”
 :%s/original/replacement/g	Search and replace all occurrences of the string “original” with “replacement”
 :%s/original/replacement/gc	Search for all occurrences of the string “original” but ask for confirmation before replacing them with “replacement”

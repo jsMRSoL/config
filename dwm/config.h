@@ -1,21 +1,30 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10" };
-static const char dmenufont[]       = "monospace:size=10";
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
+static const char *fonts[]          = { "Liberation Mono:size=10" };
+static const char dmenufont[]       = "Liberation Mono:size=10";
+
+static const char norm_fg[] = "#c5c8c6";
+static const char norm_bg[] = "#1d1f21";
+static const char norm_border[] = "#76868d";
+
+static const char sel_fg[] = "#c5c8c6";
+static const char sel_bg[] = "#373b41";
+static const char sel_border[] = "#373b41";
+
+static const char urg_fg[] = "#cc6666";
+static const char urg_bg[] = "#373b41";
+static const char urg_border[] = "#b5bd68";
+
 static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+    /*               fg           bg         border                         */
+    [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
+    [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
+    [SchemeUrg]  = { sel_fg,      sel_bg,    urg_border },  // the focused win
 };
 
 /* tagging */
@@ -27,8 +36,11 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "Gimp",     NULL,       NULL,       1<<1,            0,           -1 },
+	{ "Waterfox",  NULL,       NULL,       1<<2,            0,           -1 },
+	{ "Simple-scan",  NULL,       NULL,       1<<3,            0,           -1 },
+	{ "libreoffice-writer",  NULL,       NULL,       1<<4,            0,           -1 },
+	{ "libreoffice-calc",  NULL,       NULL,       1<<5,            0,           -1 },
 };
 
 /* layout(s) */
@@ -51,17 +63,19 @@ static const Layout layouts[] = {
 	{ MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
 
-/* helper for spawning shell commands in the pre dwm-5.0 fashion */
-#define SHCMD(cmd) { .v = (const char*[]){ "/bin/bash", "-c", cmd, NULL } }
+/* helper for spawning shell commands in the 5.0 fashion */
+#define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-l", "20", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", norm_bg, "-nf", norm_fg, "-sb", sel_bg, "-sf", sel_fg, NULL };
 static const char *termcmd[]  = { "x-terminal-emulator", NULL };
-static const char *browsercmd[] = { "firefox", NULL };
+static const char *browsercmd[] = { "waterfox", NULL };
+static const char *textbrowser[] = { "x-terminal-emulator", "-e", "w3m", "www.duckduckgo.com", NULL };
 static const char *musiccmd[] = { "x-terminal-emulator", "-e", "ncmpcpp", NULL };
 static const char *shutcmd[] = { "sudo", "shutdown", "-h", "now", NULL };
 static const char *filebrowse[] = { "x-terminal-emulator", "-e", "ranger", NULL };
+static const char *textedit[] = { "x-terminal-emulator", "-e", "vim", NULL };
 static const char *mutecmd[] = { "amixer", "-q", "sset", "Master", "toggle", NULL };
 static const char *volupcmd[] = { "amixer", "-q", "sset", "Master", "5%+", "unmute", NULL };
 static const char *voldowncmd[] = { "amixer", "-q", "sset", "Master", "5%-", "unmute", NULL };
@@ -69,15 +83,17 @@ static const char *calccmd[] = { "xcalc", NULL };
 static const char *slockcmd[] = { "slock", NULL };
 static Key keys[] = {
 	/* modifier                     key        function        argument */
+	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ 0,                       0x1008ff12,      spawn,          {.v = mutecmd } },
 	{ 0,                       0x1008ff11,      spawn,          {.v = voldowncmd } },
 	{ 0,                       0x1008ff13,      spawn,          {.v = volupcmd } },
 	{ 0,                       0x1008ff1d,      spawn,          {.v = calccmd } },
-	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,        XK_b,      spawn,       {.v = browsercmd } },
+	{ MODKEY|ShiftMask,        XK_w,      spawn,       {.v = textbrowser } },
 	{ MODKEY|ShiftMask,        XK_m,      spawn,       {.v = musiccmd } },
 	{ MODKEY|ShiftMask,        XK_f,      spawn,       {.v = filebrowse } },
+	{ MODKEY|ShiftMask,        XK_v,      spawn,       {.v = textedit } },
 	{ MODKEY|ShiftMask,        XK_Delete, spawn,       {.v = shutcmd } },
 	{ MODKEY|ShiftMask,        XK_s,      spawn,       {.v = slockcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },

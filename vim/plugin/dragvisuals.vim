@@ -63,6 +63,9 @@ endif
 function! DVB_Drag (dir)
     " No-op in Visual mode...
     if mode() ==# 'v'
+        " Why not just return ""?
+        " Maybe this is better than return "" because other commands
+        " continue to work after the gv. E.g. iw.
         return "\<ESC>gv"
 
     " Do Visual Line drag indirectly via temporary nmap
@@ -72,6 +75,7 @@ function! DVB_Drag (dir)
         exec "nnoremap <silent><expr><buffer>  M  \<SID>Drag_Lines('".a:dir."')"
 
         " Return instructions to implement the move and reset selection...
+        " "v means copy to v register.
         return '"vyM'
 
     " Otherwise do Visual Block drag indirectly via temporary nmap
@@ -136,6 +140,7 @@ function! s:Drag_Lines (dir)
     if a:dir == 'left'
         " Are all lines indented at least one space???
         let lines        = getline(line_left, line_right)
+        " match returns -1 when there is no match found.
         let all_indented = match(lines, '^[^ ]') == -1
         nohlsearch
 

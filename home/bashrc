@@ -37,13 +37,13 @@ fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
-    xterm-color|*-256color) color_prompt=yes;;
+    xterm-color) color_prompt=yes;;
 esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -57,7 +57,10 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1="\[$(tput bold)\]\[\033[38;5;68m\]\u\[$(tput sgr0)\]\[\033[38;5;245m\]@\[$(tput sgr0)\]\[\033[38;5;129m\]\h\[$(tput sgr0)\]\[\033[38;5;247m\]:\[$(tput sgr0)\]\[\033[38;5;28m\]\w\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;134m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
+    # PS1="\u@\h:\w\\$ \[$(tput sgr0)\]"
+     #PS1="\[$(tput bold)\]\[\033[38;5;95m\]\u\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;124m\]@\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;172m\]\h\[$(tput sgr0)\]\[\033[38;5;4m\]:\[$(tput sgr0)\]\[\033[38;5;66m\]\w\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;140m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
+#    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -78,9 +81,10 @@ if [ -x /usr/bin/dircolors ]; then
     alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
-    #alias grep='grep --color=auto'
-    #alias fgrep='fgrep --color=auto'
-    #alias egrep='egrep --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
 fi
 
 # colored GCC warnings and errors
@@ -110,56 +114,4 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-set -o vi
-
-#### My additions
-###Is this line to support ranger. When did I add it?
-export PATH="${PATH}:${HOME}/.local/bin"
-export DISPLAY=:0.0
-
-RANGER_LOAD_DEFAULT_RC=FALSE
-
-#myfunctions
-function snip() {
-	options="-i ${1} -ss ${2} -t ${3} -acodec copy ${4}";
-	echo "$options" && avconv "options";
-}
-
-function echotest() {
-	if [ -e "${1}" ]
-	then
-		echo "File exists"
-	fi
-	echo "${1}" "${2}" "${3}" "${4}";
-
-}
-##This ensures the right colours in terminals using wal
-(cat ~/.cache/wal/sequences &)
-##This gives me screenfetch in non-login shells
-if [ -f /usr/bin/screenfetch ]; then
-	/usr/bin/screenfetch
-fi
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-## Launch programs from the cmd line
-fzf-dmenu() { 
-	# note: xdg-open has a bug with .desktop files, so we cant use that shit
-	selected="$(ls /usr/share/applications | fzf -e)"
-	nohup `grep '^Exec' "/usr/share/applications/$selected" | tail -1 | sed 's/^Exec=//' | sed 's/%.//'` >/dev/null 2>&1&
-}
-# hotkey to run the function (Ctrl+O)
-bind '"\C-O":"fzf-dmenu\n"'
-
-## Hooks for fasd 
-fasd_cache="$HOME/.fasd-init-bash"
-if [ "$(command -v fasd)" -nt "$fasd_cache" -o ! -s "$fasd_cache" ]; then
-  fasd --init posix-alias bash-hook bash-ccomp bash-ccomp-install >| "$fasd_cache"
-fi
-source "$fasd_cache"
-unset fasd_cache
-
-## Commandlinefu function
-cmdfu() { curl "http://www.commandlinefu.com/commands/matching/$(echo "$@" \
-| sed 's/ /-/g')/$(echo -n $@ | base64)/plaintext" ;}
 

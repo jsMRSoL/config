@@ -9,199 +9,265 @@
 
 
 # hlsearch on (H) or off (h):
-~h
+~H
 # Last Search Pattern:
-~MSle0~/-
+~MSle0/copp
 
 # Last Substitute Search Pattern:
-~MSle0&-
+~MSle0~&\s\+$
 
 # Last Substitute String:
-$
+$,
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1527880768,,"wq"
 :q!
-|2,0,1527863405,,"q!"
-:w
-|2,0,1527862976,,"w"
+|2,0,1534359063,,"q!"
 :q
-|2,0,1527861760,,"q"
-:e ~/.bash_aliases
-|2,0,1527859077,,"e ~/.bash_aliases"
+|2,0,1534359058,,"q"
+:wq
+|2,0,1534359048,,"wq"
+:w
+|2,0,1534359036,,"w"
+:call PromoteEntry()
+|2,0,1534356584,,"call PromoteEntry()"
+:c
+|2,0,1534356576,,"c"
+:s/,/\r/g
+|2,0,1534353830,,"s/,/\\r/g"
 :reg
-|2,0,1527856195,,"reg"
-:%s/-/*/
-|2,0,1527852113,,"%s/-/*/"
-:browse oldfiles
-|2,0,1527852046,,"browse oldfiles"
-:w ~/Documents/listtest
-|2,0,1527852030,,"w ~/Documents/listtest"
+|2,0,1534353727,,"reg"
+:vs ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+|2,0,1534353247,,"vs ~/Downloads/Aeneid/Aen-XI-Trans-1-224"
+:close
+|2,0,1534353111,,"close"
+:Buffers
+|2,0,1534352766,,"Buffers"
+:buffers
+|2,0,1534352746,,"buffers"
+:help G
+|2,0,1534352552,,"help G"
+:help shift
+|2,0,1534352450,,"help shift"
+:vne
+|2,0,1534352308,,"vne"
+:silent 2,$s/,/\r/g
+|2,0,1534351342,,"silent 2,$s/,/\\r/g"
+:2,$s/,/\r/g
+|2,0,1534351314,,"2,$s/,/\\r/g"
+:1,$s/,/\r/g
+|2,0,1534351292,,"1,$s/,/\\r/g"
+:s/
+|2,0,1534340067,,"s/"
+:set write
+|2,0,1534339950,,"set write"
+:set write=1
+|2,0,1534339865,,"set write=1"
+:set write=write
+|2,0,1534339857,,"set write=write"
+:set write -m
+|2,0,1534339798,,"set write -m"
+:write -m
+|2,0,1534339789,,"write -m"
+:help nowrite
+|2,0,1534339743,,"help nowrite"
+:help readonly
+|2,0,1534339735,,"help readonly"
+:w!
+|2,0,1534339706,,"w!"
+:help write
+|2,0,1534339692,,"help write"
+:set write?
+|2,0,1534339681,,"set write?"
+:?write
+|2,0,1534339669,,"?write"
+:set buftype=write
+|2,0,1534339651,,"set buftype=write"
+:set buftype?
+|2,0,1534339635,,"set buftype?"
+:help s/
+|2,0,1534339184,,"help s/"
+:help s///
+|2,0,1534339180,,"help s///"
 :tabnew
-|2,0,1527851985,,"tabnew"
-:so %
-|2,0,1527851961,,"so %"
-:e ~/.config/vim/vimrc
-|2,0,1527851809,,"e ~/.config/vim/vimrc"
-:sav ~/.vim/plugin/listtrans.vim
-|2,0,1527851756,,"sav ~/.vim/plugin/listtrans.vim"
-:e ~/.vimrc
-|2,0,1527849466,,"e ~/.vimrc"
-:Files ~/
-|2,0,1527849441,,"Files ~/"
-:sav ~/.vim/plugin/dragvisuals.vim
-|2,0,1527849397,,"sav ~/.vim/plugin/dragvisuals.vim"
-:help vimrc
-|2,0,1527848568,,"help vimrc"
-:set viminfo?
-|2,0,1527848408,,"set viminfo?"
-:Files 
-|2,0,1527848196,,"Files "
-:Files ~/.vim
-|2,0,1527846575,,"Files ~/.vim"
-:Fi
-|2,0,1527846419,,"Fi"
-:vs ~/.vimrc
-|2,0,1527846349,,"vs ~/.vimrc"
-:help UltiSnips
-|2,0,1527846061,,"help UltiSnips"
-:vs ~/.vim/customsnips/all.snippets
-|2,0,1527844468,,"vs ~/.vim/customsnips/all.snippets"
-:help folding
-|2,0,1527844206,,"help folding"
-:Files ~/.local
-|2,0,1527843614,,"Files ~/.local"
-:Files ./local
-|2,0,1527843604,,"Files ./local"
-:'<,'>s/=/ = /
-|2,0,1527843560,,"'<,'>s/=/ = /"
-:call AlignOnChar(input("Enter character: "))
-|2,0,1527843165,,"call AlignOnChar(input(\"Enter character: \"))"
-:sp newfile
-|2,0,1527843146,,"sp newfile"
-:vs
-|2,0,1527842470,,"vs"
-:Files .
-|2,0,1527841064,,"Files ."
-:s
-|2,0,1527840358,,"s"
-:.s/-\+\ze{{{/ /
-|2,0,1527840234,,".s/-\\+\\ze{{{/ /"
-:.s/-\+\ze{{{/-/
-|2,0,1527840213,,".s/-\\+\\ze{{{/-/"
-:help fugitive
-|2,0,1527839472,,"help fugitive"
-:Bcommits
-|2,0,1527839436,,"Bcommits"
-:Commits
-|2,0,1527839427,,"Commits"
-:help fzf
-|2,0,1527839367,,"help fzf"
-:Bcommit
-|2,0,1527839355,,"Bcommit"
-:Gstatus
-|2,0,1527839328,,"Gstatus"
-:e ~/.dotfiles/home/vimrc
-|2,0,1527838933,,"e ~/.dotfiles/home/vimrc"
-:tabe
-|2,0,1527838795,,"tabe"
-:Files
-|2,0,1527836844,,"Files"
-:Files ~
-|2,0,1527836714,,"Files ~"
-:setlocal noexpandtab
-|2,0,1527840788,,"setlocal noexpandtab"
-:setlocal nolist
-|2,0,1527840747,,"setlocal nolist"
-:setlocal nolistchars
-|2,0,1527840737,,"setlocal nolistchars"
-:Files ~/.dotfiles/help
-|2,0,1527837530,,"Files ~/.dotfiles/help"
-:call AlignAssignments()
-|2,0,1527803478,,"call AlignAssignments()"
+|2,0,1534330306,,"tabnew"
+:call ReassembleEntry()
+|2,0,1534277155,,"call ReassembleEntry()"
+:call SplitVocabLineIntoSidebar()
+|2,0,1534277134,,"call SplitVocabLineIntoSidebar()"
+:help getline
+|2,0,1534276105,,"help getline"
+:set hlsearch
+|2,0,1534273635,,"set hlsearch"
+:help noh
+|2,0,1534272866,,"help noh"
+:noh
+|2,0,1534272281,,"noh"
+:help set
+|2,0,1534272140,,"help set"
+:set noh
+|2,0,1534271991,,"set noh"
+:set hlsearch?
+|2,0,1534271806,,"set hlsearch?"
+:2,$s/\n;\n/;
+|2,0,1534267351,,"2,$s/\\n;\\n/;"
+:2,$s/;\n/;/g
+|2,0,1534267283,,"2,$s/;\\n/;/g"
+:2,$s/,\n/,/g
+|2,0,1534267260,,"2,$s/,\\n/,/g"
+:2,$s/,\r/,/g
+|2,0,1534267235,,"2,$s/,\\r/,/g"
+:2,$s/
+|2,0,1534267140,,"2,$s/"
+:2,$s/,/,\r/g
+|2,0,1534267042,,"2,$s/,/,\\r/g"
 
 # Search String History (newest to oldest):
+? \w\zs$
+|2,1,1534357902,,"\\w\\zs$"
+? ,
+|2,1,1534357885,,","
+? \n
+|2,1,1534357885,,"\\n"
+? \s\+$
+|2,1,1534356906,,"\\s\\+$"
+?/copp
+|2,1,1534353901,47,"copp"
+??-
+|2,1,1534353779,63,"-"
+? write
+|2,1,1534339669,,"write"
+?/\d
+|2,1,1534277005,47,"\\d"
+??\d\{1,3}
+|2,1,1534277005,63,"\\d\\{1,3}"
+?/\w$
+|2,1,1534273648,47,"\\w$"
+?/,
+|2,1,1534273424,47,","
+? ,$
+|2,1,1534273373,,",$"
 ? @$
-|2,1,1527856606,,"@$"
-? -
-|2,1,1527852113,,"-"
-?/<leader>l
-|2,1,1527851905,47,"<leader>l"
-? \s*$
-|2,1,1527851287,,"\\s*$"
-?/fileexists
-|2,1,1527850256,47,"fileexists"
-? =
-|2,1,1527843560,,"="
-? -\+\ze{{{
-|2,1,1527840234,,"-\\+\\ze{{{"
-?/*
-|2,1,1527836771,47,"*"
-??<++>
-|2,1,1527836761,63,"<++>"
-?/^\%
-|2,1,1527799216,47,"^\\%"
-?/%(
-|2,1,1527798757,47,"%("
-?/mat
-|2,1,1527798649,47,"mat"
-?/\\@
-|2,1,1527794766,47,"\\\\@"
-?/\@<
-|2,1,1527794738,47,"\\@<"
-? eunuch
-|2,1,1527789388,,"eunuch"
-??ll
-|2,1,1527787775,63,"ll"
-?/down
-|2,1,1527786733,47,"down"
-?/mirror
-|2,1,1527782325,47,"mirror"
-? ['"][^'"]*\zs__COMMA__\ze[^'"]*['"]
-|2,1,1527778376,,"['\"][^'\"]*\\zs__COMMA__\\ze[^'\"]*['\"]"
-? âŠ¡
-|2,1,1527777675,,"âŠ¡"
-??set
-|2,1,1527776426,63,"set"
-?/corner-corner
-|2,1,1527776369,47,"corner-corner"
-?/jkkj
-|2,1,1527776357,47,"jkkj"
-??s
-|2,1,1527775746,63,"s"
-?/Heading
-|2,1,1527773210,47,"Heading"
-?/TODO
-|2,1,1527772959,47,"TODO"
-??imp
-|2,1,1527772901,63,"imp"
-?/imp
-|2,1,1527772897,47,"imp"
-??within
-|2,1,1527772734,63,"within"
-??on
-|2,1,1527772393,63,"on"
-?/:m
-|2,1,1527772043,47,":m"
-? \<2018\>
-|2,1,1527768737,,"\\<2018\\>"
-?/hidden
-|2,1,1527767422,47,"hidden"
+|2,1,1534271218,,"@$"
+? \n;\n
+|2,1,1534267351,,"\\n;\\n"
+? ;\n
+|2,1,1534267283,,";\\n"
+? ,\n
+|2,1,1534267260,,",\\n"
+? ,\r
+|2,1,1534267235,,",\\r"
+? ;
+|2,1,1534266977,,";"
+? ju
+|2,1,1534263059,,"ju"
+?/tunc
+|2,1,1534261819,47,"tunc"
+?/av
+|2,1,1534261695,47,"av"
+??Latini
+|2,1,1534261668,63,"Latini"
+?/tum
+|2,1,1534260514,47,"tum"
+?/gif
+|2,1,1534260474,47,"gif"
+?/rev
+|2,1,1534259612,47,"rev"
+?/ :
+|2,1,1534257258,47," :"
+?/righ
+|2,1,1534175389,47,"righ"
+?/res
+|2,1,1534175384,47,"res"
+?/fai
+|2,1,1534175374,47,"fai"
+?/die
+|2,1,1534174920,47,"die"
+?/sink
+|2,1,1534174918,47,"sink"
+??Latium
+|2,1,1534174855,63,"Latium"
+?/sla
+|2,1,1534174769,47,"sla"
+?/str
+|2,1,1534174763,47,"str"
+?/cut
+|2,1,1534174753,47,"cut"
+?/cho
+|2,1,1534174747,47,"cho"
+?/\; contin
+|2,1,1534174719,47,"\\; contin"
+??refero
+|2,1,1534173854,63,"refero"
+?/br
+|2,1,1534173759,47,"br"
+??telum
+|2,1,1534172595,63,"telum"
+?/we
+|2,1,1534172403,47,"we"
+??:
+|2,1,1534172066,63,":"
+?/kee
+|2,1,1534171776,47,"kee"
+?/for
+|2,1,1534171732,47,"for"
+?/, f
+|2,1,1534171084,47,", f"
+?/in o
+|2,1,1534169508,47,"in o"
+?/acc
+|2,1,1534169258,47,"acc"
+?/ju
+|2,1,1534169081,47,"ju"
+?/leav
+|2,1,1534168710,47,"leav"
+?/over
+|2,1,1534168513,47,"over"
 
 # Expression History (newest to oldest):
+=p
+|2,2,1534353724,,"p"
+=SelectMatchesIntoSidebar()
+|2,2,1532449995,,"SelectMatchesIntoSidebar()"
+=MakeNewBuffer()
+|2,2,1532447611,,"MakeNewBuffer()"
+=append(0,'Hello, World!')
+|2,2,1532441762,,"append(0,'Hello, World!')"
+=CommentBlock('This is my comment')
+|2,2,1532439497,,"CommentBlock('This is my comment')"
+=join('-',range(33))
+|2,2,1531395511,,"join('-',range(33))"
+=strftime("%c")
+|2,2,1527961218,,"strftime(\"%c\")"
+=strftime("%e %b %Y")
+|2,2,1527960104,,"strftime(\"%e %b %Y\")"
+=':!read !date'
+|2,2,1527959001,,"':!read !date'"
+=execute ':!read !date'
+|2,2,1527958972,,"execute ':!read !date'"
+='read !date\ %a'
+|2,2,1527958761,,"'read !date\\ %a'"
+=execute ':read !date'
+|2,2,1527947435,,"execute ':read !date'"
+=exe ':read !date'
+|2,2,1527947420,,"exe ':read !date'"
+='execute :read !date'
+|2,2,1527947378,,"'execute :read !date'"
+='read !date'
+|2,2,1527947342,,"'read !date'"
+=`($date)`
+|2,2,1527944728,,"`($date)`"
 
 # Input Line History (newest to oldest):
+@|"
+|2,3,1528035889,,"|\""
+@=
+|2,3,1528035006,,"="
 @test
 |2,3,1527845863,,"test"
 @testfold
 |2,3,1527845826,,"testfold"
-@=
-|2,3,1527845722,,"="
 @i
 |2,3,1527845287,,"i"
-@|"
-|2,3,1527843958,,"|\""
 @ 
 |2,3,1527843777,," "
 @:
@@ -213,531 +279,1750 @@ $
 
 # Registers:
 "0	LINE	0
-	# set PATH so it includes user's private bin if it exists
-	if [ -d "$HOME/.local/usr/bin" ] ; then
-	    PATH="$HOME/.local/usr/bin:$PATH"
-	fi
-|3,0,0,1,4,0,1527859173,"# set PATH so it includes user's private bin if it exists","if [ -d \"$HOME/.local/usr/bin\" ] ; then","    PATH=\"$HOME/.local/usr/bin:$PATH\"","fi"
-""1	BLOCK	1
-	MY
-	MY
-	MY
-|3,1,1,2,3,1,1527880756,"MY","MY","MY"
+	    execute 'nnoremap <buffer> <F12> :ReEnt<CR>'
+|3,0,0,1,1,0,1534356621,"    execute 'nnoremap <buffer> <F12> :ReEnt<CR>'"
+""1	LINE	0
+	;
+|3,1,1,1,1,0,1534357898,";"
 "2	LINE	0
-	    cp -p $HOME/.stsrc/st-alpha-0.7.diff $GITVAR/st/
-|3,0,2,1,1,0,1527863306,"    cp -p $HOME/.stsrc/st-alpha-0.7.diff $GITVAR/st/"
+	 smile on
+|3,0,2,1,1,0,1534357897," smile on"
 "3	LINE	0
-	    cp -p $HOME/.Xdefaults       $GITVAR/home/Xdefaults
-|3,0,3,1,1,0,1527863238,"    cp -p $HOME/.Xdefaults       $GITVAR/home/Xdefaults"
+	;
+|3,0,3,1,1,0,1534357893,";"
 "4	LINE	0
-	
-|3,0,4,1,1,0,1527859223,""
+	 declare
+|3,0,4,1,1,0,1534357892," declare"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1527857612,""
+	 indicate
+|3,0,5,1,1,0,1534357892," indicate"
 "6	LINE	0
-	
-|3,0,6,1,1,0,1527856606,""
+	;
+|3,0,6,1,1,0,1534357888,";"
 "7	LINE	0
-	
-|3,0,7,1,1,0,1527856605,""
+	 designate by a nod
+|3,0,7,1,1,0,1534357888," designate by a nod"
 "8	LINE	0
-	
-|3,0,8,1,1,0,1527856439,""
+	- bellum, belli N :
+	 war,
+	 warfare,
+|3,0,8,1,3,0,1534357885,"- bellum, belli N :"," war,"," warfare,"
 "9	LINE	0
-	
-|3,0,9,1,1,0,1527856400,""
-"a	BLOCK	2
-	\$1
-|3,0,10,2,1,2,1527785060,"\\$1"
-"b	BLOCK	6
-	\"\$1\"
-|3,0,11,2,1,6,1527785073,"\\\"\\$1\\\""
+	;
+	 battle
+	 combat
+	 fight
+	;
+	 war
+	;
+	 military force
+	 arms
+|3,0,9,1,9,0,1534357813,";"," battle"," combat"," fight",";"," war",";"," military force"," arms"
+"a	CHAR	0
+	'#1d1f21'
+|3,0,10,0,1,0,1528306674,"'#1d1f21'"
+"b	CHAR	0
+	'#282a2e'
+|3,0,11,0,1,0,1528306694,"'#282a2e'"
+"g	CHAR	0
+	vkkV2j€F2jjj€k9jkddjddjddddddddjjddjddddjjddddjjjjddddjjjjjddjddjddjjddkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjjjjjkjkllllllllllllllllllllllllllllllllCthe desire to make a display, ostentation, vanity, show, paradejkjjjjjjjjjjjjj€k9jjijkjjjijkjjjjjjk
+|3,0,16,0,1,0,1534100888,"vkkV2j€F2jjj€k9jkddjddjddddddddjjddjddddjjddddjjjjddddjjjjjddjddjddjjddkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjjjjjkjkllllllllllllllllllllllllllllllllCthe desire to make a display, ostentation, vanity, show, paradejkjjjjjjjjjjjjj€k9jjijkjjjijkjjjjjjk"
+"j	CHAR	0
+	ma?\d\{1,3}yiw'aA jkp€k7/\d
+|3,0,19,0,1,0,1534160518,"ma?\\d\\{1,3}yiw'aA jkp€k7/\\d"
+"k	CHAR	0
+	viwdF:wPlD
+|3,0,20,0,1,0,1534164132,"viwdF:wPlD"
+"l	CHAR	0
+	ll
+|3,0,21,0,1,0,1532447888,"ll"
 "q	CHAR	0
 	jk
 |3,0,26,0,1,0,1527845607,"jk"
 "u	CHAR	0
 	oteme101€kb€kb€kb€kb€kb€kb€kbq€kbquq€kb€kb€kbjk
 |3,0,30,0,1,0,1527848174,"oteme101€kb€kb€kb€kb€kb€kb€kbq€kbquq€kb€kb€kbjk"
-"v	BLOCK	9
-	+---------
-	| Weight  
-	+---------
-	| Light   
-	| Heavy   
-	| Feather 
-	+---------
-|3,0,31,2,7,9,1527851287,"+---------","| Weight  ","+---------","| Light   ","| Heavy   ","| Feather ","+---------"
+"v	BLOCK	0
+	z
+|3,0,31,2,1,0,1534158675,"z"
+"w	CHAR	0
+	€kbj
+|3,0,32,0,1,0,1532439203,"€kbj"
 "-	CHAR	0
-	/usr
-|3,0,36,0,1,0,1527859215,"/usr"
+	normal! <F12>
+|3,0,36,0,1,0,1534357351,"normal! <F12>"
 
 # File marks:
-'0  17  33  ~/.local/usr/bin/put-configs.sh
-|4,48,17,33,1527880768,"~/.local/usr/bin/put-configs.sh"
-'1  47  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,49,47,0,1527863405,"~/.dotfiles/scripts/backup-configs.sh"
-'2  20  0  ~/.local/usr/bin/backup-configs.sh
-|4,50,20,0,1527863308,"~/.local/usr/bin/backup-configs.sh"
-'3  33  25  ~/.local/usr/bin/backup-configs.sh
-|4,51,33,25,1527863250,"~/.local/usr/bin/backup-configs.sh"
-'4  34  25  ~/.local/usr/bin/backup-configs.sh
-|4,52,34,25,1527863250,"~/.local/usr/bin/backup-configs.sh"
-'5  41  15  ~/.local/usr/bin/backup-configs.sh
-|4,53,41,15,1527862980,"~/.local/usr/bin/backup-configs.sh"
-'6  42  15  ~/.local/usr/bin/backup-configs.sh
-|4,54,42,15,1527862980,"~/.local/usr/bin/backup-configs.sh"
-'7  42  15  ~/.local/usr/bin/backup-configs.sh
-|4,55,42,15,1527862980,"~/.local/usr/bin/backup-configs.sh"
-'8  43  15  ~/.local/usr/bin/backup-configs.sh
-|4,56,43,15,1527862980,"~/.local/usr/bin/backup-configs.sh"
-'9  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,57,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
+'0  5  0  ~/_Definitions_
+|4,48,5,0,1534359063,"~/_Definitions_"
+'1  1  0  ~/_Definitions_
+|4,49,1,0,1534277452,"~/_Definitions_"
+'2  6  0  ~/_Definitions_
+|4,50,6,0,1534277452,"~/_Definitions_"
+'3  452  0  ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+|4,51,452,0,1534263453,"~/Downloads/Aeneid/Aen-XI-Trans-1-224"
+'4  452  0  ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+|4,52,452,0,1534263453,"~/Downloads/Aeneid/Aen-XI-Trans-1-224"
+'5  2061  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,53,2061,0,1534263446,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+'6  2061  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,54,2061,0,1534263446,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+'7  2062  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,55,2062,0,1534263446,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+'8  2062  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,56,2062,0,1534263446,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+'9  1791  94  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,57,1791,94,1534259484,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
 
 # Jumplist (newest first):
--'  17  33  ~/.local/usr/bin/put-configs.sh
-|4,39,17,33,1527880768,"~/.local/usr/bin/put-configs.sh"
--'  1  0  ~/.local/usr/bin/put-configs.sh
-|4,39,1,0,1527880736,"~/.local/usr/bin/put-configs.sh"
--'  47  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,47,0,1527863405,"~/.dotfiles/scripts/backup-configs.sh"
--'  47  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,47,0,1527863405,"~/.dotfiles/scripts/backup-configs.sh"
--'  1  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,1,0,1527863395,"~/.dotfiles/scripts/backup-configs.sh"
--'  1  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,1,0,1527863395,"~/.dotfiles/scripts/backup-configs.sh"
--'  20  0  ~/.local/usr/bin/backup-configs.sh
-|4,39,20,0,1527863308,"~/.local/usr/bin/backup-configs.sh"
--'  20  0  ~/.local/usr/bin/backup-configs.sh
-|4,39,20,0,1527863308,"~/.local/usr/bin/backup-configs.sh"
--'  20  0  ~/.local/usr/bin/backup-configs.sh
-|4,39,20,0,1527863308,"~/.local/usr/bin/backup-configs.sh"
--'  20  0  ~/.local/usr/bin/backup-configs.sh
-|4,39,20,0,1527863308,"~/.local/usr/bin/backup-configs.sh"
--'  1  0  ~/.local/usr/bin/backup-configs.sh
-|4,39,1,0,1527863299,"~/.local/usr/bin/backup-configs.sh"
--'  1  0  ~/.local/usr/bin/backup-configs.sh
-|4,39,1,0,1527863299,"~/.local/usr/bin/backup-configs.sh"
--'  1  0  ~/.local/usr/bin/backup-configs.sh
-|4,39,1,0,1527863299,"~/.local/usr/bin/backup-configs.sh"
--'  1  0  ~/.local/usr/bin/backup-configs.sh
-|4,39,1,0,1527863299,"~/.local/usr/bin/backup-configs.sh"
--'  33  25  ~/.local/usr/bin/backup-configs.sh
-|4,39,33,25,1527863250,"~/.local/usr/bin/backup-configs.sh"
--'  34  25  ~/.local/usr/bin/backup-configs.sh
-|4,39,34,25,1527863250,"~/.local/usr/bin/backup-configs.sh"
--'  33  25  ~/.local/usr/bin/backup-configs.sh
-|4,39,33,25,1527863250,"~/.local/usr/bin/backup-configs.sh"
--'  34  25  ~/.local/usr/bin/backup-configs.sh
-|4,39,34,25,1527863250,"~/.local/usr/bin/backup-configs.sh"
--'  33  25  ~/.local/usr/bin/backup-configs.sh
-|4,39,33,25,1527863250,"~/.local/usr/bin/backup-configs.sh"
--'  34  25  ~/.local/usr/bin/backup-configs.sh
-|4,39,34,25,1527863250,"~/.local/usr/bin/backup-configs.sh"
--'  33  25  ~/.local/usr/bin/backup-configs.sh
-|4,39,33,25,1527863250,"~/.local/usr/bin/backup-configs.sh"
--'  34  25  ~/.local/usr/bin/backup-configs.sh
-|4,39,34,25,1527863250,"~/.local/usr/bin/backup-configs.sh"
--'  1  0  ~/.local/usr/bin/backup-configs.sh
-|4,39,1,0,1527863235,"~/.local/usr/bin/backup-configs.sh"
--'  1  0  ~/.local/usr/bin/backup-configs.sh
-|4,39,1,0,1527863235,"~/.local/usr/bin/backup-configs.sh"
--'  1  0  ~/.local/usr/bin/backup-configs.sh
-|4,39,1,0,1527863235,"~/.local/usr/bin/backup-configs.sh"
--'  1  0  ~/.local/usr/bin/backup-configs.sh
-|4,39,1,0,1527863235,"~/.local/usr/bin/backup-configs.sh"
--'  41  15  ~/.local/usr/bin/backup-configs.sh
-|4,39,41,15,1527862980,"~/.local/usr/bin/backup-configs.sh"
--'  42  15  ~/.local/usr/bin/backup-configs.sh
-|4,39,42,15,1527862980,"~/.local/usr/bin/backup-configs.sh"
--'  42  15  ~/.local/usr/bin/backup-configs.sh
-|4,39,42,15,1527862980,"~/.local/usr/bin/backup-configs.sh"
--'  43  15  ~/.local/usr/bin/backup-configs.sh
-|4,39,43,15,1527862980,"~/.local/usr/bin/backup-configs.sh"
--'  41  15  ~/.local/usr/bin/backup-configs.sh
-|4,39,41,15,1527862980,"~/.local/usr/bin/backup-configs.sh"
--'  42  15  ~/.local/usr/bin/backup-configs.sh
-|4,39,42,15,1527862980,"~/.local/usr/bin/backup-configs.sh"
--'  42  15  ~/.local/usr/bin/backup-configs.sh
-|4,39,42,15,1527862980,"~/.local/usr/bin/backup-configs.sh"
--'  43  15  ~/.local/usr/bin/backup-configs.sh
-|4,39,43,15,1527862980,"~/.local/usr/bin/backup-configs.sh"
--'  41  15  ~/.local/usr/bin/backup-configs.sh
-|4,39,41,15,1527862980,"~/.local/usr/bin/backup-configs.sh"
--'  42  15  ~/.local/usr/bin/backup-configs.sh
-|4,39,42,15,1527862980,"~/.local/usr/bin/backup-configs.sh"
--'  42  15  ~/.local/usr/bin/backup-configs.sh
-|4,39,42,15,1527862980,"~/.local/usr/bin/backup-configs.sh"
--'  43  15  ~/.local/usr/bin/backup-configs.sh
-|4,39,43,15,1527862980,"~/.local/usr/bin/backup-configs.sh"
--'  41  15  ~/.local/usr/bin/backup-configs.sh
-|4,39,41,15,1527862980,"~/.local/usr/bin/backup-configs.sh"
--'  42  15  ~/.local/usr/bin/backup-configs.sh
-|4,39,42,15,1527862980,"~/.local/usr/bin/backup-configs.sh"
--'  42  15  ~/.local/usr/bin/backup-configs.sh
-|4,39,42,15,1527862980,"~/.local/usr/bin/backup-configs.sh"
--'  43  15  ~/.local/usr/bin/backup-configs.sh
-|4,39,43,15,1527862980,"~/.local/usr/bin/backup-configs.sh"
--'  1  0  ~/.local/usr/bin/backup-configs.sh
-|4,39,1,0,1527862952,"~/.local/usr/bin/backup-configs.sh"
--'  1  0  ~/.local/usr/bin/backup-configs.sh
-|4,39,1,0,1527862952,"~/.local/usr/bin/backup-configs.sh"
--'  1  0  ~/.local/usr/bin/backup-configs.sh
-|4,39,1,0,1527862952,"~/.local/usr/bin/backup-configs.sh"
--'  1  0  ~/.local/usr/bin/backup-configs.sh
-|4,39,1,0,1527862952,"~/.local/usr/bin/backup-configs.sh"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  81  0  ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-|4,39,81,0,1527861760,"~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
--'  35  0  ~/.config/vim/customsnips/sh.snippets
-|4,39,35,0,1527860384,"~/.config/vim/customsnips/sh.snippets"
+-'  5  0  ~/_Definitions_
+|4,39,5,0,1534359063,"~/_Definitions_"
+-'  625  25  ~/.config/vim/vimrc
+|4,39,625,25,1534359048,"~/.config/vim/vimrc"
+-'  166  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,166,0,1534357313,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1953  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1953,0,1534356923,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  114  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,114,0,1534356906,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  99  46  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,99,46,1534356609,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  51  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,51,0,1534352975,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1,0,1534281393,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  6  0  ~/_Definitions_
+|4,39,6,0,1534277452,"~/_Definitions_"
+-'  6  0  ~/_Definitions_
+|4,39,6,0,1534277452,"~/_Definitions_"
+-'  9  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,9,0,1534277445,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  9  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,9,0,1534277445,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1,0,1534263703,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  452  0  ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+|4,39,452,0,1534263453,"~/Downloads/Aeneid/Aen-XI-Trans-1-224"
+-'  452  0  ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+|4,39,452,0,1534263453,"~/Downloads/Aeneid/Aen-XI-Trans-1-224"
+-'  452  0  ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+|4,39,452,0,1534263453,"~/Downloads/Aeneid/Aen-XI-Trans-1-224"
+-'  2061  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,2061,0,1534263446,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  2062  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,2062,0,1534263446,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  2062  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,2062,0,1534263446,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  2045  2  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,2045,2,1534263059,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  2046  2  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,2046,2,1534263059,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  2046  2  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,2046,2,1534263059,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1947  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1947,0,1534261819,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1948  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1948,0,1534261819,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1948  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1948,0,1534261819,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1922  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1922,0,1534261695,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1923  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1923,0,1534261695,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1923  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1923,0,1534261695,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1826  2  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1826,2,1534261674,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1827  2  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1827,2,1534261674,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1827  2  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1827,2,1534261674,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1905  37  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1905,37,1534261668,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1918  35  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1918,35,1534261668,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1906  37  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1906,37,1534261668,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1919  35  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1919,35,1534261668,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1906  37  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1906,37,1534261668,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1919  35  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1919,35,1534261668,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1889  59  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1889,59,1534261650,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1916  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1916,0,1534261650,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1890  59  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1890,59,1534261650,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1917  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1917,0,1534261650,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1890  59  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1890,59,1534261650,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1917  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1917,0,1534261650,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1853  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1853,0,1534260514,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1854  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1854,0,1534260514,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1854  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1854,0,1534260514,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1842  21  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1842,21,1534260474,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1843  21  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1843,21,1534260474,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1843  21  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1843,21,1534260474,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1833  7  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1833,7,1534260219,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1834  7  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1834,7,1534260219,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1834  7  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1834,7,1534260219,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1791  62  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1791,62,1534259612,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1792  62  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1792,62,1534259612,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1792  62  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1792,62,1534259612,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1,0,1534259491,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1792  2  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1792,2,1534259484,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1793  2  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1793,2,1534259484,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1793  2  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1793,2,1534259484,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1691  62  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1691,62,1534258016,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1692  62  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1692,62,1534258016,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1692  62  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1692,62,1534258016,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1692  62  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1692,62,1534258016,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1687  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1687,0,1534257841,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1688  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1688,0,1534257841,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1688  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1688,0,1534257841,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1688  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1688,0,1534257841,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1618  19  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1618,19,1534257258,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1619  19  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1619,19,1534257258,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1619  19  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1619,19,1534257258,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1619  19  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1619,19,1534257258,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  358  0  ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+|4,39,358,0,1534257235,"~/Downloads/Aeneid/Aen-XI-Trans-1-224"
+-'  358  0  ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+|4,39,358,0,1534257235,"~/Downloads/Aeneid/Aen-XI-Trans-1-224"
+-'  358  0  ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+|4,39,358,0,1534257235,"~/Downloads/Aeneid/Aen-XI-Trans-1-224"
+-'  1  0  ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+|4,39,1,0,1534257181,"~/Downloads/Aeneid/Aen-XI-Trans-1-224"
+-'  1  0  ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+|4,39,1,0,1534257181,"~/Downloads/Aeneid/Aen-XI-Trans-1-224"
+-'  1  0  ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+|4,39,1,0,1534257181,"~/Downloads/Aeneid/Aen-XI-Trans-1-224"
+-'  1  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1,0,1534257157,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  358  0  ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+|4,39,358,0,1534175859,"~/Downloads/Aeneid/Aen-XI-Trans-1-224"
+-'  358  0  ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+|4,39,358,0,1534175859,"~/Downloads/Aeneid/Aen-XI-Trans-1-224"
+-'  358  0  ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+|4,39,358,0,1534175859,"~/Downloads/Aeneid/Aen-XI-Trans-1-224"
+-'  358  0  ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+|4,39,358,0,1534175859,"~/Downloads/Aeneid/Aen-XI-Trans-1-224"
+-'  358  0  ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+|4,39,358,0,1534175859,"~/Downloads/Aeneid/Aen-XI-Trans-1-224"
+-'  358  0  ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+|4,39,358,0,1534175859,"~/Downloads/Aeneid/Aen-XI-Trans-1-224"
+-'  358  0  ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+|4,39,358,0,1534175859,"~/Downloads/Aeneid/Aen-XI-Trans-1-224"
+-'  358  0  ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+|4,39,358,0,1534175859,"~/Downloads/Aeneid/Aen-XI-Trans-1-224"
+-'  554  53  ~/.config/vim/vimrc
+|4,39,554,53,1534175850,"~/.config/vim/vimrc"
+-'  554  53  ~/.config/vim/vimrc
+|4,39,554,53,1534175850,"~/.config/vim/vimrc"
+-'  554  53  ~/.config/vim/vimrc
+|4,39,554,53,1534175850,"~/.config/vim/vimrc"
+-'  554  53  ~/.config/vim/vimrc
+|4,39,554,53,1534175850,"~/.config/vim/vimrc"
+-'  554  53  ~/.config/vim/vimrc
+|4,39,554,53,1534175850,"~/.config/vim/vimrc"
+-'  554  53  ~/.config/vim/vimrc
+|4,39,554,53,1534175850,"~/.config/vim/vimrc"
+-'  554  53  ~/.config/vim/vimrc
+|4,39,554,53,1534175850,"~/.config/vim/vimrc"
+-'  1537  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1537,0,1534173173,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1538  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1538,0,1534173173,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1538  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1538,0,1534173173,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1538  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1538,0,1534173173,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1538  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1538,0,1534173173,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
+-'  1538  0  ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+|4,39,1538,0,1534173173,"~/Downloads/Aeneid/Aen-XI-Text-and-Vocab"
 
 # History of marks within files (newest to oldest):
 
-> ~/.local/usr/bin/put-configs.sh
-	*	1527880756	0
-	"	17	33
-	.	17	33
-	+	17	33
+> ~/_Definitions_
+	*	1534359058	0
+	"	5	0
+	.	2	0
+	+	1	0
+	+	1	21
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	11
+	+	1	0
+	+	2	0
+	+	4	0
+	+	2	0
 
-> ~/.dotfiles/scripts/backup-configs.sh
-	*	1527863402	0
-	"	47	0
+> ~/.config/vim/vimrc
+	*	1534359045	0
+	"	625	25
+	^	625	26
+	.	625	25
+	+	562	0
+	+	560	64
+	+	558	0
+	+	557	0
+	+	558	0
+	+	559	0
+	+	558	0
+	+	556	0
+	+	561	0
+	+	202	17
+	+	554	65
+	+	204	0
+	+	202	0
+	+	204	0
+	+	199	0
+	+	204	0
+	+	200	0
+	+	201	0
+	+	198	31
+	+	629	0
+	+	579	51
+	+	580	31
+	+	579	35
+	+	581	48
+	+	583	10
+	+	579	7
+	+	580	7
+	+	581	7
+	+	580	36
+	+	578	46
+	+	579	21
+	+	581	30
+	+	579	45
+	+	578	0
+	+	579	45
+	+	580	39
+	+	578	46
+	+	579	0
+	+	584	49
+	+	576	0
+	+	628	0
+	+	629	0
+	+	197	25
+	+	555	53
+	+	524	0
+	+	628	0
+	+	603	0
+	+	586	0
+	+	594	0
+	+	596	17
+	+	599	17
+	+	310	18
+	+	599	20
+	+	597	19
+	+	605	27
+	+	608	37
+	+	618	10
+	+	607	30
+	+	616	0
+	+	607	16
+	+	609	46
+	+	608	0
+	+	613	45
+	+	615	0
+	+	611	35
+	+	618	0
+	+	524	29
+	+	525	0
+	+	600	0
+	+	602	0
+	+	600	21
+	+	593	22
+	+	203	19
+	+	603	57
+	+	604	0
+	+	619	48
+	+	600	46
+	+	203	19
+	+	617	20
+	+	597	0
+	+	599	0
+	+	597	24
+	+	593	0
+	+	596	29
+	+	597	31
+	+	596	29
+	+	598	33
+	+	596	19
+	+	607	19
+	+	614	35
+	+	592	5
+	+	592	0
+	+	597	31
+	+	612	41
+	+	626	10
+	+	627	43
+	+	624	25
+	+	601	40
+	+	625	25
 
-> ~/.local/usr/bin/backup-configs.sh
-	*	1527863306	0
-	"	20	0
-	^	33	26
-	.	20	0
-	+	41	15
+> ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+	*	1534359042	0
+	"	44	0
+	.	358	0
+	+	358	0
+
+> ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+	*	1534359037	0
+	"	197	0
+	^	2099	83
+	.	196	0
+	+	1956	0
+	+	1957	0
+	+	1959	59
+	+	1963	0
+	+	1962	59
+	+	1965	0
+	+	1969	0
+	+	1972	59
+	+	1975	0
+	+	1974	59
+	+	1976	0
+	+	1978	0
+	+	1979	0
+	+	1982	59
+	+	1986	0
+	+	1985	59
+	+	1986	0
+	+	1987	0
+	+	1988	0
+	+	1989	0
+	+	1996	0
+	+	1990	30
+	+	1998	59
+	+	2002	0
+	+	2001	59
+	+	2002	2
+	+	2003	0
+	+	2004	0
+	+	2005	0
+	+	2008	18
+	+	2011	0
+	+	2014	0
+	+	2015	0
+	+	2016	59
+	+	2021	0
+	+	2020	59
+	+	2021	0
+	+	2025	0
+	+	2030	0
+	+	2031	0
+	+	2036	0
+	+	2039	59
+	+	2043	0
+	+	2042	59
+	+	2045	0
+	+	2049	0
+	+	2051	0
+	+	2052	0
+	+	2056	0
+	+	2057	59
+	+	2061	0
+	+	2060	59
+	+	2065	0
+	+	2067	0
+	+	2069	0
+	+	2070	0
+	+	2071	59
+	+	2085	10
+	+	2075	0
+	+	2074	59
+	+	2076	0
+	+	2077	0
+	+	2080	0
+	+	2084	59
+	+	2087	0
+	+	2086	59
+	+	2093	59
+	+	2096	0
+	+	2095	59
+	+	2097	0
+	+	2098	0
+	+	2099	82
+	+	2102	0
+	+	9	0
 	+	10	0
-	+	33	25
-	+	20	0
+	+	23	0
+	+	52	0
+	+	51	0
+	+	73	0
+	+	76	0
+	+	83	0
+	+	97	0
+	+	98	0
+	+	100	0
+	+	99	0
+	+	105	0
+	+	106	0
+	+	107	0
+	+	109	0
+	+	122	0
+	+	14	0
+	+	125	0
+	+	134	0
+	+	135	0
+	+	138	0
+	+	146	0
+	+	139	0
+	+	175	0
+	+	181	0
+	+	196	0
+	a	1905	37
 
-> ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-	*	1527861757	0
-	"	81	0
+> /usr/share/vim/vim80/doc/motion.txt
+	*	1534352557	0
+	"	319	7
 
-> ~/NERD_tree_1
-	*	1527860383	0
-	"	134	0
+> /usr/share/vim/vim80/doc/intro.txt
+	*	1534352547	0
+	"	464	27
+
+> ~/.config/vim/bundle/uplooker/plugin/uplooker.vim
+	*	1534352389	0
+	"	1	0
+	^	1	0
 	.	1	0
 	+	1	0
 
-> ~/.config/vim/customsnips/sh.snippets
-	*	1527860351	0
-	"	35	0
+> ~/NERD_tree_3
+	*	1534352381	0
+	"	58	0
+	.	1	0
+	+	1	0
+
+> ~/.config/vim/plugin/dragvisuals.vim
+	*	1534351494	0
+	"	190	8
+	^	143	56
+	.	143	56
+	+	149	0
+	+	150	0
+	+	151	0
+	+	150	0
+	+	149	0
+	+	148	0
+	+	149	0
+	+	147	0
+	+	70	0
+	+	68	48
+	+	69	0
+	+	222	0
+	+	224	0
+	+	68	0
+	+	66	32
+	+	67	14
+	+	78	37
+	+	145	0
+	+	143	56
+
+> /usr/share/vim/vim80/doc/options.txt
+	*	1534339872	0
+	"	8246	48
+
+> /usr/share/vim/vim80/doc/editing.txt
+	*	1534339732	0
+	"	943	40
+
+> /usr/share/vim/vim80/doc/change.txt
+	*	1534339426	0
+	"	846	33
+
+> ~/NERD_tree_2
+	*	1534330321	0
+	"	53	0
+	.	1	0
+	+	1	0
+
+> ~/NERD_tree_1
+	*	1534329805	0
+	"	53	1
+	.	1	0
+	+	1	0
+
+> /usr/share/vim/vim80/doc/eval.txt
+	*	1534276110	0
+	"	4417	7
+	^	7412	12
+
+> /usr/share/vim/vim80/doc/pattern.txt
+	*	1534272920	0
+	"	212	0
+
+> ~/.config/vim/plugin/userfunctions.vim
+	*	1534264172	0
+	"	27	0
+	^	143	103
+	.	143	87
+	+	125	18
+	+	124	25
+	+	125	25
+	+	125	0
+	+	128	49
+	+	130	13
+	+	124	0
+	+	127	0
+	+	124	0
+	+	127	0
+	+	126	0
+	+	123	0
+	+	124	0
+	+	127	0
+	+	124	4
+	+	124	0
+	+	125	0
+	+	128	0
+	+	127	0
+	+	124	0
+	+	125	0
+	+	128	0
+	+	127	0
+	+	124	0
+	+	125	0
+	+	128	0
+	+	127	10
+	+	124	10
+	+	130	51
+	+	132	73
+	+	130	9
+	+	132	0
+	+	133	17
+	+	130	8
+	+	132	39
+	+	124	8
+	+	125	8
+	+	126	8
+	+	127	8
+	+	128	8
+	+	124	35
+	+	125	35
+	+	126	35
+	+	127	35
+	+	128	31
+	+	128	0
+	+	133	0
+	+	131	16
+	+	132	55
+	+	125	34
+	+	126	34
+	+	127	34
+	+	125	30
+	+	126	30
+	+	127	30
+	+	128	0
+	+	125	24
+	+	126	29
+	+	127	30
+	+	128	26
+	+	132	10
+	+	130	10
+	+	131	11
+	+	132	0
+	+	125	32
+	+	126	38
+	+	127	38
+	+	125	59
+	+	124	27
+	+	126	39
+	+	127	35
+	+	125	39
+	+	127	39
+	+	128	5
+	+	127	4
+	+	126	4
+	+	125	4
+	+	130	25
+	+	132	53
+	+	124	29
+	+	125	4
+	+	132	58
+	+	124	36
+	+	130	33
+	+	124	4
+	+	130	20
+	+	117	28
+	+	115	6
+	+	122	15
+	+	135	17
+	+	137	4
+	+	138	4
+	+	139	4
+	+	136	40
+	+	137	39
+	+	138	37
+	+	139	39
+	+	141	48
+	+	139	34
+	+	143	87
+
+> /usr/share/vim/vim80/doc/windows.txt
+	*	1534263908	0
+	"	196	0
+
+> /usr/share/vim/vim80/doc/index.txt
+	*	1534263871	0
+	"	522	0
+
+> /usr/share/vim/vim80/doc/tagsrch.txt
+	*	1534263858	0
+	"	738	27
+
+> ~/n
+	*	1534263732	0
+	"	1	0
+
+> ~/.config/vim/pythonx/fetchLatinAll.py
+	*	1534259388	0
+	"	68	11
+	^	65	21
+	.	65	20
+	+	65	20
+
+> /usr/share/vim/vim80/doc/various.txt
+	*	1534173712	0
+	"	235	0
+
+> /usr/share/vim/vim80/doc/usr_41.txt
+	*	1534157363	0
+	"	606	40
+
+> ~/Downloads/Histories-1/Tacitus-Histories-1-Latin-text-and-vocab
+	*	1534155416	0
+	"	1964	0
+	^	2084	60
+	.	2105	0
+	+	1933	22
+	+	1937	0
+	+	1939	0
+	+	1944	0
+	+	1940	0
+	+	1947	59
+	+	1949	73
+	+	1952	0
+	+	1951	59
+	+	1952	0
+	+	1953	0
+	+	1954	0
+	+	1958	0
+	+	1960	0
+	+	1961	0
+	+	1968	0
+	+	1969	0
+	+	1970	0
+	+	1974	0
+	+	1975	0
+	+	1976	0
+	+	1977	0
+	+	1978	0
+	+	1980	59
+	+	2000	0
+	+	2001	60
+	+	2067	0
+	+	2069	0
+	+	2079	0
+	+	2081	0
+	+	2105	0
+	+	1981	70
+	+	1984	0
+	+	1983	59
+	+	1986	0
+	+	1987	0
+	+	1989	0
+	+	1991	2
+	+	1992	0
+	+	1993	0
+	+	1995	0
+	+	1996	0
+	+	1997	0
+	+	1999	0
+	+	2001	60
+	+	2001	0
+	+	2006	76
+	+	2009	0
+	+	2008	59
+	+	2009	0
+	+	2010	0
+	+	2013	0
+	+	2015	0
+	+	2016	0
+	+	2020	0
+	+	2022	0
+	+	2024	0
+	+	2025	0
+	+	2026	0
+	+	2028	0
+	+	2029	0
+	+	2033	0
+	+	2034	0
+	+	2038	0
+	+	2041	0
+	+	2042	0
+	+	2041	34
+	+	2042	0
+	+	2044	0
+	+	2048	0
+	+	2055	0
+	+	2053	0
+	+	2055	0
+	+	2056	0
+	+	2057	0
+	+	2059	0
+	+	2062	0
+	+	2063	0
+	+	2064	0
+	+	2065	0
+	+	2079	0
+	+	2068	59
+	+	2071	0
+	+	2070	59
+	+	2072	0
+	+	2076	0
+	+	2080	59
+	+	2082	74
+	+	2085	0
+	+	2084	59
+	+	2087	0
+	+	2088	0
+	+	2089	0
+	+	2092	0
+	+	2094	0
+	+	2097	0
+	+	2102	0
+	+	2103	0
+	+	2097	0
+	+	2105	0
+
+> ~/.config/vim/customsnips/all.snippets
+	*	1534151556	0
+	"	85	0
+	^	95	0
+	.	94	10
+	+	55	0
+	+	63	9
+	+	55	0
+	+	62	0
+	+	64	0
+	+	1	0
+	+	30	0
+	+	77	12
+	+	78	11
+	+	6	8
+	+	4	67
+	+	78	48
+	+	81	0
+	+	82	0
+	+	81	17
+	+	82	47
+	+	83	9
+	+	65	0
+	+	76	0
+	+	65	30
+	+	67	0
+	+	76	0
+	+	68	0
+	+	75	9
+	+	69	1
+	+	72	1
+	+	29	35
+	+	81	24
+	+	82	44
+	+	14	8
+	+	13	17
+	+	82	35
+	+	29	0
+	+	14	31
+	+	14	37
+	+	14	28
+	+	14	0
+	+	29	0
+	+	15	0
+	+	15	23
+	+	15	0
+	+	14	37
+	+	15	11
+	+	15	12
+	+	15	0
+	+	15	7
+	+	15	0
+	+	31	0
+	+	20	0
+	+	85	0
+	+	84	0
+	+	85	49
+	+	86	34
+	+	24	0
+	+	89	0
+	+	90	0
+	+	88	0
+	+	89	10
+	+	90	34
+	+	28	0
+	+	93	0
+	+	92	0
+	+	93	45
+	+	94	10
+
+> ~/Downloads/Histories-1/Hist-1-Kline-Translation-Excerpts
+	*	1534150908	0
+	"	391	0
+	.	411	0
+	+	1	0
+	+	2	0
+	+	22	0
+	+	24	0
+	+	50	0
+	+	93	0
+	+	96	0
+	+	117	0
+	+	147	0
+	+	220	0
+	+	265	0
+	+	289	0
+	+	292	0
+	+	311	0
+	+	309	0
+	+	333	0
+	+	335	0
+	+	353	0
+	+	355	0
+	+	376	0
+	+	375	0
+	+	377	0
+	+	390	0
+	+	392	0
+	+	411	0
+
+> ~/.config/vim/pythonx/fetchLatinList.py
+	*	1533804152	0
+	"	41	8
+	^	33	21
+	.	33	20
+	+	33	20
+
+> ~/.config/w3m/w3mtmp7753-0
+	*	1533802288	0
+	"	14	0
+	.	14	0
+	+	1	0
+	+	470	0
+	+	9	0
+	+	10	0
+	+	10	231
+	+	14	0
+
+> ~/Downloads/Aeneid/P. VERGILI MARONIS AENEIDOS LIBER VNDECIMVS.shtml
+	*	1533802030	0
+	"	1	0
+
+> ~/Downloads/Aeneid/Aeneid, The - Virgil & A. S. Kline.htm
+	*	1533801461	0
+	"	1	0
+
+> /tmp/tmp9I4bq5
+	*	1532815430	0
+	"	1	0
+
+> /tmp/tmp_W8D5m
+	*	1532815426	0
+	"	3	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> /tmp/tmpZz2zTu
+	*	1532815380	0
+	"	1	0
 
 > ~/.bash_aliases
-	*	1527859224	0
-	"	10	0
-	^	6	33
-	.	10	0
-	+	1	0
-	+	3	0
-	+	2	26
-	+	3	27
-	+	10	0
-	+	6	32
-	+	7	21
-	+	8	22
-	+	10	0
-
-> ~/.profile
-	*	1527859069	0
-	"	19	0
-
-> ~/.config/surfraw/conf
-	*	1527857675	0
-	"	1	0
-
-> ~/.config/redshift.conf
-	*	1527857659	0
-	"	1	3
-
-> ~/.config/mimeapps.list
-	*	1527857651	0
-	"	1	0
-
-> ~/.config/vim/vimrc
-	*	1527857630	0
-	"	182	4
-	^	181	17
-	.	181	17
-	+	120	0
-	+	121	0
-	+	120	17
-	+	122	64
-	+	121	50
+	*	1532812525	0
+	"	74	0
+	^	171	2
+	.	190	0
+	+	187	29
+	+	26	0
+	+	130	48
 	+	122	0
-	+	121	17
-	+	122	17
-	+	121	0
-	+	243	45
-	+	244	43
-	+	179	0
-	+	121	8
-	+	122	8
-	+	179	0
-	+	181	17
+	+	123	0
+	+	122	45
+	+	134	0
+	+	135	32
+	+	136	28
+	+	140	39
+	+	141	28
+	+	142	31
+	+	143	28
+	+	143	31
+	+	143	28
+	+	143	30
+	+	144	25
+	+	141	31
+	+	142	0
+	+	141	41
+	+	143	0
+	+	133	0
+	+	107	0
+	+	113	0
+	+	141	46
+	+	140	33
+	+	141	0
+	+	135	0
+	+	147	0
+	+	148	29
+	+	149	25
+	+	153	29
+	+	154	24
+	+	185	0
+	+	155	19
+	+	153	44
+	+	154	35
+	+	155	21
+	+	184	0
+	+	43	17
+	+	44	0
+	+	153	43
+	+	154	35
+	+	155	30
+	+	154	47
+	+	157	0
+	+	155	21
+	+	157	0
+	+	155	0
+	+	156	0
+	+	155	52
+	+	155	0
+	+	156	0
+	+	155	4
+	+	155	0
+	+	158	0
+	+	159	28
+	+	160	24
+	+	164	28
+	+	165	23
+	+	166	20
+	+	164	37
+	+	165	29
+	+	166	26
+	+	168	31
+	+	170	0
+	+	166	0
+	+	190	17
+	+	190	0
+	+	190	12
+	+	189	0
+	+	190	0
+	+	190	9
+	+	190	0
+	+	190	152
+	+	190	3
+	+	190	60
+	+	190	41
+	+	190	158
+	+	190	0
+	+	183	0
+	+	184	0
+	+	171	0
+	+	172	29
+	+	173	25
+	+	177	39
+	+	178	30
+	+	179	33
+	+	180	32
+	+	181	33
+	+	178	24
+	+	179	27
+	+	180	26
+	+	181	33
+	+	178	36
+	+	190	16
+	+	190	0
+	+	171	1
+	+	190	0
 
-> ~/.config/htop/htoprc
-	*	1527857510	0
+> /tmp/tmpBwTE9m
+	*	1532811179	0
 	"	1	0
 
-> ~/.local/bin/webview.sh
-	*	1527856629	0
-	"	5	28
-	^	5	29
-	.	5	28
-	+	5	28
+> /tmp/tmpE03Gjh
+	*	1532811174	0
+	"	3	44
+	.	3	44
+	+	1	57
+	+	2	42
+	+	3	44
 
-> ~/.local/bin/youtube-viewer
-	*	1527856457	0
-	"	4	57
-	^	4	58
-	.	4	57
-	+	4	57
-
-> ~/.config/newsbeuter/config
-	*	1527856390	0
-	"	79	38
-	^	79	38
-	.	79	38
-	+	80	0
-	+	79	38
-
-> ~/.local/bin/playlist-browser
-	*	1527856045	0
-	"	4	31
-	^	13	1
-	.	13	0
-	+	6	0
-	+	10	0
-	+	13	0
-
-> ~/.config/newsbeuter/urls
-	*	1527855741	0
-	"	8	0
-
-> ~/Downloads/Instantly_Better_Vim_2013/intro.swtc
-	*	1527853884	0
-	"	71	0
-
-> ~/.config/vim/bundle/uplooker/plugin/uplooker.vim
-	*	1527853756	0
-	"	34	0
-
-> ~/Documents/listtest
-	*	1527853617	0
-	"	3	4
-	^	2	0
-	.	3	0
-	+	3	0
-	+	3	4
-	+	3	0
-	+	1	0
-	+	3	0
-	+	2	0
-	+	3	0
-
-> ~/.config/vim/plugin/listtrans.vim
-	*	1527853495	0
-	"	119	0
-
-> ~/Documents/todo.org
-	*	1527852035	0
-	"	1	0
-	^	93	4
-	.	47	0
-	+	54	0
-	+	42	0
-	+	46	0
-	+	47	0
-	+	54	4
-	+	47	52
-	+	53	52
-	+	47	52
-	+	55	9
-	+	60	48
-	+	60	0
+> ~/.bashrc
+	*	1532810469	0
+	"	117	0
+	^	60	4
+	.	118	0
+	+	117	0
+	+	46	1
+	+	117	0
 	+	46	0
 	+	62	0
-	+	68	0
-	+	62	10
-	+	68	0
-	+	62	42
-	+	68	0
-	+	63	0
-	+	68	0
-	+	63	0
-	+	70	12
-	+	69	21
-	+	61	42
-	+	71	5
-	+	76	43
-	+	77	50
-	+	79	29
-	+	84	35
-	+	70	0
-	+	89	4
-	+	81	0
-	+	84	7
-	+	81	5
-	+	81	0
-	+	84	0
-	+	86	5
-	+	80	0
-	+	82	0
-	+	81	5
-	+	83	7
-	+	84	7
-	+	86	0
-	+	87	0
-	+	86	0
-	+	85	45
-	+	86	0
-	+	85	9
-	+	86	0
-	+	46	0
-	+	59	0
-	+	73	0
-	+	86	0
-	+	72	15
-	+	73	15
-	+	74	15
-	+	75	15
-	+	71	44
-	+	76	6
-	+	89	0
-	+	87	59
-	+	46	0
-	+	89	67
-	+	46	0
-	+	90	35
-	+	46	0
-	+	91	64
-	+	90	13
-	+	92	19
-	+	93	4
+	+	62	354
+	+	62	326
+	+	62	4
+	+	118	50
+	+	118	0
+	+	62	5
+	+	61	0
+	+	60	4
+	+	118	0
+
+> ~/.config/newsbeuter/urls
+	*	1532790757	0
+	"	7	51
+	^	7	52
+	.	7	51
+	+	26	0
+	+	26	273
+	+	26	0
+	+	24	0
+	+	23	0
+	+	22	0
+	+	18	52
+	+	4	57
+	+	5	0
+	+	4	0
+	+	5	0
+	+	3	46
+	+	4	0
+	+	3	75
+	+	4	63
+	+	3	0
+	+	27	0
+	+	19	87
+	+	19	0
+	+	20	92
+	+	3	0
+	+	1	64
+	+	25	57
+	+	7	51
+
+> ~/Downloads/diogenes-3.2.0/diogenes/perl/Perseus_Data/tmp.xml
+	*	1532639837	0
+	"	1	0
+
+> ~/Downloads/diogenes-3.2.0/diogenes/perl/Perseus_Data/output.txt
+	*	1532639637	0
+	"	1	0
+
+> ~/Downloads/diogenes-3.2.0/diogenes/perl/CPAN/CGI.pm
+	*	1532639164	0
+	"	454	7
+
+> ~/Downloads/diogenes-3.2.0/linux-installer.pl
+	*	1532639156	0
+	"	20	4
+
+> ~/Downloads/diogenes-3.2.0/diogenes/perl/diogenes-server.pl
+	*	1532638738	0
+	"	440	0
+
+> ~/Downloads/diogenes-3.2.0/diogenes/perl/diogenes_server.pl
+	*	1532638537	0
+	"	1	0
+
+> ~/Downloads/diogenes-3.2.0/diogenes/perl/Unicode_input.html
+	*	1532638440	0
+	"	84	0
+
+> ~/Downloads/diogenes-3.2.0/diogenes/perl/Perseus_input.html
+	*	1532638353	0
+	"	55	0
+
+> ~/Downloads/diogenes-3.2.0/diogenes/perl/diogenes-cli.pl
+	*	1532632887	0
+	"	38	0
+
+> ~/Downloads/diogenes-3.2.0/diogenes/perl/diogenes-clip.pl
+	*	1532632685	0
+	"	1	0
+
+> ~/Downloads/diogenes-3.2.0/diogenes/perl/Perseus_Data/1999.04.0057.xml
+	*	1532624524	0
+	"	6321	0
+	.	6297	0
+	+	6297	0
+
+> /usr/share/vim/vim80/doc/version6.txt
+	*	1532619825	0
+	"	17	33
+
+> ~/Python/NERD_tree_1
+	*	1532619783	0
+	"	58	0
+	.	1	0
+	+	1	0
+
+> /usr/share/vim/vim80/doc/insert.txt
+	*	1532619444	0
+	"	1935	62
+
+> ~/Python/fetchLatinList.py
+	*	1532617546	0
+	"	41	0
+	^	15	36
+	.	15	35
+	+	1	0
+	+	3	0
+	+	1	21
+	+	18	31
+	+	19	4
+	+	15	4
+	+	17	0
+	+	15	59
+	+	17	21
+	+	18	30
+	+	21	19
+	+	16	31
+	+	15	26
+	+	17	28
+	+	19	59
+	+	20	32
+	+	33	58
+	+	31	14
+	+	33	39
+	+	34	16
+	+	36	0
+	+	41	16
+	+	12	0
+	+	28	0
+	+	27	37
+	+	11	14
+	+	31	0
+	+	30	0
+	+	29	52
+	+	30	0
+	+	31	0
+	+	25	0
+	+	26	48
+	+	4	18
+	+	25	0
+	+	41	26
+	+	4	23
+	+	37	19
+	+	39	8
+	+	41	0
+	+	20	33
+	+	40	44
+	+	10	4
+	+	9	7
+	+	10	38
+	+	33	25
+	+	14	32
+	+	9	39
+	+	15	35
+
+> ~/Python/fetchGreekAll.py
+	*	1532616798	0
+	"	60	12
+	^	43	30
+	.	43	29
+	+	28	0
+	+	50	52
+	+	42	29
+	+	43	29
+
+> ~/Python/NERD_tree_2
+	*	1532616611	0
+	"	8	0
+	.	1	0
+	+	1	0
+
+> ~/.config/vim/bundle/vim-snippets/snippets/python.snippets
+	*	1532616191	0
+	"	141	7
+
+> ~/.config/vim/bundle/vim-snippets/pythonx/vimsnippets.py
+	*	1532616142	0
+	"	1	0
+
+> ~/.config/vim/customsnips/python.snippets
+	*	1532616048	0
+	"	1	0
+	^	6	17
+	.	7	8
+	+	1	0
+	+	8	0
+	+	7	33
+	+	9	0
+	+	14	0
+	+	15	0
+	+	14	19
+	+	15	39
+	+	16	9
+	+	15	105
+	+	14	18
+	+	15	0
+	+	7	1
+	+	7	2
+	+	4	6
+	+	7	0
+	+	3	0
+	+	4	0
+	+	7	0
+	+	3	0
+	+	15	4
+	+	7	0
+	+	5	20
+	+	6	16
+	+	7	8
+
+> ~/fetchGreekAll.py
+	*	1532610439	0
+	"	8	20
+	^	36	45
+	.	36	44
+	+	8	18
+	+	9	101
+	+	11	39
+	+	10	30
+	+	8	0
+	+	10	30
+	+	24	51
+	+	28	0
+	+	29	0
+	+	28	65
+	+	30	0
+	+	32	25
+	+	35	0
+	+	47	13
+	+	48	25
+	+	50	51
+	+	54	0
+	+	53	0
+	+	54	29
+	+	39	25
+	+	41	118
+	+	43	61
+	+	42	11
+	+	43	28
+	+	44	34
+	+	41	51
+	+	42	66
+	+	45	0
+	+	36	44
+
+> ~/.config/vim/pythonx/fetchLatinPronunciation.py
+	*	1532608932	0
+	"	5	0
+
+> ~/Downloads/DBP.txt
+	*	1532533041	0
+	"	1578	0
+	^	1579	18
+	.	1580	0
+	+	1488	9
+	+	1488	71
+	+	1489	8
+	+	1490	0
+	+	1492	22
+	+	1493	6
+	+	1494	5
+	+	1495	12
+	+	1496	9
+	+	1497	0
+	+	1499	7
+	+	1500	8
+	+	1501	9
+	+	1502	13
+	+	1503	5
+	+	1504	6
+	+	1505	6
+	+	1506	8
+	+	1507	6
+	+	1508	14
+	+	1509	6
+	+	1510	18
+	+	1511	40
+	+	1512	7
+	+	1513	9
+	+	1514	57
+	+	1515	5
+	+	1516	14
+	+	1517	6
+	+	1518	0
+	+	1519	12
+	+	1520	0
+	+	1521	6
+	+	1522	6
+	+	1523	9
+	+	1524	10
+	+	1525	7
+	+	1526	7
+	+	1527	11
+	+	1528	6
+	+	1529	14
+	+	1530	18
+	+	1531	8
+	+	1532	15
+	+	1533	0
+	+	1534	8
+	+	1535	0
+	+	1541	7
+	+	1537	9
+	+	1538	7
+	+	1539	10
+	+	1540	13
+	+	1541	7
+	+	1542	8
+	+	1543	20
+	+	1544	22
+	+	1545	0
+	+	1546	5
+	+	1547	5
+	+	1548	5
+	+	1549	8
+	+	1550	7
+	+	1551	9
+	+	1552	9
+	+	1553	10
+	+	1554	8
+	+	1555	9
+	+	1556	17
+	+	1557	21
+	+	1558	33
+	+	1559	0
+	+	1561	10
+	+	1560	6
+	+	1561	10
+	+	1562	6
+	+	1563	9
+	+	1564	7
+	+	1565	10
+	+	1566	6
+	+	1567	9
+	+	1568	0
+	+	1569	19
+	+	1570	10
+	+	1571	7
+	+	1572	10
+	+	1573	11
+	+	1574	20
+	+	1575	22
+	+	1576	14
+	+	1577	7
+	+	1578	13
+	+	1579	18
+	+	1580	0
+	a	43	0
+
+> /usr/share/vim/vim80/doc/repeat.txt
+	*	1532532243	0
+	"	321	35
+
+> /usr/share/vim/vim80/doc/cmdline.txt
+	*	1532530655	0
+	"	670	39
+
+> /usr/share/vim/vim80/doc/help.txt
+	*	1532512068	0
+	"	1	0
+
+> ~/Downloads/DBP-latin.txt
+	*	1532509324	0
+	"	1	0
+
+> /usr/share/vim/vim80/doc/if_pyth.txt
+	*	1532478701	0
+	"	406	36
+
+> ~/Downloads/CR-Latin-sorted.txt
+	*	1532471369	0
+	"	723	0
+	^	483	61
+	.	712	0
+	+	1	0
+	+	205	0
+	+	209	0
+	+	142	0
+	+	160	0
+	+	176	31
+	+	2	0
+	+	51	0
+	+	282	0
+	+	291	0
+	+	293	0
+	+	318	0
+	+	324	0
+	+	361	0
+	+	371	0
+	+	483	61
+	+	512	0
+	+	521	4
+	+	542	0
+	+	712	0
+
+> ~/Downloads/Collar-Review.txt
+	*	1532469742	0
+	"	1	20
+	^	76	62
+	.	12	20
+	+	736	49
+	+	738	0
+	+	727	53
+	+	728	0
+	+	732	0
+	+	731	61
+	+	732	0
+	+	730	72
+	+	732	0
+	+	725	0
+	+	722	45
+	+	723	0
+	+	719	0
+	+	717	66
+	+	687	0
+	+	685	58
+	+	703	0
+	+	701	54
+	+	679	62
+	+	681	0
+	+	676	0
+	+	675	0
+	+	671	49
+	+	672	0
+	+	671	0
+	+	668	0
+	+	667	0
+	+	662	0
+	+	650	0
+	+	642	0
+	+	637	0
+	+	625	51
+	+	626	0
+	+	624	0
+	+	620	0
+	+	617	0
+	+	621	0
+	+	608	0
+	+	604	0
+	+	588	41
+	+	589	0
+	+	588	0
+	+	581	0
+	+	574	0
+	+	573	0
+	+	572	0
+	+	568	0
+	+	567	0
+	+	560	0
+	+	544	0
+	+	528	0
+	+	517	0
+	+	499	0
+	+	487	0
+	+	478	0
+	+	474	0
+	+	466	0
+	+	458	0
+	+	453	0
+	+	448	0
+	+	437	0
+	+	428	0
+	+	420	0
+	+	412	0
+	+	404	0
+	+	381	0
+	+	380	0
+	+	376	0
+	+	370	0
+	+	367	0
+	+	363	0
+	+	360	0
+	+	353	0
+	+	335	54
+	+	338	0
+	+	305	0
+	+	293	0
+	+	262	0
+	+	241	3
+	+	199	0
+	+	185	0
+	+	130	0
+	+	122	0
+	+	105	0
+	+	97	0
 	+	96	0
-	+	93	84
-	+	92	0
-	+	95	66
-	+	47	41
-	+	47	0
-	+	48	0
-	+	49	0
-	+	48	0
-	+	47	0
-	+	48	0
-	+	49	0
+	+	81	0
+	+	80	0
+	+	79	0
+	+	77	0
+	+	78	0
+	+	67	0
+	+	66	21
+	+	26	0
+	+	25	0
+	+	12	20
+
+> ~/.dotfiles/help/vim-cmds
+	*	1532468066	0
+	"	1	0
+	^	18	48
+	.	18	47
+	+	126	45
+	+	17	38
+	+	18	47
+	m	15	14
+
+> ~/Python/fetchLatinBackup.py
+	*	1532461518	0
+	"	10	100
+	^	10	101
+	.	10	101
+	+	8	0
+	+	10	3
+	+	6	34
+	+	35	20
+	+	42	31
+	+	50	29
+	+	10	101
+
+> ~/Python/fetchLatinAll.py
+	*	1532460362	0
+	"	72	0
+	^	54	32
+	.	54	47
+	+	7	0
+	+	9	3
+	+	6	34
+	+	34	20
+	+	66	31
+	+	80	29
+	+	37	0
+	+	61	0
+	+	37	15
+	+	42	45
+	+	42	46
 	+	50	0
-	+	49	0
+	+	36	27
+	+	60	0
+	+	66	14
+	+	73	33
+	+	7	0
+	+	44	14
+	+	45	22
+	+	47	16
+	+	54	47
+	+	57	15
+	+	59	20
+	+	54	47
+
+> /tmp/bash-fc.advOET
+	*	1532457292	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> ~/Python/fetchLatinPronunciation.py
+	*	1532454164	0
+	"	40	44
+	^	50	29
+	.	50	29
+	+	8	0
+	+	10	3
+	+	6	34
+	+	35	20
+	+	42	31
+	+	50	29
+
+> ~/.config/vim/bundle/ultisnips/doc/UltiSnips.txt
+	*	1532452973	0
+	"	1067	59
+	^	834	7
+
+> ~/_Matches_Text_
+	*	1532450298	0
+	"	8	0
+	.	1	0
+	+	1	0
+
+> ~/.config/vim/plugin/abbreviations.vim
+	*	1532449234	0
+	"	1	0
+
+> ~/.config/vim/plugin/listtrans.vim
+	*	1532449224	0
+	"	1	0
+
+> ~/__pycache__/HtmlPrinting.cpython-35.pyc
+	*	1532449195	0
+	"	3	0
+
+> ~/Example_buffer
+	*	1532448722	0
+	"	3	0
+	.	1	0
+	+	3	0
+	+	1	0
+
+> ~/.config/vim/customsnips/vim.snippets
+	*	1532439002	0
+	"	1	8
+	^	2	9
+	.	2	8
+	+	2	8
+
+> ~/Downloads/.admin/CM_012.jpg
+	*	1532257762	0
+	"	1	0
+
+> ~/Python/apihelper.py
+	*	1532188013	0
+	"	9	55
+	^	13	23
+	.	13	22
+	+	7	9
+	+	10	47
+	+	13	22
+
+> ~/Documents/todo.org
+	*	1532181632	0
+	"	262	0
+	^	262	6
+	.	190	0
 	+	48	0
 	+	47	41
 	+	51	0
@@ -754,9 +2039,1019 @@ $
 	+	94	0
 	+	7	0
 	+	47	0
+	+	99	0
+	+	92	0
+	+	99	0
+	+	104	79
+	+	103	0
+	+	104	79
+	+	109	0
+	+	103	0
+	+	105	46
+	+	103	0
+	+	106	63
+	+	109	0
+	+	107	0
+	+	105	0
+	+	109	0
+	+	110	0
+	+	109	71
+	+	115	85
+	+	121	110
+	+	127	92
+	+	105	0
+	+	153	0
+	+	150	0
+	+	140	0
+	+	139	43
+	+	152	8
+	+	118	0
+	+	107	0
+	+	141	0
+	+	107	2
+	+	153	19
+	+	154	4
+	+	107	0
+	+	155	5
+	+	180	5
+	+	166	0
+	+	162	66
+	+	161	0
+	+	164	66
+	+	163	66
+	+	181	33
+	+	179	0
+	+	177	0
+	+	179	0
+	+	177	0
+	+	179	0
+	+	182	50
+	+	181	63
+	+	189	23
+	+	179	0
+	+	172	59
+	+	179	0
+	+	183	64
+	+	179	0
+	+	175	38
+	+	179	0
+	+	190	134
+	+	194	54
+	+	195	0
+	+	190	0
+	+	205	210
+	+	190	0
+	+	215	241
+	+	190	0
+	+	226	90
+	+	190	0
+	+	236	127
+	+	190	0
+	+	246	545
+	+	190	0
+	+	254	6
+	+	190	0
+	+	256	0
+	+	247	160
+	+	190	0
+	+	258	13
+	+	190	0
+	+	259	240
+	+	190	0
+	+	260	395
+	+	190	0
+	+	261	79
+	+	263	0
+	+	190	0
+
+> ~/Documents/apihelper.py
+	*	1532181628	0
+	"	1	0
+	^	13	22
+	.	13	22
+	+	1	41
+	+	13	22
+
+> ~/__Calendar
+	*	1532168836	0
+	"	7	42
+	^	10	0
+	.	3	0
+	+	10	0
+	+	3	0
+
+> ~/.config/ranger/commands.py
+	*	1531925678	0
+	"	145	94
+	^	145	110
+	.	145	0
+	+	145	54
+	+	145	151
+	+	145	0
+	+	143	21
+	+	144	71
+	+	145	48
+	+	145	131
+	+	145	0
+	+	145	109
+	+	145	0
+
+> ~/.config/ranger/scope.sh
+	*	1531923082	0
+	"	164	0
+
+> ~/.config/ranger/rifle.conf
+	*	1531923067	0
+	"	80	0
+
+> ~/.dotfiles/help/mpv-cmds
+	*	1531855926	0
+	"	32	22
+	^	26	21
+
+> ~/Documents/webpage.html
+	*	1531777950	0
+	"	38	0
+	^	38	0
+	.	38	0
+	+	1	0
+	+	6	22
+	+	1	0
+	+	35	0
+	+	9	0
+	+	34	0
+	+	10	16
+	+	11	25
+	+	12	24
+	+	13	27
+	+	14	27
+	+	11	0
+	+	34	0
+	+	15	0
+	+	15	24
+	+	15	12
+	+	15	0
+	+	15	27
+	+	15	0
+	+	34	0
+	+	16	0
+	+	18	0
+	+	17	24
+	+	19	0
+	+	18	21
+	+	20	0
+	+	19	25
+	+	21	0
+	+	20	24
+	+	21	0
+	+	22	0
+	+	24	0
+	+	23	22
+	+	25	0
+	+	24	22
+	+	26	0
+	+	25	24
+	+	27	0
+	+	26	26
+	+	27	0
+	+	28	0
+	+	30	0
+	+	29	26
+	+	31	0
+	+	30	26
+	+	32	0
+	+	31	24
+	+	33	0
+	+	32	27
+	+	33	0
+	+	38	15
+	+	38	0
+
+> ~/testfile.html
+	*	1531777801	0
+	"	2	0
+	.	2	0
+	+	2	0
+
+> ~/HtmlPrinting.py
+	*	1531777749	0
+	"	98	6
+	^	60	35
+	.	46	6
+	+	7	0
+	+	5	62
+	+	6	12
+	+	7	51
+	+	8	40
+	+	10	0
+	+	8	64
+	+	10	43
+	+	11	36
+	+	13	0
+	+	11	56
+	+	12	12
+	+	13	37
+	+	14	34
+	+	16	0
+	+	14	51
+	+	16	40
+	+	17	12
+	+	19	54
+	+	20	41
+	+	22	0
+	+	20	63
+	+	88	0
+	+	63	0
+	+	63	40
+	+	63	0
+	+	64	26
+	+	63	14
+	+	63	15
+	+	65	0
+	+	66	27
+	+	63	11
+	+	64	22
+	+	66	23
+	+	88	38
+	+	65	59
+	+	88	0
+	+	67	41
+	+	69	42
+	+	68	0
+	+	70	0
+	+	93	0
+	+	90	42
+	+	93	22
+	+	90	44
+	+	98	0
+	+	93	10
+	+	93	11
+	+	98	27
+	+	97	26
+	+	93	54
+	+	93	0
+	+	59	0
+	+	93	0
+	+	91	0
+	+	92	27
+	+	93	0
+	+	95	16
+	+	96	0
+	+	67	11
+	+	63	11
+	+	63	6
+	+	63	0
+	+	62	21
+	+	87	22
+	+	50	22
+	+	54	25
+	+	52	0
+	+	53	0
+	+	54	0
+	+	87	16
+	+	62	30
+	+	87	23
+	+	71	34
+	+	73	34
+	+	72	0
+	+	74	24
+	+	75	36
+	+	77	36
+	+	76	0
+	+	78	0
+	+	79	39
+	+	81	39
+	+	80	0
+	+	82	0
+	+	87	0
+	+	83	47
+	+	85	47
+	+	84	0
+	+	86	0
+	+	62	22
+	+	59	46
+	+	60	34
+	+	61	0
+	+	58	6
+	+	49	0
+	+	47	0
+	+	46	6
+	j	65	8
+
+> ~/testfile2.html
+	*	1531776920	0
+	"	6	0
+
+> ~/.config/vim/bundle/vim-snippets/snippets/html.snippets
+	*	1531776441	0
+	"	475	7
+	^	828	11
+	.	828	0
+	+	828	0
+
+> ~/UltiSnips/html.snippets
+	*	1531776271	0
+	"	1	0
+
+> ~/Documents/fetchLatinPronunciation.py
+	*	1531485951	0
+	"	35	20
+	^	34	49
+	.	34	48
+	+	5	9
+	+	20	0
+	+	21	0
+	+	19	0
+	+	28	0
+	+	29	29
+	+	30	8
+	+	29	73
+	+	30	0
+	+	29	0
+	+	30	35
+	+	36	0
+	+	33	16
+	+	35	28
+	+	31	36
+	+	35	20
+	+	34	48
+
+> ~/Videos/__Calendar
+	*	1531473138	0
+	"	6	39
+	^	10	0
+	.	3	0
+	+	3	0
+
+> ~/Documents/verbs.py
+	*	1531379562	0
+	"	73	0
+
+> ~/.config/mps-youtube/transcode
+	*	1531377585	0
+	"	60	0
+
+> ~/fetchLatinPronunciation.py
+	*	1531245837	0
+	"	24	22
+	^	28	40
+	.	28	39
+	+	1	0
+	+	3	0
+	+	1	21
+	+	22	7
+	+	8	7
+	+	23	0
+	+	22	0
+	+	38	0
+	+	39	0
+	+	38	0
+	+	43	11
+	+	7	104
+	+	7	12
+	+	13	9
+	+	13	0
+	+	15	13
+	+	20	19
+	+	21	0
+	+	8	0
+	+	32	16
+	+	19	8
+	+	20	0
+	+	17	15
+	+	4	8
+	+	35	24
+	+	17	55
+	+	27	25
+	+	29	0
+	+	27	48
+	+	28	39
+
+> /tmp/bash-fc.OtWfql
+	*	1531231407	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> /tmp/bash-fc.E7h4x9
+	*	1531231396	0
+	"	1	0
+	^	1	1
+	.	1	0
+	+	1	0
+
+> ~/Documents/fetchItalianPronunciation.py
+	*	1531231230	0
+	"	12	0
+	^	8	74
+	.	18	0
+	+	1	0
+	+	3	20
+	+	9	0
+	+	10	0
+	+	13	0
+	+	11	26
+	+	13	3
+	+	15	16
+	+	12	0
+	+	19	25
+	+	19	14
+	+	19	24
+	+	8	75
+	+	1	21
+	+	15	52
+	+	19	0
+	+	18	0
+	+	18	22
+	+	18	0
+	+	18	16
+	+	7	23
+	+	8	73
+	+	7	20
+	+	8	71
+	+	7	0
+	+	18	0
+
+> ~/Documents/test.ital
+	*	1531231195	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/test
+	*	1531180502	0
+	"	3	20
+	^	3	21
+	.	3	0
+	+	1	19
+	+	2	13
+	+	3	0
+
+> /tmp/bash-fc.oUhHGY
+	*	1531174236	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/test.it
+	*	1531171256	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	3
+	+	1	0
+
+> ~/Documents/UltiSnips/ppwiz.snippets
+	*	1531171141	0
+	"	1	0
+	^	16	0
+	.	16	0
+	+	11	25
+	+	15	0
+	+	16	0
+	+	15	39
+	+	17	9
+	+	16	0
+
+> ~/Documents/music
+	*	1531169384	0
+	"	1	0
+	^	3	7
+	.	3	6
+	+	5	31
+	+	5	69
+	+	7	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	4	1
+	+	5	0
+	+	5	69
+	+	7	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	10	20
+	+	9	30
+	+	5	33
+	+	5	102
+	+	7	33
+	+	8	33
+	+	9	33
+	+	10	33
+	+	4	0
+	+	5	68
+	+	5	34
+	+	6	0
+	+	5	34
+	+	9	28
+	+	6	0
+	+	7	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	18	20
+	+	17	30
+	+	19	0
+	+	19	67
+	+	9	59
+	+	10	63
+	+	17	59
+	+	18	63
+	+	19	0
+	+	3	6
+
+> ~/Documents/Shotgun-tab
+	*	1531169375	0
+	"	1	0
+
+> ~/.config/vim/customsnips/snippets.all
+	*	1531169005	0
+	"	1	0
+
+> ~/Documents/NERD_tree_1
+	*	1531168877	0
+	"	46	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/exp.py
+	*	1531168288	0
+	"	29	0
+	^	29	0
+	.	29	0
+	+	1	8
+	+	1	0
+	+	1	5
+	+	1	0
+	+	1	2
+	+	1	5
+	+	1	0
+	+	2	0
+	+	1	15
+	+	2	10
+	+	3	0
+	+	4	7
+	+	4	8
+	+	5	8
+	+	6	9
+	+	7	8
+	+	8	21
+	+	9	9
+	+	10	7
+	+	11	10
+	+	12	12
+	+	13	10
+	+	14	8
+	+	13	8
+	+	12	10
+	+	15	9
+	+	16	9
+	+	17	9
+	+	17	0
+	+	16	8
+	+	17	7
+	+	18	8
+	+	21	8
+	+	22	9
+	+	23	8
+	+	24	0
+	+	30	0
+	+	24	8
+	+	25	13
+	+	26	0
+	+	30	0
+	+	26	8
+	+	28	8
+	+	29	0
+
+> ~/__pycache__/Verbs.cpython-35.pyc
+	*	1531166036	0
+	"	1	0
+
+> ~/Music/George Ezra/NERD_tree_1
+	*	1531164856	0
+	"	16	0
+	.	1	0
+	+	1	0
+
+> ~/.config/vim/bundle/YouCompleteMe/doc/youcompleteme.txt
+	*	1531148640	0
+	"	3099	4
+
+> /etc/hosts
+	*	1531129622	0
+	"	49417	17
+	^	49417	1
+	.	49417	0
+	+	49417	0
+
+> ~/Documents/verbConjugator.py
+	*	1530374490	0
+	"	981	0
+
+> ~/.config/rtv/rtv.cfg
+	*	1529774720	0
+	"	138	0
+
+> /usr/local/bin/dwmstart
+	*	1529005235	0
+	"	3	0
+	^	5	35
+	.	5	34
+	+	5	34
+
+> ~/usr/local/bin/dwmstart
+	*	1529005157	0
+	"	1	0
+
+> ~/.config/vim/bundle/vim-surround/doc/surround.txt
+	*	1528926424	0
+	"	67	20
+
+> ~/Documents/todo.tex
+	*	1528837332	0
+	"	1	0
+
+> /usr/share/vim/vim80/doc/autocmd.txt
+	*	1528836943	0
+	"	701	7
+
+> ~/.dotfiles/help/vimscript-notes.org
+	*	1528835636	0
+	"	7	0
+	^	161	9
+	.	52	37
+	+	130	0
+	+	136	18
+	+	137	60
+	+	142	4
+	+	112	0
+	+	110	7
+	+	130	0
+	+	144	63
+	+	144	4
+	+	144	0
+	+	143	0
+	+	146	8
+	+	145	52
+	+	143	0
+	+	75	81
+	+	143	0
+	+	76	70
+	+	142	0
+	+	164	0
+	+	56	64
+	+	57	0
+	+	164	0
+	+	37	22
+	+	38	50
+	+	40	79
+	+	164	0
+	+	51	2
+	+	51	3
+	+	53	0
+	+	51	45
+	+	52	37
+
+> ~/.config/tmux/tmux.conf
+	*	1528753490	0
+	"	35	16
+	^	35	17
+	.	35	16
+	+	4	30
+	+	8	41
+	+	3	0
+	+	5	0
+	+	4	29
+	+	6	36
+	+	9	25
+	+	3	0
+	+	8	0
+	+	3	0
+	+	7	0
+	+	3	0
+	+	7	0
+	+	5	0
+	+	8	0
+	+	3	0
+	+	7	0
+	+	5	0
+	+	8	0
+	+	3	0
+	+	7	0
+	+	9	0
+	+	10	0
+	+	12	0
+	+	16	30
+	+	17	36
+	+	14	34
+	+	17	31
+	+	14	37
+	+	13	0
+	+	12	22
+	+	14	29
+	+	16	24
+	+	17	31
+	+	13	30
+	+	15	0
+	+	16	0
+	+	15	0
+	+	16	0
+	+	15	37
+	+	89	0
+	+	90	0
+	+	91	0
+	+	92	0
+	+	93	5
+	+	94	5
+	+	93	6
+	+	94	7
+	+	35	5
+	+	23	26
+	+	18	0
+	+	24	0
+	+	27	25
+	+	28	24
+	+	27	33
+	+	30	28
+	+	31	39
+	+	32	23
+	+	30	28
+	+	31	28
+	+	32	38
+	+	29	30
+	+	33	34
+	+	34	43
+	+	33	31
+	+	34	38
+	+	33	36
+	+	34	44
+	+	21	21
+	+	19	20
+	+	13	0
+	+	11	34
+	+	19	63
+	+	33	34
+	+	34	42
+	+	33	0
+	+	34	0
+	+	35	0
+	+	34	0
+	+	35	0
+	+	34	42
+	+	33	86
+	+	19	74
+	+	34	0
+	+	33	121
+	+	33	0
+	+	33	87
+	+	34	0
+	+	33	30
+	+	19	86
+	+	19	76
+	+	33	0
+	+	34	0
+	+	19	73
+	+	97	22
+	+	41	14
+	+	19	0
+	+	20	52
+	+	36	0
+	+	35	16
+
+> ~/.config/newsbeuter/config
+	*	1528496980	0
+	"	32	27
+	^	32	26
+	.	32	27
+	+	80	0
+	+	79	38
+	+	32	27
+
+> ~/Documents/test2.py
+	*	1528492951	0
+	"	4	0
+	^	4	0
+	.	4	0
+	+	3	0
+	+	1	0
+	+	3	13
+	+	3	0
+	+	4	0
+
+> ~/Documents/test.py
+	*	1528491387	0
+	"	24	0
+	.	25	0
+	+	25	0
+
+> ~/.dwmsrc/config.h
+	*	1528402924	0
+	"	144	0
+	^	17	41
+	.	17	40
+	+	12	37
+	+	11	37
+	+	15	36
+	+	16	36
+	+	17	40
+	+	21	39
+	+	19	36
+	+	20	37
+	+	16	36
+	+	17	40
+
+> ~/.stsrc/config.h
+	*	1528402864	0
+	"	1	0
+	^	100	32
+	.	100	31
+	+	121	2
+	+	121	34
+	+	121	0
+	+	121	34
+	+	121	0
+	+	120	35
+	+	114	28
+	+	99	28
+	+	108	34
+	+	113	34
+	+	112	30
+	+	111	27
+	+	110	32
+	+	109	34
+	+	107	32
+	+	106	32
+	+	112	26
+	+	105	32
+	+	104	32
+	+	103	33
+	+	102	41
+	+	101	33
+	+	100	0
+	+	101	0
+	+	100	31
+
+> ~/Downloads/Aeneas-Ascanius-Romulus-Remus.txt
+	*	1528402290	0
+	"	1	0
+
+> ~/Documents/Example-regexes.txt
+	*	1528401879	0
+	"	20	0
+	^	46	57
+	.	48	0
+	+	2	2
+	+	2	26
+	+	9	0
+	+	11	0
+	+	13	0
+	+	9	0
+	+	2	26
+	+	13	0
+	+	12	18
+	+	9	0
+	+	2	2
+	+	3	6
+	+	4	16
+	+	5	6
+	+	6	0
+	+	9	0
+	+	7	0
+	+	18	0
+	+	25	0
+	+	18	0
+	+	14	0
+	+	17	35
+	+	1	48
+	+	17	36
+	+	25	41
+	+	29	0
+	+	21	0
+	+	23	0
+	+	18	8
+	+	19	10
+	+	20	0
+	+	17	28
+	+	1	0
+	+	25	0
+	+	17	0
+	+	33	14
+	+	34	0
+	+	35	0
+	+	34	0
+	+	33	44
+	+	25	0
+	+	33	0
+	+	31	0
+	+	28	3
+	+	1	0
+	+	12	0
+	+	11	18
+	+	15	0
+	+	17	0
+	+	23	0
+	+	22	0
+	+	26	0
+	+	28	0
+	+	31	65
+	+	27	0
+	+	16	0
+	+	37	0
+	+	38	0
+	+	37	51
+	+	36	24
+	+	35	0
+	+	36	0
+	+	35	0
+	+	33	22
+	+	35	0
+	+	32	0
+	+	33	0
+	+	32	12
+	+	33	0
+	+	32	0
+	+	33	0
+	+	32	0
+	+	33	0
+	+	49	0
+	+	39	0
+	+	44	72
+	+	47	15
+	+	46	56
+	+	48	0
+
+> ~/.config/vim/bundle/base16-vim/colors/base16-tomorrow-night.vim
+	*	1528401514	0
+	"	18	27
+
+> ~/.config/vim/bundle/vim-airline/autoload/airline/init.vim
+	*	1528317111	0
+	"	80	64
+
+> ~/.config/vim/bundle/vim-airline/autoload/airline/themes.vim
+	*	1528315579	0
+	"	1	0
+
+> ~/.config/vim/bundle/vim-airline/autoload/airline.vim
+	*	1528315512	0
+	"	1	0
+
+> ~/.config/vim/bundle/vim-airline-themes/autoload/airline/themes/powerlineish.vim
+	*	1528315384	0
+	"	6	0
+
+> ~/.config/vim/bundle/vim-airline-themes/plugin/airline-themes.vim
+	*	1528315316	0
+	"	1	0
+
+> ~/.config/vim/bundle/vim-airline/plugin/airline.vim
+	*	1528315270	0
+	"	163	0
+
+> ~/Downloads/xterm-333/vttests/fonts.sh
+	*	1528228320	0
+	"	1	0
+
+> ~/.config/tmux/tmux.conf.bak
+	*	1528219811	0
+	"	26	0
+	.	16	0
+	+	16	0
+
+> ~/newfile
+	*	1528143511	0
+	"	4	0
+	^	9	0
+	.	8	0
+	+	1	2
+	+	1	26
+	+	2	0
+	+	3	26
+	+	6	0
+	+	1	0
+	+	2	0
+	+	3	0
+	+	8	0
+	+	10	0
+	+	5	101
+	+	9	0
+	+	7	22
+	+	8	0
+	+	11	0
+	+	10	104
+	+	12	67
+	+	8	0
 
 > ~/.vimrc
-	*	1527851783	0
+	*	1528142947	0
 	"	1	0
 	^	232	38
 	.	232	37
@@ -831,6 +3126,431 @@ $
 	+	232	32
 	+	231	0
 	+	232	37
+
+> ~/Videos/.bashrc
+	*	1528141747	0
+	"	1	0
+
+> ~/.stsrc/README
+	*	1528139555	0
+	"	1	0
+
+> ~/left
+	*	1528058085	0
+	"	1	0
+
+> ~/:help
+	*	1528034377	0
+	"	1	0
+
+> ~/help
+	*	1528034368	0
+	"	1	0
+
+> /usr/share/vim/vim80/doc/visual.txt
+	*	1528033516	0
+	"	519	5
+
+> ~/Documents/tmp/todo.markdown
+	*	1528028860	0
+	"	84	70
+
+> /usr/share/vim/vim80/doc/helphelp.txt
+	*	1528023522	0
+	"	201	3
+
+> ~/Documents/todo.markdown
+	*	1528014639	0
+	"	114	74
+	^	114	75
+	.	114	74
+	+	110	9
+	+	111	9
+	+	112	9
+	+	109	0
+	+	110	9
+	+	111	9
+	+	112	9
+	+	106	10
+	+	105	0
+	+	111	8
+	+	114	74
+
+> ~/Documents/todo.md
+	*	1528013491	0
+	"	111	0
+	^	111	0
+	.	111	0
+	+	41	43
+	+	44	47
+	+	45	0
+	+	46	0
+	+	47	38
+	+	49	0
+	+	51	0
+	+	52	0
+	+	48	0
+	+	50	48
+	+	52	0
+	+	49	3
+	+	53	0
+	+	52	28
+	+	54	0
+	+	56	0
+	+	58	0
+	+	57	58
+	+	60	0
+	+	61	0
+	+	60	24
+	+	62	0
+	+	64	0
+	+	63	28
+	+	66	0
+	+	67	0
+	+	66	64
+	+	68	0
+	+	70	0
+	+	69	63
+	+	71	0
+	+	72	0
+	+	71	27
+	+	73	0
+	+	73	22
+	+	73	0
+	+	73	20
+	+	77	12
+	+	78	10
+	+	77	19
+	+	78	0
+	+	11	0
+	+	78	0
+	+	11	0
+	+	12	7
+	+	11	0
+	+	12	0
+	+	13	0
+	+	12	0
+	+	78	0
+	+	31	0
+	+	78	0
+	+	80	0
+	+	78	0
+	+	81	0
+	+	82	0
+	+	83	0
+	+	97	0
+	+	83	39
+	+	97	69
+	+	97	12
+	+	84	0
+	+	97	0
+	+	102	35
+	+	104	51
+	+	104	0
+	+	24	0
+	+	22	43
+	+	24	0
+	+	23	52
+	+	24	0
+	+	26	38
+	+	28	52
+	+	29	0
+	+	31	74
+	+	32	0
+	+	40	27
+	+	41	0
+	+	43	62
+	+	44	0
+	+	46	22
+	+	47	0
+	+	51	58
+	+	52	0
+	+	74	63
+	+	77	0
+	+	76	70
+	+	77	0
+	+	78	23
+	+	79	72
+	+	80	43
+	+	81	0
+	+	84	0
+	+	98	0
+	+	99	0
+	+	98	50
+	+	100	0
+	+	2	0
+	+	105	13
+	+	111	0
+
+> ~/.nvm/nvm.sh
+	*	1528012051	0
+	"	236	0
+
+> ~/.nvm/install.sh
+	*	1528011956	0
+	"	11	0
+
+> ~/.config/w3m/w3mtmp6384-0
+	*	1528011481	0
+	"	155	8
+
+> ~/Documents/vim-screencasts-Greg-Hurrell-32.org
+	*	1527982458	0
+	"	31	0
+	^	31	3
+	.	31	3
+	+	126	0
+	+	124	0
+	+	127	69
+	+	128	0
+	+	130	0
+	+	131	0
+	+	129	0
+	+	128	0
+	+	1	0
+	+	131	0
+	+	1	49
+	+	1	0
+	+	131	0
+	+	5	8
+	+	7	0
+	+	6	50
+	+	8	2
+	+	5	25
+	+	131	0
+	+	4	37
+	+	5	0
+	+	15	0
+	+	11	53
+	+	15	0
+	+	13	0
+	+	14	40
+	+	7	26
+	+	6	33
+	+	7	33
+	+	9	36
+	+	11	36
+	+	13	34
+	+	14	34
+	+	4	22
+	+	3	0
+	+	17	36
+	+	11	13
+	+	4	21
+	+	131	0
+	+	18	0
+	+	131	0
+	+	19	11
+	+	31	3
+
+> ~/.dotfiles/help/tmux-cmds
+	*	1527981939	0
+	"	2	0
+
+> ~/Downloads/LC1_Summer_Exam_Vocabulary_2018.docx
+	*	1527972300	0
+	"	27	0
+	.	1	0
+	+	1	0
+
+> ~/.config/vim/customsnips/markdown.snippets
+	*	1527961156	0
+	"	14	38
+	^	14	39
+	.	14	38
+	+	2	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	9	22
+	+	11	10
+	+	3	7
+	+	2	16
+	+	9	15
+	+	10	27
+	+	20	0
+	+	10	19
+	+	9	12
+	+	17	10
+	+	18	15
+	+	13	0
+	+	16	0
+	+	13	15
+	+	14	38
+
+> ~/Videos/NERD_tree_1
+	*	1527960861	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/.config/vim/bundle/vim-speeddating/doc/speeddating.txt
+	*	1527944675	0
+	"	2	0
+
+> ~/Videos/.bash_aliases
+	*	1527942579	0
+	"	1	0
+
+> ~/.config/mutt/accounts/Yahoo.muttrc
+	*	1527887469	0
+	"	1	0
+
+> ~/.config/mutt/muttrc
+	*	1527887447	0
+	"	88	0
+
+> ~/.config/mutt/personal.muttrc
+	*	1527887365	0
+	"	3	0
+
+> ~/.config/mutt/credentials/imappwd.pyc
+	*	1527887162	0
+	"	1	0
+
+> ~/.config/mutt/credentials/imappwd.py
+	*	1527887098	0
+	"	1	0
+
+> ~/.config/mutt/credentials/getmuttpass
+	*	1527887050	0
+	"	1	0
+
+> ~/.config/mutt/etc/mailsync.sh
+	*	1527886964	0
+	"	1	0
+
+> /tmp/crontab.OFCif4/crontab
+	*	1527886936	0
+	"	24	2
+	.	25	0
+	+	25	0
+
+> /tmp/mutt-debdev-1000-6310-4221204484240522332
+	*	1527886697	0
+	"	1	291
+
+> /tmp/crontab.ChFp3A/crontab
+	*	1527886081	0
+	"	24	2
+	^	24	3
+	.	24	2
+	+	24	2
+
+> /tmp/crontab.NrOmbc/crontab
+	*	1527886014	0
+	"	24	3
+	^	24	4
+	.	24	4
+	+	24	43
+	+	23	23
+	+	24	4
+
+> /tmp/crontab.urRbuG/crontab
+	*	1527885782	0
+	"	1	0
+
+> /tmp/crontab.UjCSd2/crontab
+	*	1527882282	0
+	"	24	101
+	^	24	102
+	.	24	101
+	+	24	101
+
+> /tmp/crontab.iK75DR/crontab
+	*	1527882204	0
+	"	24	32
+	^	24	33
+	.	24	32
+	+	24	32
+
+> ~/.local/usr/bin/put-configs.sh
+	*	1527881635	0
+	"	1	0
+	.	17	33
+	+	17	33
+
+> ~/.dotfiles/scripts/backup-configs.sh
+	*	1527863402	0
+	"	47	0
+
+> ~/.local/usr/bin/backup-configs.sh
+	*	1527863306	0
+	"	20	0
+	^	33	26
+	.	20	0
+	+	41	15
+	+	10	0
+	+	33	25
+	+	20	0
+
+> ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
+	*	1527861757	0
+	"	81	0
+
+> ~/.config/vim/customsnips/sh.snippets
+	*	1527860351	0
+	"	35	0
+
+> ~/.profile
+	*	1527859069	0
+	"	19	0
+
+> ~/.config/surfraw/conf
+	*	1527857675	0
+	"	1	0
+
+> ~/.config/redshift.conf
+	*	1527857659	0
+	"	1	3
+
+> ~/.config/mimeapps.list
+	*	1527857651	0
+	"	1	0
+
+> ~/.config/htop/htoprc
+	*	1527857510	0
+	"	1	0
+
+> ~/.local/bin/webview.sh
+	*	1527856629	0
+	"	5	28
+	^	5	29
+	.	5	28
+	+	5	28
+
+> ~/.local/bin/youtube-viewer
+	*	1527856457	0
+	"	4	57
+	^	4	58
+	.	4	57
+	+	4	57
+
+> ~/.local/bin/playlist-browser
+	*	1527856045	0
+	"	4	31
+	^	13	1
+	.	13	0
+	+	6	0
+	+	10	0
+	+	13	0
+
+> ~/Downloads/Instantly_Better_Vim_2013/intro.swtc
+	*	1527853884	0
+	"	71	0
+
+> ~/Documents/listtest
+	*	1527853617	0
+	"	3	4
+	^	2	0
+	.	3	0
+	+	3	0
+	+	3	4
+	+	3	0
+	+	1	0
+	+	3	0
+	+	2	0
+	+	3	0
 
 > ~/test.sh
 	*	1527851430	0
@@ -933,22 +3653,6 @@ $
 	*	1527844337	0
 	"	381	30
 
-> ~/Documents/vim-screencasts-Greg-Hurrell-32.org
-	*	1527843482	0
-	"	2	2
-	.	2	0
-	+	97	0
-	+	95	0
-	+	98	69
-	+	99	0
-	+	101	0
-	+	102	0
-	+	100	0
-	+	99	0
-	+	1	0
-	+	102	0
-	+	2	0
-
 > ~/.vim/plugin/userfunctions.vim
 	*	1527843480	0
 	"	76	10
@@ -967,12 +3671,6 @@ $
 	+	40	26
 	+	43	27
 	+	78	72
-
-> ~/newfile
-	*	1527843475	0
-	"	1	0
-	.	1	0
-	+	1	0
 
 > ~/.dotfiles/home/vimrc
 	*	1527843470	0
@@ -1023,16 +3721,6 @@ $
 	+	70	0
 	+	75	0
 
-> ~/.dotfiles/help/vim-cmds
-	*	1527841038	0
-	"	18	0
-	^	18	48
-	.	18	47
-	+	126	45
-	+	17	38
-	+	18	47
-	m	15	14
-
 > ~/.vim/bundle/vim-fugitive/doc/fugitive.txt
 	*	1527839662	0
 	"	313	48
@@ -1045,50 +3733,6 @@ $
 	*	1527839337	0
 	"	1	0
 
-> ~/.dotfiles/help/vimscript-notes.org
-	*	1527837597	0
-	"	161	8
-	^	161	9
-	.	52	37
-	+	130	0
-	+	136	18
-	+	137	60
-	+	142	4
-	+	112	0
-	+	110	7
-	+	130	0
-	+	144	63
-	+	144	4
-	+	144	0
-	+	143	0
-	+	146	8
-	+	145	52
-	+	143	0
-	+	75	81
-	+	143	0
-	+	76	70
-	+	142	0
-	+	164	0
-	+	56	64
-	+	57	0
-	+	164	0
-	+	37	22
-	+	38	50
-	+	40	79
-	+	164	0
-	+	51	2
-	+	51	3
-	+	53	0
-	+	51	45
-	+	52	37
-
-> ~/__Calendar
-	*	1527836775	0
-	"	5	39
-	^	10	0
-	.	3	0
-	+	3	0
-
 > ~/Documents/testfile
 	*	1527809056	0
 	"	5	6
@@ -1099,22 +3743,9 @@ $
 	*	1527803458	0
 	"	1	0
 
-> /usr/share/vim/vim80/doc/eval.txt
-	*	1527802154	0
-	"	5575	45
-	^	7412	12
-
-> /usr/share/vim/vim80/doc/pattern.txt
-	*	1527800343	0
-	"	1028	31
-
 > ~/.dotfiles/help/fasd-cmds
 	*	1527794012	0
 	"	1	0
-
-> /usr/share/vim/vim80/doc/options.txt
-	*	1527788616	0
-	"	6606	37
 
 > ~/.local/bin/playlist-creator
 	*	1527787967	0
@@ -1210,10 +3841,8 @@ $
 	*	1527773765	0
 	"	993	66
 
-> /usr/share/vim/vim80/doc/intro.txt
-	*	1527769763	0
-	"	797	0
+> ~/
+	"	1	0
 
-> /usr/share/vim/vim80/doc/change.txt
-	*	1527768210	0
-	"	1687	11
+> ~/Videos
+	"	1	0

@@ -47,3 +47,6 @@ sed -r 's/(true|false);(true|false)$/\2/' <test.csv >output.csv
 xrdb .Xdefaults
 # To get detailed battery info
 upower -i /org/freedesktop/UPower/devices/battery_BAT0
+# To record an iso from the command line
+sudo wodim -eject -tao speed=0 dev=/dev/sr0 -v -data target.iso
+

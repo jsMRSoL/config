@@ -29,7 +29,7 @@ max-items 500
 #}}}
 #-------- podbeuter {{{
 #------------------------------------------------------
-download-path		"~/Downloads/%n"
+download-path		"~/Podcasts/"
 max-downloads		2
 player			"$PLAYER"
 

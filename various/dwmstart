@@ -1,7 +1,10 @@
 #Set background
-/bin/bash ~/.fehbg &
+#/bin/bash ~/.fehbg &
+#xsetroot -solid "#1d1f21"
+#swap ctrl and capslock
+/usr/bin/setxkbmap -option "ctrl:nocaps"
 #Set colour schemes
-wal -R
+#wal -R
 #Enable transparency
 compton -b
 #music player daemon

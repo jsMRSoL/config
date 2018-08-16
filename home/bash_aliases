@@ -1,16 +1,77 @@
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/usr/bin" ] ; then
+    PATH="$HOME/.local/usr/bin:$PATH"
+fi
+
+# set PATH so it includes .local/bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
+# Set vi mode 
+set -o vi
+bind -m vi-command ".":insert-last-argument
+
+### RANGER tweaks
+export PATH="${PATH}:${HOME}/.local/bin"
+RANGER_LOAD_DEFAULT_RC=FALSE
+
+##This ensures the right colours in terminals using wal
+(cat ~/.cache/wal/sequences &)
+
+##This gives me neofetch in non-login shells
+# if [ -f /usr/bin/neofetch ]; then
+# 	/usr/bin/neofetch
+# fi
+
+#fzf integration
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+#fasd integration
+fasd_cache="$HOME/.fasd-init-bash"
+if [ "$(command -v fasd)" -nt "$fasd_cache" -o ! -s "$fasd_cache" ]; then
+  fasd --init posix-alias bash-hook bash-ccomp bash-ccomp-install >| "$fasd_cache"
+fi
+source "$fasd_cache"
+unset fasd_cache
+
+# set default programs
+export EDITOR="vim"
+export BROWSER="waterfox"
+export PAGER="less"
+export RTV_BROWSER="w3m"
+export PLAYER='mpv'
+
+# set default directories
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DESKTOP_DIR="$HOME/Desktop"
+export XDG_DOWNLOAD_DIR="$HOME/Downloads"
+export XDG_TEMPLATES_DIR="$HOME/Templates"
+export XDG_PUBLICSHARE_DIR="$HOME/Public"
+export XDG_DOCUMENTS_DIR="$HOME/Documents"
+export XDG_MUSIC_DIR="$HOME/Music"
+export XDG_PICTURES_DIR="$HOME/Pictures"
+export XDG_VIDEOS_DIR="$HOME/Videos"
+
+#bash aliases
+alias la='ls -lah'
+alias ll='ls -lh'
+alias gla='ls -lah | grep'
+alias gps='ps aux | grep'
+alias brc='source ~/.bashrc'
+
 #programs
 alias r='ranger'
-alias m='ncmpcpp -c ~/.config/ncmpcpp/config'
+#alias m='ncmpcpp -c ~/.config/ncmpcpp/config'
 alias rec="avconv -f alsa -ac 2 -ar 48000 -f pulse -i alsa_output.pci-0000_00_1b.0.analog-stereo.monitor -acodec libvorbis -aq 6 $1"
 alias snip='avconv -i "${1}" -ss "${2}" -t "${3}" "${4}"'
 alias wwwd='w3m www.duckduckgo.com'
 alias start-mpd='mpd ~/.config/mpd/mpd.conf'
+alias servefiles='python -m SimpleHTTPServer'
+alias pb='playlist-browser'
 
 #shortcut files
-alias fc='vim ~/.dotfiles/help/forgettable-commands'
-alias vs='vim ~/.dotfiles/help/vim-shortcuts-improved'
-alias vv='vim ~/.dotfiles/help/vimvixenkeys.txt'
-alias mpvkeys='vim ~/.dotfiles/help/mpvkeys.txt'
+alias min='vim ~/.dotfiles/help/minimal-debian-install'
 
 #config files
 alias cfg-ncmpcpp='vim ~/.config/ncmpcpp/config'
@@ -18,3 +79,111 @@ alias cfg-mpd='vim ~/.config/mpd/mpd.conf'
 alias cfg-ranger='vim ~/.config/ranger/rc.conf'
 alias cfg-ba='vim ~/.bash_aliases'
 alias cfg-brc='vim ~/.bashrc'
+
+#my functions
+tagger() {
+	lltag --clear --yes "$1" && \
+	lltag -a "$2" --yes "$1" && \
+	lltag -t "$3" --yes "$1"
+}
+
+vff() {
+	vim "$(find "$1" | fzf -e --select-1)"
+}
+
+cheat() {
+	vim "$(find /home/simon/.dotfiles/help | fzf -e --query="$1" --select-1)"
+}
+
+cfg() {
+	vim "$(find /home/simon/.config | fzf -e --query="$1" --select-1)"
+}
+
+snipper() {
+	options="-i ${1} -ss ${2} -t ${3} -c:a copy -c:v copy ${4}";
+	avconv "$options"
+}
+
+
+function bak() {
+    for file in $@; do
+        mv "$file" "$file.bak"
+    done
+}
+
+m() {
+    if tmux has-session -t music; then
+        tmux attach -t music
+        exit
+    fi
+
+    tmux new-session -d -s music -n playlist
+    tmux set status off
+    tmux set-window-option -t music:playlist window-style 'bg=#1d1f21'
+    tmux send-keys -t music:playlist "ncmpcpp -c ~/.config/ncmpcpp/config" Enter
+    tmux split-window -t music:playlist -h
+    tmux send-keys -t music:playlist.right "ncmpcpp" Enter
+    tmux send-keys -t music:playlist.right "8" Enter
+    tmux split-window -t music:playlist.right -v
+    tmux send-keys -t music:playlist.bottom-right "ncmpcpp" Enter
+    tmux send-keys -t music:playlist.bottom-right "2" Enter
+    tmux resize-pane -t music:playlist.left -R 10
+    tmux attach -t music:playlist.left
+}
+
+v() {
+    if tmux has-session -t Editor; then
+        tmux attach -t Editor
+        exit
+    fi
+
+    tmux new-session -d -s Editor -n vim
+    tmux send-keys -t Editor:vim "vim -c Files" Enter
+    tmux split-window -t Editor:vim -h
+    tmux resize-pane -t Editor:vim.left -R 10
+    tmux attach -t Editor:vim.left
+}
+
+n() {
+    if tmux has-session -t RSS; then
+        tmux attach -t RSS
+        exit
+    fi
+
+    tmux new-session -d -s RSS -n newsbeuter
+    tmux send-keys -t RSS:newsbeuter "newsbeuter" Enter
+    tmux attach -t RSS:newsbeuter
+}
+
+y() {
+    if tmux has-session -t YT; then
+        tmux attach -t YT
+        exit
+    fi
+
+    tmux new-session -d -s YT -n mpsyt
+    tmux send-keys -t YT:mpsyt "mpsyt" Enter
+    tmux split-window -t YT:mpsyt -h
+    tmux resize-pane -t YT:mpsyt -R 10
+    tmux attach -t YT:mpsyt.left
+}
+
+rd() {
+    if tmux has-session -t RTV; then
+        tmux attach -t RTV
+        exit
+    fi
+
+    tmux new-session -d -s RTV -n reddit
+    tmux send-keys -t RTV:reddit "rtv" Enter
+    tmux split-window -t RTV:reddit -h
+    tmux resize-pane -t RTV:reddit -R 10
+    tmux attach -t RTV:reddit.left
+}
+
+function bak() {
+    for file in $@; do
+        mv "$file" "$file.bak"
+    done
+}
+
