@@ -30,21 +30,21 @@ cp-w-dir() {
     cp-w-dir $GITVAR/st/config.h   $HOME/.stsrc/
 
 # configs for terminal applications
-    cp-w-dir $GITVAR/mpd/mpd.conf           $MYHOME/mpd/
-    cp-w-dir $GITVAR/mps-youtube/transcode  $MYHOME/mps-youtube/
-    cp-w-dir $GITVAR/ncmpcpp/*              $MYHOME/ncmpcpp/
-    cp-w-dir $GITVAR/newsbeuter/*           $MYHOME/newsbeuter
-    cp-w-dir $GITVAR/ranger/*               $MYHOME/ranger/
-    cp-w-dir $GITVAR/redshift/redshift.conf $MYHOME/
-    cp-w-dir $GITVAR/rtv/rtv.cfg            $MYHOME/rtv/
-    cp-w-dir $GITVAR/surfraw/conf           $MYHOME/surfraw/
-    cp-w-dir $GITVAR/tmux/tmux.conf         $MYHOME/tmux/
-    cp-w-dir $GITVAR/urlview/urlview        $MYHOME/
-    cp-w-dir $GITVAR/vim/*                  $MYHOME/vim/
-    cp-w-dir $GITVAR/w3m/*                  $MYHOME/w3m/
+    cp -pr $GITVAR/mpd         $MYHOME/
+    cp -pr $GITVAR/mps-youtube $MYHOME/
+    cp -pr $GITVAR/ncmpcpp     $MYHOME/
+    cp -pr $GITVAR/newsbeuter  $MYHOME/
+    cp -pr $GITVAR/ranger      $MYHOME/
+    cp -pr $GITVAR/redshift    $MYHOME/
+    cp -pr $GITVAR/rtv         $MYHOME/
+    cp -pr $GITVAR/surfraw     $MYHOME/
+    cp -pr $GITVAR/tmux        $MYHOME/
+    cp -pr $GITVAR/urlview     $MYHOME/
+    cp -pr $GITVAR/vim         $MYHOME/
+    cp -pr $GITVAR/w3m         $MYHOME/
 
 # myscripts
-    cp-w-dir $GITVAR/scripts/*              $HOME/.local/usr/bin/
+    cp -pr $GITVAR/scripts/* $HOME/.local/usr/bin/
 
 # Create links
     ln -sT $MYHOME/newsbeuter            $HOME/.newsbeuter
