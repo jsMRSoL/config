@@ -4,10 +4,10 @@ GITVAR='/home/simon/.dotfiles'
 
 # customized copy function
 cp-w-dir() {
-    if [[ ! -d "$2" ]]; then
-        mkdir -p "$2"
+    if [[ ! -d "${@:-1}" ]]; then
+        mkdir -p "${@:-1}"
     fi
-    cp -p "$1" "$2"
+    cp -pr "$@"
 }
 
 # config files under home
@@ -49,7 +49,7 @@ cp-w-dir() {
 # Create links
     ln -sT $MYHOME/newsbeuter            $HOME/.newsbeuter
     ln -sT $MYHOME/tmux/tmux.conf        $HOME/.tmux.conf
-    ln -sT $MYHOME/urlview               $HOME/.urlview
+    ln -sT $MYHOME/urlview/urlview       $HOME/.urlview
     ln -sT $MYHOME/vim                   $HOME/.vim
     ln -sT $MYHOME/w3m                   $HOME/.w3m
 
