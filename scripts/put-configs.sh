@@ -44,7 +44,7 @@ cp-w-dir() {
     cp -pr $GITVAR/w3m         $MYHOME/
 
 # myscripts
-    cp -pr $GITVAR/scripts/* $HOME/.local/usr/bin/
+    cp-w-dir $GITVAR/scripts/* $HOME/.local/usr/bin/
 
 # Create links
     ln -sT $MYHOME/newsbeuter            $HOME/.newsbeuter
