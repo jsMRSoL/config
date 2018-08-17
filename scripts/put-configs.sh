@@ -2,40 +2,51 @@
 MYHOME='/home/simon/.config'
 GITVAR='/home/simon/.dotfiles'
 
+# customized copy function
+cp-w-dir() {
+    if [[ -d "$2" ]]; then
+        mkdir -p "$2"
+    fi
+    cp -p "$1" "$2"
+}
+
 # config files under home
-    cp -p $GITVAR/home/bash_aliases    $HOME/.bash_aliases 
-    cp -p $GITVAR/home/bashrc          $HOME/.bashrc 
-    cp -p $GITVAR/home/inputrc         $HOME/.inputrc 
-    cp -p $GITVAR/home/profile         $HOME/.profile 
-    cp -p $GITVAR/home/selected_editor $HOME/.selected_editor 
+    cp-w-dir $GITVAR/home/bash_aliases    $HOME/.bash_aliases
+    cp-w-dir $GITVAR/home/bashrc          $HOME/.bashrc
+    cp-w-dir $GITVAR/home/inputrc         $HOME/.inputrc
+    cp-w-dir $GITVAR/home/profile         $HOME/.profile
+    cp-w-dir $GITVAR/home/selected_editor $HOME/.selected_editor
 
 # configs to start window manager
-    cp -p $GITVAR/various/dwm.desktop /usr/share/xsessions/dwm.desktop 
-    cp -p $GITVAR/various/dwmstart    /usr/local/bin/dwmstart  
+    cp-w-dir $GITVAR/various/dwm.desktop /usr/share/xsessions/dwm.desktop
+    cp-w-dir $GITVAR/various/dwmstart    /usr/local/bin/dwmstart
+
+# config for greeter
+    cp-w-dir $GITVAR/various/lightdm-gtk-greeter.conf   /etc/lightdm/
 
 # customized source files
-    cp -p $GITVAR/dwm/config.h  $HOME/.dwmsrc/
-    cp -p $GITVAR/dwm/config.mk $HOME/.dwmsrc/
-    cp -p $GITVAR/st/config.h   $HOME/.stsrc/
+    cp-w-dir $GITVAR/dwm/config.h  $HOME/.dwmsrc/
+    cp-w-dir $GITVAR/dwm/config.mk $HOME/.dwmsrc/
+    cp-w-dir $GITVAR/st/config.h   $HOME/.stsrc/
 
 # configs for terminal applications
-    cp -p $GITVAR/mpd/mpd.conf           $MYHOME/mpd/
-    cp -p $GITVAR/mps-youtube/transcode  $MYHOME/mps-youtube/
-    cp -p $GITVAR/ncmpcpp/*              $MYHOME/ncmpcpp/
-    cp -p $GITVAR/newsbeuter/*           $MYHOME/newsbeuter
-    cp -p $GITVAR/ranger/*               $MYHOME/ranger/
-    cp -p $GITVAR/redshift/redshift.conf $MYHOME/
-    cp -p $GITVAR/rtv/rtv.cfg            $MYHOME/rtv/
-    cp -p $GITVAR/surfraw/conf           $MYHOME/surfraw/
-    cp -p $GITVAR/tmux/tmux.conf         $MYHOME/tmux/
-    cp -p $GITVAR/urlview/urlview        $MYHOME/
-    cp -pr $GITVAR/vim/*                 $MYHOME/vim/
-    cp -p $GITVAR/w3m/*                  $MYHOME/w3m/
+    cp-w-dir $GITVAR/mpd/mpd.conf           $MYHOME/mpd/
+    cp-w-dir $GITVAR/mps-youtube/transcode  $MYHOME/mps-youtube/
+    cp-w-dir $GITVAR/ncmpcpp/*              $MYHOME/ncmpcpp/
+    cp-w-dir $GITVAR/newsbeuter/*           $MYHOME/newsbeuter
+    cp-w-dir $GITVAR/ranger/*               $MYHOME/ranger/
+    cp-w-dir $GITVAR/redshift/redshift.conf $MYHOME/
+    cp-w-dir $GITVAR/rtv/rtv.cfg            $MYHOME/rtv/
+    cp-w-dir $GITVAR/surfraw/conf           $MYHOME/surfraw/
+    cp-w-dir $GITVAR/tmux/tmux.conf         $MYHOME/tmux/
+    cp-w-dir $GITVAR/urlview/urlview        $MYHOME/
+    cp-w-dir $GITVAR/vim/*                  $MYHOME/vim/
+    cp-w-dir $GITVAR/w3m/*                  $MYHOME/w3m/
 
 # myscripts
-    cp -p $GITVAR/scripts/*              $HOME/.local/usr/bin/
+    cp-w-dir $GITVAR/scripts/*              $HOME/.local/usr/bin/
 
-# Create links 
+# Create links
     ln -sT $MYHOME/newsbeuter            $HOME/.newsbeuter
     ln -sT $MYHOME/tmux/tmux.conf        $HOME/.tmux.conf
     ln -sT $MYHOME/urlview               $HOME/.urlview

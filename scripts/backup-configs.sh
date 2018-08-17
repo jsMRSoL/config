@@ -3,15 +3,18 @@ MYHOME='/home/simon/.config'
 GITVAR='/home/simon/.dotfiles'
 
 # config files under home
-    cp -p $HOME/.inputrc         $GITVAR/home/inputrc
-    cp -p $HOME/.bash_aliases    $GITVAR/home/bash_aliases
-    cp -p $HOME/.bashrc          $GITVAR/home/bashrc
-    cp -p $HOME/.selected_editor $GITVAR/home/selected_editor
-    cp -p $HOME/.profile         $GITVAR/home/profile
+    cp -p $HOME/.inputrc         $GITVAR/home/
+    cp -p $HOME/.bash_aliases    $GITVAR/home/
+    cp -p $HOME/.bashrc          $GITVAR/home/
+    cp -p $HOME/.selected_editor $GITVAR/home/
+    cp -p $HOME/.profile         $GITVAR/home/
 
 # configs to start window manager
-    cp -p /usr/share/xsessions/dwm.desktop $GITVAR/various/dwm.desktop
-    cp -p /usr/local/bin/dwmstart          $GITVAR/various/dwmstart
+    cp -p /usr/share/xsessions/dwm.desktop $GITVAR/various/
+    cp -p /usr/local/bin/dwmstart          $GITVAR/various/
+
+# config for greeter
+    cp -p /etc/lightdm/lightdm-gtk-greeter.conf $GITVAR/various/lightdm/
 
 # customized source files
     cp -p $HOME/.dwmsrc/config.h         $GITVAR/dwm/

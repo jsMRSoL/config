@@ -1,7 +1,9 @@
 1. Download netinst (about 250-300MB)
 
 2. Set up networking
-To find the names of your interfaces you will want to look here: $ ls /sys/class/net/ vi /etc/network/interfaces
+To find the names of your interfaces you will want to look here: $ ls /sys/class/net/ 
+
+vi /etc/network/interfaces
 # add custom lines for ethernet
 auto eth0 #for laptops remove this later, seems to slow start up
 iface eth0 inet dhcp
