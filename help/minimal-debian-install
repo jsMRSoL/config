@@ -32,17 +32,19 @@ visudo
 simon   ALL=(ALL:ALL) ALL
 simon ALL=(ALL) NOPASSWD:/sbin/poweroff,/sbin/reboot,/sbin/shutdown
 
-## Install vim
-apt-get install vim
-
 ## Install git
 git clone https://github.com/jsMRSoL/config.git ~/.dotfiles
 
+## Install vim
+apt-get install vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 ## Install lightdm
 apt-get install lightdm
+apt install blackbird-gtk-theme
 
 ## Install various packages
-apt-get install build-essential alsa-utils ssh git curl urlview screenfetch python3-pip vim ranger mpd mpc ncmpcpp w3m w3m-img compton feh libx11-dev libxft-dev libxrandr-dev libxext-dev task-spooler imagemagick rtv finch surfraw acpi mupdf tmux nfs-common catdoc atool caca-utils highlight pdftotext mediainfo exiftool odt2txt docx2txt xlsx2csv cups-bsd cups sxiv texlive-latex-base pandoc
+apt-get install build-essential alsa-utils ssh curl urlview screenfetch python3-pip vim ranger mpd mpc ncmpcpp w3m w3m-img compton libx11-dev libxft-dev libxrandr-dev libxext-dev task-spooler imagemagick rtv finch surfraw acpi mupdf tmux nfs-common catdoc atool caca-utils highlight mediainfo exiftool odt2txt docx2txt xlsx2csv cups-bsd cups sxiv texlive-latex-base pandoc mpv
 
 ## Clone dwm and st and compile
 git clone https://git.suckless.org/dwm ~/.dwmsrc
@@ -78,6 +80,9 @@ sudo apt-get install ttf-mscorefonts-installer
 
 ## gui apps
 sudo apt-get install gimp firefox-esr libreoffice simple-scan
+
+## install lxappearance to choose dark widgets for gui apps
+sudo apt install lxappearance
 
 ## browser
 # waterfox e.g.

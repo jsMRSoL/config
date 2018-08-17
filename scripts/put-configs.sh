@@ -4,22 +4,22 @@ GITVAR='/home/simon/.dotfiles'
 
 # customized copy function
 cp-w-dir() {
-    if [[ -d "$2" ]]; then
+    if [[ ! -d "$2" ]]; then
         mkdir -p "$2"
     fi
     cp -p "$1" "$2"
 }
 
 # config files under home
-    cp-w-dir $GITVAR/home/bash_aliases    $HOME/.bash_aliases
-    cp-w-dir $GITVAR/home/bashrc          $HOME/.bashrc
-    cp-w-dir $GITVAR/home/inputrc         $HOME/.inputrc
-    cp-w-dir $GITVAR/home/profile         $HOME/.profile
-    cp-w-dir $GITVAR/home/selected_editor $HOME/.selected_editor
+    cp -p $GITVAR/home/bash_aliases    $HOME/.bash_aliases
+    cp -p $GITVAR/home/bashrc          $HOME/.bashrc
+    cp -p $GITVAR/home/inputrc         $HOME/.inputrc
+    cp -p $GITVAR/home/profile         $HOME/.profile
+    cp -p $GITVAR/home/selected_editor $HOME/.selected_editor
 
 # configs to start window manager
-    cp-w-dir $GITVAR/various/dwm.desktop /usr/share/xsessions/dwm.desktop
-    cp-w-dir $GITVAR/various/dwmstart    /usr/local/bin/dwmstart
+    cp-w-dir $GITVAR/various/dwm.desktop /usr/share/xsessions/
+    cp-w-dir $GITVAR/various/dwmstart    /usr/local/bin/
 
 # config for greeter
     cp-w-dir $GITVAR/various/lightdm-gtk-greeter.conf   /etc/lightdm/
