@@ -1,26 +1,80 @@
-https://www.youtube.com/feeds/videos.xml?user=yourguitaracademytv
-https://filmsbykris.com/rss.xml linux
-https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA linux
-https://www.youtube.com/feeds/videos.xml?user=BryanLunduke linux
-https://freedompenguin.com/feed/ linux
-http://wakingup.libsyn.com/rss philosophy
-https://www.youtube.com/feeds/videos.xml?channel_id=UCZQE7IVuRhxr54i6mHBrlMQ
-https://www.youtube.com/feeds/videos.xml?user=gotbletu linux
-https://www.youtube.com/feeds/videos.xml?user=petermillard1 woodworking
-https://www.youtube.com/feeds/videos.xml?user=jpheisz woodworking
-https://www.youtube.com/feeds/videos.xml?channel_id=UCzGbp-rRVNwyFhn9gHoZr5g woodworking
-https://www.youtube.com/feeds/videos.xml?channel_id=UCaJsEh2_YxWHMcjASs4cJcA woodworking
-https://www.youtube.com/feeds/videos.xml?user=Matthiaswandel woodworking
-https://www.youtube.com/feeds/videos.xml?user=PaulSellersWoodwork woodworking
-https://www.youtube.com/feeds/videos.xml?user=Alukuchen1992 woodworking
-https://www.youtube.com/feeds/videos.xml?channel_id=UCVyE_6jEtVZGmYGXtUOL5FQ woodworking
-https://www.youtube.com/feeds/videos.xml?channel_id=UC8HX5CxoGOt2q1uT7uQxLOw woodworking
-https://www.youtube.com/feeds/videos.xml?channel_id=UCTomKrWlaNa1YVVWwjpbZpA woodworking
-https://www.youtube.com/feeds/videos.xml?channel_id=UCnRwrrMKMCvcHhY5hhE3YZw woodworking
-https://www.youtube.com/feeds/videos.xml?channel_id=UC4UDFzeOPhEkPJMuIqoVqTA woodworking shed
-https://www.youtube.com/feeds/videos.xml?channel_id=UCAPPwmy6TfvzEOskLK5bGxw cars
-https://www.youtube.com/feeds/videos.xml?channel_id=UC6hOVYvNn79Sl1Fc1vx2mYA chess
-https://www.youtube.com/feeds/videos.xml?channel_id=UClV9nqHHcsrm2krkFDPPr-g chess
-https://www.youtube.com/feeds/videos.xml?channel_id=UCXPHFM88IlFn68OmLwtPmZA linux vim 
-https://www.youtube.com/feeds/videos.xml?user=ChessNetwork
-#https://www.youtube.com/feeds/videos.xml?channel_id=
+#-------- settings {{{
+#------------------------------------------------------
+#
+auto-reload yes
+reload-time 30
+#reload-only-visible-feeds yes
+#suppress-first-reload yes
+#refresh-on-startup no
+# reload-only-visible-feeds yes
+article-sort-order  date-asc
+confirm-exit yes
+browser w3m
+external-url-viewer	urlview
+#download-full-page yes		# for feeds with link only then dl full page
+download-retries 4
+download-timeout 60
+save-path ~/Downloads
+feedlist-format " %n %4i %11u %t -- %T"
+#articlelist-format  "%4i %f %D   %?T?|%-17T|  ?%t"
+#notify-format       "%d new articles (%n unread articles, %f unread feeds)"
+#show-read-feeds no
+#show-read-articles no
+#notify-program      "/usr/bin/notify-send"
+#goto-next-feed no
+max-items 500
+#refresh-on-startup no
+#text-width 72
+#prepopulate-query-feeds yes
+#}}}
+#-------- podbeuter {{{
+#------------------------------------------------------
+download-path		"~/Podcasts/"
+max-downloads		2
+player			"$PLAYER"
+
+# send any links to queue in URL view
+# http://www.newsbeuter.org/doc/newsbeuter.html#_macro_support
+#macro E set browser "echo %u >> ~/.newsbeuter/queue" ; open ; set browser "w3m %u"
+# }}}
+#-------- themes {{{
+#------------------------------------------------------
+# include ~/.newsbeuter/themes/tronlegacy_by_gotbletu.theme
+# include ~/.newsbeuter/themes/tronlegacy_clu_by_gotbletu.theme
+#include ~/.newsbeuter/themes/tronlegacy_rinzler_by_gotbletu.theme
+
+# }}}
+#-------- Hotkey {{{
+#------------------------------------------------------
+
+# vim like navigation
+bind-key j down
+bind-key k up
+bind-key m toggle-show-read-feeds
+bind-key ^D pagedown
+bind-key ^U pageup
+bind-key / open-search tagselection
+
+
+bind-key i sort
+bind-key I rev-sort
+
+bind-key g home all
+bind-key G end all
+
+unbind-key l
+bind-key l open
+bind-key h quit
+bind-key ESC hard-quit
+
+bind-key b external-url-viewer
+
+# use macro prefix key ( default: , )
+#macro i set browser "$IMAGEVIEWER %u"; open-in-browser ; set browser "$BROWSER %u"
+#macro o set browser "$BROWSERCLI %u"; open-in-browser ; set browser "$BROWSER %u"
+#macro m set browser "$PLAYER %u"; open-in-browser ; set browser "$BROWSER %u"
+#macro r set browser "rtv -l %u"; open-in-browser ; set browser "$BROWSER %u"
+
+# macro y set browser "$PLAYER $(youtube-dl -g %u)"; open-in-browser ; set browser "$BROWSER %u"
+macro y set browser "youtube-viewer %u"; open-in-browser ; set browser "w3m %u"
+#}}}

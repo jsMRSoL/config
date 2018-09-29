@@ -35,13 +35,15 @@ cp-w-dir() {
     cp -pr $GITVAR/ncmpcpp     $MYHOME/
     cp -pr $GITVAR/newsbeuter  $MYHOME/
     cp -pr $GITVAR/ranger      $MYHOME/
-    cp -pr $GITVAR/redshift    $MYHOME/
     cp -pr $GITVAR/rtv         $MYHOME/
     cp -pr $GITVAR/surfraw     $MYHOME/
     cp -pr $GITVAR/tmux        $MYHOME/
     cp -pr $GITVAR/urlview     $MYHOME/
     cp -pr $GITVAR/vim         $MYHOME/
     cp -pr $GITVAR/w3m         $MYHOME/
+
+# The odd one out
+    cp -p $GITVAR/redshift/redshift.conf   $MYHOME/
 
 # myscripts
     cp-w-dir $GITVAR/scripts/* $HOME/.local/usr/bin/

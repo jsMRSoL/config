@@ -17,7 +17,7 @@ export PATH="${PATH}:${HOME}/.local/bin"
 RANGER_LOAD_DEFAULT_RC=FALSE
 
 ##This ensures the right colours in terminals using wal
-(cat ~/.cache/wal/sequences &)
+(cat ~/.config/sequences &)
 
 ##This gives me neofetch in non-login shells
 # if [ -f /usr/bin/neofetch ]; then
@@ -59,6 +59,7 @@ alias ll='ls -lh'
 alias gla='ls -lah | grep'
 alias gps='ps aux | grep'
 alias brc='source ~/.bashrc'
+alias trash-restore='restore-trash'
 
 #programs
 alias r='ranger'
@@ -187,3 +188,6 @@ function bak() {
     done
 }
 
+scantopnm() {
+    scanimage --device-name=epson2:net:192.168.1.111 --format=pnm --resolution 300 >"$1.pnm";
+}
