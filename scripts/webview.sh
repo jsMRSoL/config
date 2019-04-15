@@ -7,11 +7,12 @@ gifview() { sxiv -a -s f -- "$1" 2&>/dev/null & disown ;}
 pdfview() { mupdf "$1" 2&>/dev/null & disown ;}
 filedl() { wget "$1" 2&>/dev/null & disown ;}
 imageview() { feh -. "$1" & disown ;}
+ytdl() { youtube-viewer "$1" & disown ;}
 
 # dmenu function
 # The URL will be shown visually in 30 characters or less.
 ask() {
-x=$(echo -e "w3m\nwaterfox\nmpv\nmupdf\nwget\nsxiv" | dmenu -i -p "How to open?")
+x=$(echo -e "w3m\nwaterfox\nmpv\nmupdf\nwget\nsxiv\nytdl" | dmenu -i -p "How to open?")
 
 case "$x" in
 	w3m) webcli "$1" ;;
@@ -21,6 +22,7 @@ case "$x" in
 	mupdf) pdfview "$1" ;;
 	wget) filedl "$1" ;;
 	sxiv) gifview "$1" ;;
+	ytdl) ytdl "$1" ;;
 esac
 }
 

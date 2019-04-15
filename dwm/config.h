@@ -10,21 +10,21 @@ static const char dmenufont[]       = "Liberation Mono:size=10";
 
 static const char norm_fg[] = "#c5c8c6";
 static const char norm_bg[] = "#1d1f21";
-static const char norm_border[] = "#76868d";
+static const char norm_border[] = "#373b41";
 
 static const char sel_fg[] = "#c5c8c6";
-static const char sel_bg[] = "#373b41";
-static const char sel_border[] = "#373b41";
+static const char sel_bg[] = "#76868d";
+static const char sel_border[] = "#76868d";
 
-/* static const char urg_fg[] = "#cc6666"; */
-/* static const char urg_bg[] = "#373b41"; */
-/* static const char urg_border[] = "#b5bd68"; */
+static const char urg_fg[] = "#cc6666";
+static const char urg_bg[] = "#76868d";
+static const char urg_border[] = "#b5bd68";
 
 static const char *colors[][3]      = {
     /*               fg           bg         border                         */
     [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
     [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
-    /* [SchemeUrg]  = { sel_fg,      sel_bg,    urg_border },  // the focused win */
+    [SchemeUrg]  = { sel_fg,      sel_bg,    urg_border },  // the focused win
 };
 
 /* tagging */
@@ -36,7 +36,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       1<<6,            0,           -1 },
+	{ "Gimp",     NULL,       NULL,       1<<1,            0,           -1 },
 	{ "Waterfox",  NULL,       NULL,       1<<2,            0,           -1 },
 	{ "Simple-scan",  NULL,       NULL,       1<<3,            0,           -1 },
 	{ "libreoffice-writer",  NULL,       NULL,       1<<4,            0,           -1 },
@@ -81,7 +81,7 @@ static const char *volupcmd[] = { "amixer", "-q", "sset", "Master", "5%+", "unmu
 static const char *voldowncmd[] = { "amixer", "-q", "sset", "Master", "5%-", "unmute", NULL };
 static const char *calccmd[] = { "xcalc", NULL };
 static const char *slockcmd[] = { "slock", NULL };
-static const char *scrnshtcmd[] = { "gnome-screenshot", "-i", NULL };
+static const char *printscrn[] = { "gnome-screenshot", "-i", NULL };
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -89,7 +89,7 @@ static Key keys[] = {
 	{ 0,                       0x1008ff11,      spawn,          {.v = voldowncmd } },
 	{ 0,                       0x1008ff13,      spawn,          {.v = volupcmd } },
 	{ 0,                       0x1008ff1d,      spawn,          {.v = calccmd } },
-	{ 0,                       0xff61,      spawn,          {.v = scrnshtcmd } },
+	{ 0,                       0xff61,      spawn,          {.v = printscrn } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,        XK_b,      spawn,       {.v = browsercmd } },
 	{ MODKEY|ShiftMask,        XK_w,      spawn,       {.v = textbrowser } },

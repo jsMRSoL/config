@@ -194,6 +194,7 @@ let g:fzf_colors =
     nnoremap <F3> :%s/\s\+$//<CR>
     noremap <F4> :CLU<CR>
     noremap <localleader><F4> :BLU<CR>
+    noremap <leader>g  :GLU<CR>
     nnoremap <F5> :PrFile<CR>
     map <F6> :setlocal spell! spelllang=en_gb<CR>
     nnoremap <F7> :SAC<CR>
@@ -201,8 +202,11 @@ let g:fzf_colors =
     nnoremap <F9> O78i-j0
     map <F10> :PLU<CR>
     map <F11> :SHL<CR>
+    map <localleader><F11> :LUL<CR>
     map <F12> :GLL<CR>
     map <localleader><F12> :SVS<CR>
+    map <localleader>l  :LTL<CR>
+    nnoremap <localleader>e     :EMR<CR>
     set mouse=a
     "Cursor settings
     let &t_SI = "\<Esc>[6 q"
@@ -244,7 +248,7 @@ endif
 if exists('$SUDO_USER')
     set noundofile
 else
-    set undodir=~/.vim/tmp/undo
+    set undodir=~/.vim/tmp/undo//
     set undodir+=.
     set undofile
 endif
@@ -542,6 +546,20 @@ function! RearrangeLines(line1, line2, count) range
 endfunction
     command! -narg=0 -range RL call RearrangeLines(<line1>, <line2>, <count>)
 
+function! ListToLine(line1, line2, count) range
+    if a:count == -1
+        echo "Please visually select your lines"
+        return
+    endif
+    let my_lookup_lines = getline(a:line1, a:line2)
+    execute 'normal gvd'
+    let newline = join(my_lookup_lines, '; ')
+    let newline = substitute(newline, '-  ', '', 'g')
+    "call setpos('.', [0, a:line2, 1, 0])
+    call setline(a:line1, newline)
+endfunction
+    command! -narg=0 -range LTL call ListToLine(<line1>, <line2>, <count>)
+
 function! GetLatinVocab(line1) range
     " Wrapper for fetchLatinList.py
     let my_lookup_text = getline(a:line1)
@@ -583,6 +601,38 @@ function! BackupLookup()
 endfunction
     command! -narg=0 BLU call BackupLookup()
 
+function! GreekLookup(line1, line2) range
+    let lines = getline(a:line1, a:line2)
+    let newlines = []
+    execute '60vsplit Greek_Definitions'
+    for line in lines
+        execute 'normal ggdGgg'
+        let answer = systemlist('grep -m9 :*' . shellescape(line)
+            \ . ' ~/.vim/bundle/vim-GG-lookup/GCSE-Greek-vocab.txt')
+        if len(answer) == 0
+            call add(newlines, line)
+            continue
+        endif
+        if len(answer) == 1
+            call add(newlines, answer[0])
+            continue
+        endif
+        let enum_answer = map(copy(answer), 'v:key . ". " . v:val') 
+        call insert(enum_answer, 'Choose a definition for ' . line. ': ')
+        call append('0', enum_answer)
+        redraw
+        let choice = input('Select a definition: ')
+        "echo answer[choice]
+        call add(newlines, answer[choice])
+        redraw
+    endfor
+    execute 'close!'
+    " echo newlines
+    call append('$', newlines)
+    execute a:line1 . ',' . a:line2 . 'delete'
+endfunction
+    command! -narg=0 -range GLU call GreekLookup(<line1>, <line2>)
+
 function! ShuntLine()
      " Shunt line from cursor onwards down a line
     let [bufno, lineno, colno, offset] = getpos('.')
@@ -598,7 +648,244 @@ function! PushLineUp()
 endfunction
     command! -narg=0 PLU call PushLineUp()
 
+function! LookupAndLabel()
+    let indent = matchstr(getline('.'), '^\s*')
+    let words = split(getline('.'), '\s\s*')
+    " echo "Words: "
+    " echo words
+    let topline = indent
+    let bottomline = indent
+    let dictionaryfile = "/home/simon/.config/vim/bundle/vim-amores2/amores2vocab.txt"
+    for word in words
+        " clean punctuation
+        let cleanwd = substitute(word, '\(.\{-}\)[^A-z]', '\=submatch(1)', '')
+        " determine headword
+        " echo "cleanwd is : " . cleanwd
+        if len(cleanwd) == 0
+            continue
+        endif
+        let headwords = systemlist('/home/simon/.config/vim/bundle/vim-amores2/hermes.sh ' . shellescape(expand(cleanwd)))
+        if len(headwords) == 0
+            call add(headwords, cleanwd)
+        endif
+        " echo 'headwords: '
+        " echo headwords
+        " get definition
+        let definitions = []
+        let positions = []
+        let defcount = 0
+        for position in range(len(headwords))
+            " let definition = system('/home/simon/.config/vim/bundle/vim-amores2/deffinder.sh ' . shellescape(expand(headwords[position])) . ' | tr -d "\n"')
+            let definitionlist = systemlist('/home/simon/.config/vim/bundle/vim-amores2/deffinder.sh ' . shellescape(expand(headwords[position])))
+            let definition = join(definitionlist, ', ')
+            let definition = substitute(definition, '^I ', '', '')
+            if len(definition) > 0
+                let defcount = defcount + 1
+                call add(positions, position)
+            endif
+            call add(definitions, definition)
+        endfor
+        " echo 'definitions: '
+        " echo definitions
+        " echo 'definition count: ' . defcount
+        " echo 'positions list: '
+        " echo positions
+        if defcount == 0 && len(headwords) > 1 || defcount > 1
+            let enum_answer = map(copy(headwords), 'v:key . ". " . v:val') 
+            call insert(enum_answer, 'Choose a headword for ' . cleanwd . ': ')
+            50vsplit _Headwords_
+            call append('0', enum_answer)
+            redraw
+            let choice = input('Select a definition: ')
+            let headword = headwords[choice]
+            let definition = definitions[choice]
+            normal ggdG
+            bdelete! _Headwords_
+        elseif len(positions) > 0
+            let headword = headwords[positions[0]]
+            " echo 'headword: ' . headword
+            let definition = definitions[positions[0]]
+            " echo 'definition: ' . definition
+        else
+            let headword = headwords[0]
+            " echo 'headword: ' . headword
+        endif
+        if len(definition) == 0
+            echo "No definition found for " . cleanwd
+            let definition = input('Input definition for ' . cleanwd . ': ')
+        endif
+        " echo definition
+        " line up printing fields
+        let pattern = ""
+        " echo 'len(word) is ' . len(word)
+        " echo 'len(definition) is ' . len(definition)
+        if len(word) > len(definition)
+            let pattern = '%-' . expand(len(word) + 2) . 's'
+        else
+            let pattern = '%-' . expand(len(definition) + 2) . 's'
+        endif
+        " echo 'pattern is ' . pattern
+        let topline = topline . printf(pattern, definition)
+        " echo 'topline is ' . topline
+        let bottomline = bottomline . printf(pattern, word)
+        " echo 'bottomline is ' . bottomline
+    endfor
+    "print to screen
+    call setline('.', topline)
+    normal o<Esc>
+    call setline('.', bottomline)
+endfunction
+    command! -narg=0 LUL call LookupAndLabel()
+
+function! GetHeadword(form, dictfile)
+    "Error checking
+    if len(a:form) == 0
+        echo "No word given. Nothing to find headword for! Aborting..."
+        return
+    endif
+    if !filereadable(a:dictfile)
+        echo a:dictfile . " is not readable."
+        return
+    endif
+    "Start lookup
+    let headwords = systemlist('hermes2.sh ' 
+        \ . a:dictfile . ' ' . shellescape(a:form))
+    " echo "Headwords: "
+    " echo headwords
+    if len(headwords) == 0
+        let headword = input("Supply headword for " . a:form . ": ", a:form)
+    elseif len(headwords) == 1
+        let headword = headwords[0]
+    else
+        let enum_answer = map(copy(headwords), 'v:key . ". " . v:val') 
+        call insert(enum_answer, 'Choose a headword for ' . a:form . ': ')
+        50vsplit _Headwords_
+        call append('0', enum_answer)
+        redraw
+        let choice = input('Select a definition: [n for none] ')
+        normal ggdG
+        bdelete! _Headwords_
+        if choice == 'n' || choice == ''
+            let headword = input("Supply headword for " . a:form . ": ", a:form)
+        else
+            let headword = headwords[choice]
+        endif
+    endif
+    return headword
+endfunction
+
+function! TestHeadword()
+    let headword = GetHeadword('a', '/home/simon/.config/vim/bundle/vim-amores2/latin-analyses2.txt')
+    echo "Headword is : " . headword
+endfunction
+
+function! GetDefinition(word, dictfile)
+    "Error checking
+    if len(a:word) == 0
+        echo "No word given. Nothing to find headword for! Aborting..."
+        return
+    endif
+    if !filereadable(a:dictfile)
+        echo a:dictfile . " is not readable."
+        return
+    endif
+    "Start lookup
+    " echo a:word
+    let definitions = systemlist('deffinder.sh ' . a:dictfile . ' '
+        \ . shellescape(a:word))
+    " echo "Definitions: "
+    " echo definitions
+    if len(definitions) == 0
+        let definition = input("Supply definition for " . a:word . ": ")
+    elseif len(definitions) == 1
+        let definition = definitions[0]
+    else
+        let enum_answer = map(copy(definitions), 'v:key . ". " . v:val') 
+        call insert(enum_answer, 'Choose a definition for ' . a:form . ': ')
+        50vsplit _Definitions_
+        call append('0', enum_answer)
+        redraw
+        let choice = input('Select a definition: [n for none] ')
+        normal ggdG
+        bdelete! _Definitions_
+        if choice == 'n' || choice == ''
+            let definition = input("Supply definition for " . a:form . ": ")
+        else
+            let definition = definitions[choice]
+        endif
+    endif
+    return definition
+endfunction
+
+function! TestDefinition()
+    let definition = GetDefinition('ab', '/home/simon/.config/vim/bundle/vim-amores2/amores2vocab.txt')
+    echo "Definition is: " . definition
+endfunction
+
+function! SplitAndKeepString(string)
+    let spaced = split(a:string, '\s')
+    let chunks = []
+    for word in range(len(spaced))
+        let parts = []
+        call add(parts, spaced[word])
+        call add(parts, substitute(spaced[word], '\A', '', 'g'))
+        call add(chunks,parts)
+    endfor
+    return chunks
+endfunction
+
+function! TestSplitAndKeep()
+    let words = SplitAndKeepString('amores?? amores - amores! amores. amores:')
+    echo words
+endfunction
+
+function! LookupAndLabel2()
+    "get indent
+    let indent = matchstr(getline('.'), '^\s*')
+    let topline = indent
+    let bottomline = indent
+    "split line into words and punctuation chunks
+    let words = SplitAndKeepString(getline('.'))
+    "loop through chunks
+    for word in words
+        " abort loop for punctuation
+        " echo "Word is: " . word
+        let cleanwd = substitute(word[1], '\(.\{-}\)[^A-z]', '\=submatch(1)', '')
+        " echo "Clean word is: " . cleanwd
+        if len(cleanwd) != 0
+        " get headword
+            let headword = GetHeadword(cleanwd,
+                \ '/home/simon/.config/vim/bundle/vim-amores2/latin-analyses2.txt')
+            " echo "Headword is: " . headword
+            " get definition
+            let definition = GetDefinition(headword,
+                \ '/home/simon/.config/vim/bundle/vim-amores2/amores2vocab.txt')
+            let definition = substitute(definition, '^I ', '', '')
+            " echo "Definition is: " . definition
+        else
+            let definition = ''
+        endif
+        "assemble line
+        let pattern = ""
+        if len(word[0]) > len(definition)
+            let pattern = '%-' . expand(len(word[0]) + 2) . 's'
+        else
+            let pattern = '%-' . expand(len(definition) + 2) . 's'
+        endif
+        " echo 'pattern is ' . pattern
+        let topline = topline . printf(pattern, definition)
+        " echo 'topline is ' . topline
+        let bottomline = bottomline . printf(pattern, word[0])
+        " echo 'bottomline is ' . bottomline
+    endfor
+    "print to screen
+    call setline('.', topline)
+    normal o<Esc>
+    call setline('.', bottomline)
+endfunction
+
 function! SplitAndAlignOnCol()
+    "For lining up all line numbers in a text
     let line_parts = split(getline('.'), '\s\ze\d')
     let start = substitute(line_parts[0], '\s$', '', 'g')
     let number = join(line_parts[1:], '')
@@ -636,7 +923,7 @@ function! ReassembleEntry()
     let entry = substitute(entry, ':;', ':', 'g')
     let entry = substitute(entry, ',$', '', '')
     let entry = substitute(entry, ';$', '', '')
-    execute 'close'
+    execute 'bdelete! _Definitions_'
     call setline('.', entry)
     let &hlsearch = 1
 endfunction
@@ -654,14 +941,26 @@ function! CleanFile()
     execute 'silent g/^$/d'
     execute 'silent %s/^* //'
     execute 'silent %s/^*//'
-    execute 'silent %s/^' //'
-    execute 'silent %s/^'//'
+    execute "silent %s/^' //"
+    execute "silent %s/^'//"
     execute 'silent %s/^` //'
     execute 'silent %s/^`//'
     execute 'silent %s/,\n/, /'
     execute 'silent %s/  / /g'
+    execute 'silent %s/ab]/abl/g'
     execute 'silent %s/4- acc/+ acc/'
     execute 'silent %s/4- abl/+ abl/'
+    execute 'silent %s/4— acc/+ acc/'
+    execute 'silent %s/4— abl/+ abl/'
+    execute 'silent %s/—/-/'
+    execute 'silent %s/4- /+ /'
+    execute 'silent %s/\[ /I /g'
+    execute 'silent %s/\] /I /g'
+    execute 'silent %s/l /I /g'
+    execute 'silent %s/1 /I /g'
+    execute 'silent %s/( /(/g'
+    execute 'silent %s/ )/)/g'
+    execute 'silent %s/111\./m./g'
 endfunction
 
 function! MarrySplitLines()
@@ -673,6 +972,19 @@ function! MarrySplitLines()
         call setline(no, newline)
     endfor
 endfunction
+
+function! MarrySelectedLines(line1, line2) range
+    let lines = getline(a:line1, a:line2)
+    echo 'lines selected'
+    let nolines = line(a:line2) - line(a:line1) + 1
+    echo 'number of lines to be added is ' . nolines
+    normal gvdd
+    for no in range(nolines)
+        let newline = lines[no] . ' : ' . lines[no + nolines]
+        call setline(no, newline)
+    endfor
+endfunction
+    command! -narg=0 -range MSL call MarrySelectedLines(<line1>, <line2>)
 
 function! CorrectDiacritics()
     execute 'silent %s/ä/ā/g'
@@ -755,7 +1067,74 @@ function! RemoveCommonWords()
     execute 'silent %s/- Ti\.,.*\n//g'
     execute 'silent %s/- Gaius,.*\n//g'
 endfunction
+
+function! EditMeaningsRow()
+    let line = getline('.')
+
+    35vsplit _Definitions_
+    normal! ggdG
+    call setline(1, line)
+    execute 'silent s/^\s*//'
+    execute 'silent s/\s*$//'
+    execute 'silent s/\s\s\s*/\r\r\r/ge'
+    execute 'silent %s/, /\r/ge'
+    call setpos('.', [0, 2, 1, 0])
+    let &hlsearch = 0
+    execute 'nnoremap <buffer> <F12> :RMR<CR>'
+endfunction
+    command! -narg=0 EMR call EditMeaningsRow()
+
+function! ReturnMeaningsRow()
+    execute 'silent %s/\n\n\n/  /ge'
+    execute 'silent %s/\S\zs\n\ze\S/, /ge'
+    let line = getline(1)
+    execute 'quit!'
+    let line = expand(matchstr(getline('.'), '^\s*')) . line
+    call setline('.', line)
+    normal Vjgv
+    execute "'<,'>RWC"
+    normal! 0
+endfunction
+    command! -nargs=0 RMR call ReturnMeaningsRow()
+
+function! RealignWordColumns(line1, line2, count) range
+    if a:count == -1
+        echo "Please visually select lines"
+        return
+    endif
+    let indent = matchstr(getline(a:line1), '^\s*')
+    let topline = indent
+    let bottomline = indent
+    let topline_parts = split(getline(a:line1), '\s\s\s*')
+    " echo len(topline_parts)
+    " echo topline_parts
+    let bottomline_parts = split(getline(a:line2), '\s\s\s*')
+    " echo bottomline_parts
+    " echo len(bottomline_parts)
+    let tpct = 0
+    for part in range(len(bottomline_parts))
+        if len(substitute(bottomline_parts[part], '[^A-z]', '', 'g')) == 0
+            let pattern = '%-' . expand(len(bottomline_parts[part]) + 2) . 's'
+            let topline = topline . printf(pattern, '')
+            let bottomline = bottomline . printf(pattern, bottomline_parts[part])
+        elseif len(topline_parts[tpct]) > len(bottomline_parts[part])
+            let pattern = '%-' . expand(len(topline_parts[tpct]) + 2) . 's'
+            let topline = topline . printf(pattern, topline_parts[tpct])
+            let bottomline = bottomline . printf(pattern, bottomline_parts[part])
+            let tpct += 1
+        else
+            let pattern = '%-' . expand(len(bottomline_parts[part]) + 2) . 's'
+            let topline = topline . printf(pattern, topline_parts[tpct])
+            let bottomline = bottomline . printf(pattern, bottomline_parts[part])
+            let tpct += 1
+        endif
+    endfor
+    call setline(a:line1, topline)
+    call setline(a:line2, bottomline)
+    call setpos('.', [0, a:line1, 1, 0])
+endfunction
+    command! -nargs=0 -range RWC call RealignWordColumns(<line1>, <line2>, <count>)
 " }}}
-" expression mappings {{{
+" expression mappingsdefinition 
    iabbrev   <expr>   dts   strftime('%a %d-%m-%Y %H:%M')
 " }}}

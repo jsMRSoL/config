@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Hack-Regular:pixelsize=16";
+static char *font = "Hack-Regular:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -82,42 +82,50 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-/*
-* base16-tomorrow-night-theme.h
-*
-* Base16: (https://github.com/chriskempson/base16)
-*
-* Authors:
-*
-* Scheme: Chris Kempson (http://chriskempson.com)
-* Template: Honza Pokorny <me@honza.ca>
-*
-*/
-
-
+/* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-  "#1d1f21", /* base00 black */
-  "#cc6666", /* base08 pink red */
-  "#b5bd68", /* base0B pale green */
-  "#f0c674", /* base0A light orange beige */
-  "#81a2be", /* base0D light blue */
-  "#b294bb", /* base0E pale mauve*/
-  "#8abeb7", /* base0C pale blue */
-  "#c5c8c6", /* base05 off-white */
-  "#969896", /* base03 pale grey */
-  "#de935f", /* base09 pale orange */
-  "#282a2e", /* base01 darker grey */
-  "#373b41", /* base02 dark grey */
-  "#b4b7b4", /* base04 grey */
-  "#e0e0e0", /* base06 off-white*/
-  "#a3685a", /* base0F brown beige */
-  "#ffffff", /* base07 white */
+  /* 8 normal colors */
+  [0] = "#1d1f21", /* black   #000000*/
+  [1] = "#cc6666", /* red     #ff5555*/
+  [2] = "#b5bd68", /* green   #50fa7b*/
+  [3] = "#f0c674", /* yellow  #f1fa8c*/
+  [4] = "#81a2be", /* blue    #bd93f9*/
+  [5] = "#b294bb", /* magenta #ff79c6*/
+  [6] = "#8abeb7", /* cyan    #8be9fd*/
+  [7] = "#bbbbbb", /* white   #bbbbbb*/
+
+  /* 8 bright colors */
+  [8]  = "#1d1f21", /* black   #44475a*/
+  [9]  = "#cc6666", /* red     #ff5555*/
+  [10] = "#b5bd68", /* green   #50fa7b*/
+  [11] = "#f0c674", /* yellow  #f1fa8c*/
+  [12] = "#81a2be", /* blue    #bd93f9*/
+  [13] = "#b294bb", /* magenta #ff79c6*/
+  [14] = "#8abeb7", /* cyan    #8be9fd*/
+  [15] = "#bbbbbb", /* white   #ffffff*/
+
+  /* special colors */
+  [256] = "#08080D", /* background #282a36*/
+  [257] = "#f8f8f2", /* foreground #f8f8f2*/
 };
 
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 13;
-static unsigned int defaultrcs = 0;
+
+/*
+ * Default colors (colorname index)
+ * foreground, background, cursor
+ */
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
+unsigned int defaultcs = 257;
+static unsigned int defaultrcs = 257;
+
+/*
+ * Colors used, when the specific fg == defaultfg. So in reverse mode this
+ * will reverse too. Another logic would only make the simple feature too
+ * complex.
+ */
+unsigned int defaultitalic = 7;
+unsigned int defaultunderline = 7;
 /*
  * Default shape of cursor
  * 2: Block ("█")
@@ -173,8 +181,11 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
+	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
+	{ ControlMask,          XK_Escape,      keyboard_select,    { 0 } },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ TERMMOD,              XK_I,           iso14755,       {.i =  0} },
+	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
+	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
 };
 
 /*

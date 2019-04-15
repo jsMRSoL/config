@@ -140,6 +140,33 @@ class clip(Command):
     Create command like 'shell ffmpeg -i "filename" -ss 00:00:00 -t 00:00:10 output.mp4'
     """
     def execute(self):
-        import os.path
-        filename, ext = os.path.splitext(self.fm.thisfile.relative_path)
-        self.fm.open_console('shell ffmpeg -i %f -ss 00:00:00 -t 00:00:10 -an -c:v copy output' + ext.replace("%", "%%"), position=31)
+        self.fm.open_console('shell ffmpeg -i ' + self.fm.thisfile.relative_path + ' -ss 00:00:00 -t 00:00:10 output.mp4'.replace("%", "%%"), position=28 + len(self.fm.thisfile.relative_path))
+
+
+class killspaces(Command):
+    """:killspaces
+
+    Changes the name of the currently highlighted file to version with 
+    underscores instead of spaces
+    """
+
+    def execute(self):
+        from ranger.container.file import File
+        from os import access
+
+        new_name = self.fm.thisfile.relative_path.replace(' ', '_')
+
+        if new_name == self.fm.thisfile.relative_path:
+            return None
+
+        if access(new_name, os.F_OK):
+            return self.fm.notify("Can't rename: file already exists!", bad=True)
+
+        if self.fm.rename(self.fm.thisfile, new_name):
+            file_new = File(new_name)
+            self.fm.bookmarks.update_path(self.fm.thisfile.path, file_new)
+            self.fm.tags.update_path(self.fm.thisfile.path, file_new.path)
+            self.fm.thisdir.pointed_obj = file_new
+            self.fm.thisfile = file_new
+
+        return None

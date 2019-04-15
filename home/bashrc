@@ -57,10 +57,10 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1="\[$(tput bold)\]\[\033[38;5;68m\]\u\[$(tput sgr0)\]\[\033[38;5;245m\]@\[$(tput sgr0)\]\[\033[38;5;129m\]\h\[$(tput sgr0)\]\[\033[38;5;247m\]:\[$(tput sgr0)\]\[\033[38;5;28m\]\w\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;134m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
+    # PS1="\[$(tput bold)\]\[\033[38;5;68m\]\u\[$(tput sgr0)\]\[\033[38;5;245m\]@\[$(tput sgr0)\]\[\033[38;5;129m\]\h\[$(tput sgr0)\]\[\033[38;5;247m\]:\[$(tput sgr0)\]\[\033[38;5;28m\]\w\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;134m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
     # PS1="\u@\h:\w\\$ \[$(tput sgr0)\]"
      #PS1="\[$(tput bold)\]\[\033[38;5;95m\]\u\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;124m\]@\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;172m\]\h\[$(tput sgr0)\]\[\033[38;5;4m\]:\[$(tput sgr0)\]\[\033[38;5;66m\]\w\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;140m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
-#    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -68,7 +68,7 @@ unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
-xterm*|rxvt*)
+st*|xterm*|rxvt*)
     PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
     ;;
 *)
@@ -115,3 +115,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
+### Added by surfraw. To remove use surfraw-update-path -remove
+	export PATH=$PATH:/usr/lib/surfraw
+### End surfraw addition.

@@ -1,7 +1,7 @@
 tabstop 8
 indent_incr 4
-pixel_per_char 9
-pixel_per_line 18
+pixel_per_char 10
+pixel_per_line 19
 frame 0
 target_self 0
 open_tab_blank 0
@@ -21,7 +21,7 @@ display_borders 0
 fold_textarea 1
 display_ins_del 1
 ignore_null_img_alt 0
-view_unseenobject 0
+view_unseenobject 1
 display_image 0
 pseudo_inlines 0
 auto_image 0
@@ -42,7 +42,7 @@ image_color green
 form_color red
 mark_color cyan
 bg_color terminal
-active_style 0
+active_style 1
 active_color cyan
 visited_anchor 0
 visited_color magenta
@@ -80,11 +80,11 @@ urimethodmap ~/.w3m/urimethodmap, /etc/w3m/urimethodmap
 editor sensible-editor
 mailto_options 1
 mailer xdg-open mailto:%s
-extbrowser waterfox &
-extbrowser2 webview.sh %s &
-extbrowser3 mupdf %s &
-extbrowser4 sxiv -a -s f -- %s &
-extbrowser5 vim -R %s &
+extbrowser surf &
+extbrowser2 waterfox &
+extbrowser3 webview.sh %s &
+extbrowser4 mupdf %s &
+extbrowser5 sxiv -a -s f -- %s &
 extbrowser6 curl -L -O -C - %s &
 extbrowser7 wget -c
 extbrowser8 mpv %s &

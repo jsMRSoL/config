@@ -11,217 +11,217 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/celer
+~MSle0/{
 
 # Last Substitute Search Pattern:
-~MSle0&\s\+$
+~MSle0~&_
 
 # Last Substitute String:
-$
+$|
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1538215749,,"q"
 :wq
-|2,0,1538215705,,"wq"
-:qa
-|2,0,1538214367,,"qa"
-:wa
-|2,0,1538214364,,"wa"
-:waq
-|2,0,1538214359,,"waq"
-:diff
-|2,0,1538214265,,"diff"
-:w
-|2,0,1538213896,,"w"
-:'<,'>sort u
-|2,0,1537828497,,"'<,'>sort u"
-:sav ~/Documents/st34-insidiae-2-vocab.txt
-|2,0,1537827757,,"sav ~/Documents/st34-insidiae-2-vocab.txt"
-:help system
-|2,0,1537826667,,"help system"
-:W
-|2,0,1537826510,,"W"
-:help line
-|2,0,1537826469,,"help line"
-:help setline
-|2,0,1537826453,,"help setline"
-:vert help shell
-|2,0,1537826242,,"vert help shell"
-:read !grep itaque ~/.vim/bundle/vim-clc-lookup/clc4-vocab
-|2,0,1537826052,,"read !grep itaque ~/.vim/bundle/vim-clc-lookup/clc4-vocab"
-:echo expand('<cword>')
-|2,0,1537825970,,"echo expand('<cword>')"
-:call expand('<cword>')
-|2,0,1537825951,,"call expand('<cword>')"
-:b4
-|2,0,1537825647,,"b4"
-:buffers
-|2,0,1537825636,,"buffers"
-:b2
-|2,0,1537825618,,"b2"
-:call RemoveDiacritics()
-|2,0,1537825256,,"call RemoveDiacritics()"
-:call CorrectDiacritics()
-|2,0,1537825252,,"call CorrectDiacritics()"
-:%s/T/i/g
-|2,0,1537825245,,"%s/T/i/g"
-:e ~/tmp/binder.txt
-|2,0,1537825216,,"e ~/tmp/binder.txt"
-:vsp
-|2,0,1537825208,,"vsp"
-:w st34-insidiae-1-vocab.txt
-|2,0,1537822396,,"w st34-insidiae-1-vocab.txt"
-:help complete line
-|2,0,1537820729,,"help complete line"
-:e ~/.vim/bundle/vim-clc-lookup/clc4-vocab
-|2,0,1537820191,,"e ~/.vim/bundle/vim-clc-lookup/clc4-vocab"
-:sav ultio_Epaphroditi_vocab.txt
-|2,0,1537819868,,"sav ultio_Epaphroditi_vocab.txt"
-:sav ~/Documents/ultio_Epaphroditi.txt
-|2,0,1537819695,,"sav ~/Documents/ultio_Epaphroditi.txt"
+|2,0,1555254732,,"wq"
+:q
+|2,0,1555254419,,"q"
 :q!
-|2,0,1537824485,,"q!"
-:w GBG-1.3-Correlatives-vocab.txt
-|2,0,1537738803,,"w GBG-1.3-Correlatives-vocab.txt"
-:e PUAL-08-done.txt
-|2,0,1537099067,,"e PUAL-08-done.txt"
-:w ~/OvidUnseens/Hex-01-Text-and-Vocab.txt
-|2,0,1537097134,,"w ~/OvidUnseens/Hex-01-Text-and-Vocab.txt"
-:%s/\s\+$//g
-|2,0,1537096458,,"%s/\\s\\+$//g"
-:g/^$/d
-|2,0,1537096418,,"g/^$/d"
+|2,0,1555254407,,"q!"
+:'<,'>s/_/|/g
+|2,0,1555237131,,"'<,'>s/_/|/g"
+:'<,'>s/}|/}_/g
+|2,0,1555237111,,"'<,'>s/}|/}_/g"
+:'<,'>s/:_/:|/g
+|2,0,1555236931,,"'<,'>s/:_/:|/g"
+:UltiSnipsEdit!
+|2,0,1555236853,,"UltiSnipsEdit!"
 :reg
-|2,0,1537094423,,"reg"
-:Reg
-|2,0,1537094421,,"Reg"
-:.!grep 'vale' ~/clc4-vocab
-|2,0,1537094887,,".!grep 'vale' ~/clc4-vocab"
-:.!grep '^as,' /home/simon/clc4-vocab
-|2,0,1537094794,,".!grep '^as,' /home/simon/clc4-vocab"
-:.!grep 'as' /home/simon/clc4-vocab
-|2,0,1537094768,,".!grep 'as' /home/simon/clc4-vocab"
-:.!grep 'iubeo' /home/simon/clc4-vocab
-|2,0,1537094658,,".!grep 'iubeo' /home/simon/clc4-vocab"
-:.!grep 'iubeo' clc4-vocab
-|2,0,1537094630,,".!grep 'iubeo' clc4-vocab"
-:Q
-|2,0,1537093152,,"Q"
-:Wq
-|2,0,1537092740,,"Wq"
-:%s/\s$//g
-|2,0,1536791811,,"%s/\\s$//g"
-:tabe PUAL-04-done.txt
-|2,0,1536790114,,"tabe PUAL-04-done.txt"
-:sav 33_iad_1_vocab.txt
-|2,0,1536616739,,"sav 33_iad_1_vocab.txt"
-:w ~/Documents/LC1-diagnostic
-|2,0,1536528856,,"w ~/Documents/LC1-diagnostic"
-:call RemoveCommonWords()
-|2,0,1536186358,,"call RemoveCommonWords()"
+|2,0,1555236759,,"reg"
+:erg
+|2,0,1555236468,,"erg"
+:help Ultisnips
+|2,0,1555235645,,"help Ultisnips"
+:sav amores2-6-nums-exp.txt
+|2,0,1555252704,,"sav amores2-6-nums-exp.txt"
+:%s/\n\n/\r\r\r\r/
+|2,0,1555252673,,"%s/\\n\\n/\\r\\r\\r\\r/"
+:%s/\n/\r\r\r/
+|2,0,1555252655,,"%s/\\n/\\r\\r\\r/"
+:%s/\n/\n\n\n/
+|2,0,1555252636,,"%s/\\n/\\n\\n\\n/"
+:%s/\s*$//
+|2,0,1555243521,,"%s/\\s*$//"
+:tabnew
+|2,0,1555241528,,"tabnew"
+:e ~/.config/vim/bundle/vim-amores2/
+|2,0,1555240556,,"e ~/.config/vim/bundle/vim-amores2/"
+:newtab
+|2,0,1555240538,,"newtab"
+:'<,'>RWC
+|2,0,1555239612,,"'<,'>RWC"
+:s/10/12/g
+|2,0,1555239519,,"s/10/12/g"
+:qa
+|2,0,1555239484,,"qa"
+:USE!
+|2,0,1555234246,,"USE!"
+:help ultisnips
+|2,0,1555233624,,"help ultisnips"
+:UTE
+|2,0,1555233595,,"UTE"
+:ultisnips
+|2,0,1555233590,,"ultisnips"
+:wqa
+|2,0,1555190233,,"wqa"
+:sp amores2-12-translation.txt
+|2,0,1555189699,,"sp amores2-12-translation.txt"
+:w
+|2,0,1555189405,,"w"
+:wa
+|2,0,1555184990,,"wa"
+:sp amores2-10-translation.txt
+|2,0,1555180044,,"sp amores2-10-translation.txt"
+:sp amores2-6-translation.txt
+|2,0,1555177220,,"sp amores2-6-translation.txt"
+:help surround
+|2,0,1555176759,,"help surround"
+:surround
+|2,0,1555176683,,"surround"
+:sp ~/Documents/amores2/amores2-6-translation.txt
+|2,0,1555014169,,"sp ~/Documents/amores2/amores2-6-translation.txt"
+:e ~/Documents/amores2/amores2-6.txt
+|2,0,1554985578,,"e ~/Documents/amores2/amores2-6.txt"
+:e amores2-4-translation.txt
+|2,0,1554982725,,"e amores2-4-translation.txt"
+:sp
+|2,0,1554982716,,"sp"
+:e ~/.config/vim/bundle/vim-amores2/amores2vocab.txt
+|2,0,1554833391,,"e ~/.config/vim/bundle/vim-amores2/amores2vocab.txt"
+:e amores2-12.txt
+|2,0,1554833375,,"e amores2-12.txt"
+:help setpos
+|2,0,1554820959,,"help setpos"
+:help setcursorpos
+|2,0,1554820954,,"help setcursorpos"
+:help setcurs
+|2,0,1554820947,,"help setcurs"
+:%s/\(^[A-Z]\)/\l\1/c
+|2,0,1554820810,,"%s/\\(^[A-Z]\\)/\\l\\1/c"
+:.s/\(^[A-Z]\)/\l\1/c
+|2,0,1554820800,,".s/\\(^[A-Z]\\)/\\l\\1/c"
+:.s/\(^[A-Z]\)/\l\1/
+|2,0,1554820769,,".s/\\(^[A-Z]\\)/\\l\\1/"
+:.s/\(^[A-Z]\)/\l\u/
+|2,0,1554820753,,".s/\\(^[A-Z]\\)/\\l\\u/"
+:.s/(^[A-Z])/\l\u/
+|2,0,1554820684,,".s/(^[A-Z])/\\l\\u/"
+:s/(^[A-Z])/\l\u/
+|2,0,1554820655,,"s/(^[A-Z])/\\l\\u/"
+:s/^([A-Z])/\l\1/
+|2,0,1554820567,,"s/^([A-Z])/\\l\\1/"
+:help :s
+|2,0,1554820498,,"help :s"
 
 # Search String History (newest to oldest):
-?/celer
-|2,1,1537827385,47,"celer"
-?/quam
-|2,1,1537827206,47,"quam"
-?/setline
-|2,1,1537826449,47,"setline"
-? \s\+$
-|2,1,1537825705,,"\\s\\+$"
-?/\. 
-|2,1,1537825442,47,"\\. "
-? Å«
-|2,1,1537825256,,"Å«"
-? Ã¼
-|2,1,1537825252,,"Ã¼"
-? Ã¶
-|2,1,1537825252,,"Ã¶"
-? T
-|2,1,1537825245,,"T"
-?/iaceo
-|2,1,1537822330,47,"iaceo"
-?/obici
-|2,1,1537822112,47,"obici"
-?/iubeo
-|2,1,1537821906,47,"iubeo"
-?/visito
-|2,1,1537821839,47,"visito"
-?/\.
-|2,1,1537821615,47,"\\."
-?/aperte
-|2,1,1537820325,47,"aperte"
-?/^punio
-|2,1,1537820237,47,"^punio"
-?/increpo
-|2,1,1537099154,47,"increpo"
-?/provoco
-|2,1,1537099087,47,"provoco"
-?/Livy
-|2,1,1537098385,47,"Livy"
-?/sustul
-|2,1,1537098217,47,"sustul"
-?/sustuli
-|2,1,1537098213,47,"sustuli"
-?/quo
-|2,1,1537098147,47,"quo"
-? ^$
-|2,1,1537096418,,"^$"
+? _
+|2,1,1555237131,,"_"
+? }|
+|2,1,1555237111,,"}|"
+?/{
+|2,1,1555237056,47,"{"
+? :_
+|2,1,1555236931,,":_"
+?/\d
+|2,1,1555236716,47,"\\d"
+? \n\n
+|2,1,1555252673,,"\\n\\n"
+? \n
+|2,1,1555252655,,"\\n"
+?/\r
+|2,1,1555252600,47,"\\r"
 ? \s*$
-|2,1,1537094343,,"\\s*$"
-?/^in
-|2,1,1537094333,47,"^in"
-?/in
-|2,1,1537094327,47,"in"
-??iam
-|2,1,1537094206,63,"iam"
-?/longur
-|2,1,1537094002,47,"longur"
-? \<haudquaquam\>
-|2,1,1537093873,,"\\<haudquaquam\\>"
-?/^haud
-|2,1,1537093861,47,"^haud"
-?/^lenkkj
-|2,1,1537093450,47,"^lenkkj"
-?/^man
-|2,1,1537093382,47,"^man"
-?/^cum
-|2,1,1537093063,47,"^cum"
-?/^dilig
-|2,1,1537092719,47,"^dilig"
-??non mod
-|2,1,1537092630,63,"non mod"
-?/^ut
-|2,1,1537092598,47,"^ut"
-?/^c
-|2,1,1537092331,47,"^c"
-??CLU
-|2,1,1537091543,63,"CLU"
-? \<asyndeton\>
-|2,1,1536792027,,"\\<asyndeton\\>"
-? \s$
-|2,1,1536791811,,"\\s$"
-?/ :
-|2,1,1536618054,47," :"
-?/te,
-|2,1,1536617642,47,"te,"
-?/tu
-|2,1,1536616942,47,"tu"
-?/h
-|2,1,1536616035,47,"h"
-?/mixer
-|2,1,1536616017,47,"mixer"
-? \<romanus\>
-|2,1,1536528635,,"\\<romanus\\>"
-? \w\zs$
-|2,1,1536528286,,"\\w\\zs$"
-? ,
-|2,1,1536528274,,","
-??SVS
-|2,1,1536528181,63,"SVS"
-?/trash
-|2,1,1536420956,47,"trash"
+|2,1,1555243521,,"\\s*$"
+? \S\zs\n\ze\S
+|2,1,1555243109,,"\\S\\zs\\n\\ze\\S"
+? , 
+|2,1,1555243098,,", "
+?/^ni
+|2,1,1555241592,47,"^ni"
+?/^e
+|2,1,1555240604,47,"^e"
+? @$
+|2,1,1555240556,,"@$"
+? 10
+|2,1,1555239519,,"10"
+? \<Ossa\>
+|2,1,1555178829,,"\\<Ossa\\>"
+???
+|2,1,1555172336,63,"?"
+?/lott
+|2,1,1554974838,47,"lott"
+?/pay
+|2,1,1554974684,47,"pay"
+?/sae
+|2,1,1554835016,47,"sae"
+?/fulI
+|2,1,1554834970,47,"fulI"
+?/hatefu
+|2,1,1554834944,47,"hatefu"
+?/imple
+|2,1,1554834806,47,"imple"
+?/rudis
+|2,1,1554833966,47,"rudis"
+?/^si
+|2,1,1554833448,47,"^si"
+?/can
+|2,1,1554822016,47,"can"
+?/sus
+|2,1,1554821216,47,"sus"
+?/RW
+|2,1,1554820889,47,"RW"
+? \(^[A-Z]\)
+|2,1,1554820810,,"\\(^[A-Z]\\)"
+? (^[A-Z])
+|2,1,1554820684,,"(^[A-Z])"
+?/[A-Z]
+|2,1,1554820590,47,"[A-Z]"
+? ^([A-Z])
+|2,1,1554820567,,"^([A-Z])"
+? ^[A-Z]
+|2,1,1554820474,,"^[A-Z]"
+?/XII
+|2,1,1554819258,47,"XII"
+?/X:
+|2,1,1554819203,47,"X:"
+?/ VII
+|2,1,1554819146,47," VII"
+?/ VI
+|2,1,1554819133,47," VI"
+?/ VI 
+|2,1,1554819125,47," VI "
+?/V
+|2,1,1554818846,47,"V"
+?/^$
+|2,1,1554818379,47,"^$"
+?/VI
+|2,1,1554818369,47,"VI"
+?/   VI
+|2,1,1554818367,47,"   VI"
+?/<leader>e
+|2,1,1554809928,47,"<leader>e"
+??if
+|2,1,1554808699,63,"if"
+?/split
+|2,1,1554807732,47,"split"
+?/quid
+|2,1,1554815166,47,"quid"
+?/iuv
+|2,1,1554812786,47,"iuv"
+?/fee
+|2,1,1554812748,47,"fee"
+?/^s
+|2,1,1554767760,47,"^s"
+??\a
+|2,1,1554766441,63,"\\a"
 
 # Expression History (newest to oldest):
 =p
@@ -258,3079 +258,809 @@ $
 |2,2,1527944728,,"`($date)`"
 
 # Input Line History (newest to oldest):
-@$G
-|2,3,1538215700,,"$G"
-@|"
-|2,3,1528035889,,"|\""
-@=
-|2,3,1528035006,,"="
-@test
-|2,3,1527845863,,"test"
-@testfold
-|2,3,1527845826,,"testfold"
-@i
-|2,3,1527845287,,"i"
-@ 
-|2,3,1527843777,," "
-@:
-|2,3,1527843284,,":"
-@,
-|2,3,1527843236,,","
+@order
+|2,3,1555242904,,"order"
+@Cupid
+|2,3,1555242895,,"Cupid"
+@0
+|2,3,1555242892,,"0"
+@heifer
+|2,3,1555242879,,"heifer"
+@1
+|2,3,1555242865,,"1"
+@bull
+|2,3,1555242836,,"bull"
+@husband
+|2,3,1555242833,,"husband"
+@set upon
+|2,3,1555242571,,"set upon"
+@even now
+|2,3,1555242539,,"even now"
+@Romans
+|2,3,1555242535,,"Romans"
+@Latinus
+|2,3,1555241964,,"Latinus"
+@2
+|2,3,1555241962,,"2"
+@justly
+|2,3,1555241955,,"justly"
+@drive in
+|2,3,1555241948,,"drive in"
+@Trojans
+|2,3,1555241927,,"Trojans"
+@served
+|2,3,1555241893,,"served"
+@Lapiths
+|2,3,1555241831,,"Lapiths"
+@Asia
+|2,3,1555241694,,"Asia"
+@Europe
+|2,3,1555241688,,"Europe"
+@=Helen
+|2,3,1555241681,,"=Helen"
+@if not
+|2,3,1555241515,,"if not"
+@if..not
+|2,3,1555241511,,"if..not"
+@4
+|2,3,1555241500,,"4"
+@Triumph
+|2,3,1555241389,,"Triumph"
+@o
+|2,3,1555241380,,"o"
+@mix in
+|2,3,1555241064,,"mix in"
+@right
+|2,3,1555240788,,"right"
+@from
+|2,3,1555240515,,"from"
+@Atrides
+|2,3,1555239767,,"Atrides"
+@Troy
+|2,3,1555239743,,"Troy"
+@by
+|2,3,1555190094,,"by"
+@not any
+|2,3,1555190091,,"not any"
+@door
+|2,3,1555190065,,"door"
+@Corinna
+|2,3,1555189755,,"Corinna"
+@your
+|2,3,1555188455,,"your"
+@Venus
+|2,3,1555188340,,"Venus"
+@lying
+|2,3,1555188329,,"lying"
+@wealth
+|2,3,1555188306,,"wealth"
+@weapon
+|2,3,1555187945,,"weapon"
+@often
+|2,3,1555187621,,"often"
+@sinew
+|2,3,1555187198,,"sinew"
+@strength
+|2,3,1555187131,,"strength"
+@better
+|2,3,1555181932,,"better"
+@light ship
+|2,3,1555181238,,"light ship"
+@different
+|2,3,1555181223,,"different"
+@us
+|2,3,1555181119,,"us"
+@both
+|2,3,1555180730,,"both"
+@catch
+|2,3,1555180413,,"catch"
+@Graecinus
+|2,3,1555180160,,"Graecinus"
+@speak
+|2,3,1555179420,,"speak"
 
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	CHAR	0
-	profile
-|3,1,0,0,1,0,1538215677,"profile"
+"0	LINE	0
+	I
+|3,0,0,1,1,0,1555254488,"I"
 "1	LINE	0
-	    nnoremap <F3> :%s/\s\+$//<CR>
-	    noremap <F4> :CLU<CR>
-	    noremap <localleader><F4> :BLU<CR>
-	    nnoremap <F5> :PrFile<CR>
-|3,0,1,1,4,0,1538213822,"    nnoremap <F3> :%s/\\s\\+$//<CR>","    noremap <F4> :CLU<CR>","    noremap <localleader><F4> :BLU<CR>","    nnoremap <F5> :PrFile<CR>"
+	I
+|3,0,1,1,1,0,1555243106,"I"
 "2	LINE	0
-	
-|3,0,2,1,1,0,1537828719,""
+	much
+|3,0,2,1,1,0,1555243104,"much"
 "3	LINE	0
-	- suum, sui N : his property
-|3,0,3,1,1,0,1537828685,"- suum, sui N : his property"
+	which
+|3,0,3,1,1,0,1555243102,"which"
 "4	LINE	0
-	- sus, suis : swine; hog, pig, sow
-|3,0,4,1,1,0,1537828684,"- sus, suis : swine; hog, pig, sow"
+	I
+|3,0,4,1,1,0,1555243100,"I"
 "5	LINE	0
-	- suo, suere, sui, sutus : sew together/up, stitch
-|3,0,5,1,1,0,1537828681,"- suo, suere, sui, sutus : sew together/up, stitch"
+	at mihi saevus amor somnos abrumpat inertes,:
+|3,0,5,1,1,0,1555243098,"at mihi saevus amor somnos abrumpat inertes,:"
 "6	LINE	0
-	- secum, seci N : suet; tallow; hard animal fat
-|3,0,6,1,1,0,1537828674,"- secum, seci N : suet; tallow; hard animal fat"
+	courage
+|3,0,6,1,1,0,1555243040,"courage"
 "7	LINE	0
-	- sceleratus, scelerata -um, sceleratior -or -us, sceleratissimus -a -um : criminal, wicked; accursed; lying under a ban; sinful, atrocious, heinous
-|3,0,7,1,1,0,1537828667,"- sceleratus, scelerata -um, sceleratior -or -us, sceleratissimus -a -um : criminal, wicked; accursed; lying under a ban; sinful, atrocious, heinous"
+	at mihi saevus amor somnos abrumpat inertes,:
+|3,0,7,1,1,0,1555243037,"at mihi saevus amor somnos abrumpat inertes,:"
 "8	LINE	0
-	- retinens, retinentis (gen.), retinentior -or -us, retinentissimus -a -um : tenacious; observant
-|3,0,8,1,1,0,1537828664,"- retinens, retinentis (gen.), retinentior -or -us, retinentissimus -a -um : tenacious; observant"
+	at mihi saevus amor somnos abrumpat inertes,:
+|3,0,8,1,1,0,1555242949,"at mihi saevus amor somnos abrumpat inertes,:"
 "9	LINE	0
-	- refert, referre, retulit, relatus est : it matters/makes a difference/is of importance; matter/be of importance
-|3,0,9,1,1,0,1537828659,"- refert, referre, retulit, relatus est : it matters/makes a difference/is of importance; matter/be of importance"
-"a	CHAR	0
-	'#1d1f21'
-|3,0,10,0,1,0,1528306674,"'#1d1f21'"
+	on behalf of
+	in defence of
+	in proportion to
+|3,0,9,1,3,0,1555242934,"on behalf of","in defence of","in proportion to"
+"a	LINE	0
+	
+	ante + acc. : before, in front of
+	apud + acc. : among, at the house of
+	cum : (1) + SUBJ when, since, although; (2) + ABL with
+	de + abl. : from, down from; about
+	in : (1) + acc. into, onto (2) + abl in, on
+	inter + acc. : among, between
+	per + acc. : through, along
+	post + acc. : after, behind
+	pro + abl. : in front of, for, in return for
+	sub + abl. : under, beneath
+|3,0,10,1,11,0,1537564462,"","ante + acc. : before, in front of","apud + acc. : among, at the house of","cum : (1) + SUBJ when, since, although; (2) + ABL with","de + abl. : from, down from; about","in : (1) + acc. into, onto (2) + abl in, on","inter + acc. : among, between","per + acc. : through, along","post + acc. : after, behind","pro + abl. : in front of, for, in return for","sub + abl. : under, beneath"
 "b	CHAR	0
 	'#282a2e'
 |3,0,11,0,1,0,1528306694,"'#282a2e'"
 "g	CHAR	0
-	vkkV2j€F2jjj€k9jkddjddjddddddddjjddjddddjjddddjjjjddddjjjjjddjddjddjjddkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjjjjjkjkllllllllllllllllllllllllllllllllCthe desire to make a display, ostentation, vanity, show, paradejkjjjjjjjjjjjjj€k9jjijkjjjijkjjjjjjk
-|3,0,16,0,1,0,1534100888,"vkkV2j€F2jjj€k9jkddjddjddddddddjjddjddddjjddddjjjjddddjjjjjddjddjddjjddkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjjjjjkjkllllllllllllllllllllllllllllllllCthe desire to make a display, ostentation, vanity, show, paradejkjjjjjjjjjjjjj€k9jjijkjjjijkjjjjjjk"
+	
+|3,0,16,0,1,0,1549217724,""
+"i	CHAR	0
+	iq
+|3,0,18,0,1,0,1547326331,"iq"
 "j@	CHAR	0
-	0f.lyeLpj
-|3,2,19,0,1,0,1538215047,"0f.lyeLpj"
+	yiw/{, ldiw"0P
+|3,2,19,0,1,0,1555237046,"yiw/{, ldiw\"0P"
 "k	CHAR	0
-	viwdF:wPlD
-|3,0,20,0,1,0,1534164132,"viwdF:wPlD"
+	kkkk
+|3,0,20,0,1,0,1538167511,"kkkk"
 "l	CHAR	0
 	ll
 |3,0,21,0,1,0,1532447888,"ll"
-"q	CHAR	0
-	WWW€kb€kbd2f jki jkkkkkkhhhi jkjjjjjjlllddkkkkkkkOjkjVGkk
-|3,0,26,0,1,0,1536528333,"WWW€kb€kbd2f jki jkkkkkkhhhi jkjjjjjjlllddkkkkkkkOjkjVGkk"
 "u	CHAR	0
-	643
-<e suis unum famulis pudibunda vocavit,et pavidum blandita 'fer has, fidissime, nostro'dixit, et adiecit longo post tempore 'fratri.'cum daret, elapsae manibus cecidere tabellae.omine turbata est, misit tamen. apta ministertempora nactus adit traditque latentia verba.attonitus subita iuvenis Maeandrius iraproicit acceptas lecta sibi parte tabellas,vixque manus retinens trepidantis ab ore ministri,'dum licet, o vetitae scelerate libidinis auctor,effuge!' ait 'qui, si nostrum tua fata pudoremnon traherent secum, poenas mihi morte dedisses.'ille fugit pavidus, dominaeque ferocia Caunidicta refert.€k2€k2qq€k2q€kb€kb€kbq€kbjk
-|3,0,30,0,1,0,1537828365,>642
-|<"e suis unum famulis pudibunda vocavit,et pavidum blandita 'fer has, fidissime, nostro'dixit, et adiecit longo post tempore 'fratri.'cum daret, elapsae manibus cecidere tabellae.omine turbata est, misit tamen. apta ministertempora nactus adit traditque latentia verba.attonitus subita iuvenis Maeandrius iraproicit acceptas lecta sibi parte tabellas,vixque manus retinens trepidantis ab ore ministri,'dum licet, o vetitae scelerate libidinis auctor,effuge!' ait 'qui, si nostrum tu
-|<a fata pudoremnon traherent secum, poenas mihi morte dedisses.'ille fugit pavidus, dominaeque ferocia Caunidicta refert.€k2€k2qq€k2q€kb€kb€kbq€kbjk"
+	oteme101€kb€kb€kb€kb€kb€kb€kbq€kbquq€kb€kb€kbjk
+|3,0,30,0,1,0,1527848174,"oteme101€kb€kb€kb€kb€kb€kb€kbq€kbquq€kb€kb€kbjk"
 "v	LINE	0
-	-  priusquam : before, until
-|3,0,31,1,1,0,1537827301,"-  priusquam : before, until"
+	map gh cd ~
+|3,0,31,1,1,0,1554725777,"map gh cd ~"
 "w	CHAR	0
-	€kbj
-|3,0,32,0,1,0,1532439203,"€kbj"
-"-	CHAR	0
+	
+|3,0,32,0,1,0,1555180592,""
+"x	CHAR	0
+	
+|3,0,33,0,1,0,1554810086,""
+""-	CHAR	0
 	 
-|3,0,36,0,1,0,1537827643," "
+|3,1,36,0,1,0,1555254690," "
 
 # File marks:
-'0  1  0  ~/.local/usr/bin/backup-configs.sh
-|4,48,1,0,1538215749,"~/.local/usr/bin/backup-configs.sh"
-'1  37  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,49,37,52,1538215705,"~/.dotfiles/scripts/backup-configs.sh"
-'2  1  0  ~/.local/usr/bin/backup-configs.sh
-|4,50,1,0,1538215664,"~/.local/usr/bin/backup-configs.sh"
-'3  5  24  ~/.dotfiles/scripts/backup-configs.sh
-|4,51,5,24,1538215640,"~/.dotfiles/scripts/backup-configs.sh"
-'4  5  24  ~/.dotfiles/scripts/backup-configs.sh
-|4,52,5,24,1538215640,"~/.dotfiles/scripts/backup-configs.sh"
-'5  17  63  ~/.dotfiles/scripts/backup-configs.sh
-|4,53,17,63,1538215586,"~/.dotfiles/scripts/backup-configs.sh"
-'6  17  63  ~/.dotfiles/scripts/backup-configs.sh
-|4,54,17,63,1538215586,"~/.dotfiles/scripts/backup-configs.sh"
-'7  17  63  ~/.dotfiles/scripts/backup-configs.sh
-|4,55,17,63,1538215586,"~/.dotfiles/scripts/backup-configs.sh"
-'8  17  63  ~/.dotfiles/scripts/backup-configs.sh
-|4,56,17,63,1538215586,"~/.dotfiles/scripts/backup-configs.sh"
-'9  1  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,57,1,0,1538215366,"~/.dotfiles/scripts/backup-configs.sh"
+'0  5  17  ~/.local/usr/bin/bookmarklauncher.sh
+|4,48,5,17,1555254732,"~/.local/usr/bin/bookmarklauncher.sh"
+'1  1  0  ~/Documents/amores2/bookmark-launcher:
+|4,49,1,0,1555254419,"~/Documents/amores2/bookmark-launcher:"
+'2  1  0  ~/Documents/amores2/bookmarklauncher:
+|4,50,1,0,1555254407,"~/Documents/amores2/bookmarklauncher:"
+'3  1  0  /tmp/tmpTsXEG6
+|4,51,1,0,1555253164,"/tmp/tmpTsXEG6"
+'4  4  9  /tmp/tmpqPC1G4
+|4,52,4,9,1555253161,"/tmp/tmpqPC1G4"
+'5  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,53,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+'6  1  0  ~/Documents/amores2/amores2-12-nums.txt
+|4,54,1,0,1555243540,"~/Documents/amores2/amores2-12-nums.txt"
+'7  1  0  ~/Documents/amores2/amores2-12.txt
+|4,55,1,0,1555243442,"~/Documents/amores2/amores2-12.txt"
+'8  1  0  /tmp/bash-fc.I92t25
+|4,56,1,0,1555239522,"/tmp/bash-fc.I92t25"
+'9  3  0  ~/Documents/amores2/amores2-10.txt
+|4,57,3,0,1555239484,"~/Documents/amores2/amores2-10.txt"
 
 # Jumplist (newest first):
--'  1  0  ~/.local/usr/bin/backup-configs.sh
-|4,39,1,0,1538215749,"~/.local/usr/bin/backup-configs.sh"
--'  37  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,37,52,1538215705,"~/.dotfiles/scripts/backup-configs.sh"
--'  37  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,37,52,1538215705,"~/.dotfiles/scripts/backup-configs.sh"
--'  1  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,1,0,1538215667,"~/.dotfiles/scripts/backup-configs.sh"
--'  1  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,1,0,1538215667,"~/.dotfiles/scripts/backup-configs.sh"
--'  1  0  ~/.local/usr/bin/backup-configs.sh
-|4,39,1,0,1538215664,"~/.local/usr/bin/backup-configs.sh"
--'  1  0  ~/.local/usr/bin/backup-configs.sh
-|4,39,1,0,1538215664,"~/.local/usr/bin/backup-configs.sh"
--'  5  24  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,5,24,1538215640,"~/.dotfiles/scripts/backup-configs.sh"
--'  5  24  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,5,24,1538215640,"~/.dotfiles/scripts/backup-configs.sh"
--'  5  24  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,5,24,1538215640,"~/.dotfiles/scripts/backup-configs.sh"
--'  5  24  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,5,24,1538215640,"~/.dotfiles/scripts/backup-configs.sh"
--'  5  24  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,5,24,1538215640,"~/.dotfiles/scripts/backup-configs.sh"
--'  5  24  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,5,24,1538215640,"~/.dotfiles/scripts/backup-configs.sh"
--'  1  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,1,0,1538215597,"~/.dotfiles/scripts/backup-configs.sh"
--'  1  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,1,0,1538215597,"~/.dotfiles/scripts/backup-configs.sh"
--'  1  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,1,0,1538215597,"~/.dotfiles/scripts/backup-configs.sh"
--'  1  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,1,0,1538215597,"~/.dotfiles/scripts/backup-configs.sh"
--'  17  63  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,17,63,1538215586,"~/.dotfiles/scripts/backup-configs.sh"
--'  17  63  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,17,63,1538215586,"~/.dotfiles/scripts/backup-configs.sh"
--'  17  63  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,17,63,1538215586,"~/.dotfiles/scripts/backup-configs.sh"
--'  17  63  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,17,63,1538215586,"~/.dotfiles/scripts/backup-configs.sh"
--'  17  63  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,17,63,1538215586,"~/.dotfiles/scripts/backup-configs.sh"
--'  17  63  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,17,63,1538215586,"~/.dotfiles/scripts/backup-configs.sh"
--'  17  63  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,17,63,1538215586,"~/.dotfiles/scripts/backup-configs.sh"
--'  17  63  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,17,63,1538215586,"~/.dotfiles/scripts/backup-configs.sh"
--'  17  63  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,17,63,1538215586,"~/.dotfiles/scripts/backup-configs.sh"
--'  17  63  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,17,63,1538215586,"~/.dotfiles/scripts/backup-configs.sh"
--'  1  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,1,0,1538215569,"~/.dotfiles/scripts/backup-configs.sh"
--'  1  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,1,0,1538215569,"~/.dotfiles/scripts/backup-configs.sh"
--'  1  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,1,0,1538215569,"~/.dotfiles/scripts/backup-configs.sh"
--'  1  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,1,0,1538215569,"~/.dotfiles/scripts/backup-configs.sh"
--'  1  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,1,0,1538215366,"~/.dotfiles/scripts/backup-configs.sh"
--'  1  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,1,0,1538215366,"~/.dotfiles/scripts/backup-configs.sh"
--'  1  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,1,0,1538215366,"~/.dotfiles/scripts/backup-configs.sh"
--'  1  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,1,0,1538215366,"~/.dotfiles/scripts/backup-configs.sh"
--'  26  25  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,26,25,1538215359,"~/.dotfiles/scripts/backup-configs.sh"
--'  26  25  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,26,25,1538215359,"~/.dotfiles/scripts/backup-configs.sh"
--'  26  25  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,26,25,1538215359,"~/.dotfiles/scripts/backup-configs.sh"
--'  26  25  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,26,25,1538215359,"~/.dotfiles/scripts/backup-configs.sh"
--'  26  25  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,26,25,1538215359,"~/.dotfiles/scripts/backup-configs.sh"
--'  26  25  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,26,25,1538215359,"~/.dotfiles/scripts/backup-configs.sh"
--'  26  25  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,26,25,1538215359,"~/.dotfiles/scripts/backup-configs.sh"
--'  26  25  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,26,25,1538215359,"~/.dotfiles/scripts/backup-configs.sh"
--'  26  25  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,26,25,1538215359,"~/.dotfiles/scripts/backup-configs.sh"
--'  26  25  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,26,25,1538215359,"~/.dotfiles/scripts/backup-configs.sh"
--'  26  25  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,26,25,1538215359,"~/.dotfiles/scripts/backup-configs.sh"
--'  26  25  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,26,25,1538215359,"~/.dotfiles/scripts/backup-configs.sh"
--'  26  25  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,26,25,1538215359,"~/.dotfiles/scripts/backup-configs.sh"
--'  26  25  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,26,25,1538215359,"~/.dotfiles/scripts/backup-configs.sh"
--'  26  25  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,26,25,1538215359,"~/.dotfiles/scripts/backup-configs.sh"
--'  26  25  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,26,25,1538215359,"~/.dotfiles/scripts/backup-configs.sh"
--'  26  25  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,26,25,1538215359,"~/.dotfiles/scripts/backup-configs.sh"
--'  26  25  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,26,25,1538215359,"~/.dotfiles/scripts/backup-configs.sh"
--'  1  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,1,0,1538215233,"~/.dotfiles/scripts/backup-configs.sh"
--'  1  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,1,0,1538215233,"~/.dotfiles/scripts/backup-configs.sh"
--'  1  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,1,0,1538215233,"~/.dotfiles/scripts/backup-configs.sh"
--'  1  0  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,1,0,1538215233,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  34  52  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,34,52,1538215080,"~/.dotfiles/scripts/backup-configs.sh"
--'  6  61  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,6,61,1538215014,"~/.dotfiles/scripts/backup-configs.sh"
--'  6  61  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,6,61,1538215014,"~/.dotfiles/scripts/backup-configs.sh"
--'  6  61  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,6,61,1538215014,"~/.dotfiles/scripts/backup-configs.sh"
--'  6  61  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,6,61,1538215014,"~/.dotfiles/scripts/backup-configs.sh"
--'  6  61  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,6,61,1538215014,"~/.dotfiles/scripts/backup-configs.sh"
--'  6  61  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,6,61,1538215014,"~/.dotfiles/scripts/backup-configs.sh"
--'  6  61  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,6,61,1538215014,"~/.dotfiles/scripts/backup-configs.sh"
--'  6  61  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,6,61,1538215014,"~/.dotfiles/scripts/backup-configs.sh"
--'  6  61  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,6,61,1538215014,"~/.dotfiles/scripts/backup-configs.sh"
--'  6  61  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,6,61,1538215014,"~/.dotfiles/scripts/backup-configs.sh"
--'  6  61  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,6,61,1538215014,"~/.dotfiles/scripts/backup-configs.sh"
--'  6  61  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,6,61,1538215014,"~/.dotfiles/scripts/backup-configs.sh"
--'  6  61  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,6,61,1538215014,"~/.dotfiles/scripts/backup-configs.sh"
--'  6  61  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,6,61,1538215014,"~/.dotfiles/scripts/backup-configs.sh"
--'  6  61  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,6,61,1538215014,"~/.dotfiles/scripts/backup-configs.sh"
--'  6  61  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,6,61,1538215014,"~/.dotfiles/scripts/backup-configs.sh"
--'  6  61  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,6,61,1538215014,"~/.dotfiles/scripts/backup-configs.sh"
--'  6  61  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,6,61,1538215014,"~/.dotfiles/scripts/backup-configs.sh"
--'  6  61  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,6,61,1538215014,"~/.dotfiles/scripts/backup-configs.sh"
--'  6  61  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,6,61,1538215014,"~/.dotfiles/scripts/backup-configs.sh"
--'  6  61  ~/.dotfiles/scripts/backup-configs.sh
-|4,39,6,61,1538215014,"~/.dotfiles/scripts/backup-configs.sh"
+-'  5  17  ~/.local/usr/bin/bookmarklauncher.sh
+|4,39,5,17,1555254732,"~/.local/usr/bin/bookmarklauncher.sh"
+-'  4  1  ~/.local/usr/bin/bookmarklauncher.sh
+|4,39,4,1,1555254508,"~/.local/usr/bin/bookmarklauncher.sh"
+-'  1  0  ~/.local/usr/bin/bookmarklauncher.sh
+|4,39,1,0,1555254479,"~/.local/usr/bin/bookmarklauncher.sh"
+-'  1  0  ~/Documents/amores2/bookmark-launcher:
+|4,39,1,0,1555254419,"~/Documents/amores2/bookmark-launcher:"
+-'  1  0  ~/Documents/amores2/bookmark-launcher:
+|4,39,1,0,1555254419,"~/Documents/amores2/bookmark-launcher:"
+-'  1  0  ~/Documents/amores2/bookmarklauncher:
+|4,39,1,0,1555254407,"~/Documents/amores2/bookmarklauncher:"
+-'  1  0  ~/Documents/amores2/bookmarklauncher:
+|4,39,1,0,1555254407,"~/Documents/amores2/bookmarklauncher:"
+-'  1  0  ~/Documents/amores2/bookmarklauncher:
+|4,39,1,0,1555254407,"~/Documents/amores2/bookmarklauncher:"
+-'  1  0  ~/Documents/amores2/bookmarklauncher:
+|4,39,1,0,1555254407,"~/Documents/amores2/bookmarklauncher:"
+-'  1  0  /tmp/tmpTsXEG6
+|4,39,1,0,1555253164,"/tmp/tmpTsXEG6"
+-'  1  0  /tmp/tmpTsXEG6
+|4,39,1,0,1555253164,"/tmp/tmpTsXEG6"
+-'  1  0  /tmp/tmpTsXEG6
+|4,39,1,0,1555253164,"/tmp/tmpTsXEG6"
+-'  1  0  /tmp/tmpTsXEG6
+|4,39,1,0,1555253164,"/tmp/tmpTsXEG6"
+-'  1  0  /tmp/tmpTsXEG6
+|4,39,1,0,1555253164,"/tmp/tmpTsXEG6"
+-'  1  0  /tmp/tmpTsXEG6
+|4,39,1,0,1555253164,"/tmp/tmpTsXEG6"
+-'  1  0  /tmp/tmpTsXEG6
+|4,39,1,0,1555253164,"/tmp/tmpTsXEG6"
+-'  1  0  /tmp/tmpTsXEG6
+|4,39,1,0,1555253164,"/tmp/tmpTsXEG6"
+-'  4  9  /tmp/tmpqPC1G4
+|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
+-'  4  9  /tmp/tmpqPC1G4
+|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
+-'  4  9  /tmp/tmpqPC1G4
+|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
+-'  4  9  /tmp/tmpqPC1G4
+|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
+-'  4  9  /tmp/tmpqPC1G4
+|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
+-'  4  9  /tmp/tmpqPC1G4
+|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
+-'  4  9  /tmp/tmpqPC1G4
+|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
+-'  4  9  /tmp/tmpqPC1G4
+|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
+-'  4  9  /tmp/tmpqPC1G4
+|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
+-'  4  9  /tmp/tmpqPC1G4
+|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
+-'  4  9  /tmp/tmpqPC1G4
+|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
+-'  4  9  /tmp/tmpqPC1G4
+|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
+-'  4  9  /tmp/tmpqPC1G4
+|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
+-'  4  9  /tmp/tmpqPC1G4
+|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
+-'  4  9  /tmp/tmpqPC1G4
+|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
+-'  4  9  /tmp/tmpqPC1G4
+|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
+-'  1  0  /tmp/tmpqPC1G4
+|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
+-'  1  0  /tmp/tmpqPC1G4
+|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
+-'  1  0  /tmp/tmpqPC1G4
+|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
+-'  1  0  /tmp/tmpqPC1G4
+|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
+-'  1  0  /tmp/tmpqPC1G4
+|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
+-'  1  0  /tmp/tmpqPC1G4
+|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
+-'  1  0  /tmp/tmpqPC1G4
+|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
+-'  1  0  /tmp/tmpqPC1G4
+|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
+-'  1  0  /tmp/tmpqPC1G4
+|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
+-'  1  0  /tmp/tmpqPC1G4
+|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
+-'  1  0  /tmp/tmpqPC1G4
+|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
+-'  1  0  /tmp/tmpqPC1G4
+|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
+-'  1  0  /tmp/tmpqPC1G4
+|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
+-'  1  0  /tmp/tmpqPC1G4
+|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
+-'  1  0  /tmp/tmpqPC1G4
+|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
+-'  1  0  /tmp/tmpqPC1G4
+|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
+|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
 
 # History of marks within files (newest to oldest):
 
-> ~/.local/usr/bin/backup-configs.sh
-	*	1538215745	0
-	"	1	0
-	^	33	26
-	.	20	0
-	+	41	15
-	+	10	0
-	+	33	25
-	+	20	0
-
-> ~/.dotfiles/scripts/backup-configs.sh
-	*	1538215700	0
-	"	37	52
-	^	39	33
-	.	41	0
-	+	7	0
-	+	6	46
-	+	7	46
-	+	8	46
-	+	9	46
-	+	10	46
-	+	35	26
-	+	41	0
-	+	39	25
-	+	41	0
-	+	17	64
-	+	35	26
-	+	39	32
-	+	6	46
-	+	7	46
-	+	8	46
-	+	9	46
-	+	10	46
-	+	41	0
-
-> ~/.config/vim/vimrc
-	*	1538214364	0
-	"	67	38
-	^	221	60
-	.	566	0
-	+	710	23
-	+	711	23
-	+	712	23
-	+	713	23
-	+	709	26
-	+	710	27
-	+	711	27
-	+	712	27
-	+	713	27
-	+	671	30
-	+	666	0
-	+	663	36
-	+	664	0
-	+	689	10
-	+	690	46
-	+	691	0
-	+	198	28
-	+	565	0
-	+	587	0
-	+	576	0
-	+	565	18
-	+	566	27
-	+	572	56
-	+	575	30
-	+	198	4
-	+	757	10
-	+	718	33
-	+	720	27
-	+	718	27
-	+	717	28
-	+	757	0
-	+	726	27
-	+	721	26
-	+	727	29
-	+	728	28
-	+	727	30
-	+	728	28
-	+	729	27
-	+	730	27
-	+	731	29
-	+	732	26
-	+	733	26
-	+	734	29
-	+	735	27
-	+	736	0
-	+	737	0
-	+	738	0
-	+	717	0
-	+	718	0
-	+	725	26
-	+	740	0
-	+	742	0
-	+	745	0
-	+	746	28
-	+	747	0
-	+	743	0
-	+	744	0
-	+	739	0
-	+	725	0
-	+	723	0
-	+	748	29
-	+	749	0
-	+	750	0
-	+	751	0
-	+	741	30
-	+	724	27
-	+	753	27
-	+	722	26
-	+	755	26
-	+	756	30
-	+	752	25
-	+	754	25
-	+	719	26
-	+	201	22
-	+	192	0
-	+	198	28
-	+	527	0
-	+	577	41
-	+	584	66
-	+	585	0
-	+	198	37
-	+	579	56
-	+	580	11
-	+	579	0
-	+	577	23
-	+	584	43
-	+	579	24
-	+	580	54
-	+	582	35
-	+	581	41
-	+	582	22
-	+	579	30
-	+	580	33
-	+	579	33
-	+	198	0
-	+	194	0
-	+	195	0
-	+	219	37
-	+	221	59
-	+	566	0
-
-> ~/.dotfiles/vim/vimrc
-	*	1538213438	0
-	"	67	38
-	.	652	0
-	+	194	0
-	+	201	0
-	+	219	0
-	+	221	0
-	+	565	0
-	+	652	0
-
-> ~/Documents/OvidUnseens/LUFAL-Ovid-Byblis.txt
-	*	1537828730	0
-	"	4	0
-	^	100	78
-	.	106	0
-	+	16	13
-	+	3	6
-	+	1	31
-	+	3	0
-	+	18	0
-	+	17	0
-	+	18	0
-	+	21	0
-	+	22	0
-	+	26	0
-	+	42	0
-	+	43	0
-	+	45	0
-	+	46	0
-	+	53	0
-	+	55	0
-	+	59	0
-	+	62	0
-	+	64	0
-	+	67	0
-	+	68	0
-	+	69	0
-	+	74	0
-	+	79	0
-	+	81	0
-	+	82	0
-	+	85	0
-	+	89	0
-	+	100	77
-	+	106	0
-
-> ~/.config/vim/bundle/vim-clc-lookup/clc4-vocab
-	*	1537827761	0
-	"	182	0
-	^	583	16
-	.	1078	15
-	+	678	0
-	+	582	10
-	+	583	16
-	+	1079	0
-	+	1078	15
-
-> ~/Documents/st34-insidiae-2-vocab.txt
-	*	1537827757	0
-	"	125	0
-	^	120	0
-	.	126	0
-	+	231	0
-	+	234	0
-	+	236	0
-	+	238	0
-	+	242	0
-	+	245	0
-	+	247	0
-	+	250	0
-	+	253	0
-	+	255	0
-	+	256	0
-	+	259	0
-	+	268	2
-	+	265	0
-	+	272	0
-	+	275	0
-	+	281	0
-	+	283	0
-	+	282	5
-	+	282	0
-	+	284	4
-	+	284	0
-	+	288	0
-	+	289	0
-	+	206	0
-	+	1	9
-	+	2	0
-	+	14	0
-	+	103	2
-	+	26	26
-	+	64	29
-	+	103	47
-	+	115	44
-	+	121	16
-	+	12	0
-	+	24	0
-	+	33	0
-	+	46	0
-	+	48	11
-	+	55	0
-	+	73	0
-	+	62	0
-	+	91	0
-	+	4	8
-	+	4	0
-	+	3	0
-	+	11	11
-	+	15	0
-	+	22	0
-	+	23	0
-	+	27	0
-	+	31	0
-	+	37	0
-	+	44	0
-	+	45	0
-	+	49	0
-	+	52	0
-	+	55	0
-	+	57	0
-	+	58	0
-	+	61	0
-	+	65	0
-	+	67	0
-	+	69	0
-	+	72	0
-	+	75	0
-	+	76	0
-	+	80	0
-	+	84	0
-	+	82	0
-	+	84	0
-	+	85	0
-	+	86	0
-	+	82	22
-	+	83	27
-	+	89	0
-	+	94	0
-	+	96	0
-	+	102	0
-	+	103	55
-	+	104	0
-	+	105	0
-	+	110	0
-	+	112	0
-	+	113	0
-	+	115	0
-	+	120	0
-	+	116	0
-	+	118	0
-	+	120	0
-	+	122	0
-	+	124	0
-	+	126	0
-
-> /usr/share/vim/vim80/doc/eval.txt
-	*	1537826799	0
-	"	7564	42
-	^	7412	12
-
-> /usr/share/vim/vim80/doc/various.txt
-	*	1537826449	0
-	"	179	0
-
-> ~/.config/vim/plugin/dragvisuals.vim
-	*	1537825616	0
-	"	169	0
-	^	143	56
-	.	143	56
-	+	149	0
-	+	150	0
-	+	151	0
-	+	150	0
-	+	149	0
-	+	148	0
-	+	149	0
-	+	147	0
-	+	70	0
-	+	68	48
-	+	69	0
-	+	222	0
-	+	224	0
-	+	68	0
-	+	66	32
-	+	67	14
-	+	78	37
-	+	145	0
-	+	143	56
-
-> ~/.config/vim/plugin/userfunctions.vim
-	*	1537825605	0
-	"	136	0
-	^	143	103
-	.	143	87
-	+	125	18
-	+	124	25
-	+	125	25
-	+	125	0
-	+	128	49
-	+	130	13
-	+	124	0
-	+	127	0
-	+	124	0
-	+	127	0
-	+	126	0
-	+	123	0
-	+	124	0
-	+	127	0
-	+	124	4
-	+	124	0
-	+	125	0
-	+	128	0
-	+	127	0
-	+	124	0
-	+	125	0
-	+	128	0
-	+	127	0
-	+	124	0
-	+	125	0
-	+	128	0
-	+	127	10
-	+	124	10
-	+	130	51
-	+	132	73
-	+	130	9
-	+	132	0
-	+	133	17
-	+	130	8
-	+	132	39
-	+	124	8
-	+	125	8
-	+	126	8
-	+	127	8
-	+	128	8
-	+	124	35
-	+	125	35
-	+	126	35
-	+	127	35
-	+	128	31
-	+	128	0
-	+	133	0
-	+	131	16
-	+	132	55
-	+	125	34
-	+	126	34
-	+	127	34
-	+	125	30
-	+	126	30
-	+	127	30
-	+	128	0
-	+	125	24
-	+	126	29
-	+	127	30
-	+	128	26
-	+	132	10
-	+	130	10
-	+	131	11
-	+	132	0
-	+	125	32
-	+	126	38
-	+	127	38
-	+	125	59
-	+	124	27
-	+	126	39
-	+	127	35
-	+	125	39
-	+	127	39
-	+	128	5
-	+	127	4
-	+	126	4
-	+	125	4
-	+	130	25
-	+	132	53
-	+	124	29
-	+	125	4
-	+	132	58
-	+	124	36
-	+	130	33
-	+	124	4
-	+	130	20
-	+	117	28
-	+	115	6
-	+	122	15
-	+	135	17
-	+	137	4
-	+	138	4
-	+	139	4
-	+	136	40
-	+	137	39
-	+	138	37
-	+	139	39
-	+	141	48
-	+	139	34
-	+	143	87
-
-> ~/tmp/NERD_tree_2
-	*	1537825562	0
-	"	38	0
-	.	1	0
-	+	1	0
-
-> ~/.config/vim/bundle/vim-clc-lookup/clclookup.py
-	*	1537823966	0
-	"	1	0
-
-> ~/tmp/ultio_Epaphroditi_vocab.txt
-	*	1537821002	0
-	"	93	11
-	^	97	52
-	.	97	51
-	+	1	0
-	+	87	46
-	+	95	1
-	+	11	25
-	+	11	0
-	+	24	0
-	+	26	29
-	+	47	8
-	+	72	0
-	+	87	0
-	+	91	0
-	+	94	0
-	+	95	5
-	+	2	0
-	+	3	0
-	+	11	9
-	+	11	0
+> ~/.local/usr/bin/bookmarklauncher.sh
+	*	1555254729	0
+	"	5	17
+	^	5	26
+	.	5	2
+	+	4	44
+	+	6	39
 	+	8	0
-	+	10	0
-	+	14	0
-	+	24	4
-	+	22	2
-	+	24	0
-	+	23	0
-	+	24	21
-	+	27	0
-	+	31	0
-	+	33	0
-	+	34	0
-	+	33	3
-	+	34	0
-	+	36	0
-	+	38	0
-	+	45	0
-	+	46	0
-	+	47	41
-	+	48	0
-	+	51	0
-	+	52	0
-	+	53	0
-	+	54	30
-	+	55	0
-	+	61	30
-	+	62	0
-	+	64	27
-	+	68	0
-	+	69	0
-	+	70	0
-	+	75	0
-	+	77	0
-	+	78	0
-	+	81	41
-	+	84	0
-	+	88	0
-	+	91	33
-	+	96	0
-	+	97	51
-
-> ~/tmp/NERD_tree_1
-	*	1537820717	0
-	"	4	0
-	.	1	0
-	+	1	0
-
-> /usr/share/vim/vim80/doc/help.txt
-	*	1537819940	0
-	"	1	0
-
-> /etc/hosts
-	*	1537655706	0
-	"	3	12
-	^	49417	1
-	.	3	0
-	+	49417	0
-	+	3	0
-
-> ~/Documents/PUAL/text/PUAL-08-done.txt
-	*	1537099800	0
-	"	3	0
-	^	2	0
-	.	1	8
-	+	1	8
-
-> ~/Documents/PUAL/text/PUAL-08-Feedback.txt
-	*	1537099749	0
-	"	1	65
-	^	82	66
-	.	82	65
-	+	87	0
-	+	1	77
-	+	13	20
-	+	20	48
-	+	33	60
-	+	54	23
-	+	69	11
-	+	81	0
-	+	76	35
-	+	26	44
-	+	47	0
-	+	10	77
-	+	11	77
-	+	12	77
-	+	17	77
-	+	18	77
-	+	19	77
-	+	23	77
-	+	24	77
-	+	25	77
-	+	30	77
-	+	31	77
-	+	32	77
-	+	38	77
-	+	39	77
-	+	40	77
-	+	44	77
-	+	45	77
-	+	46	77
-	+	51	77
-	+	52	77
-	+	53	77
-	+	66	77
-	+	67	77
-	+	68	77
-	+	73	77
-	+	74	77
-	+	75	77
-	+	83	77
-	+	84	77
-	+	85	77
-	+	1	0
-	+	12	0
-	+	19	0
-	+	25	0
-	+	30	0
-	+	32	0
-	+	40	0
-	+	46	0
-	+	53	0
-	+	68	0
-	+	75	1
-	+	85	0
-	+	61	35
-	+	58	77
-	+	59	77
-	+	60	77
-	+	7	54
-	+	4	77
-	+	5	77
-	+	6	0
-	+	12	0
-	+	19	0
-	+	25	0
-	+	32	0
-	+	40	0
-	+	46	0
-	+	53	0
-	+	68	2
-	+	75	1
-	+	60	1
-	+	68	0
-	+	75	0
-	+	3	71
-	+	9	37
-	+	16	36
-	+	22	76
-	+	29	25
-	+	37	68
-	+	41	0
-	+	43	5
-	+	47	0
-	+	50	43
-	+	57	12
-	+	65	59
-	+	72	23
-	+	83	46
-	+	76	47
-	+	78	77
-	+	79	77
-	+	80	1
-	+	83	0
-	+	77	0
-	+	82	65
-
-> ~/Documents/PUAL/text/PUAL-08.txt
-	*	1537098309	0
-	"	53	21
-	^	53	22
-	.	53	21
-	+	3	42
-	+	6	10
-	+	7	0
-	+	13	2
-	+	137	8
-	+	18	0
-	+	17	0
-	+	19	0
-	+	22	0
-	+	26	0
-	+	31	0
-	+	40	0
-	+	47	0
-	+	48	0
-	+	54	0
-	+	60	0
-	+	62	0
-	+	68	0
-	+	70	0
-	+	71	0
-	+	79	0
-	+	80	0
-	+	84	0
-	+	85	0
-	+	96	0
-	+	101	0
-	+	104	0
-	+	102	0
-	+	108	0
-	+	117	0
-	+	126	0
-	+	124	0
-	+	129	0
-	+	132	0
-	+	134	0
-	+	18	0
-	+	19	0
-	+	53	21
-
-> ~/OvidUnseens/Hex-01-Text-and-Vocab.txt
-	*	1537097141	0
-	"	1	1
-	^	15	0
-	.	61	0
-	+	14	44
-	+	14	0
-	+	1	0
-	+	16	0
-	+	25	0
-	+	15	0
-	+	30	0
-	+	31	0
-	+	32	0
-	+	38	0
-	+	45	0
-	+	50	0
-	+	49	0
-	+	51	0
-	+	52	0
-	+	58	0
-	+	60	0
-	+	64	0
-	+	67	0
-	+	68	0
-	+	69	0
-	+	79	0
-	+	86	0
-	+	90	0
-	+	96	0
-	+	98	0
-	+	99	0
-	+	100	0
-	+	103	0
-	+	105	0
-	+	107	0
-	+	111	0
-	+	116	0
-	+	16	0
-	+	61	0
-
-> ~/clc4-vocab
-	*	1537096343	0
-	"	668	23
-	^	614	37
-	.	615	0
-	+	221	5
-	+	1385	0
-	+	1384	16
-	+	856	0
-	+	352	47
-	+	284	0
-	+	283	53
-	+	752	0
-	+	751	27
-	+	615	0
-	+	614	27
-	+	614	9
-	+	614	26
-	+	615	0
-
-> ~/clc4/33-in-aula-domitiani-II.txt
-	*	1537094948	0
-	"	52	0
-	^	182	3
-	.	183	0
-	+	67	0
-	+	69	0
-	+	68	0
-	+	70	0
-	+	72	0
-	+	74	0
-	+	73	0
-	+	81	28
-	+	81	0
-	+	75	0
-	+	77	0
-	+	78	0
-	+	80	0
-	+	78	0
-	+	76	18
-	+	79	17
-	+	83	0
-	+	85	0
-	+	88	0
-	+	91	56
-	+	93	0
-	+	98	57
-	+	108	54
-	+	120	44
-	+	127	6
-	+	180	0
-	+	108	15
-	+	99	0
-	+	107	0
-	+	100	0
-	+	102	0
-	+	105	40
-	+	108	108
-	+	119	55
-	+	118	0
-	+	108	0
-	+	111	0
-	+	112	0
-	+	111	0
-	+	110	13
-	+	126	27
-	+	120	27
-	+	121	0
-	+	123	26
-	+	124	0
-	+	135	48
-	+	133	0
-	+	128	0
-	+	133	33
-	+	134	0
-	+	137	0
-	+	138	36
-	+	139	0
-	+	154	42
-	+	142	0
-	+	145	0
-	+	143	40
-	+	144	20
-	+	149	0
-	+	154	0
-	+	148	0
-	+	149	0
-	+	148	0
-	+	151	8
-	+	151	0
-	+	148	0
-	+	153	0
-	+	160	24
-	+	156	0
-	+	158	4
-	+	158	0
-	+	159	0
-	+	157	0
-	+	157	2
-	+	159	0
-	+	171	51
-	+	164	0
-	+	165	0
-	+	168	0
-	+	164	2
-	+	164	0
-	+	163	2
-	+	162	4
-	+	162	0
-	+	170	0
-	+	173	0
-	+	175	0
-	+	172	14
-	+	174	9
-	+	174	0
-	+	177	0
-	+	179	0
-	+	178	0
-	+	177	2
-	+	181	0
-	+	182	2
-	+	183	0
-	i	8	0
-
-> ~/NERD_tree_1
-	*	1537093223	0
-	"	45	0
-	.	1	0
-	+	1	0
-
-> ~/NERD_tree_2
-	*	1537093152	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/.dwmsrc/config.h
-	*	1537091946	0
-	"	84	61
-	^	84	62
-	.	84	61
-	+	12	37
-	+	11	37
-	+	15	36
-	+	16	36
-	+	17	40
-	+	21	39
-	+	19	36
-	+	21	37
-	+	16	36
-	+	17	40
-	+	39	42
-	+	27	0
-	+	21	0
-	+	20	0
-	+	92	70
-	+	84	61
-
-> ~/CLClookup.py
-	*	1537091552	0
-	"	1	0
-	.	27	0
-	+	27	0
-	+	28	34
-	+	41	8
-	+	41	31
-	+	41	23
-	+	39	32
-	+	40	39
-	+	41	49
-	+	43	22
-	+	27	0
-	+	25	4
-	+	24	18
-	+	25	20
-	+	24	22
-	+	43	22
-	+	28	0
-	+	28	22
-	+	30	33
-	+	32	24
-	+	31	27
-	+	30	27
-	+	28	0
-	+	26	0
-	+	26	24
-	+	33	28
-	+	26	0
-	+	27	25
-	+	27	0
-	+	33	0
-	+	27	0
-	+	33	0
-	+	27	0
-
-> ~/PUAL/text/PUAL-04-Feedback.txt
-	*	1536793628	0
-	"	88	21
-	^	114	68
-	.	114	67
-	+	16	59
-	+	20	40
-	+	23	59
-	+	27	59
-	+	23	79
-	+	23	0
 	+	4	0
-	+	3	77
-	+	7	0
-	+	6	77
-	+	11	0
-	+	10	77
-	+	16	0
-	+	15	77
-	+	23	0
-	+	22	77
-	+	27	0
-	+	26	77
-	+	29	77
-	+	34	77
-	+	10	0
-	+	9	77
-	+	10	0
-	+	21	77
-	+	22	0
-	+	29	0
-	+	28	77
-	+	29	0
-	+	38	0
-	+	37	77
-	+	43	0
-	+	42	77
-	+	48	77
-	+	40	73
-	+	41	7
-	+	36	77
-	+	37	0
-	+	49	77
-	+	50	0
-	+	55	77
-	+	58	77
-	+	59	77
-	+	60	0
-	+	65	77
-	+	66	77
-	+	67	0
-	+	72	77
-	+	73	45
-	+	74	77
-	+	75	77
-	+	76	0
-	+	80	77
-	+	83	77
-	+	84	77
-	+	85	0
-	+	87	77
-	+	88	77
-	+	89	0
-	+	94	77
-	+	96	77
-	+	97	77
-	+	98	0
-	+	102	77
-	+	106	77
-	+	107	77
-	+	108	0
-	+	112	77
-	+	118	0
-	+	113	74
-	+	116	77
-	+	117	77
-	+	118	0
-	+	121	77
-	+	123	77
-	+	124	77
-	+	4	0
-	+	95	59
-	+	3	0
-	+	10	0
-	+	22	0
-	+	29	0
-	+	37	0
-	+	49	0
-	+	59	0
-	+	66	0
-	+	75	0
-	+	84	1
-	+	88	1
-	+	97	1
-	+	107	1
-	+	117	1
-	+	47	7
-	+	46	13
-	+	79	37
-	+	82	34
-	+	113	0
-	+	110	21
-	+	115	0
-	+	114	67
+	+	5	2
 
-> ~/PUAL/text/PUAL-04-done.txt
-	*	1536790121	0
-	"	16	69
-	^	16	70
-	.	16	69
-	+	3	0
-	+	25	0
-	+	39	0
-	+	75	0
-	+	84	0
-	+	87	0
-	+	104	0
-	+	108	0
-	+	31	0
-	+	26	0
-	+	29	0
-	+	35	0
-	+	36	0
-	+	39	0
-	+	41	0
-	+	42	0
-	+	48	0
-	+	49	0
-	+	52	0
-	+	60	0
-	+	63	0
-	+	67	0
-	+	68	0
-	+	69	0
-	+	96	0
-	+	101	0
-	+	34	0
-	+	36	0
-	+	1	9
-	+	16	69
-
-> ~/clc4/33_iad_1_vocab.txt
-	*	1536618107	0
-	"	176	31
-	^	172	38
-	.	177	59
-	+	64	0
-	+	63	0
-	+	64	0
-	+	65	39
-	+	68	0
-	+	66	0
-	+	67	40
-	+	68	0
-	+	70	0
-	+	71	0
-	+	70	37
-	+	72	44
-	+	73	38
-	+	74	53
-	+	76	41
-	+	77	0
-	+	75	26
-	+	77	38
-	+	78	0
-	+	33	27
-	+	78	27
-	+	79	34
-	+	80	51
-	+	81	21
-	+	82	0
-	+	83	2
-	+	86	0
-	+	85	0
-	+	87	42
-	+	88	38
-	+	90	0
-	+	92	0
-	+	93	2
-	+	122	2
-	+	99	0
-	+	98	0
-	+	99	0
-	+	100	21
-	+	102	10
-	+	103	14
-	+	104	0
-	+	105	34
-	+	106	37
-	+	107	38
-	+	108	14
-	+	109	59
-	+	110	31
-	+	111	34
-	+	112	33
-	+	113	0
-	+	114	79
-	+	115	31
-	+	116	57
-	+	117	0
-	+	118	0
-	+	119	43
-	+	125	0
-	+	124	0
-	+	125	0
-	+	126	52
-	+	128	0
-	+	129	25
-	+	130	37
-	+	132	40
-	+	137	0
-	+	137	18
-	+	153	19
-	+	139	0
-	+	138	0
-	+	140	41
-	+	142	51
-	+	143	58
-	+	144	57
-	+	145	39
-	+	146	51
-	+	147	23
-	+	149	59
-	+	150	14
-	+	153	0
-	+	151	0
-	+	158	0
-	+	157	0
-	+	158	0
-	+	161	31
-	+	162	59
-	+	163	0
-	+	164	0
-	+	164	50
-	+	165	0
-	+	166	0
-	+	165	27
-	+	167	28
-	+	168	55
-	+	169	22
-	+	170	51
-	+	172	37
-	+	173	0
-	+	174	26
-	+	176	31
-	+	177	59
-
-> ~/Documents/St-33-in-aula-Domitiani-p82-vocab.doc
-	*	1536616660	0
+> ~/Documents/amores2/bookmark-launcher:
+	*	1555254418	0
 	"	1	0
 
-> ~/.config/mpd/mpd.conf
-	*	1536616257	0
-	"	219	0
-	^	219	0
-	.	219	0
-	+	215	0
-	+	219	0
-	+	215	0
-	+	218	0
-	+	220	21
-	+	218	0
-	+	216	0
-	+	217	0
-	+	220	0
-	+	221	0
-	+	219	0
-
-> ~/.config/mpd/mpd.log
-	*	1536615770	0
+> ~/Documents/amores2/bookmarklauncher:
+	*	1555254403	0
 	"	1	0
 
-> ~/.config/ncmpcpp/config
-	*	1536613331	0
-	"	600	0
+> /tmp/tmpTsXEG6
+	*	1555253162	0
+	"	1	0
 
-> ~/_Definitions_
-	*	1536528863	0
-	"	2	0
+> /tmp/tmpqPC1G4
+	*	1555253159	0
+	"	4	9
+	^	4	10
+	.	4	10
+	+	1	10
+	+	2	10
+	+	3	10
+	+	4	10
+
+> ~/Documents/amores2/amores2-6-nums-exp.txt
+	*	1555252704	0
+	"	1	0
 	.	2	0
 	+	1	0
-	+	1	21
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	11
-	+	1	0
-	+	2	0
-	+	3	0
 	+	2	0
 
-> ~/Documents/LC1-diagnostic
-	*	1536528860	0
-	"	21	0
-	^	18	20
-	.	34	0
-	+	1	21
-	+	4	44
-	+	7	24
-	+	8	18
-	+	7	23
-	+	14	29
-	+	14	45
-	+	15	20
+> ~/Documents/amores2/amores2-12-nums.txt
+	*	1555243538	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/amores2/amores2-12.txt
+	*	1555243439	0
+	"	1	0
+	^	83	9
+	.	80	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
 	+	3	0
-	+	4	0
+	+	5	0
+	+	6	0
+	+	8	0
+	+	9	0
+	+	11	0
+	+	12	0
+	+	11	0
 	+	14	0
-	+	9	15
-	+	16	53
 	+	15	0
-	+	18	0
-	+	18	19
-	+	18	28
-	+	18	24
-	+	19	0
-	+	19	28
-	+	18	16
-	+	19	0
+	+	17	0
+	+	16	0
 	+	17	0
 	+	18	0
-	+	18	12
-	+	18	28
-	+	18	0
-	+	61	0
-	+	62	0
-	+	63	0
-	+	65	0
-	+	71	0
-	+	39	9
-	+	41	19
-	+	35	0
-	+	37	0
-	+	38	0
-	+	45	0
-	+	19	25
-	+	20	33
-	+	21	49
-	+	22	42
-	+	24	11
-	+	25	25
-	+	26	0
-	+	29	9
-	+	30	26
-	+	31	37
-	+	35	37
-	+	38	42
-	+	39	23
-	+	41	26
-	+	42	43
-	+	43	25
-	+	44	27
-	+	45	41
-	+	47	17
-	+	48	39
-	+	50	28
-	+	53	20
-	+	54	42
-	+	55	0
-	+	56	0
-	+	57	15
-	+	58	28
-	+	59	46
-	+	60	34
-	+	61	0
-	+	63	46
-	+	66	30
-	+	68	30
-	+	72	37
-	+	26	22
-	+	27	43
-	+	47	22
-	+	18	0
-	+	51	0
-	+	18	0
-	+	34	0
-
-> ~/.config/ranger/rc.conf
-	*	1536420965	0
-	"	688	15
-	^	688	16
-	.	688	15
-	+	685	0
-	+	686	23
-	+	690	0
-	+	687	24
-	+	686	13
-	+	688	15
-
-> ~/.bash_aliases
-	*	1536420111	0
-	"	62	34
-	^	62	35
-	.	62	34
-	+	124	0
-	+	123	45
-	+	135	0
-	+	136	32
-	+	137	28
-	+	141	39
-	+	142	28
-	+	143	31
-	+	144	28
-	+	144	31
-	+	144	28
-	+	144	30
-	+	145	25
-	+	142	31
-	+	143	0
-	+	142	41
-	+	144	0
-	+	134	0
-	+	108	0
-	+	114	0
-	+	142	46
-	+	141	33
-	+	142	0
-	+	136	0
-	+	148	0
-	+	149	29
-	+	150	25
-	+	154	29
-	+	155	24
-	+	186	0
-	+	156	19
-	+	154	44
-	+	155	35
-	+	156	21
-	+	185	0
-	+	43	17
-	+	44	0
-	+	154	43
-	+	155	35
-	+	156	30
-	+	155	47
-	+	158	0
-	+	156	21
-	+	158	0
-	+	156	0
-	+	157	0
-	+	156	52
-	+	156	0
-	+	157	0
-	+	156	4
-	+	156	0
-	+	159	0
-	+	160	28
-	+	161	24
-	+	165	28
-	+	166	23
-	+	167	20
-	+	165	37
-	+	166	29
-	+	167	26
-	+	169	31
-	+	171	0
-	+	167	0
-	+	191	17
-	+	191	0
-	+	191	12
-	+	190	0
-	+	191	0
-	+	191	9
-	+	191	0
-	+	191	152
-	+	191	3
-	+	191	60
-	+	191	41
-	+	191	158
-	+	191	0
-	+	184	0
-	+	185	0
-	+	172	0
-	+	173	29
-	+	174	25
-	+	178	39
-	+	179	30
-	+	180	33
-	+	181	32
-	+	182	33
-	+	179	24
-	+	180	27
-	+	181	26
-	+	182	33
-	+	179	36
-	+	191	16
-	+	191	0
-	+	172	1
-	+	191	0
-	+	20	14
-	+	193	1
-	+	191	8
-	+	192	90
-	+	62	34
-
-> ~/Downloads/VBox.log
-	*	1536418545	0
-	"	180	0
-
-> ~/PUAL/text/PUAL-Comp-04.txt
-	*	1536186907	0
-	"	3	0
-	^	2	0
-	.	1	23
-	+	4	64
-	+	9	16
-	+	11	0
-	+	17	42
+	+	20	0
 	+	21	0
-	+	25	0
+	+	23	0
+	+	24	0
+	+	23	0
 	+	26	0
-	+	85	0
-	+	83	0
-	+	85	0
-	+	91	0
-	+	97	0
-	+	25	0
+	+	27	0
+	+	29	0
+	+	30	0
 	+	26	0
+	+	29	0
+	+	32	0
+	+	33	0
+	+	32	0
 	+	35	0
-	+	37	0
+	+	36	0
+	+	38	0
+	+	39	0
 	+	41	0
 	+	42	0
-	+	43	0
+	+	44	0
 	+	45	0
+	+	44	0
 	+	47	0
 	+	48	0
 	+	49	0
+	+	50	0
 	+	51	0
-	+	58	0
-	+	61	0
-	+	64	0
-	+	67	0
+	+	53	0
+	+	54	0
+	+	56	0
+	+	57	0
+	+	59	0
+	+	60	0
+	+	59	0
+	+	62	0
+	+	63	0
+	+	65	0
+	+	66	0
+	+	56	0
 	+	68	0
 	+	69	0
 	+	71	0
 	+	72	0
+	+	73	0
+	+	74	0
 	+	75	0
+	+	77	0
 	+	78	0
-	+	79	0
 	+	80	0
+	+	81	0
+	+	83	0
+	+	74	0
+	+	77	0
+	+	80	0
+
+> ~/Documents/amores2/amores2-12-translation.txt
+	*	1555243398	0
+	"	55	0
+	^	56	0
+	.	55	64
+	+	5	0
+	+	9	0
+	+	7	0
+	+	9	20
+	+	11	36
+	+	13	20
+	+	17	4
+	+	15	4
+	+	17	68
+	+	21	0
+	+	23	29
+	+	25	45
+	+	27	55
+	+	29	10
+	+	31	29
+	+	33	46
+	+	35	59
+	+	37	65
+	+	39	71
+	+	41	0
+	+	39	13
+	+	41	10
+	+	43	42
+	+	45	4
+	+	49	0
+	+	47	24
+	+	49	34
+	+	51	48
+	+	53	0
+	+	51	49
+	+	53	23
+	+	55	55
+	+	55	65
+	+	57	4
+	+	55	57
+	+	57	0
+	+	55	64
+
+> ~/Documents/amores2/_Definitions_
+	*	1555243108	0
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	6
+	+	1	8
+	+	1	0
+	+	1	5
+	+	1	0
+	+	1	6
+	+	1	0
+	+	1	2
+	+	1	8
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	3
+	+	1	0
+	+	1	2
+	+	1	0
+	+	1	8
+	+	1	0
+	+	1	2
+	+	1	0
+	+	1	2
+	+	1	0
+	+	1	3
+	+	1	0
+	+	1	2
+	+	1	0
+	+	1	5
+	+	1	0
+	+	2	0
+	+	1	0
+
+> ~/Documents/amores2/_Headwords_
+	*	1555242889	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.config/vim/bundle/vim-amores2/amores2vocab.txt
+	*	1555241611	0
+	"	414	22
+	^	414	23
+	.	414	22
+	+	409	0
+	+	403	3
+	+	222	1
+	+	698	37
+	+	608	25
+	+	552	26
+	+	305	7
+	+	310	25
+	+	482	28
+	+	556	0
+	+	555	28
+	+	2	1
+	+	1	1
+	+	2	1
+	+	186	6
+	+	187	0
+	+	186	1
+	+	187	0
+	+	414	22
+
+> /tmp/bash-fc.I92t25
+	*	1555239519	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/amores2/amores2-10.txt
+	*	1555239480	0
+	"	3	0
+	^	113	9
+	.	26	0
+	+	17	0
+	+	18	0
+	+	20	0
+	+	25	0
+	+	21	0
+	+	23	0
+	+	24	0
+	+	26	0
+	+	27	0
+	+	29	0
+	+	30	0
+	+	32	0
+	+	33	0
+	+	35	0
+	+	36	0
+	+	35	0
+	+	34	0
+	+	38	0
+	+	39	0
+	+	41	0
+	+	42	0
+	+	43	0
+	+	44	0
+	+	45	0
+	+	44	64
+	+	48	0
+	+	47	0
+	+	50	0
+	+	51	0
+	+	53	0
+	+	54	0
+	+	56	0
+	+	57	0
+	+	59	0
+	+	60	0
+	+	50	0
+	+	53	0
+	+	56	0
+	+	62	57
+	+	63	0
+	+	65	0
+	+	66	0
+	+	62	0
+	+	65	0
+	+	68	0
+	+	69	0
+	+	71	0
+	+	68	10
+	+	72	0
+	+	74	0
+	+	75	0
+	+	77	0
+	+	78	0
+	+	77	0
+	+	80	0
+	+	81	0
 	+	83	0
 	+	84	0
 	+	86	0
+	+	87	0
+	+	89	0
+	+	90	0
 	+	91	0
-	+	94	0
-	+	97	0
-	+	79	88
-	+	68	0
-	+	72	0
-	+	76	0
-	+	77	0
-	+	82	0
-	+	83	0
-	+	85	0
-	+	22	0
-	+	1	23
+	+	93	0
+	+	89	0
+	+	92	0
+	+	95	0
+	+	96	0
+	+	91	0
+	+	92	0
+	+	98	0
+	+	99	0
+	+	101	0
+	+	102	0
+	+	104	0
+	+	105	0
+	+	107	0
+	+	108	0
+	+	110	0
+	+	111	0
+	+	113	0
+	+	104	0
+	+	98	0
+	+	86	0
+	+	59	0
+	+	41	0
+	+	26	0
 
-> /usr/share/vim/vim80/doc/pattern.txt
-	*	1536183238	0
-	"	412	23
-
-> ~/33-iad-i/in_aula_Domitiani_I.txt
-	*	1535898072	0
-	"	36	0
-	.	43	0
-	+	1	0
-	+	2	43
-	+	6	3
-	+	7	53
-	+	20	14
-	+	24	1
-	+	30	0
-	+	34	5
-	+	39	5
-	+	41	39
-	+	44	0
-	+	43	0
-
-> /tmp/tmpFfnAnR
-	*	1535655075	0
+> ~/Documents/amores2/amores2-10-translation.txt
+	*	1555239473	0
 	"	1	0
-
-> /tmp/tmpsCNzRB
-	*	1535655073	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> /tmp/tmpBvd5Ue
-	*	1535654997	0
-	"	1	0
-
-> /tmp/tmpPDz1Mc
-	*	1535654995	0
-	"	2	0
-	.	1	0
-	+	1	0
-	+	2	0
-	+	1	0
-
-> ~/imagestotxt.sh
-	*	1535498953	0
-	"	28	7
-	^	28	8
-	.	28	7
-	+	1	22
-	+	1	0
-	+	1	23
-	+	1	11
-	+	22	21
-	+	7	0
-	+	4	0
-	+	4	18
-	+	5	36
-	+	9	0
-	+	9	13
-	+	4	23
-	+	5	36
-	+	9	17
-	+	10	40
-	+	15	0
-	+	15	20
-	+	17	43
-	+	14	6
-	+	16	29
-	+	18	21
-	+	17	27
-	+	23	0
-	+	23	8
-	+	23	4
-	+	23	16
-	+	24	25
-	+	4	19
-	+	5	36
-	+	4	21
-	+	5	34
-	+	4	25
-	+	5	38
-	+	4	19
-	+	5	32
-	+	4	18
-	+	5	31
-	+	19	11
-	+	25	11
-	+	28	7
-
-> ~/tmp/binder.txt
-	*	1535498768	0
-	"	1	0
-
-> ~/NERD_tree_5
-	*	1535495686	0
-	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/Pictures/33-p82.txt
-	*	1535495112	0
-	"	42	1
-	^	41	2
-	.	41	1
-	+	2	16
-	+	2	67
-	+	1	63
-	+	2	83
-	+	2	82
-	+	2	4
-	+	2	119
-	+	2	4
-	+	2	72
-	+	2	4
-	+	72	0
-	+	2	4
-	+	2	48
-	+	2	53
-	+	2	4
-	+	2	47
-	+	2	14
-	+	2	4
-	+	2	13
-	+	2	4
-	+	2	59
-	+	2	4
-	+	72	0
-	+	2	4
-	+	2	5
-	+	2	4
-	+	2	5
-	+	72	0
-	+	2	4
-	+	2	0
-	+	71	0
-	+	41	1
-
-> ~/Pictures/33-iad-p82.txt
-	*	1535492605	0
-	"	1	0
-
-> ~/.config/vim/pythonx/fetchLatinAll.py
-	*	1535491348	0
-	"	76	0
-	^	65	21
-	.	65	20
-	+	65	20
-
-> ~/.config/vim/bundle/vim-clc-lookup/hermes.sh
-	*	1535486174	0
-	"	4	63
-	^	2	63
-	.	2	63
-	+	2	63
-
-> ~/NERD_tree_4
-	*	1535469239	0
-	"	20	0
-	.	1	0
-	+	1	0
-
-> ~/NERD_tree_3
-	*	1535468659	0
-	"	19	0
-	.	1	0
-	+	1	0
-
-> ~/clc-vocab
-	*	1535459196	0
-	"	2	0
-	.	40	0
-	+	1	0
-	+	40	0
-
-> /usr/share/vim/vim80/doc/editing.txt
-	*	1535459078	0
-	"	503	14
-
-> /usr/share/vim/vim80/doc/windows.txt
-	*	1535459071	0
-	"	1136	14
-
-> ~/clc4-7-b-ocr.txt
-	*	1535458622	0
-	"	16	24
-	.	48	0
-	+	1	0
-	+	1	15
-	+	1	18
-	+	1	17
-	+	1	13
-	+	1	0
-	+	1	13
-	+	1	8
-	+	1	21
-	+	1	3
-	+	1	0
-	+	48	0
-
-> ~/clc4-7-a-ocr.txt
-	*	1535458421	0
-	"	40	28
-	^	44	29
-	.	44	28
-	+	13	0
-	+	20	0
-	+	43	0
-	+	2	0
-	+	1	6
-	+	3	34
-	+	10	14
-	+	12	38
-	+	15	22
-	+	16	18
-	+	18	23
-	+	20	19
-	+	21	12
-	+	23	21
-	+	24	25
-	+	26	1
-	+	42	30
-	+	43	10
-	+	45	0
-	+	1	23
-	+	2	35
-	+	3	17
-	+	4	19
-	+	5	22
-	+	6	34
-	+	7	21
-	+	8	20
-	+	9	25
-	+	10	9
-	+	11	17
-	+	12	21
-	+	13	24
-	+	14	29
-	+	15	19
-	+	16	18
-	+	17	16
-	+	18	23
-	+	19	20
-	+	20	26
-	+	21	17
-	+	22	21
-	+	23	17
-	+	24	22
-	+	25	19
-	+	26	18
-	+	27	29
-	+	28	15
-	+	29	28
-	+	30	21
-	+	31	21
-	+	32	27
-	+	33	23
-	+	34	26
-	+	35	27
-	+	36	15
-	+	37	8
-	+	38	31
-	+	39	37
-	+	40	29
-	+	41	15
-	+	42	10
-	+	43	31
-	+	44	28
-
-> ~/clc4-6-b-ocr.txt
-	*	1535458149	0
-	"	48	0
-	.	48	0
-	+	1	0
-	+	1	2
-	+	1	6
-	+	1	27
-	+	1	0
-	+	1	8
-	+	1	4
-	+	1	10
-	+	1	4
-	+	1	9
-	+	1	1
-	+	1	3
-	+	1	4
-	+	1	0
-	+	48	0
-
-> ~/clc4-6-a-ocr.txt
-	*	1535457853	0
-	"	40	4
-	^	23	5
-	.	23	4
-	+	1	0
-	+	1	12
-	+	1	1
-	+	1	14
-	+	1	8
-	+	1	9
-	+	1	22
-	+	1	4
-	+	1	5
-	+	1	22
-	+	1	37
-	+	1	0
-	+	1	2
-	+	1	12
-	+	1	21
-	+	1	7
-	+	1	19
-	+	1	0
-	+	40	0
-	+	23	4
-
-> /tmp/tmpnbdhRg
-	*	1535454394	0
-	"	1	0
-
-> /tmp/tmpd8P605
-	*	1535454299	0
-	"	1	0
-
-> /tmp/tmp__lPRA
-	*	1535454294	0
-	"	20	6
-	.	20	0
-	+	1	0
-	+	2	0
-	+	3	0
-	+	4	0
+	^	77	28
+	.	77	27
 	+	5	0
 	+	6	0
-	+	7	0
-	+	8	0
-	+	9	0
-	+	10	0
-	+	11	0
-	+	12	0
-	+	13	0
-	+	14	0
-	+	15	0
-	+	16	0
-	+	17	0
-	+	18	0
-	+	19	0
-	+	20	0
-
-> /tmp/tmp1EgyL4
-	*	1535453633	0
-	"	1	0
-
-> /tmp/tmpGW0P3n
-	*	1535453628	0
-	"	24	0
-	.	1	0
-	+	1	0
-
-> /tmp/tmp5kPJTF
-	*	1535453411	0
-	"	1	0
-
-> ~/clc4-done/clc-15-b-ocr.txt
-	*	1535453389	0
-	"	15	20
-	^	19	21
-	.	19	20
-	+	1	0
-	+	12	0
-	+	4	22
-	+	7	22
-	+	8	15
-	+	9	0
-	+	11	6
-	+	14	0
-	+	1	17
-	+	2	13
-	+	3	19
-	+	4	31
-	+	5	47
-	+	6	20
-	+	7	20
-	+	8	5
-	+	9	31
-	+	10	20
-	+	11	7
-	+	12	32
-	+	13	18
-	+	14	5
-	+	15	10
-	+	16	16
-	+	17	43
-	+	18	22
-	+	19	20
-
-> ~/clc4-done/clc-15-a-ocr.txt
-	*	1535453228	0
-	"	20	0
-	.	20	0
-	+	1	0
-	+	1	5
-	+	1	9
-	+	1	10
-	+	1	11
-	+	1	3
-	+	1	8
-	+	1	0
-	+	1	41
-	+	1	0
-	+	1	17
-	+	1	5
-	+	1	0
-	+	1	19
-	+	1	1
-	+	1	0
-	+	20	0
-
-> ~/clc4-done/clc-14-b-ocr.txt
-	*	1535453036	0
-	"	48	0
-	.	48	0
-	+	1	0
-	+	1	12
-	+	1	7
-	+	1	3
-	+	1	25
-	+	1	13
-	+	1	1
-	+	1	16
-	+	1	28
-	+	1	8
-	+	1	14
-	+	1	4
-	+	1	21
-	+	1	0
-	+	1	15
-	+	1	4
-	+	1	14
-	+	1	7
-	+	1	4
-	+	1	6
-	+	1	13
-	+	1	4
-	+	1	0
-	+	1	7
-	+	1	0
-	+	1	3
-	+	1	0
-	+	1	1
-	+	1	0
-	+	48	0
-
-> ~/clc4-done/clc-14-a-ocr.txt
-	*	1535452600	0
-	"	1	0
-	.	49	0
-	+	1	0
-	+	1	21
-	+	1	10
-	+	1	5
-	+	1	3
-	+	1	2
-	+	1	0
-	+	1	3
-	+	1	9
-	+	1	12
-	+	1	5
-	+	1	0
-	+	1	19
-	+	1	0
-	+	49	0
-
-> ~/clc4-done/clc-13-b-ocr.txt
-	*	1535452357	0
-	"	41	27
-	.	22	34
-	+	1	0
-	+	1	25
-	+	1	20
-	+	1	25
-	+	1	0
-	+	1	10
-	+	1	16
-	+	1	11
-	+	1	9
-	+	1	0
-	+	1	11
-	+	1	0
-	+	41	0
-	+	22	34
-
-> ~/clc4-done/clc-13-a-ocr.txt
-	*	1535452095	0
-	"	1	0
-	.	49	0
-	+	1	0
-	+	1	5
-	+	1	10
-	+	1	29
-	+	1	9
-	+	1	5
-	+	1	0
-	+	1	7
-	+	1	0
-	+	49	0
-
-> ~/clc4-done/clc-12-b-ocr.txt
-	*	1535409167	0
-	"	51	8
-	.	28	10
-	+	1	0
-	+	1	4
-	+	1	1
-	+	1	3
-	+	1	25
-	+	1	4
-	+	1	20
-	+	1	13
-	+	1	15
-	+	1	20
-	+	1	5
-	+	1	24
-	+	1	6
-	+	1	4
-	+	1	3
-	+	1	0
-	+	51	0
-	+	28	10
-
-> ~/clc4-done/clc-12-a-ocr.txt
-	*	1535408820	0
-	"	45	0
-	.	45	0
-	+	1	0
-	+	1	15
-	+	1	1
-	+	1	18
-	+	1	26
-	+	1	22
-	+	1	6
-	+	1	10
-	+	1	3
-	+	1	45
-	+	1	5
-	+	1	0
-	+	45	0
-
-> ~/clc4-done/clc-11-b-ocr.txt
-	*	1535408445	0
-	"	41	0
-	.	41	0
-	+	1	0
-	+	1	5
-	+	1	3
-	+	1	6
-	+	1	22
-	+	1	14
-	+	1	1
-	+	1	17
-	+	1	9
-	+	1	31
-	+	1	3
-	+	1	0
-	+	1	12
-	+	1	11
-	+	1	0
-	+	41	0
-
-> ~/clc4-done/clc-11-a-ocr.txt
-	*	1535408128	0
-	"	41	0
-	.	41	0
-	+	1	0
-	+	1	4
-	+	1	16
-	+	1	0
-	+	1	16
-	+	1	0
-	+	41	0
-
-> ~/clc4-done/clc-10-b-ocr.txt
-	*	1535407894	0
-	"	45	0
-	.	45	0
-	+	1	0
-	+	1	5
-	+	1	14
-	+	1	28
-	+	1	5
-	+	1	4
-	+	1	5
-	+	1	13
-	+	1	11
-	+	1	28
-	+	1	0
-	+	1	6
-	+	1	9
-	+	1	4
-	+	1	36
-	+	1	0
-	+	45	0
-
-> ~/clc4-done/clc-10-a-ocr.txt
-	*	1535407359	0
-	"	38	0
-	.	44	0
-	+	1	0
-	+	1	29
-	+	1	25
-	+	1	1
-	+	1	12
-	+	1	17
-	+	1	2
-	+	1	17
-	+	1	16
-	+	1	11
-	+	1	1
-	+	1	5
-	+	1	0
-	+	44	0
-
-> ~/clc4-done/clc-9-b-ocr.txt
-	*	1535406955	0
-	"	1	0
-	.	42	0
-	+	1	0
-	+	1	4
-	+	1	14
-	+	1	11
-	+	1	16
-	+	1	14
-	+	1	10
-	+	1	4
-	+	1	12
-	+	1	25
-	+	1	15
-	+	1	0
-	+	42	0
-
-> ~/clc4-done/clc-9-a-ocr.txt
-	*	1535406599	0
-	"	42	28
-	^	27	40
-	.	27	39
-	+	1	0
-	+	1	17
-	+	1	20
-	+	1	37
-	+	1	2
-	+	1	0
-	+	42	0
-	+	13	26
-	+	27	39
-
-> ~/clc4-done/clc-8-b-ocr.txt
-	*	1535406339	0
-	"	51	0
-	.	51	0
-	+	1	0
-	+	1	1
-	+	1	22
-	+	1	0
-	+	1	5
-	+	1	11
-	+	1	6
-	+	1	33
-	+	1	15
-	+	1	10
-	+	1	0
-	+	1	15
-	+	1	0
-	+	1	6
-	+	1	0
-	+	51	0
-
-> ~/clc4-done/clc-8-a-ocr.txt
-	*	1535405921	0
-	"	1	0
-	.	45	0
-	+	1	0
-	+	1	13
-	+	1	22
-	+	1	10
-	+	1	4
-	+	1	10
-	+	1	0
-	+	1	11
-	+	1	0
-	+	45	0
-
-> ~/clc4-done/clc-7-b-ocr.txt
-	*	1535405674	0
-	"	1	0
-	.	42	0
-	+	1	0
-	+	1	12
-	+	1	1
-	+	1	18
-	+	1	0
-	+	1	46
-	+	1	0
-	+	42	0
-
-> ~/clc4-done/clc-7-a-ocr.txt
-	*	1535405358	0
-	"	47	0
-	.	49	0
-	+	1	0
-	+	1	9
-	+	1	0
-	+	1	10
-	+	1	21
-	+	1	24
-	+	1	1
-	+	1	10
-	+	1	2
-	+	1	10
-	+	1	6
-	+	1	19
-	+	1	6
-	+	1	0
-	+	1	1
-	+	1	0
-	+	49	0
-
-> ~/clc4-done/clc-6-b-ocr.txt
-	*	1535404972	0
-	"	41	22
-	.	37	22
-	+	1	0
-	+	1	5
-	+	1	41
-	+	1	0
-	+	1	22
-	+	1	0
-	+	1	5
-	+	1	8
-	+	1	10
-	+	1	17
-	+	1	0
-	+	1	18
-	+	1	8
-	+	1	0
-	+	1	2
-	+	1	0
-	+	1	9
-	+	1	0
-	+	43	0
-	+	37	22
-
-> ~/clc4-workings/clc-6-b-ocr.txt
-	*	1535404378	0
-	"	122	0
-
-> ~/clc4-done/clc-6-a-ocr.txt
-	*	1535403397	0
-	"	1	0
-	.	46	0
-	+	1	0
-	+	1	5
-	+	1	14
-	+	1	11
-	+	1	6
-	+	1	12
-	+	1	37
-	+	1	5
-	+	1	3
-	+	1	22
-	+	1	3
-	+	1	20
-	+	1	0
-	+	1	3
-	+	1	21
-	+	1	1
-	+	1	0
-	+	46	0
-
-> ~/clc4-done/clc-5-b-ocr.txt
-	*	1535402973	0
-	"	1	0
-	.	41	0
-	+	1	0
-	+	1	10
-	+	1	0
-	+	1	7
-	+	1	16
-	+	1	0
-	+	1	18
-	+	1	0
-	+	1	15
-	+	1	0
-	+	1	8
-	+	1	0
-	+	1	23
-	+	1	0
-	+	1	25
-	+	1	0
-	+	1	14
-	+	1	23
-	+	1	0
-	+	41	0
-
-> /usr/share/vim/vim80/doc/change.txt
-	*	1535402635	0
-	"	826	6
-
-> ~/clc4-done/clc-5-a-ocr.txt
-	*	1535402607	0
-	"	1	0
-	.	45	0
-	+	1	0
-	+	1	1
-	+	1	5
-	+	1	4
-	+	1	12
-	+	1	17
-	+	1	5
-	+	1	4
-	+	1	2
-	+	1	7
-	+	1	14
-	+	1	0
-	+	1	1
-	+	1	28
-	+	1	20
-	+	1	9
-	+	1	21
-	+	1	4
-	+	1	22
-	+	1	30
-	+	1	11
-	+	1	0
-	+	1	8
-	+	1	25
-	+	1	29
-	+	1	0
-	+	1	4
-	+	1	0
-	+	45	0
-
-> /usr/share/vim/vim80/doc/repeat.txt
-	*	1535402131	0
-	"	52	32
-
-> ~/.dotfiles/help/vim-cmds
-	*	1535401995	0
-	"	236	0
-	^	18	48
-	.	18	47
-	+	126	45
-	+	17	38
-	+	18	47
-	m	15	14
-
-> ~/clc4-done/clc-4-b-ocr.txt
-	*	1535401560	0
-	"	26	34
-	^	24	44
-	.	24	43
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	17
-	+	1	1
-	+	1	23
-	+	1	19
-	+	1	28
-	+	1	32
-	+	1	29
-	+	1	27
-	+	1	32
-	+	1	27
-	+	1	26
-	+	1	20
-	+	1	32
-	+	1	26
-	+	1	11
-	+	1	29
-	+	1	38
-	+	1	28
-	+	1	1
-	+	1	5
-	+	1	11
-	+	1	1
-	+	1	16
-	+	1	29
-	+	1	28
-	+	1	0
-	+	34	0
-	+	21	62
-	+	24	43
-
-> ~/clc4-done/clc-4-a-ocr.txt
-	*	1535400966	0
-	"	45	4
-	.	27	4
-	+	1	0
-	+	1	7
-	+	1	0
-	+	1	17
-	+	1	8
-	+	1	0
-	+	45	0
-	+	25	2
-	+	27	4
-
-> /tmp/tmpJAOLtI
-	*	1535400447	0
-	"	1	0
-
-> /tmp/tmps2LLAp
-	*	1535400435	0
-	"	6	0
-	.	1	0
-	+	1	0
-
-> ~/PUAL/text/PUAL-08.txt
-	*	1535229912	0
-	"	1	0
-
-> ~/PUAL/PUAL-04.txt.txt
-	*	1535223209	0
-	"	18	18
-	^	18	15
-	.	18	15
-	+	2	10
-	+	4	50
-	+	12	0
-	+	16	14
-	+	18	15
-
-> ~/clc4-done/clc4-3b-clean.txt
-	*	1534633395	0
-	"	4	24
-	.	23	24
-	+	1	0
-	+	1	11
-	+	1	0
-	+	1	26
-	+	1	0
-	+	28	0
-	+	14	0
-	+	15	25
-	+	22	27
-	+	23	24
-
-> ~/clc4-done/clc4-2b-clean.txt
-	*	1534633033	0
-	"	46	30
-	^	46	31
-	.	46	30
-	+	1	0
-	+	1	2
-	+	1	1
-	+	1	17
-	+	1	0
-	+	1	21
-	+	1	0
-	+	45	0
-	+	16	0
-	+	46	30
-
-> ~/clc4-done/clc4-2a-clean.txt
-	*	1534632982	0
-	"	52	21
-	^	52	22
-	.	52	21
-	+	52	21
-
-> ~/clc4-done/clc4-1b-clean.txt
-	*	1534632943	0
-	"	50	23
-	^	29	23
-	.	29	23
-	+	16	12
-	+	29	23
-
-> ~/clc4-done/clc4-1a-clean.txt
-	*	1534632656	0
-	"	38	30
-	^	38	31
-	.	38	30
-	+	38	30
-
-> ~/clc4-done/clc4-3a-clean.txt
-	*	1534632600	0
-	"	46	7
-	^	40	17
-	.	24	7
-	+	1	0
-	+	1	25
-	+	1	0
-	+	1	11
-	+	1	15
-	+	1	7
-	+	1	15
-	+	1	0
-	+	1	6
-	+	1	10
-	+	1	17
-	+	1	22
-	+	1	23
-	+	1	77
-	+	1	36
-	+	1	31
-	+	1	30
-	+	1	44
-	+	1	50
-	+	1	32
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	5
-	+	1	0
-	+	48	0
-	+	1	0
-	+	2	11
-	+	11	15
-	+	12	7
-	+	13	15
-	+	31	4
-	+	36	3
-	+	41	33
-	+	40	17
-	+	22	9
-	+	21	7
-	+	22	10
-	+	24	7
-
-> ~/tmp/unpapered-clc4-3a.pnm.tif.txt.txt
-	*	1534632140	0
-	"	47	5
-	^	16	17
-	.	47	5
-	+	1	0
-	+	1	25
-	+	1	0
-	+	47	0
-	+	1	0
-	+	2	11
-	+	11	15
-	+	12	7
-	+	13	15
-	+	16	0
-	+	21	6
-	+	22	10
-	+	20	17
-	+	21	22
-	+	20	23
-	+	18	77
-	+	18	36
-	+	18	31
-	+	18	30
-	+	19	44
-	+	18	50
-	+	17	32
-	+	16	0
-	+	17	0
-	+	16	16
-	+	17	0
-	+	47	5
-
-> ~/tmp/unpapered-clc4-3a.pnm.txt.txt
-	*	1534631390	0
-	"	1	0
-
-> ~/.dwmsrc/dwm.c
-	*	1534630364	0
-	"	664	0
-
-> ~/clc4-1a-clean.txt
-	*	1534629247	0
-	"	37	21
-	.	37	21
-	+	1	17
-	+	1	7
-	+	1	23
-	+	1	22
-	+	1	27
-	+	1	28
-	+	1	36
-	+	1	23
-	+	1	21
-	+	1	19
-	+	1	31
-	+	1	26
-	+	1	16
-	+	1	12
-	+	1	0
-	+	1	43
-	+	1	22
-	+	1	0
-	+	1	10
-	+	1	0
-	+	1	41
-	+	1	5
-	+	1	9
-	+	1	0
-	+	1	16
-	+	1	37
-	+	1	17
-	+	1	26
-	+	1	27
-	+	1	23
-	+	1	19
-	+	1	27
-	+	1	20
-	+	1	33
-	+	1	18
-	+	1	4
-	+	1	7
-	+	1	37
-	+	1	0
-	+	1	9
-	+	1	28
-	+	1	6
-	+	1	18
-	+	1	0
-	+	37	0
-	+	1	13
-	+	2	35
-	+	3	18
-	+	4	7
-	+	5	30
-	+	6	31
-	+	7	22
-	+	8	24
-	+	9	20
-	+	10	3
-	+	11	25
-	+	12	36
-	+	13	38
-	+	14	19
-	+	15	10
-	+	16	30
-	+	17	5
-	+	18	18
-	+	19	6
-	+	20	33
-	+	21	25
-	+	22	38
-	+	23	33
-	+	24	54
-	+	25	28
-	+	26	33
-	+	27	37
-	+	28	34
-	+	29	24
-	+	30	21
-	+	31	26
-	+	32	23
-	+	33	28
-	+	34	13
-	+	35	26
-	+	36	46
-	+	37	21
-
-> ~/clc4-2a-clean.txt
-	*	1534629138	0
-	"	20	10
-	.	48	10
-	+	1	0
-	+	1	1
-	+	1	2
-	+	1	5
-	+	1	9
-	+	1	0
-	+	1	12
-	+	1	1
-	+	1	9
-	+	1	0
-	+	1	11
-	+	1	0
-	+	51	0
-	+	2	5
-	+	14	6
-	+	5	0
-	+	1	0
-	+	4	0
-	+	7	0
-	+	8	0
-	+	11	0
-	+	17	0
-	+	19	0
-	+	20	0
-	+	37	0
-	+	46	0
-	+	47	0
-	+	48	0
-	+	34	13
-	+	35	3
-	+	42	13
-	+	46	30
-	+	5	0
-	+	25	9
-	+	48	10
-
-> ~/tesseract-clc4-2a
-	*	1534628077	0
-	"	1	0
-
-> ~/clc4-1b-clean.txt
-	*	1534624003	0
-	"	9	93
-	^	10	21
-	.	9	93
-	+	51	0
-	+	1	0
-	+	7	0
+	+	5	4
 	+	3	0
-	+	13	0
-	+	1	32
-	+	2	23
-	+	3	23
-	+	4	15
-	+	5	29
-	+	6	29
-	+	7	39
-	+	8	29
-	+	9	41
-	+	10	21
-	+	6	0
-	+	2	0
-	+	14	0
-	+	13	39
-	+	14	20
-	+	15	41
-	+	16	26
-	+	17	6
-	+	18	19
-	+	19	17
-	+	20	17
-	+	21	13
-	+	23	12
-	+	24	18
-	+	25	14
-	+	26	20
-	+	27	11
-	+	28	24
-	+	29	17
-	+	30	20
-	+	32	21
-	+	33	29
-	+	34	22
-	+	36	37
-	+	37	31
-	+	39	34
-	+	41	35
-	+	42	38
-	+	43	42
-	+	44	4
-	+	46	21
-	+	47	29
-	+	48	19
-	+	49	15
-	+	50	19
-	+	2	22
-	+	10	20
-	+	11	16
-	+	12	0
-	+	43	0
-	+	7	0
-	+	4	0
-	+	51	0
-	+	21	0
-	+	45	29
-	+	7	23
-	+	1	0
-	+	50	0
-	+	9	93
+	+	7	18
+	+	9	27
+	+	11	49
+	+	13	88
+	+	15	83
+	+	17	0
+	+	15	82
+	+	17	55
+	+	19	27
+	+	21	53
+	+	25	0
+	+	27	62
+	+	29	4
+	+	31	45
+	+	33	17
+	+	35	32
+	+	33	8
+	+	37	35
+	+	41	4
+	+	43	50
+	+	45	40
+	+	47	51
+	+	49	34
+	+	51	63
+	+	52	0
+	+	53	0
+	+	55	0
+	+	57	49
+	+	59	49
+	+	61	0
+	+	63	41
+	+	65	18
+	+	67	53
+	+	69	69
+	+	67	51
+	+	71	42
+	+	73	14
+	+	71	33
+	+	73	45
+	+	75	16
+	+	77	27
 
-> /usr/share/vim/vim80/doc/digraph.txt
-	*	1534623429	0
-	"	113	56
-
-> /usr/share/vim/vim80/doc/pi_tar.txt
-	*	1534597445	0
-	"	36	5
+> ~/Documents/amores2/vim
+	*	1555239436	0
+	"	1	0
 
 > ~/.config/vim/customsnips/all.snippets
-	*	1534597421	0
-	"	46	0
-	^	95	0
-	.	94	10
+	*	1555237157	0
+	"	67	4
+	^	69	28
+	.	71	0
 	+	55	0
 	+	63	9
 	+	55	0
@@ -3338,31 +1068,31 @@ $
 	+	64	0
 	+	1	0
 	+	30	0
-	+	77	12
-	+	78	11
+	+	87	12
+	+	88	11
 	+	6	8
 	+	4	67
-	+	78	48
-	+	81	0
-	+	82	0
-	+	81	17
-	+	82	47
-	+	83	9
-	+	65	0
-	+	76	0
-	+	65	30
-	+	67	0
-	+	76	0
-	+	68	0
-	+	75	9
-	+	69	1
-	+	72	1
+	+	88	48
+	+	91	0
+	+	92	0
+	+	91	17
+	+	92	47
+	+	93	9
+	+	75	0
+	+	86	0
+	+	75	30
+	+	77	0
+	+	86	0
+	+	78	0
+	+	85	9
+	+	79	1
+	+	82	1
 	+	29	35
-	+	81	24
-	+	82	44
+	+	91	24
+	+	92	44
 	+	14	8
 	+	13	17
-	+	82	35
+	+	92	35
 	+	29	0
 	+	14	31
 	+	14	37
@@ -3380,313 +1110,1877 @@ $
 	+	15	0
 	+	31	0
 	+	20	0
-	+	85	0
-	+	84	0
-	+	85	49
-	+	86	34
+	+	95	0
+	+	94	0
+	+	95	49
+	+	96	34
 	+	24	0
-	+	89	0
-	+	90	0
-	+	88	0
-	+	89	10
-	+	90	34
-	+	28	0
-	+	93	0
-	+	92	0
-	+	93	45
-	+	94	10
-
-> ~/.stsrc/config.h
-	*	1534537115	0
-	"	8	45
-	^	8	33
-	.	8	0
-	+	121	2
-	+	121	34
-	+	121	0
-	+	121	34
-	+	121	0
-	+	120	35
-	+	114	28
-	+	99	28
-	+	108	34
-	+	113	34
-	+	112	30
-	+	111	27
-	+	110	32
-	+	109	34
-	+	107	32
-	+	106	32
-	+	112	26
-	+	105	32
-	+	104	32
-	+	103	33
-	+	102	41
-	+	101	33
-	+	100	0
-	+	101	0
-	+	100	31
-	+	8	0
-
-> ~/Downloads/virtualbox-5.2_5.2.18-124319~Debian~stretch_amd64.deb
-	*	1534537045	0
-	"	1	0
-
-> ~/.stsrc/.stsrc
-	*	1534536915	0
-	"	1	0
-
-> ~/.config/vim/bundle/vim-airline/doc/airline.txt
-	*	1534534937	0
-	"	283	0
-
-> ~/Downloads/NERD_tree_1
-	*	1534533562	0
-	"	48	0
-	.	1	0
-	+	1	0
-
-> ~/.config/vim/bundle/vim-airline/plugin/airline.vim
-	*	1534531193	0
-	"	1	0
-
-> ~/.config/vim/bundle/vim-airline/autoload/airline/themes/dark.vim
-	*	1534531173	0
-	"	1	0
-
-> ~/.config/vim/bundle/vim-airline/autoload/airline/parts.vim
-	*	1534531161	0
-	"	109	0
-
-> ~/.config/vim/bundle/vim-airline/autoload/airline/section.vim
-	*	1534531138	0
-	"	1	0
-
-> ~/.config/vim/bundle/vim-airline/autoload/airline/util.vim
-	*	1534531135	0
-	"	71	0
-
-> ~/.config/vim/bundle/vim-airline/autoload/airline.vim
-	*	1534531123	0
-	"	166	0
-
-> ~/.config/vim/bundle/vim-airline/autoload/airline/themes.vim
-	*	1534531089	0
-	"	69	0
-
-> ~/.config/vim/bundle/vim-airline/autoload/airline/extensions/default.vim
-	*	1534531064	0
-	"	1	0
-
-> ~/.config/vim/bundle/vim-airline/autoload/airline/extensions/capslock.vim
-	*	1534531057	0
-	"	1	0
-
-> ~/.config/vim/bundle/vim-airline/autoload/airline/extensions/example.vim
-	*	1534531035	0
-	"	1	0
-
-> ~/.config/vim/bundle/vim-airline-themes/plugin/airline-themes.vim
-	*	1534530879	0
-	"	4	64
-
-> ~/.config/ranger/commands.py
-	*	1534516583	0
-	"	1	0
-	^	145	110
-	.	145	0
-	+	145	54
-	+	145	151
-	+	145	0
-	+	143	21
-	+	144	71
-	+	145	48
-	+	145	131
-	+	145	0
-	+	145	109
-	+	145	0
-
-> ~/.bashrc
-	*	1534516487	0
-	"	22	0
-	^	60	4
-	.	118	0
-	+	117	0
-	+	46	1
-	+	117	0
-	+	46	0
-	+	62	0
-	+	62	354
-	+	62	326
-	+	62	4
-	+	118	50
-	+	118	0
-	+	62	5
-	+	61	0
-	+	60	4
-	+	118	0
-
-> ~/.dotfiles/NERD_tree_1
-	*	1534498229	0
-	"	30	0
-	.	1	0
-	+	1	0
-
-> ~/.dotfiles/vim/customsnips/sh.snippets
-	*	1534498195	0
-	"	1	0
-
-> ~/Downloads/Aeneid/Aen-XI-Trans-1-224
-	*	1534359042	0
-	"	44	0
-	.	358	0
-	+	358	0
-
-> ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
-	*	1534359037	0
-	"	197	0
-	^	2099	83
-	.	196	0
-	+	1956	0
-	+	1957	0
-	+	1959	59
-	+	1963	0
-	+	1962	59
-	+	1965	0
-	+	1969	0
-	+	1972	59
-	+	1975	0
-	+	1974	59
-	+	1976	0
-	+	1978	0
-	+	1979	0
-	+	1982	59
-	+	1986	0
-	+	1985	59
-	+	1986	0
-	+	1987	0
-	+	1988	0
-	+	1989	0
-	+	1996	0
-	+	1990	30
-	+	1998	59
-	+	2002	0
-	+	2001	59
-	+	2002	2
-	+	2003	0
-	+	2004	0
-	+	2005	0
-	+	2008	18
-	+	2011	0
-	+	2014	0
-	+	2015	0
-	+	2016	59
-	+	2021	0
-	+	2020	59
-	+	2021	0
-	+	2025	0
-	+	2030	0
-	+	2031	0
-	+	2036	0
-	+	2039	59
-	+	2043	0
-	+	2042	59
-	+	2045	0
-	+	2049	0
-	+	2051	0
-	+	2052	0
-	+	2056	0
-	+	2057	59
-	+	2061	0
-	+	2060	59
-	+	2065	0
-	+	2067	0
-	+	2069	0
-	+	2070	0
-	+	2071	59
-	+	2085	10
-	+	2075	0
-	+	2074	59
-	+	2076	0
-	+	2077	0
-	+	2080	0
-	+	2084	59
-	+	2087	0
-	+	2086	59
-	+	2093	59
-	+	2096	0
-	+	2095	59
-	+	2097	0
-	+	2098	0
-	+	2099	82
-	+	2102	0
-	+	9	0
-	+	10	0
-	+	23	0
-	+	52	0
-	+	51	0
-	+	73	0
-	+	76	0
-	+	83	0
-	+	97	0
-	+	98	0
-	+	100	0
 	+	99	0
+	+	100	0
+	+	98	0
+	+	99	10
+	+	100	34
+	+	28	0
+	+	103	0
+	+	102	0
+	+	103	45
+	+	104	10
+	+	75	0
+	+	65	0
+	+	66	0
+	+	65	22
+	+	66	3
+	+	73	9
+	+	74	0
+	+	66	15
+	+	67	2
+	+	68	2
+	+	67	0
+	+	68	36
+	+	69	36
+	+	70	36
+	+	71	36
+	+	68	0
+	+	69	0
+	+	70	0
+	+	69	35
+	+	70	0
+	+	71	0
+	+	68	0
+	+	69	0
+	+	70	0
+	+	71	0
+	+	68	0
+	+	69	0
+	+	70	0
+	+	71	0
+	+	68	0
+	+	71	0
+
+> ~/.config/vim/bundle/ultisnips/doc/UltiSnips.txt
+	*	1555235910	0
+	"	1172	32
+	^	834	7
+
+> ~/.config/vim/bundle/vim-snippets/UltiSnips/all.snippets
+	*	1555234235	0
+	"	1	0
+
+> ~/.config/vim/bundle/YouCompleteMe/doc/youcompleteme.txt
+	*	1555233641	0
+	"	3105	4
+
+> ~/Documents/amores2/amores2-10-nums.txt
+	*	1555189638	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/amores2/amores2-6-nums.txt
+	*	1555179942	0
+	"	185	4
+	.	1	0
+	+	1	0
+
+> ~/Documents/amores2/amores2-6.txt
+	*	1555179835	0
+	"	1	0
+	^	185	9
+	.	38	0
+	+	99	0
+	+	101	0
+	+	102	0
+	+	98	0
+	+	101	0
 	+	105	0
-	+	106	0
+	+	104	0
 	+	107	0
-	+	109	0
+	+	104	54
+	+	107	0
+	+	108	0
+	+	110	0
+	+	111	0
+	+	113	0
+	+	114	0
+	+	110	0
+	+	113	0
+	+	116	0
+	+	117	0
+	+	119	0
+	+	120	0
+	+	119	0
+	+	123	0
 	+	122	0
-	+	14	0
 	+	125	0
+	+	126	0
+	+	127	0
+	+	122	0
+	+	128	0
+	+	129	0
+	+	128	62
+	+	131	0
+	+	132	0
+	+	131	0
 	+	134	0
 	+	135	0
+	+	137	0
 	+	138	0
+	+	140	0
+	+	141	0
+	+	143	0
+	+	144	0
 	+	146	0
+	+	147	0
+	+	149	0
 	+	139	0
+	+	140	0
+	+	145	0
+	+	146	0
+	+	149	0
+	+	150	0
+	+	153	0
+	+	152	0
+	+	155	0
+	+	151	0
+	+	152	0
+	+	155	0
+	+	156	0
+	+	158	0
+	+	159	0
+	+	161	0
+	+	162	0
+	+	158	0
+	+	161	0
+	+	164	0
+	+	163	50
+	+	165	0
+	+	167	0
+	+	168	0
+	+	167	0
+	+	166	46
+	+	170	0
+	+	171	0
+	+	173	0
+	+	174	0
+	+	173	0
+	+	170	0
 	+	175	0
-	+	181	0
+	+	176	0
+	+	177	0
+	+	179	0
+	+	180	0
+	+	185	0
+	+	176	24
+	+	175	26
+	+	179	0
+	+	178	22
+	+	182	0
+	+	183	0
+	+	185	0
+	+	146	0
+	+	38	0
+
+> ~/Documents/amores2/amores2-6-translation.txt
+	*	1555179733	0
+	"	125	42
+	^	125	43
+	.	125	42
+	+	3	26
+	+	5	0
+	+	3	4
+	+	7	15
+	+	9	0
+	+	5	4
+	+	9	0
+	+	11	67
+	+	13	38
+	+	15	71
+	+	17	39
+	+	19	39
+	+	21	0
+	+	25	0
+	+	23	41
+	+	25	4
+	+	27	37
+	+	29	67
+	+	33	42
+	+	35	35
+	+	33	4
+	+	37	55
+	+	39	26
+	+	41	52
+	+	46	0
+	+	45	40
+	+	47	44
+	+	49	4
+	+	51	71
+	+	53	4
+	+	57	4
+	+	59	37
+	+	61	45
+	+	63	45
+	+	63	46
+	+	65	45
+	+	67	67
+	+	69	39
+	+	67	24
+	+	69	52
+	+	68	0
+	+	69	19
+	+	69	20
+	+	70	0
+	+	69	4
+	+	67	46
+	+	72	0
+	+	71	0
+	+	73	4
+	+	71	47
+	+	73	42
+	+	75	17
+	+	77	0
+	+	79	21
+	+	81	0
+	+	79	0
+	+	80	0
+	+	79	38
+	+	81	41
+	+	83	0
+	+	85	0
+	+	89	0
+	+	87	12
+	+	89	4
+	+	93	4
+	+	91	44
+	+	95	22
+	+	97	4
+	+	101	4
+	+	103	55
+	+	105	4
+	+	103	74
+	+	107	25
+	+	109	0
+	+	107	39
+	+	109	28
+	+	111	18
+	+	113	47
+	+	115	53
+	+	117	4
+	+	119	47
+	+	121	36
+	+	123	62
+	+	125	42
+
+> ~/.config/vim/bundle/vim-surround/doc/surround.txt
+	*	1555176763	0
+	"	8	48
+
+> ~/.bash_aliases
+	*	1555161676	0
+	"	14	38
+	^	14	39
+	.	14	38
+	+	83	29
+	+	83	24
+	+	83	0
+	+	83	19
+	+	83	44
+	+	83	35
+	+	83	21
+	+	83	0
+	+	43	17
+	+	44	0
+	+	83	43
+	+	83	35
+	+	83	30
+	+	83	47
+	+	83	0
+	+	83	21
+	+	83	0
+	+	83	52
+	+	83	0
+	+	83	4
+	+	83	0
+	+	83	28
+	+	83	24
+	+	83	28
+	+	83	23
+	+	83	20
+	+	83	37
+	+	83	29
+	+	83	26
+	+	83	31
+	+	83	0
+	+	83	17
+	+	83	0
+	+	83	12
+	+	83	0
+	+	83	9
+	+	83	0
+	+	83	152
+	+	83	3
+	+	83	60
+	+	83	41
+	+	83	158
+	+	83	0
+	+	83	29
+	+	83	25
+	+	83	39
+	+	83	30
+	+	83	33
+	+	83	32
+	+	83	33
+	+	83	24
+	+	83	27
+	+	83	26
+	+	83	33
+	+	83	36
+	+	83	16
+	+	83	0
+	+	83	1
+	+	83	17
+	+	83	0
+	+	83	20
+	+	83	36
+	+	73	0
+	+	72	0
+	+	83	0
+	+	20	0
+	+	94	22
+	+	68	0
+	+	67	0
+	+	68	73
+	+	195	0
+	+	196	26
+	+	196	96
+	+	196	87
+	+	196	24
+	+	196	84
+	+	196	81
+	+	196	13
 	+	196	0
-	a	1905	37
+	+	196	13
+	+	196	9
+	+	196	84
+	+	196	77
+	+	196	92
+	+	196	55
+	+	196	83
+	+	196	90
+	+	196	26
+	+	196	70
+	+	196	77
+	+	196	70
+	+	197	0
+	+	198	15
+	+	205	26
+	+	204	22
+	+	210	0
+	+	208	10
+	+	47	0
+	+	40	19
+	+	14	38
 
-> /usr/share/vim/vim80/doc/motion.txt
-	*	1534352557	0
-	"	319	7
+> /usr/lib/surfraw/wikipedia
+	*	1555157754	0
+	"	5	0
 
-> /usr/share/vim/vim80/doc/intro.txt
-	*	1534352547	0
-	"	464	27
-
-> ~/.config/vim/bundle/uplooker/plugin/uplooker.vim
-	*	1534352389	0
+> ~/_Definitions_
+	*	1555014310	0
 	"	1	0
-	^	1	0
+	.	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	2	7
+	+	2	0
+	+	1	0
+	+	2	9
+	+	1	0
+	+	2	0
+	+	2	6
+	+	1	0
+	+	2	0
+	+	1	2
+	+	2	0
+	+	2	3
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	2	9
+	+	2	0
+	+	1	0
+	+	1	9
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	3
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+
+> ~/_Headwords_
+	*	1555012579	0
+	"	1	0
 	.	1	0
 	+	1	0
 
-> /usr/share/vim/vim80/doc/options.txt
-	*	1534339872	0
-	"	8246	48
+> ~/Documents/amores2/amores2-4-nums.txt
+	*	1554984674	0
+	"	1	0
+	.	1	0
+	+	1	0
 
-> /usr/share/vim/vim80/doc/index.txt
-	*	1534263871	0
-	"	522	0
+> ~/Documents/amores2/amores2-4.txt
+	*	1554984472	0
+	"	1	0
+	^	143	9
+	.	1	0
+	+	47	0
+	+	50	0
+	+	51	0
+	+	53	0
+	+	54	0
+	+	53	0
+	+	43	5
+	+	56	0
+	+	57	0
+	+	58	0
+	+	59	13
+	+	58	12
+	+	60	0
+	+	62	0
+	+	63	0
+	+	62	56
+	+	65	0
+	+	66	0
+	+	68	0
+	+	69	0
+	+	67	0
+	+	68	20
+	+	67	20
+	+	68	62
+	+	71	0
+	+	70	0
+	+	71	0
+	+	72	0
+	+	74	0
+	+	73	3
+	+	75	0
+	+	77	0
+	+	78	0
+	+	80	0
+	+	81	0
+	+	80	56
+	+	83	0
+	+	84	0
+	+	86	0
+	+	82	13
+	+	87	0
+	+	86	0
+	+	89	0
+	+	90	0
+	+	89	51
+	+	93	0
+	+	92	0
+	+	96	4
+	+	95	0
+	+	96	0
+	+	98	0
+	+	99	0
+	+	98	0
+	+	101	0
+	+	102	0
+	+	104	0
+	+	105	0
+	+	107	0
+	+	108	0
+	+	107	0
+	+	109	0
+	+	110	17
+	+	109	0
+	+	111	0
+	+	113	0
+	+	114	0
+	+	113	16
+	+	112	23
+	+	113	24
+	+	116	0
+	+	117	0
+	+	119	0
+	+	120	0
+	+	122	0
+	+	123	0
+	+	125	0
+	+	126	0
+	+	128	0
+	+	129	0
+	+	130	0
+	+	128	0
+	+	131	0
+	+	132	0
+	+	131	0
+	+	136	32
+	+	134	0
+	+	135	0
+	+	137	0
+	+	138	0
+	+	136	46
+	+	140	0
+	+	141	0
+	+	143	0
+	+	140	0
+	+	116	0
+	+	1	0
 
-> /usr/share/vim/vim80/doc/tagsrch.txt
-	*	1534263858	0
-	"	738	27
+> ~/Documents/amores2/amores2-4-translation.txt
+	*	1554984387	0
+	"	97	23
+	^	97	24
+	.	97	23
+	+	3	44
+	+	5	0
+	+	9	0
+	+	11	34
+	+	13	68
+	+	15	0
+	+	17	51
+	+	19	47
+	+	21	0
+	+	22	0
+	+	21	4
+	+	25	30
+	+	23	15
+	+	27	31
+	+	29	47
+	+	31	51
+	+	33	52
+	+	35	32
+	+	37	0
+	+	31	17
+	+	37	64
+	+	39	26
+	+	41	0
+	+	43	35
+	+	45	37
+	+	49	0
+	+	47	15
+	+	51	17
+	+	53	30
+	+	55	62
+	+	57	34
+	+	59	8
+	+	55	31
+	+	59	63
+	+	61	45
+	+	63	63
+	+	64	0
+	+	63	0
+	+	65	0
+	+	66	0
+	+	65	27
+	+	67	26
+	+	69	4
+	+	71	69
+	+	73	157
+	+	73	24
+	+	75	76
+	+	77	33
+	+	79	62
+	+	81	0
+	+	79	13
+	+	81	20
+	+	86	0
+	+	81	4
+	+	83	35
+	+	85	19
+	+	89	0
+	+	91	0
+	+	93	48
+	+	95	62
+	+	97	23
 
-> ~/n
-	*	1534263732	0
+> ~/pwords.csv
+	*	1554975155	0
+	"	36	61
+	^	36	62
+	.	36	61
+	+	27	46
+	+	36	61
+
+> ~/.local/usr/bin/webview.sh
+	*	1554840026	0
+	"	10	22
+	^	10	23
+	.	10	22
+	+	10	35
+	+	25	10
+	+	15	55
+	+	6	0
+	+	9	0
+	+	10	0
+	+	9	13
+	+	33	31
+	+	34	0
+	+	40	0
+	+	41	0
+	+	6	0
+	+	10	22
+
+> ~/.config/vim/vimrc
+	*	1554837823	0
+	"	948	21
+	^	985	25
+	.	985	0
+	+	988	46
+	+	989	0
+	+	954	0
+	+	954	26
+	+	961	23
+	+	964	36
+	+	965	24
+	+	987	0
+	+	963	28
+	+	987	40
+	+	1002	0
+	+	991	32
+	+	991	35
+	+	964	35
+	+	991	0
+	+	992	35
+	+	993	25
+	+	996	27
+	+	994	18
+	+	1000	0
+	+	997	20
+	+	1014	0
+	+	1017	0
+	+	1018	0
+	+	998	16
+	+	1015	0
+	+	998	15
+	+	1000	0
+	+	999	8
+	+	997	10
+	+	999	12
+	+	1012	37
+	+	1019	23
+	+	1020	27
+	+	1012	7
+	+	995	42
+	+	1012	41
+	+	962	22
+	+	999	13
+	+	806	0
+	+	924	0
+	+	954	0
+	+	965	0
+	+	738	45
+	+	739	0
+	+	205	30
+	+	987	0
+	+	973	26
+	+	678	29
+	+	680	0
+	+	680	54
+	+	681	0
+	+	679	0
+	+	678	37
+	+	679	145
+	+	717	53
+	+	717	11
+	+	663	8
+	+	654	20
+	+	663	30
+	+	673	0
+	+	672	0
+	+	692	0
+	+	672	0
+	+	653	42
+	+	711	0
+	+	712	0
+	+	717	0
+	+	682	0
+	+	682	68
+	+	682	83
+	+	682	30
+	+	654	0
+	+	655	0
+	+	663	0
+	+	671	0
+	+	672	0
+	+	688	0
+	+	689	0
+	+	690	0
+	+	691	0
+	+	692	0
+	+	711	0
+	+	712	0
+	+	682	0
+	+	688	0
+	+	693	27
+	+	688	0
+	+	713	11
+	+	714	49
+	+	715	64
+	+	714	52
+	+	715	67
+	+	209	39
+	+	670	12
+	+	693	46
+	+	704	32
+	+	710	37
+	+	712	0
+	+	985	0
+
+> /usr/share/vim/vim80/doc/spell.txt
+	*	1554835194	0
+	"	154	20
+
+> /usr/share/vim/vim80/doc/eval.txt
+	*	1554820980	0
+	"	6798	42
+	^	7412	12
+
+> /usr/share/vim/vim80/doc/change.txt
+	*	1554820841	0
+	"	823	33
+
+> ~/.config/w3m/w3mtmp25568-4
+	*	1554819314	0
+	"	1108	0
+	.	1	0
+	+	1	0
+
+> ~/.config/w3m/w3mtmp20151-0
+	*	1554818496	0
+	"	2	0
+	.	52	0
+	+	1	0
+	+	52	0
+	+	116	0
+	+	144	0
+	+	185	0
+	+	216	0
+	+	52	0
+
+> ~/.bookmarks
+	*	1554817874	0
+	"	4	17
+	^	4	18
+	.	4	18
+	+	1	41
+	+	2	36
+	+	3	35
+	+	4	18
+
+> ~/Documents/amores2/amores2-2-nums.txt
+	*	1554815664	0
+	"	196	4
+	.	1	0
+	+	104	67
+	+	1	0
+
+> ~/numberthirdlines.awk
+	*	1554815362	0
+	"	8	11
+	^	8	33
+	.	8	0
+	+	9	13
+	+	7	26
+	+	1	16
+	+	2	7
+	+	3	7
+	+	5	0
+	+	6	0
+	+	8	0
+	+	9	17
+	+	10	0
+	+	4	12
+	+	8	0
+
+> ~/Documents/amores2/amores2-3.txt
+	*	1554815242	0
+	"	197	0
+	^	196	8
+	.	197	0
+	+	123	0
+	+	124	0
+	+	125	0
+	+	126	0
+	+	128	0
+	+	129	0
+	+	131	13
+	+	130	22
+	+	131	27
+	+	130	26
+	+	132	0
+	+	133	0
+	+	134	0
+	+	135	0
+	+	139	0
+	+	136	0
+	+	137	0
+	+	138	0
+	+	139	0
+	+	140	0
+	+	141	0
+	+	143	0
+	+	144	0
+	+	147	0
+	+	146	0
+	+	149	0
+	+	140	0
+	+	150	0
+	+	152	0
+	+	153	0
+	+	152	0
+	+	154	0
+	+	155	0
+	+	156	0
+	+	158	0
+	+	159	0
+	+	161	0
+	+	162	0
+	+	163	0
+	+	164	0
+	+	165	0
+	+	164	0
+	+	167	0
+	+	168	0
+	+	170	0
+	+	171	0
+	+	173	0
+	+	174	0
+	+	176	0
+	+	177	0
+	+	179	0
+	+	180	4
+	+	178	0
+	+	179	0
+	+	180	0
+	+	182	0
+	+	183	0
+	+	185	0
+	+	186	0
+	+	187	0
+	+	188	0
+	+	189	0
+	+	191	0
+	+	192	0
+	+	194	0
+	+	195	0
+	+	197	0
+	+	196	0
+	+	197	0
+
+> ~/Documents/amores2/amores2-3-translation.txt
+	*	1554815239	0
+	"	1	7
+	^	127	54
+	.	131	0
+	+	131	45
+	+	1	0
+	+	4	0
+	+	3	4
+	+	5	31
+	+	7	0
+	+	9	64
+	+	11	37
+	+	13	63
+	+	15	0
+	+	17	42
+	+	19	0
+	+	21	65
+	+	23	0
+	+	19	58
+	+	23	46
+	+	25	38
+	+	27	45
+	+	29	34
+	+	31	51
+	+	29	47
+	+	33	79
+	+	35	66
+	+	37	39
+	+	39	18
+	+	43	57
+	+	45	55
+	+	47	0
+	+	51	0
+	+	53	46
+	+	55	61
+	+	57	32
+	+	59	44
+	+	61	56
+	+	63	56
+	+	67	4
+	+	69	31
+	+	71	4
+	+	69	35
+	+	73	65
+	+	75	0
+	+	77	82
+	+	78	0
+	+	79	0
+	+	83	52
+	+	85	73
+	+	87	9
+	+	89	5
+	+	91	29
+	+	93	38
+	+	95	0
+	+	97	78
+	+	99	68
+	+	101	41
+	+	103	26
+	+	105	43
+	+	107	58
+	+	109	52
+	+	111	63
+	+	113	66
+	+	115	0
+	+	117	53
+	+	119	44
+	+	121	61
+	+	123	0
+	+	127	53
+	+	131	0
+
+> /usr/share/vim/vim80/doc/windows.txt
+	*	1554807714	0
+	"	145	42
+
+> ~/:b~
+	*	1554806385	0
 	"	1	0
 
-> /usr/share/vim/vim80/doc/usr_41.txt
-	*	1534157363	0
-	"	606	40
+> /usr/share/vim/vim80/doc/options.txt
+	*	1554764820	0
+	"	2503	1
+
+> ~/.config/vim/bundle/vim-amores2/hermes.sh
+	*	1554763224	0
+	"	2	40
+	^	2	41
+	.	2	40
+	+	2	40
+
+> ~/.config/vim/vimrcderek
+	*	1554755262	0
+	"	964	16
+
+> ~/alignfields.awk
+	*	1554744569	0
+	"	15	42
+	^	15	43
+	.	15	42
+	+	12	26
+	+	12	33
+	+	12	25
+	+	12	39
+	+	18	38
+	+	12	24
+	+	19	0
+	+	18	35
+	+	18	24
+	+	12	0
+	+	18	0
+	+	5	26
+	+	7	20
+	+	8	4
+	+	7	25
+	+	6	0
+	+	7	36
+	+	18	4
+	+	7	21
+	+	18	32
+	+	18	28
+	+	18	34
+	+	18	33
+	+	18	0
+	+	18	53
+	+	3	2
+	+	12	23
+	+	18	8
+	+	18	20
+	+	18	41
+	+	18	30
+	+	18	37
+	+	11	0
+	+	11	19
+	+	11	0
+	+	11	28
+	+	11	39
+	+	18	34
+	+	11	0
+	+	11	22
+	+	18	27
+	+	18	25
+	+	18	31
+	+	18	33
+	+	11	25
+	+	11	0
+	+	11	14
+	+	11	22
+	+	11	44
+	+	11	29
+	+	11	4
+	+	11	44
+	+	18	34
+	+	11	7
+	+	11	0
+	+	17	0
+	+	18	0
+	+	13	0
+	+	16	0
+	+	14	27
+	+	16	34
+	+	18	0
+	+	12	0
+	+	15	0
+	+	16	0
+	+	12	0
+	+	17	8
+	+	12	17
+	+	16	32
+	+	16	0
+	+	13	27
+	+	8	0
+	+	8	4
+	+	11	39
+	+	11	34
+	+	11	0
+	+	10	0
+	+	11	39
+	+	11	27
+	+	11	29
+	+	14	28
+	+	14	36
+	+	15	0
+	+	12	22
+	+	13	20
+	+	14	27
+	+	16	32
+	+	18	19
+	+	11	0
+	+	14	20
+	+	18	0
+	+	19	0
+	+	18	31
+	+	18	38
+	+	16	35
+	+	18	34
+	+	15	58
+	+	18	0
+	+	14	20
+	+	15	42
+
+> ~/.config/vim/tmp/swap/%home%simon%.config%vim%vimrc.swp
+	*	1554741453	0
+	"	1	0
+
+> ~/longestline.awk
+	*	1554734061	0
+	"	1	0
+	^	1	12
+	.	1	11
+	+	2	119
+	+	2	16
+	+	6	47
+	+	2	7
+	+	3	13
+	+	4	0
+	+	5	0
+	+	6	1
+	+	7	49
+	+	8	0
+	+	9	0
+	+	10	5
+	+	11	55
+	+	12	0
+	+	1	11
+
+> ~/alignthreefields.awk
+	*	1554729872	0
+	"	12	0
+	^	6	8
+	.	6	0
+	+	2	0
+	+	3	0
+	+	4	0
+	+	3	180
+	+	2	0
+	+	3	0
+	+	2	0
+	+	4	28
+	+	7	2
+	+	9	5
+	+	10	66
+	+	12	0
+	+	8	0
+	+	7	0
+	+	10	27
+	+	11	0
+	+	5	25
+	+	6	0
+
+> ~/.config/w3m/w3mtmp28753-1
+	*	1554729470	0
+	"	104	2
+
+> /usr/share/vim/vim80/doc/help.txt
+	*	1554728889	0
+	"	1	0
+
+> ~/.config/ranger/rc.conf
+	*	1554727926	0
+	"	543	18
+	^	446	6
+	.	543	18
+	+	335	0
+	+	343	0
+	+	337	0
+	+	356	0
+	+	448	0
+	+	406	0
+	+	418	0
+	+	438	0
+	+	420	0
+	+	419	17
+	+	428	0
+	+	406	7
+	+	386	16
+	+	438	0
+	+	448	0
+	+	387	0
+	+	405	0
+	+	438	0
+	+	391	0
+	+	448	0
+	+	438	18
+	+	438	0
+	+	447	0
+	+	502	0
+	+	511	0
+	+	438	0
+	+	511	2
+	+	530	0
+	+	709	0
+	+	438	0
+	+	709	0
+	+	438	0
+	+	709	0
+	+	438	0
+	+	709	0
+	+	322	0
+	+	321	0
+	+	709	0
+	+	439	0
+	+	709	0
+	+	438	0
+	+	709	0
+	+	442	0
+	+	709	0
+	+	446	0
+	+	709	0
+	+	710	0
+	+	438	0
+	+	438	16
+	+	438	2
+	+	438	0
+	+	438	4
+	+	438	0
+	+	438	5
+	+	438	13
+	+	438	0
+	+	592	0
+	+	536	0
+	+	591	0
+	+	429	0
+	+	511	0
+	+	335	0
+	+	392	5
+	+	418	5
+	+	377	0
+	+	378	0
+	+	379	0
+	+	380	0
+	+	381	0
+	+	379	0
+	+	380	0
+	+	381	0
+	+	375	0
+	+	376	0
+	+	377	0
+	+	378	0
+	+	379	0
+	+	380	0
+	+	381	0
+	+	374	0
+	+	375	0
+	+	373	0
+	+	374	0
+	+	375	0
+	+	381	0
+	+	418	0
+	+	375	0
+	+	394	0
+	+	407	0
+	+	394	0
+	+	418	0
+	+	415	0
+	+	402	0
+	+	446	4
+	+	543	18
+
+> ~/.config/ranger/bookmarks
+	*	1554721576	0
+	"	4	0
+	^	4	21
+	.	4	0
+	+	1	0
+	+	3	0
+	+	4	0
+	+	6	0
+	+	5	0
+	+	6	22
+	+	7	19
+	+	4	20
+	+	1	0
+	+	4	0
+
+> ~/.config/ranger/rifle.conf
+	*	1554721490	0
+	"	97	42
+	^	97	43
+	.	97	43
+	+	97	43
+
+> ~/.rangersrc_192/README.md
+	*	1554717085	0
+	"	1	0
+
+> ~/.rangersrc/setup.py
+	*	1554716648	0
+	"	102	9
+
+> ~/.rangersrc/README.md
+	*	1554716359	0
+	"	8	0
+	^	1	0
+
+> ~/.dwmnew/config.h
+	*	1554657646	0
+	"	76	36
+	^	76	37
+	.	76	37
+	+	76	37
+
+> ~/bookmarklauncher.sh
+	*	1554656789	0
+	"	8	18
+	^	8	19
+	.	8	19
+	+	1	0
+	+	6	20
+	+	5	0
+	+	4	33
+	+	5	0
+	+	2	0
+	+	4	62
+	+	5	18
+	+	6	31
+	+	8	4
+	+	7	8
+	+	8	18
+	+	3	55
+	+	8	28
+	+	3	3
+	+	8	19
+
+> ~/conditioncheck.sh
+	*	1554656605	0
+	"	2	0
+	^	4	56
+	.	4	55
+	+	1	0
+	+	2	50
+	+	5	19
+	+	5	0
+	+	2	0
+	+	3	9
+	+	5	0
+	+	3	45
+	+	4	55
+
+> ~/confid
+	*	1554656577	0
+	"	1	0
+
+> ~/.config/vim/bundle/vim-clc-lookup/hermes.sh
+	*	1554653020	0
+	"	1	0
+
+> ~/.config/vifm/scripts/sxiv-handler
+	*	1554651755	0
+	"	45	0
+	^	47	12
+	.	47	11
+	+	45	32
+	+	47	11
+
+> ~/.config/w3m/bookmark.html
+	*	1554647698	0
+	"	1	0
+
+> ~/linenumstest2.txt
+	*	1554585148	0
+	"	9	8
+
+> ~/.config/surfraw/conf
+	*	1554582873	0
+	"	2	19
+	^	2	20
+	.	2	0
+	+	2	0
+
+> ~/.config/vifm/vifmrc
+	*	1554582316	0
+	"	1	0
+	^	353	20
+	.	353	19
+	+	256	0
+	+	261	16
+	+	261	0
+	+	255	36
+	+	226	0
+	+	223	0
+	+	247	36
+	+	261	0
+	+	261	14
+	+	261	16
+	+	261	0
+	+	261	19
+	+	255	22
+	+	261	20
+	+	249	16
+	+	261	0
+	+	247	21
+	+	249	20
+	+	213	27
+	+	249	22
+	+	199	10
+	+	249	24
+	+	489	0
+	+	490	85
+	+	117	18
+	+	120	13
+	+	122	24
+	+	407	22
+	+	350	23
+	+	351	26
+	+	490	1
+	+	490	0
+	+	206	0
+	+	207	0
+	+	204	9
+	+	205	20
+	+	65	0
+	+	64	0
+	+	65	17
+	+	180	27
+	+	65	12
+	+	149	114
+	+	349	27
+	+	352	25
+	+	349	15
+	+	353	0
+	+	352	20
+	+	353	28
+	+	352	26
+	+	351	0
+	+	383	0
+	+	490	0
+	+	368	25
+	+	369	0
+	+	1	0
+	+	368	28
+	+	236	26
+	+	237	30
+	+	117	0
+	+	125	0
+	+	118	15
+	+	375	0
+	+	456	15
+	+	65	22
+	+	141	16
+	+	375	0
+	+	376	0
+	+	383	43
+	+	237	43
+	+	254	22
+	+	260	26
+	+	383	0
+	+	179	0
+	+	178	0
+	+	365	13
+	+	353	19
+
+> ~/linenumstest.txt
+	*	1554579535	0
+	"	1	0
+
+> /tmp/bash-fc.o5QNGB
+	*	1554578741	0
+	"	3	14
+	^	3	0
+	.	3	14
+	+	1	10
+	+	2	51
+	+	3	14
+
+> /tmp/bash-fc.QqMu6Z
+	*	1554578346	0
+	"	1	47
+	^	1	48
+	.	1	47
+	+	1	47
+
+> /tmp/bash-fc.knnk8r
+	*	1554577751	0
+	"	1	55
+	^	1	41
+	.	1	54
+	+	1	54
+
+> /tmp/bash-fc.OAHLNb
+	*	1554577567	0
+	"	6	0
+	.	6	13
+	+	6	13
+
+> /tmp/bash-fc.Cglork
+	*	1554577017	0
+	"	10	0
+	^	11	1
+	.	11	0
+	+	2	3
+	+	9	0
+	+	11	0
+
+> /tmp/bash-fc.Adw15M
+	*	1554576937	0
+	"	8	25
+	^	8	26
+	.	8	26
+	+	4	0
+	+	5	16
+	+	8	26
+
+> /tmp/bash-fc.c7b2FA
+	*	1554576677	0
+	"	5	2
+	.	4	2
+	+	4	2
+
+> /tmp/bash-fc.qHomnS
+	*	1554576613	0
+	"	2	3
+	^	2	4
+	.	2	3
+	+	2	3
+
+> /tmp/bash-fc.AmuMFh
+	*	1554576579	0
+	"	3	0
+	.	3	0
+	+	2	2
+	+	4	15
+	+	2	0
+	+	3	0
+
+> /tmp/bash-fc.SPDopB
+	*	1554576408	0
+	"	5	15
+	^	4	4
+	.	5	15
+	+	4	3
+	+	5	15
+
+> /tmp/bash-fc.OIWYd4
+	*	1554576331	0
+	"	4	14
+	.	4	14
+	+	2	0
+	+	4	14
+
+> /tmp/bash-fc.s2G0iA
+	*	1554576303	0
+	"	4	16
+	^	4	17
+	.	4	16
+	+	4	16
+
+> ~/colstest.txt
+	*	1554435879	0
+	"	2	0
+	^	2	3
+	.	2	0
+	+	2	67
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	1	2
+	+	2	2
+	+	1	0
+	+	2	0
+	e	1	0
+
+> /usr/share/vim/vim80/doc/map.txt
+	*	1554415006	0
+	"	1347	26
+
+> /usr/share/vim/vim80/doc/editing.txt
+	*	1554413618	0
+	"	1102	12
+
+> /usr/share/vim/vim80/doc/cmdline.txt
+	*	1554410790	0
+	"	749	45
+
+> ~/.surf/styles/default.css
+	*	1554410038	0
+	"	1	0
+	^	5	16
+	.	5	15
+	+	4	0
+	+	5	15
+	+	4	0
+	+	5	15
+
+> ~/Downloads/.admin/Yulia Nova&#039;s 15th DVD - Russian Beauties 6 - Yulia in the Winter - RBD-15-ph5ae749e4e7d46.mp4.part
+	*	1554322982	0
+	"	1	0
+
+> /tmp/vifm.rename_64386473_00
+	*	1554316727	0
+	"	10	0
+	.	11	0
+	+	11	0
+	+	1	5
+	+	11	0
+	+	11	44
+	+	11	0
+	+	2	0
+	+	11	0
+	+	3	0
+	+	11	0
+
+> /tmp/vifm.cmdline_1089310928_00
+	*	1553981249	0
+	"	1	0
+
+> ~/Python/HtmlPrinting.py
+	*	1553728665	0
+	"	98	0
+
+> ~/Python/Verbs.py
+	*	1553728590	0
+	"	325	0
+
+> ~/Python/verbConjugator.py
+	*	1553728520	0
+	"	928	0
+
+> ~/Python/verbs.py
+	*	1553728390	0
+	"	74	0
+
+> ~/Python/fetchLatinList.py
+	*	1553727522	0
+	"	41	0
+	^	15	36
+	.	15	35
+	+	1	0
+	+	3	0
+	+	1	21
+	+	18	31
+	+	19	4
+	+	15	4
+	+	17	0
+	+	15	59
+	+	17	21
+	+	18	30
+	+	21	19
+	+	16	31
+	+	15	26
+	+	17	28
+	+	19	59
+	+	20	32
+	+	33	58
+	+	31	14
+	+	33	39
+	+	34	16
+	+	36	0
+	+	41	16
+	+	12	0
+	+	28	0
+	+	27	37
+	+	11	14
+	+	31	0
+	+	30	0
+	+	29	52
+	+	30	0
+	+	31	0
+	+	25	0
+	+	26	48
+	+	4	18
+	+	25	0
+	+	41	26
+	+	4	23
+	+	37	19
+	+	39	8
+	+	41	0
+	+	20	33
+	+	40	44
+	+	10	4
+	+	9	7
+	+	10	38
+	+	33	25
+	+	14	32
+	+	9	39
+	+	15	35
+
+> ~/Documents/LUfAL-Ovid-07-Vocabulary.txt
+	*	1553637256	0
+	"	28	0
+
+> ~/Documents/GBG-1.9-vocab.txt
+	*	1553637172	0
+	"	1	0
+	^	2	0
+	.	1	17
+	+	4	0
+	+	3	0
+	+	4	8
+	+	4	0
+	+	5	4
+	+	5	0
+	+	6	7
+	+	6	0
+	+	7	3
+	+	7	0
+	+	8	3
+	+	8	0
+	+	9	2
+	+	9	0
+	+	10	9
+	+	10	0
+	+	11	5
+	+	11	0
+	+	12	3
+	+	12	0
+	+	13	4
+	+	13	0
+	+	14	3
+	+	14	0
+	+	15	3
+	+	15	0
+	+	16	2
+	+	16	0
+	+	17	3
+	+	17	0
+	+	18	7
+	+	18	0
+	+	19	6
+	+	19	7
+	+	19	0
+	+	20	3
+	+	20	0
+	+	21	3
+	+	21	0
+	+	22	2
+	+	22	0
+	+	23	2
+	+	23	0
+	+	24	3
+	+	24	0
+	+	25	5
+	+	25	0
+	+	3	0
+	+	1	17
+
+> ~/Documents/Ovid-LUfAl-10-Vocabulary.txt
+	*	1553636812	0
+	"	97	0
+
+> ~/Documents/GBG-1.7-vocab.txt
+	*	1553636012	0
+	"	38	0
+	^	2	0
+	.	1	17
+	+	3	5
+	+	3	0
+	+	4	3
+	+	4	0
+	+	5	6
+	+	5	0
+	+	6	8
+	+	6	0
+	+	7	3
+	+	7	0
+	+	8	1
+	+	8	0
+	+	9	5
+	+	9	0
+	+	10	3
+	+	10	0
+	+	11	4
+	+	11	0
+	+	12	6
+	+	12	0
+	+	13	8
+	+	13	0
+	+	14	6
+	+	14	0
+	+	15	8
+	+	15	0
+	+	16	7
+	+	16	0
+	+	17	4
+	+	17	0
+	+	18	6
+	+	18	0
+	+	19	8
+	+	19	0
+	+	20	4
+	+	20	0
+	+	21	5
+	+	21	0
+	+	22	3
+	+	22	0
+	+	23	5
+	+	23	3
+	+	23	5
+	+	23	0
+	+	24	2
+	+	24	0
+	+	25	2
+	+	25	0
+	+	26	9
+	+	26	4
+	+	26	0
+	+	27	2
+	+	27	0
+	+	28	3
+	+	28	0
+	+	29	4
+	+	29	0
+	+	30	5
+	+	30	0
+	+	31	3
+	+	31	0
+	+	32	4
+	+	32	0
+	+	33	3
+	+	33	0
+	+	34	4
+	+	34	0
+	+	35	3
+	+	35	0
+	+	36	5
+	+	36	0
+	+	37	8
+	+	37	0
+	+	38	3
+	+	38	0
+	+	39	6
+	+	39	0
+	+	3	0
+	+	1	17
+
+> ~/.config/vifm/colors/lucius-dark.vifm
+	*	1553635127	0
+	"	17	44
+	^	17	45
+	.	17	44
+	+	10	49
+	+	9	0
+	+	26	52
+	+	11	53
+	+	12	53
+	+	17	56
+	+	10	48
+	+	11	52
+	+	12	52
+	+	14	55
+	+	15	51
+	+	17	55
+	+	24	54
+	+	26	51
+	+	21	0
+	+	11	0
+	+	17	44
+
+> ~/Downloads/.admin/CM-chk-001.mkv
+	*	1553471054	0
+	"	1	0
+
+> ~/Documents/Noun_endings_test.txt
+	*	1553467264	0
+	"	1	0
 
 > ~/Downloads/Histories-1/Tacitus-Histories-1-Latin-text-and-vocab
-	*	1534155416	0
-	"	1964	0
+	*	1553467051	0
+	"	2103	42
 	^	2084	60
 	.	2105	0
 	+	1933	22
@@ -3791,34 +3085,2281 @@ $
 	+	2105	0
 
 > ~/Downloads/Histories-1/Hist-1-Kline-Translation-Excerpts
-	*	1534150908	0
-	"	391	0
-	.	411	0
+	*	1553466587	0
+	"	410	35
+	.	238	0
 	+	1	0
 	+	2	0
 	+	22	0
 	+	24	0
 	+	50	0
+	+	88	0
+	+	91	0
+	+	112	0
+	+	142	0
+	+	215	0
+	+	260	0
+	+	284	0
+	+	287	0
+	+	306	0
+	+	304	0
+	+	328	0
+	+	330	0
+	+	348	0
+	+	350	0
+	+	371	0
+	+	370	0
+	+	372	0
+	+	385	0
+	+	387	0
+	+	406	0
+	+	78	0
+	+	215	0
+	+	238	0
+
+> ~/.stsrc.0.8.2/config.h
+	*	1553463086	0
+	"	172	0
+	^	8	33
+	.	172	0
+	+	8	25
+	+	172	0
+
+> /tmp/vifm.rename_85388698_00
+	*	1553462541	0
+	"	3	1
+	^	3	2
+	.	3	1
+	+	1	1
+	+	2	1
+	+	3	1
+
+> ~/.config/vifm/colors/Default.vifm
+	*	1553452756	0
+	"	49	0
+
+> ~/.config/vifm/colors/solarized-dark.vifm
+	*	1553452612	0
+	"	36	52
+
+> ~/.config/vifm/colors/darkdesert.vifm
+	*	1553452382	0
+	"	7	0
+
+> ~/Downloads/BENNETTS.2013664.0.0.B3860404.MCQ-02.635126_1_1.pdf
+	*	1553035420	0
+	"	1	0
+
+> /tmp/bash-fc.h006Yu
+	*	1553032400	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> ~/.config/vifm/scripts/sxiv-handler.sh
+	*	1552953126	0
+	"	1	0
+	^	49	0
+	.	48	2
+	+	1	9
+	+	48	2
+
+> /tmp/bash-fc.IO0AIX
+	*	1552949853	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> /tmp/bash-fc.EQlRZx
+	*	1552949851	0
+	"	1	0
+	^	1	2
+	.	1	1
+	+	1	1
+
+> /tmp/bash-fc.7r0nHw
+	*	1552946311	0
+	"	1	0
+	^	1	1
+	.	1	0
+	+	1	0
+
+> /tmp/bash-fc.dzKfeQ
+	*	1552946304	0
+	"	1	0
+
+> ~/Pictures/IMG_0039.JPG
+	*	1552941129	0
+	"	1	0
+
+> ~/.dotfiles/help/bash-cmds
+	*	1552736577	0
+	"	1	0
+	^	12	0
+	.	12	0
+	+	1	12
+	+	12	0
+
+> ~/.config/w3m/w3mtmp1543-2
+	*	1552735046	0
+	"	528	25
+	.	1	0
+	+	1	0
+
+> ~/.dotfiles/help/shell-cmds
+	*	1552731281	0
+	"	37	0
+	^	51	59
+	.	51	58
+	+	51	87
+	+	51	58
+
+> /tmp/bash-fc.LkTdbu
+	*	1552140222	0
+	"	1	0
+
+> ~/.Xresources
+	*	1551821125	0
+	"	27	21
+	^	26	22
+	.	26	21
+	+	1	29
+	+	2	25
+	+	3	27
+	+	1	21
+	+	5	0
+	+	47	0
+	+	7	0
+	+	6	0
+	+	4	0
+	+	27	0
+	+	28	0
+	+	27	21
+	+	26	21
+
+> /tmp/bash-fc.WzvGom
+	*	1551820598	0
+	"	2	0
+	^	2	0
+	.	1	2
+	+	1	2
+
+> /tmp/bash-fc.l23LEh
+	*	1551820592	0
+	"	1	1
+	^	1	2
+	.	1	1
+	+	1	1
+
+> ~/.config/w3m/mailcap
+	*	1551811209	0
+	"	112	0
+
+> ~/.config/openbox/lxde-rc.xml
+	*	1551731562	0
+	"	1	0
+
+> ~/Documents/LC1-Verb-Tenses-test.docx
+	*	1551731521	0
+	"	13	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/LC1-salvete-pisces_salsi.txt
+	*	1551731469	0
+	"	1	0
+	^	8	13
+	.	7	78
+	+	13	0
+	+	2	77
+	+	16	0
+	+	14	75
+	+	23	0
+	+	18	0
+	+	125	46
+	+	25	0
+	+	31	0
+	+	30	22
+	+	35	0
+	+	34	17
+	+	38	0
+	+	40	0
+	+	42	0
+	+	43	14
+	+	40	37
+	+	47	0
+	+	49	0
+	+	51	0
+	+	50	0
+	+	55	0
+	+	56	18
+	+	40	0
+	+	39	67
+	+	59	22
+	+	62	0
+	+	63	33
+	+	69	0
+	+	70	0
+	+	72	17
+	+	72	0
+	+	52	0
+	+	74	0
+	+	79	0
+	+	84	0
+	+	86	0
+	+	91	0
+	+	98	0
+	+	99	14
+	+	103	0
+	+	105	0
+	+	109	0
+	+	110	33
+	+	114	0
+	+	118	0
+	+	119	0
+	+	116	0
+	+	119	0
+	+	122	0
+	+	121	6
+	+	125	7
+	+	126	0
+	+	128	22
+	+	13	214
+	+	13	0
+	+	12	19
+	+	8	12
+	+	7	78
+
+> ~/Documents/LC1-Ulysses-Laestrygonians.txt
+	*	1551731425	0
+	"	4	0
+	^	3	456
+	.	3	455
+	+	3	415
+	+	8	44
+	+	9	0
+	+	10	0
+	+	11	15
+	+	15	0
+	+	8	44
+	+	16	67
+	+	8	60
+	+	13	21
+	+	17	30
+	+	19	0
+	+	21	16
+	+	22	21
+	+	23	39
+	+	26	31
+	+	28	0
+	+	29	0
+	+	27	11
+	+	33	51
+	+	34	28
+	+	35	16
+	+	37	0
+	+	46	45
+	+	40	16
+	+	43	0
+	+	41	25
+	+	47	0
+	+	49	16
+	+	50	16
+	+	52	0
+	+	50	28
+	+	58	55
+	+	59	37
+	+	17	36
+	+	66	42
+	+	56	0
+	+	55	0
+	+	66	6
+	+	58	70
+	+	68	0
+	+	67	30
+	+	72	19
+	+	83	67
+	+	75	0
+	+	76	32
+	+	79	0
+	+	80	29
+	+	81	0
+	+	82	0
+	+	84	0
+	+	88	0
+	+	86	0
+	+	87	0
+	+	88	9
+	+	92	29
+	+	95	57
+	+	97	0
+	+	96	25
+	+	98	0
+	+	99	15
+	+	102	0
+	+	109	27
+	+	105	0
+	+	111	0
+	+	110	8
+	+	107	0
+	+	65	0
+	+	53	0
+	+	7	0
+	+	6	79
+	+	3	455
+
+> ~/Documents/LC1-Ulysses-Laestrygonians.docx
+	*	1551730221	0
+	"	13	0
+	.	1	0
+	+	1	0
+
+> ~/.dotfiles/help/mpv-cmds
+	*	1551729920	0
+	"	1	0
+	^	26	21
+
+> ~/.bashrc
+	*	1551050591	0
+	"	63	54
+	^	63	55
+	.	63	0
+	+	117	0
+	+	46	1
+	+	117	0
+	+	46	0
+	+	62	0
+	+	62	354
+	+	62	326
+	+	62	4
+	+	118	50
+	+	118	0
+	+	62	5
+	+	61	0
+	+	60	4
+	+	118	0
+	+	60	0
+	+	63	0
+	+	71	4
+	+	63	0
+
+> ~/.stsrc.0.8.1/config.h
+	*	1551049796	0
+	"	146	0
+
+> /etc/udev/rules.d/10-usb-stick.rules
+	*	1551035952	0
+	"	5	69
+	^	5	70
+	.	5	69
+	+	4	66
+	+	5	69
+
+> /tmp/zshb3f64v
+	*	1549582148	0
+	"	1	0
+
+> /tmp/zsh1CpThv
+	*	1549582141	0
+	"	1	1
+	.	1	1
+	+	1	1
+
+> ~/.zshrc
+	*	1549581044	0
+	"	164	0
+	^	121	9
+	.	242	0
+	+	14	9
+	+	3	13
+	+	43	13
+	+	43	0
+	+	1	0
+	+	4	0
+	+	3	0
+	+	3	18
+	+	3	0
+	+	3	24
+	+	3	0
+	+	3	51
+	+	3	0
+	+	3	25
+	+	3	0
+	+	2	0
+	+	3	0
+	+	13	0
+	+	11	0
+	+	13	18
+	+	72	15
+	+	75	0
+	+	72	3
+	+	73	7
+	+	74	22
+	+	41	0
+	+	11	0
+	+	12	18
+	+	40	0
+	+	67	7
+	+	70	0
+	+	69	22
+	+	104	0
+	+	103	11
+	+	104	0
+	+	119	0
+	+	116	0
+	+	111	0
+	+	112	58
+	+	104	0
+	+	103	10
+	+	1	0
+	+	122	15
+	+	122	0
+	+	121	8
+	+	126	21
+	+	138	10
+	+	139	10
+	+	138	21
+	+	139	23
+	+	140	0
+	+	242	0
+
+> ~/.z
+	*	1549579330	0
+	"	1	0
+
+> ~/.local/bin/wake.sh
+	*	1549402187	0
+	"	1	0
+
+> ~/.config/fish/functions/fish_user_key_bindings.fish
+	*	1549120747	0
+	"	3	16
+	^	3	17
+	.	3	16
+	+	2	0
+	+	4	3
+	+	3	16
+
+> ~/.config/fish/fishd.debdev
+	*	1549118890	0
+	"	1	0
+
+> ~/.config/tmux/tmux.conf
+	*	1549117035	0
+	"	2	0
+	^	2	26
+	.	2	0
+	+	9	36
+	+	12	25
+	+	6	0
+	+	11	0
+	+	6	0
+	+	10	0
+	+	6	0
+	+	10	0
+	+	8	0
+	+	11	0
+	+	6	0
+	+	10	0
+	+	8	0
+	+	11	0
+	+	6	0
+	+	10	0
+	+	12	0
+	+	13	0
+	+	15	0
+	+	19	30
+	+	20	36
+	+	17	34
+	+	20	31
+	+	17	37
+	+	16	0
+	+	15	22
+	+	17	29
+	+	19	24
+	+	20	31
+	+	16	30
+	+	18	0
+	+	19	0
+	+	18	0
+	+	19	0
+	+	18	37
+	+	92	0
+	+	93	0
+	+	94	0
+	+	95	0
+	+	96	5
+	+	97	5
+	+	96	6
+	+	97	7
+	+	38	5
+	+	26	26
+	+	21	0
+	+	27	0
+	+	30	25
+	+	31	24
+	+	30	33
+	+	33	28
+	+	34	39
+	+	35	23
+	+	33	28
+	+	34	28
+	+	35	38
+	+	32	30
+	+	36	34
+	+	37	43
+	+	36	31
+	+	37	38
+	+	36	36
+	+	37	44
+	+	24	21
+	+	22	20
+	+	16	0
+	+	14	34
+	+	22	63
+	+	36	34
+	+	37	42
+	+	36	0
+	+	37	0
+	+	38	0
+	+	37	0
+	+	38	0
+	+	37	42
+	+	36	86
+	+	22	74
+	+	37	0
+	+	36	121
+	+	36	0
+	+	36	87
+	+	37	0
+	+	36	30
+	+	22	86
+	+	22	76
+	+	36	0
+	+	37	0
+	+	22	73
+	+	100	22
+	+	44	14
+	+	22	0
+	+	23	52
+	+	39	0
+	+	38	16
+	+	5	0
+	+	2	21
+	+	4	0
+	+	3	34
+	+	2	0
+
+> /tmp/bash-fc.V6NJA8
+	*	1549116841	0
+	"	1	4
+
+> /etc/tmux.conf
+	*	1549116567	0
+	"	1	0
+
+> /tmp/bash-fc.SZTsD2
+	*	1549116200	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> ~/.config/tmux/t
+	*	1549115034	0
+	"	1	0
+
+> ~/.zsh_history
+	*	1548964989	0
+	"	21	0
+	.	21	0
+	+	17	0
+	+	21	0
+
+> ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+	*	1548964419	0
+	"	145	22
+
+> ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+	*	1548964192	0
+	"	1	0
+
+> ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/README.md
+	*	1548964030	0
+	"	4	0
+
+> ~/Downloads/Hist-1-Kline-Translation-Excerpts
+	*	1548714175	0
+	"	1	0
+	.	255	0
+	+	46	0
+	+	68	0
+	+	72	0
+	+	114	0
+	+	144	0
+	+	169	0
+	+	166	0
+	+	169	0
+	+	201	0
+	+	205	0
+	+	239	0
+	+	242	0
+	+	255	0
+
+> /tmp/tmpI3POV_
+	*	1547387022	0
+	"	1	0
+
+> /tmp/tmpUJhbJ8
+	*	1547387019	0
+	"	5	9
+	^	6	10
+	.	6	9
+	+	2	0
+	+	3	0
+	+	4	0
+	+	5	0
+	+	6	9
+
+> /tmp/tmpknyOx0
+	*	1547386795	0
+	"	1	0
+
+> /tmp/tmp99XZqB
+	*	1547386791	0
+	"	17	3
+	^	17	4
+	.	18	0
+	+	1	5
+	+	2	0
+	+	3	0
+	+	2	0
+	+	3	0
+	+	4	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	6	5
+	+	7	3
+	+	8	3
+	+	9	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	16	5
+	+	17	0
+	+	18	0
+	+	19	0
+	+	20	0
+	+	21	0
+	+	22	0
+	+	18	0
+
+> /usr/share/vim/vim80/doc/various.txt
+	*	1547323611	0
+	"	571	24
+
+> :s/^-
+	*	1547320327	0
+	"	1	0
+
+> ~/wake.sh
+	*	1546693752	0
+	"	15	11
+	^	24	15
+	.	24	14
+	+	18	0
+	+	1	0
+	+	5	65
+	+	16	0
+	+	18	0
+	+	16	19
+	+	17	19
+	+	18	0
+	+	17	21
+	+	18	4
+	+	33	0
+	+	32	0
+	+	34	5
+	+	16	38
+	+	17	40
+	+	25	0
+	+	26	0
+	+	25	24
+	+	27	15
+	+	29	7
+	+	27	17
+	+	33	0
+	+	31	35
+	+	35	0
+	+	34	2
+	+	5	0
+	+	1	8
+	+	22	14
+	+	19	0
+	+	19	24
+	+	19	16
+	+	19	7
+	+	19	0
+	+	19	9
+	+	19	0
+	+	10	0
+	+	14	0
+	+	19	0
+	+	10	32
+	+	7	24
+	+	10	10
+	+	7	12
+	+	23	20
+	+	7	0
+	+	8	7
+	+	9	0
+	+	7	7
+	+	8	0
+	+	23	24
+	+	24	14
+
+> ~/.dotfiles/scripts/webview.sh
+	*	1546691756	0
+	"	3	0
+
+> ~/.config/ranger/commands.py
+	*	1546629874	0
+	"	172	8
+	^	157	67
+	.	145	0
+	+	145	54
+	+	145	151
+	+	145	0
+	+	143	21
+	+	144	71
+	+	145	48
+	+	145	131
+	+	145	0
+	+	145	109
+	+	145	0
+	+	145	22
+	+	143	0
+	+	145	0
+	+	146	15
+	+	147	17
+	+	150	32
+	+	157	66
+	+	159	0
+	+	145	0
+
+> ~/.config/dunst/dunstrc
+	*	1546620277	0
+	"	245	24
+	^	246	20
+	.	245	24
+	+	97	20
+	+	151	0
+	+	152	19
+	+	180	0
+	+	185	0
+	+	183	24
+	+	180	0
+	+	178	0
+	+	180	0
+	+	179	0
+	+	180	0
+	+	247	0
+	+	246	4
+	+	246	0
+	+	245	13
+	+	246	19
+	+	245	24
+
+> ~/.dwmsrc/config.h
+	*	1545489499	0
+	"	20	37
+	^	13	36
+	.	20	37
+	+	12	37
+	+	11	37
+	+	15	36
+	+	16	36
+	+	17	40
+	+	21	39
+	+	19	36
+	+	20	37
+	+	16	36
+	+	17	40
+	+	84	60
+	+	92	30
+	+	13	35
+	+	13	0
+	+	17	41
+	+	17	0
+	+	16	38
+	+	13	42
+	+	16	31
+	+	20	37
+
+> ~/Documents/todo.org
+	*	1545482671	0
+	"	139	0
+	^	262	6
+	.	190	0
+	+	48	0
+	+	47	41
+	+	51	0
+	+	92	0
+	+	96	38
+	+	80	0
+	+	97	0
+	+	42	0
+	+	45	91
+	+	42	0
+	+	46	0
+	+	87	15
+	+	95	0
+	+	94	0
+	+	7	0
+	+	47	0
+	+	99	0
+	+	92	0
+	+	99	0
+	+	104	79
+	+	103	0
+	+	104	79
+	+	109	0
+	+	103	0
+	+	105	46
+	+	103	0
+	+	106	63
+	+	109	0
+	+	107	0
+	+	105	0
+	+	109	0
+	+	110	0
+	+	109	71
+	+	115	85
+	+	121	110
+	+	127	92
+	+	105	0
+	+	153	0
+	+	150	0
+	+	140	0
+	+	139	43
+	+	152	8
+	+	118	0
+	+	107	0
+	+	141	0
+	+	107	2
+	+	153	19
+	+	154	4
+	+	107	0
+	+	155	5
+	+	180	5
+	+	166	0
+	+	162	66
+	+	161	0
+	+	164	66
+	+	163	66
+	+	181	33
+	+	179	0
+	+	177	0
+	+	179	0
+	+	177	0
+	+	179	0
+	+	182	50
+	+	181	63
+	+	189	23
+	+	179	0
+	+	172	59
+	+	179	0
+	+	183	64
+	+	179	0
+	+	175	38
+	+	179	0
+	+	190	134
+	+	194	54
+	+	195	0
+	+	190	0
+	+	205	210
+	+	190	0
+	+	215	241
+	+	190	0
+	+	226	90
+	+	190	0
+	+	236	127
+	+	190	0
+	+	246	545
+	+	190	0
+	+	254	6
+	+	190	0
+	+	256	0
+	+	247	160
+	+	190	0
+	+	258	13
+	+	190	0
+	+	259	240
+	+	190	0
+	+	260	395
+	+	190	0
+	+	261	79
+	+	263	0
+	+	190	0
+
+> ~/Downloads/vocab-list-vocab.csv
+	*	1545482355	0
+	"	1	0
+
+> ~/Documents/rejection
+	*	1544298132	0
+	"	18	57
+	^	18	58
+	.	18	57
+	+	18	57
+
+> /tmp/bash-fc.qCgX49
+	*	1540668382	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> /tmp/bash-fc.IUDNAV
+	*	1540668380	0
+	"	1	0
+	^	1	0
+
+> /tmp/tmpKXwDDH
+	*	1540477818	0
+	"	1	0
+
+> /tmp/tmpDuMRYQ
+	*	1540477812	0
+	"	2	45
+	.	3	45
+	+	1	0
+	+	2	0
+	+	3	45
+
+> ~/Greek_Definitions
+	*	1539465306	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Greek-Vocab-GBG-1.16.txt
+	*	1539465294	0
+	"	3	0
+	^	2	0
+	.	3	0
+	+	39	4
+	+	39	0
+	+	40	0
+	+	40	1
+	+	40	2
+	+	40	0
+	+	41	1
+	+	41	0
+	+	42	5
+	+	42	0
+	+	43	3
+	+	43	0
+	+	44	2
+	+	44	0
+	+	45	5
+	+	45	0
+	+	46	2
+	+	46	0
+	+	47	6
+	+	47	0
+	+	48	4
+	+	48	0
+	+	49	4
+	+	49	0
+	+	50	5
+	+	50	0
+	+	51	2
+	+	51	0
+	+	52	2
+	+	52	0
+	+	53	8
+	+	53	0
+	+	54	4
+	+	54	0
+	+	55	1
+	+	55	0
+	+	56	8
+	+	56	0
+	+	57	5
+	+	57	6
+	+	57	0
+	+	58	3
+	+	58	6
+	+	58	0
+	+	59	3
+	+	59	0
+	+	60	7
+	+	60	0
+	+	61	3
+	+	61	0
+	+	62	3
+	+	62	0
+	+	63	6
+	+	63	28
+	+	64	3
+	+	64	0
+	+	65	5
+	+	65	0
+	+	66	4
+	+	66	0
+	+	67	2
+	+	67	0
+	+	68	4
+	+	68	0
+	+	69	7
+	+	69	0
+	+	70	2
+	+	70	0
+	+	71	7
+	+	71	4
+	+	71	0
+	+	72	2
+	+	72	0
+	+	73	2
+	+	73	0
+	+	73	2
+	+	73	0
+	+	73	2
+	+	73	0
+	+	73	2
+	+	73	0
+	+	73	3
+	+	73	0
+	+	73	1
+	+	73	0
+	+	73	2
+	+	73	0
+	+	73	4
+	+	73	0
+	+	73	3
+	+	73	0
+	+	73	3
+	+	73	0
+	+	73	4
+	+	73	0
+	+	73	3
+	+	73	0
+	+	74	0
+	+	1	43
+	+	3	0
+
+> ~/PUAL-16-done.txt
+	*	1539462129	0
+	"	137	0
+	.	137	0
+	+	137	0
+
+> ~/Greek-Vocab-for-GBG-1.14.txt
+	*	1539461736	0
+	"	15	36
+
+> ~/Derek/PUAL/text/PUAL-Comp-16.txt
+	*	1539457381	0
+	"	1	0
+	^	142	76
+	.	142	76
+	+	1	43
+	+	8	17
+	+	149	0
+	+	25	0
+	+	22	0
+	+	23	0
+	+	24	0
+	+	25	0
+	+	26	0
+	+	29	0
+	+	28	0
+	+	29	0
+	+	30	0
+	+	32	0
+	+	40	0
+	+	44	0
+	+	45	0
+	+	46	0
+	+	55	0
+	+	56	0
+	+	57	0
+	+	58	27
+	+	64	0
+	+	62	0
+	+	63	45
+	+	67	0
+	+	68	0
+	+	67	51
+	+	82	0
+	+	84	0
+	+	83	0
+	+	86	0
+	+	90	0
+	+	91	0
+	+	92	0
 	+	93	0
 	+	96	0
+	+	98	0
+	+	106	0
+	+	110	0
+	+	111	0
+	+	112	0
+	+	123	0
+	+	124	0
+	+	130	0
+	+	138	55
+	+	143	0
+	+	142	76
+
+> ~/Derek/PUAL/text/PUAL-Comp-12-done.txt
+	*	1539444677	0
+	"	1	0
+
+> ~/Derek/PUAL/text/PUAL-20.txt
+	*	1539444612	0
+	"	2	0
+	^	2	0
+	.	1	27
+	+	3	47
+	+	7	54
+	+	8	57
+	+	13	59
+	+	14	4
+	+	16	4
+	+	18	39
+	+	155	0
+	+	25	0
+	+	20	0
+	+	21	0
+	+	22	0
+	+	25	0
+	+	23	0
+	+	26	0
+	+	28	0
+	+	30	0
+	+	31	0
+	+	34	0
+	+	37	0
+	+	40	0
+	+	43	0
+	+	48	0
+	+	49	0
+	+	51	0
+	+	60	0
+	+	63	0
+	+	64	0
+	+	66	0
+	+	81	0
+	+	82	0
+	+	90	0
+	+	92	0
+	+	3	0
+	+	94	0
+	+	101	0
+	+	103	0
+	+	108	0
+	+	109	0
+	+	110	0
+	+	116	0
 	+	117	0
+	+	118	0
+	+	119	0
+	+	124	0
+	+	130	0
+	+	131	0
+	+	133	0
+	+	135	11
+	+	140	0
 	+	147	0
-	+	220	0
-	+	265	0
-	+	289	0
-	+	292	0
-	+	311	0
-	+	309	0
-	+	333	0
-	+	335	0
-	+	353	0
-	+	355	0
-	+	376	0
-	+	375	0
-	+	377	0
-	+	390	0
-	+	392	0
-	+	411	0
+	+	148	0
+	+	149	0
+	+	155	0
+	+	1	27
+
+> ~/Ovid-LUfAl-10-Vocabulary.txt
+	*	1538928020	0
+	"	112	33
+	^	112	34
+	.	112	33
+	+	17	44
+	+	6	0
+	+	11	0
+	+	15	0
+	+	16	0
+	+	1	28
+	+	3	0
+	+	7	0
+	+	15	0
+	+	20	0
+	+	18	47
+	+	20	0
+	+	21	36
+	+	22	25
+	+	23	0
+	+	31	0
+	+	33	33
+	+	34	0
+	+	38	0
+	+	40	0
+	+	44	0
+	+	45	0
+	+	46	0
+	+	47	0
+	+	54	0
+	+	69	0
+	+	70	0
+	+	71	0
+	+	72	0
+	+	73	0
+	+	75	0
+	+	76	0
+	+	85	0
+	+	93	0
+	+	109	0
+	+	112	33
+
+> ~/Greek-vocab-GBG-1.17.txt
+	*	1538926038	0
+	"	2	0
+	.	3	0
+	+	3	0
+
+> ~/.config/vim/bundle/vim-GG-lookup/GCSE-Greek-vocab.txt
+	*	1538926008	0
+	"	297	26
+	^	297	27
+	.	297	26
+	+	295	22
+	+	107	23
+	+	266	24
+	+	350	43
+	+	236	37
+	+	114	18
+	+	357	4
+	+	128	44
+	+	139	23
+	+	64	39
+	+	284	0
+	+	283	38
+	+	297	26
+
+> ~/.config/vim/pythonx/fetchLatinAll.py
+	*	1538924409	0
+	"	1	0
+	^	65	21
+	.	65	20
+	+	65	20
+
+> ~/NERD_tree_1
+	*	1538924390	0
+	"	110	7
+	.	1	0
+	+	1	0
+
+> ~/.config/vim/bundle/ultisnips/test_all.py
+	*	1538924268	0
+	"	1	0
+
+> ~/UltiSnips/text.snippets
+	*	1538924221	0
+	"	1	0
+
+> ~/LUfAL-Ovid-10-vocabulary.txt
+	*	1538921122	0
+	"	117	33
+	^	116	34
+	.	116	33
+	+	3	0
+	+	6	0
+	+	11	0
+	+	15	0
+	+	16	0
+	+	2	0
+	+	3	0
+	+	7	0
+	+	15	0
+	+	20	0
+	+	18	30
+	+	20	0
+	+	21	36
+	+	22	25
+	+	1	0
+	+	23	0
+	+	31	0
+	+	33	33
+	+	34	0
+	+	38	0
+	+	40	0
+	+	44	0
+	+	45	0
+	+	46	0
+	+	47	0
+	+	54	0
+	+	71	0
+	+	72	0
+	+	73	0
+	+	74	0
+	+	78	0
+	+	88	0
+	+	89	0
+	+	97	0
+	+	113	0
+	+	116	33
+
+> ~/LUfAL-Ovid-07-Vocabulary.txt
+	*	1538920481	0
+	"	85	58
+	^	105	39
+	.	105	38
+	+	3	0
+	+	16	8
+	+	1	35
+	+	108	0
+	+	12	0
+	+	11	43
+	+	4	0
+	+	9	0
+	+	16	0
+	+	18	0
+	+	17	0
+	+	18	0
+	+	21	0
+	+	28	0
+	+	31	0
+	+	35	0
+	+	36	0
+	+	37	0
+	+	51	0
+	+	53	0
+	+	58	0
+	+	59	0
+	+	61	16
+	+	63	0
+	+	76	0
+	+	79	0
+	+	80	0
+	+	83	0
+	+	90	0
+	+	91	0
+	+	106	0
+	+	107	0
+	+	105	4
+	+	106	0
+	+	105	38
+
+> ~/PUAL-Comp-12.txt
+	*	1538919856	0
+	"	5	66
+	^	20	0
+	.	137	0
+	+	3	4
+	+	4	1
+	+	5	66
+	+	11	39
+	+	12	70
+	+	13	25
+	+	14	45
+	+	18	0
+	+	21	0
+	+	15	0
+	+	21	0
+	+	2	0
+	+	19	0
+	+	20	0
+	+	21	0
+	+	24	0
+	+	25	0
+	+	29	0
+	+	31	0
+	+	36	0
+	+	40	0
+	+	47	0
+	+	48	0
+	+	50	0
+	+	54	0
+	+	62	0
+	+	65	0
+	+	67	0
+	+	69	0
+	+	72	0
+	+	80	0
+	+	79	0
+	+	85	0
+	+	88	0
+	+	89	0
+	+	88	0
+	+	91	0
+	+	93	0
+	+	97	0
+	+	106	0
+	+	110	0
+	+	113	0
+	+	115	0
+	+	116	0
+	+	118	0
+	+	120	0
+	+	128	0
+	+	135	0
+	+	137	0
+
+> ~/PUAL-16.txt
+	*	1538917153	0
+	"	165	0
+	^	41	19
+	.	160	0
+	+	4	69
+	+	15	62
+	+	17	0
+	+	166	0
+	+	20	0
+	+	19	0
+	+	1	23
+	+	18	0
+	+	166	0
+	+	20	0
+	+	22	0
+	+	23	0
+	+	30	0
+	+	31	0
+	+	33	0
+	+	38	0
+	+	41	0
+	+	35	0
+	+	41	18
+	+	47	0
+	+	50	0
+	+	62	0
+	+	71	0
+	+	75	0
+	+	80	0
+	+	86	0
+	+	87	0
+	+	94	0
+	+	101	0
+	+	102	0
+	+	103	0
+	+	106	0
+	+	110	0
+	+	113	0
+	+	114	0
+	+	117	0
+	+	120	0
+	+	130	0
+	+	131	0
+	+	135	0
+	+	136	0
+	+	139	0
+	+	141	0
+	+	144	0
+	+	145	0
+	+	147	0
+	+	149	0
+	+	150	0
+	+	158	0
+	+	160	0
+
+> ~/.config/ranger/commands_full.py
+	*	1538346255	0
+	"	50	0
+
+> ~/Documents/GBG-1.10-vocab.txt
+	*	1538346041	0
+	"	2	0
+	^	2	0
+	.	1	18
+	+	3	6
+	+	3	0
+	+	4	3
+	+	4	0
+	+	5	5
+	+	5	0
+	+	6	5
+	+	6	0
+	+	7	6
+	+	7	0
+	+	8	5
+	+	8	0
+	+	8	4
+	+	8	0
+	+	9	4
+	+	9	0
+	+	10	5
+	+	10	0
+	+	11	4
+	+	11	0
+	+	12	6
+	+	12	0
+	+	13	3
+	+	13	0
+	+	14	4
+	+	14	0
+	+	15	4
+	+	15	0
+	+	16	2
+	+	16	0
+	+	17	3
+	+	17	0
+	+	3	0
+	+	1	18
+
+> /tmp/tmp9I4bq5
+	*	1538344426	0
+	"	1	0
+
+> ~/vimrc
+	*	1538343640	0
+	"	198	0
+
+> ~/.dotfiles/vim/vimrc
+	*	1538218534	0
+	"	221	0
+
+> ~/.dotfiles/scripts/backup-configs.sh
+	*	1538215854	0
+	"	38	0
+	^	18	0
+	.	17	71
+	+	18	0
+	+	6	45
+	+	7	45
+	+	8	45
+	+	9	45
+	+	10	45
+	+	13	58
+	+	14	58
+	+	17	71
+
+> /usr/share/vim/vim80/doc/diff.txt
+	*	1538213936	0
+	"	387	32
+
+> ~/Documents/Example-regexes.md
+	*	1538172518	0
+	"	27	3
+
+> ~/Documents/snip-test.txt
+	*	1538171414	0
+	"	1	0
+
+> ~/Downloads/testfile.ltn
+	*	1538171318	0
+	"	1	0
+
+> ~/Downloads/CR-Latin-sorted.txt
+	*	1538170996	0
+	"	1	0
+	^	483	61
+	.	712	0
+	+	1	0
+	+	205	0
+	+	209	0
+	+	142	0
+	+	160	0
+	+	176	31
+	+	2	0
+	+	51	0
+	+	282	0
+	+	291	0
+	+	293	0
+	+	318	0
+	+	324	0
+	+	361	0
+	+	371	0
+	+	483	61
+	+	512	0
+	+	521	4
+	+	542	0
+	+	712	0
+
+> ~/Downloads/CR-latin.txt
+	*	1538170492	0
+	"	1	0
+
+> /usr/share/vim/vim80/doc/intro.txt
+	*	1538169264	0
+	"	620	18
+
+> /usr/share/vim/vim80/doc/starting.txt
+	*	1538169062	0
+	"	93	3
+
+> ~/Downloads/Aeneid/Aen-XI-Text-1-224
+	*	1538166137	0
+	"	2	0
+
+> ~/.dotfiles/help/minimal-debian-install
+	*	1537655894	0
+	"	76	2
+	^	61	20
+	.	72	0
+	+	4	89
+	+	4	0
+	+	5	0
+	+	35	0
+	+	38	0
+	+	40	0
+	+	35	0
+	+	40	78
+	+	47	47
+	+	47	131
+	+	47	283
+	+	47	375
+	+	44	30
+	+	71	49
+	+	72	0
+
+> /etc/ssh/ssh_config
+	*	1537654778	0
+	"	51	0
+
+> ~/Downloads/newvocabs
+	*	1537565318	0
+	"	377	0
+	.	178	0
+	+	1	0
+	+	28	31
+	+	178	0
+
+> ~/Downloads/others-processed
+	*	1537565077	0
+	"	663	0
+	.	1	0
+	+	1	0
+	+	662	0
+	+	1	0
+
+> ~/Downloads/shorties2
+	*	1537564972	0
+	"	37	0
+	.	33	0
+	+	1	0
+	+	35	0
+	+	1	0
+	+	33	0
+
+> ~/Downloads/preps2
+	*	1537564742	0
+	"	3	5
+	^	5	6
+	.	5	5
+	+	1	0
+	+	3	6
+	+	5	5
+
+> ~/Downloads/shorties
+	*	1537563961	0
+	"	1	0
+	.	1	0
+	+	123	0
+	+	1	0
+
+> ~/Downloads/preps
+	*	1537563879	0
+	"	10	0
+	.	1	0
+	+	1	0
+	+	2	0
+	+	1	0
+
+> ~/Downloads/vocab-list-vocab
+	*	1537563807	0
+	"	1	0
+
+> /usr/share/vim/vim80/doc/repeat.txt
+	*	1537563138	0
+	"	49	11
+
+> /usr/share/vim/vim80/doc/index.txt
+	*	1537563130	0
+	"	744	50
+
+> /usr/share/vim/vim80/doc/visual.txt
+	*	1537563092	0
+	"	139	13
+
+> ~/Downloads/others
+	*	1537562486	0
+	"	1	0
+	^	1	20
+	.	9	0
+	+	1	0
+	+	189	10
+	+	2	0
+	+	1	0
+	+	9	0
+
+> ~/Downloads/Histories-1/Tacitus-Histories-1-Latin-text
+	*	1536489065	0
+	"	1	0
+	^	121	0
+	.	238	78
+	+	38	0
+	+	42	13
+	+	44	75
+	+	46	47
+	+	52	0
+	+	53	0
+	+	58	65
+	+	63	27
+	+	67	10
+	+	72	0
+	+	71	0
+	+	76	53
+	+	77	74
+	+	79	55
+	+	82	48
+	+	87	0
+	+	86	0
+	+	90	46
+	+	92	24
+	+	93	38
+	+	95	57
+	+	97	15
+	+	98	41
+	+	100	12
+	+	101	21
+	+	107	0
+	+	106	0
+	+	110	74
+	+	114	67
+	+	116	11
+	+	116	10
+	+	118	37
+	+	122	0
+	+	121	0
+	+	124	54
+	+	126	41
+	+	127	43
+	+	129	33
+	+	133	0
+	+	136	43
+	+	139	10
+	+	141	12
+	+	143	49
+	+	144	30
+	+	146	66
+	+	150	0
+	+	153	29
+	+	155	29
+	+	156	64
+	+	159	30
+	+	161	9
+	+	162	13
+	+	166	0
+	+	169	31
+	+	171	23
+	+	173	73
+	+	175	73
+	+	177	20
+	+	179	15
+	+	182	0
+	+	186	58
+	+	188	40
+	+	189	27
+	+	191	15
+	+	192	27
+	+	193	61
+	+	194	65
+	+	197	0
+	+	199	56
+	+	205	52
+	+	206	70
+	+	210	15
+	+	211	64
+	+	215	0
+	+	217	48
+	+	220	36
+	+	222	40
+	+	227	0
+	+	230	57
+	+	236	64
+	+	237	53
+	+	19	72
+	+	20	0
+	+	31	49
+	+	34	15
+	+	66	19
+	+	35	76
+	+	50	70
+	+	68	67
+	+	83	72
+	+	105	0
+	+	118	71
+	+	130	74
+	+	147	75
+	+	165	0
+	+	181	0
+	+	194	71
+	+	212	76
+	+	224	77
+	+	238	78
+
+> ~/hermes.sh
+	*	1535483332	0
+	"	5	0
+	^	5	1
+	.	5	0
+	+	7	0
+	+	3	8
+	+	4	25
+	+	7	0
+	+	6	10
+	+	5	13
+	+	4	15
+	+	7	0
+	+	6	17
+	+	4	39
+	+	6	72
+	+	3	0
+	+	5	0
+
+> ~/Downloads/diogenes-3.2.0/diogenes/perl/Perseus_Data/latin-analyses.txt
+	*	1535478055	0
+	"	109741	0
+
+> ~/Downloads/Aeneid/Aen-XI-Text-and-Vocab
+	*	1534625213	0
+	"	11	0
+	.	11	0
+	+	1956	0
+	+	1958	59
+	+	1962	0
+	+	1961	59
+	+	1964	0
+	+	1968	0
+	+	1971	59
+	+	1974	0
+	+	1973	59
+	+	1975	0
+	+	1977	0
+	+	1978	0
+	+	1981	59
+	+	1985	0
+	+	1984	59
+	+	1985	0
+	+	1986	0
+	+	1987	0
+	+	1988	0
+	+	1995	0
+	+	1989	30
+	+	1997	59
+	+	2001	0
+	+	2000	59
+	+	2001	2
+	+	2002	0
+	+	2003	0
+	+	2004	0
+	+	2007	18
+	+	2010	0
+	+	2013	0
+	+	2014	0
+	+	2015	59
+	+	2020	0
+	+	2019	59
+	+	2020	0
+	+	2024	0
+	+	2029	0
+	+	2030	0
+	+	2035	0
+	+	2038	59
+	+	2042	0
+	+	2041	59
+	+	2044	0
+	+	2048	0
+	+	2050	0
+	+	2051	0
+	+	2055	0
+	+	2056	59
+	+	2060	0
+	+	2059	59
+	+	2064	0
+	+	2066	0
+	+	2068	0
+	+	2069	0
+	+	2070	59
+	+	2084	10
+	+	2074	0
+	+	2073	59
+	+	2075	0
+	+	2076	0
+	+	2079	0
+	+	2083	59
+	+	2086	0
+	+	2085	59
+	+	2092	59
+	+	2095	0
+	+	2094	59
+	+	2096	0
+	+	2097	0
+	+	2098	82
+	+	2101	0
+	+	9	0
+	+	10	0
+	+	22	0
+	+	51	0
+	+	50	0
+	+	72	0
+	+	75	0
+	+	82	0
+	+	96	0
+	+	97	0
+	+	99	0
+	+	98	0
+	+	104	0
+	+	105	0
+	+	106	0
+	+	108	0
+	+	121	0
+	+	13	0
+	+	124	0
+	+	133	0
+	+	134	0
+	+	137	0
+	+	145	0
+	+	138	0
+	+	174	0
+	+	180	0
+	+	195	0
+	+	11	0
+	a	1904	37
+
+> ~/.config/vim/plugin/userfunctions.vim
+	*	1534624187	0
+	"	27	0
+	^	143	103
+	.	143	87
+	+	125	18
+	+	124	25
+	+	125	25
+	+	125	0
+	+	128	49
+	+	130	13
+	+	124	0
+	+	127	0
+	+	124	0
+	+	127	0
+	+	126	0
+	+	123	0
+	+	124	0
+	+	127	0
+	+	124	4
+	+	124	0
+	+	125	0
+	+	128	0
+	+	127	0
+	+	124	0
+	+	125	0
+	+	128	0
+	+	127	0
+	+	124	0
+	+	125	0
+	+	128	0
+	+	127	10
+	+	124	10
+	+	130	51
+	+	132	73
+	+	130	9
+	+	132	0
+	+	133	17
+	+	130	8
+	+	132	39
+	+	124	8
+	+	125	8
+	+	126	8
+	+	127	8
+	+	128	8
+	+	124	35
+	+	125	35
+	+	126	35
+	+	127	35
+	+	128	31
+	+	128	0
+	+	133	0
+	+	131	16
+	+	132	55
+	+	125	34
+	+	126	34
+	+	127	34
+	+	125	30
+	+	126	30
+	+	127	30
+	+	128	0
+	+	125	24
+	+	126	29
+	+	127	30
+	+	128	26
+	+	132	10
+	+	130	10
+	+	131	11
+	+	132	0
+	+	125	32
+	+	126	38
+	+	127	38
+	+	125	59
+	+	124	27
+	+	126	39
+	+	127	35
+	+	125	39
+	+	127	39
+	+	128	5
+	+	127	4
+	+	126	4
+	+	125	4
+	+	130	25
+	+	132	53
+	+	124	29
+	+	125	4
+	+	132	58
+	+	124	36
+	+	130	33
+	+	124	4
+	+	130	20
+	+	117	28
+	+	115	6
+	+	122	15
+	+	135	17
+	+	137	4
+	+	138	4
+	+	139	4
+	+	136	40
+	+	137	39
+	+	138	37
+	+	139	39
+	+	141	48
+	+	139	34
+	+	143	87
+
+> ~/Downloads/Instantly_Better_Vim_2013/plugin/betterdigraphs.vim
+	*	1534623344	0
+	"	173	0
+
+> /usr/share/vim/vim80/doc/insert.txt
+	*	1534619751	0
+	"	1225	9
+
+> /usr/share/vim/vim80/doc/tagsrch.txt
+	*	1534617985	0
+	"	50	40
+
+> /usr/share/vim/vim80/doc/usr_43.txt
+	*	1534616716	0
+	"	92	76
+
+> /usr/share/vim/vim80/doc/usr_42.txt
+	*	1534615225	0
+	"	17	23
+
+> /usr/share/vim/vim80/doc/usr_41.txt
+	*	1534615199	0
+	"	29	19
+
+> ~/Documents/utf8-symbols-and-codes.md
+	*	1534537391	0
+	"	49	10
+	^	49	11
+	.	49	10
+	+	43	0
+	+	44	10
+	+	49	10
+
+> ~/.config/vim/bundle/vim-airline/doc/airline.txt
+	*	1534535010	0
+	"	268	0
+
+> ~/.dotfiles/ranger/commands.py
+	*	1534516698	0
+	"	1	0
+
+> ~/.dotfiles/scripts/put-configs.sh
+	*	1534500876	0
+	"	3	0
+	^	47	13
+	.	47	12
+	+	14	0
+	+	6	0
+	+	7	0
+	+	6	7
+	+	7	0
+	+	8	0
+	+	7	16
+	+	8	20
+	+	10	18
+	+	14	0
+	+	43	12
+	+	43	29
+	+	43	8
+	+	44	0
+	+	43	11
+	+	25	68
+	+	26	0
+	+	7	11
+	+	14	0
+	+	21	61
+	+	22	55
+	+	35	51
+	+	36	51
+	+	37	51
+	+	39	51
+	+	40	51
+	+	41	51
+	+	43	51
+	+	44	51
+	+	33	51
+	+	34	43
+	+	33	27
+	+	35	28
+	+	36	31
+	+	37	27
+	+	38	29
+	+	39	24
+	+	40	28
+	+	41	25
+	+	42	28
+	+	43	24
+	+	44	24
+	+	44	0
+	+	33	0
+	+	47	0
+	+	52	34
+	+	7	20
+	+	8	18
+	+	10	23
+	+	8	25
+	+	10	9
+	+	47	12
+
+> ~/.stsrc/config.h.bak
+	*	1534495461	0
+	"	1	0
+
+> ~/.stsrc/config.h
+	*	1534494074	0
+	"	1	0
+	^	100	32
+	.	100	31
+	+	121	2
+	+	121	34
+	+	121	0
+	+	121	34
+	+	121	0
+	+	120	35
+	+	114	28
+	+	99	28
+	+	108	34
+	+	113	34
+	+	112	30
+	+	111	27
+	+	110	32
+	+	109	34
+	+	107	32
+	+	106	32
+	+	112	26
+	+	105	32
+	+	104	32
+	+	103	33
+	+	102	41
+	+	101	33
+	+	100	0
+	+	101	0
+	+	100	31
+
+> ~/.dotfiles/various/lightdm-gtk-greeter.conf
+	*	1534485985	0
+	"	1	0
+
+> /usr/share/lightdm/lightdm-gtk-greeter.conf.d/02_custom.conf
+	*	1534461436	0
+	"	1	0
+
+> ~/.dotfiles/.git/COMMIT_EDITMSG
+	*	1534461145	0
+	"	1	13
+	^	1	14
+	.	1	13
+	+	1	13
+
+> ~/.dotfiles/various/dwmstart
+	*	1534460902	0
+	"	1	0
+
+> /tmp/crontab.jsxN6H/crontab
+	*	1534460534	0
+	"	24	18
+
+> /etc/network/interfaces
+	*	1534460262	0
+	"	1	0
+
+> ~/Downloads/Aeneid/Aen-XI-Trans-1-224
+	*	1534359042	0
+	"	44	0
+	.	358	0
+	+	358	0
+
+> /usr/share/vim/vim80/doc/motion.txt
+	*	1534352557	0
+	"	319	7
+
+> ~/.config/vim/bundle/uplooker/plugin/uplooker.vim
+	*	1534352389	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> ~/NERD_tree_3
+	*	1534352381	0
+	"	58	0
+	.	1	0
+	+	1	0
+
+> ~/.config/vim/plugin/dragvisuals.vim
+	*	1534351494	0
+	"	190	8
+	^	143	56
+	.	143	56
+	+	149	0
+	+	150	0
+	+	151	0
+	+	150	0
+	+	149	0
+	+	148	0
+	+	149	0
+	+	147	0
+	+	70	0
+	+	68	48
+	+	69	0
+	+	222	0
+	+	224	0
+	+	68	0
+	+	66	32
+	+	67	14
+	+	78	37
+	+	145	0
+	+	143	56
+
+> ~/NERD_tree_2
+	*	1534330321	0
+	"	53	0
+	.	1	0
+	+	1	0
+
+> /usr/share/vim/vim80/doc/pattern.txt
+	*	1534272920	0
+	"	212	0
+
+> ~/n
+	*	1534263732	0
+	"	1	0
 
 > ~/.config/vim/pythonx/fetchLatinList.py
 	*	1533804152	0
@@ -3844,10 +5385,6 @@ $
 
 > ~/Downloads/Aeneid/Aeneid, The - Virgil & A. S. Kline.htm
 	*	1533801461	0
-	"	1	0
-
-> /tmp/tmp9I4bq5
-	*	1532815430	0
 	"	1	0
 
 > /tmp/tmp_W8D5m
@@ -3958,65 +5495,6 @@ $
 	"	58	0
 	.	1	0
 	+	1	0
-
-> /usr/share/vim/vim80/doc/insert.txt
-	*	1532619444	0
-	"	1935	62
-
-> ~/Python/fetchLatinList.py
-	*	1532617546	0
-	"	41	0
-	^	15	36
-	.	15	35
-	+	1	0
-	+	3	0
-	+	1	21
-	+	18	31
-	+	19	4
-	+	15	4
-	+	17	0
-	+	15	59
-	+	17	21
-	+	18	30
-	+	21	19
-	+	16	31
-	+	15	26
-	+	17	28
-	+	19	59
-	+	20	32
-	+	33	58
-	+	31	14
-	+	33	39
-	+	34	16
-	+	36	0
-	+	41	16
-	+	12	0
-	+	28	0
-	+	27	37
-	+	11	14
-	+	31	0
-	+	30	0
-	+	29	52
-	+	30	0
-	+	31	0
-	+	25	0
-	+	26	48
-	+	4	18
-	+	25	0
-	+	41	26
-	+	4	23
-	+	37	19
-	+	39	8
-	+	41	0
-	+	20	33
-	+	40	44
-	+	10	4
-	+	9	7
-	+	10	38
-	+	33	25
-	+	14	32
-	+	9	39
-	+	15	35
 
 > ~/Python/fetchGreekAll.py
 	*	1532616798	0
@@ -4212,10 +5690,6 @@ $
 	+	1580	0
 	a	43	0
 
-> /usr/share/vim/vim80/doc/cmdline.txt
-	*	1532530655	0
-	"	670	39
-
 > ~/Downloads/DBP-latin.txt
 	*	1532509324	0
 	"	1	0
@@ -4223,32 +5697,6 @@ $
 > /usr/share/vim/vim80/doc/if_pyth.txt
 	*	1532478701	0
 	"	406	36
-
-> ~/Downloads/CR-Latin-sorted.txt
-	*	1532471369	0
-	"	723	0
-	^	483	61
-	.	712	0
-	+	1	0
-	+	205	0
-	+	209	0
-	+	142	0
-	+	160	0
-	+	176	31
-	+	2	0
-	+	51	0
-	+	282	0
-	+	291	0
-	+	293	0
-	+	318	0
-	+	324	0
-	+	361	0
-	+	371	0
-	+	483	61
-	+	512	0
-	+	521	4
-	+	542	0
-	+	712	0
 
 > ~/Downloads/Collar-Review.txt
 	*	1532469742	0
@@ -4352,6 +5800,16 @@ $
 	+	25	0
 	+	12	20
 
+> ~/.dotfiles/help/vim-cmds
+	*	1532468066	0
+	"	1	0
+	^	18	48
+	.	18	47
+	+	126	45
+	+	17	38
+	+	18	47
+	m	15	14
+
 > ~/Python/fetchLatinBackup.py
 	*	1532461518	0
 	"	10	100
@@ -4414,11 +5872,6 @@ $
 	+	42	31
 	+	50	29
 
-> ~/.config/vim/bundle/ultisnips/doc/UltiSnips.txt
-	*	1532452973	0
-	"	1067	59
-	^	834	7
-
 > ~/_Matches_Text_
 	*	1532450298	0
 	"	8	0
@@ -4464,112 +5917,6 @@ $
 	+	10	47
 	+	13	22
 
-> ~/Documents/todo.org
-	*	1532181632	0
-	"	262	0
-	^	262	6
-	.	190	0
-	+	48	0
-	+	47	41
-	+	51	0
-	+	92	0
-	+	96	38
-	+	80	0
-	+	97	0
-	+	42	0
-	+	45	91
-	+	42	0
-	+	46	0
-	+	87	15
-	+	95	0
-	+	94	0
-	+	7	0
-	+	47	0
-	+	99	0
-	+	92	0
-	+	99	0
-	+	104	79
-	+	103	0
-	+	104	79
-	+	109	0
-	+	103	0
-	+	105	46
-	+	103	0
-	+	106	63
-	+	109	0
-	+	107	0
-	+	105	0
-	+	109	0
-	+	110	0
-	+	109	71
-	+	115	85
-	+	121	110
-	+	127	92
-	+	105	0
-	+	153	0
-	+	150	0
-	+	140	0
-	+	139	43
-	+	152	8
-	+	118	0
-	+	107	0
-	+	141	0
-	+	107	2
-	+	153	19
-	+	154	4
-	+	107	0
-	+	155	5
-	+	180	5
-	+	166	0
-	+	162	66
-	+	161	0
-	+	164	66
-	+	163	66
-	+	181	33
-	+	179	0
-	+	177	0
-	+	179	0
-	+	177	0
-	+	179	0
-	+	182	50
-	+	181	63
-	+	189	23
-	+	179	0
-	+	172	59
-	+	179	0
-	+	183	64
-	+	179	0
-	+	175	38
-	+	179	0
-	+	190	134
-	+	194	54
-	+	195	0
-	+	190	0
-	+	205	210
-	+	190	0
-	+	215	241
-	+	190	0
-	+	226	90
-	+	190	0
-	+	236	127
-	+	190	0
-	+	246	545
-	+	190	0
-	+	254	6
-	+	190	0
-	+	256	0
-	+	247	160
-	+	190	0
-	+	258	13
-	+	190	0
-	+	259	240
-	+	190	0
-	+	260	395
-	+	190	0
-	+	261	79
-	+	263	0
-	+	190	0
-
 > ~/Documents/apihelper.py
 	*	1532181628	0
 	"	1	0
@@ -4589,15 +5936,6 @@ $
 > ~/.config/ranger/scope.sh
 	*	1531923082	0
 	"	164	0
-
-> ~/.config/ranger/rifle.conf
-	*	1531923067	0
-	"	80	0
-
-> ~/.dotfiles/help/mpv-cmds
-	*	1531855926	0
-	"	32	22
-	^	26	21
 
 > ~/Documents/webpage.html
 	*	1531777950	0
@@ -5071,9 +6409,12 @@ $
 	.	1	0
 	+	1	0
 
-> ~/.config/vim/bundle/YouCompleteMe/doc/youcompleteme.txt
-	*	1531148640	0
-	"	3099	4
+> /etc/hosts
+	*	1531129622	0
+	"	49417	17
+	^	49417	1
+	.	49417	0
+	+	49417	0
 
 > ~/Documents/verbConjugator.py
 	*	1530374490	0
@@ -5093,10 +6434,6 @@ $
 > ~/usr/local/bin/dwmstart
 	*	1529005157	0
 	"	1	0
-
-> ~/.config/vim/bundle/vim-surround/doc/surround.txt
-	*	1528926424	0
-	"	67	20
 
 > ~/Documents/todo.tex
 	*	1528837332	0
@@ -5142,112 +6479,6 @@ $
 	+	53	0
 	+	51	45
 	+	52	37
-
-> ~/.config/tmux/tmux.conf
-	*	1528753490	0
-	"	35	16
-	^	35	17
-	.	35	16
-	+	4	30
-	+	8	41
-	+	3	0
-	+	5	0
-	+	4	29
-	+	6	36
-	+	9	25
-	+	3	0
-	+	8	0
-	+	3	0
-	+	7	0
-	+	3	0
-	+	7	0
-	+	5	0
-	+	8	0
-	+	3	0
-	+	7	0
-	+	5	0
-	+	8	0
-	+	3	0
-	+	7	0
-	+	9	0
-	+	10	0
-	+	12	0
-	+	16	30
-	+	17	36
-	+	14	34
-	+	17	31
-	+	14	37
-	+	13	0
-	+	12	22
-	+	14	29
-	+	16	24
-	+	17	31
-	+	13	30
-	+	15	0
-	+	16	0
-	+	15	0
-	+	16	0
-	+	15	37
-	+	89	0
-	+	90	0
-	+	91	0
-	+	92	0
-	+	93	5
-	+	94	5
-	+	93	6
-	+	94	7
-	+	35	5
-	+	23	26
-	+	18	0
-	+	24	0
-	+	27	25
-	+	28	24
-	+	27	33
-	+	30	28
-	+	31	39
-	+	32	23
-	+	30	28
-	+	31	28
-	+	32	38
-	+	29	30
-	+	33	34
-	+	34	43
-	+	33	31
-	+	34	38
-	+	33	36
-	+	34	44
-	+	21	21
-	+	19	20
-	+	13	0
-	+	11	34
-	+	19	63
-	+	33	34
-	+	34	42
-	+	33	0
-	+	34	0
-	+	35	0
-	+	34	0
-	+	35	0
-	+	34	42
-	+	33	86
-	+	19	74
-	+	34	0
-	+	33	121
-	+	33	0
-	+	33	87
-	+	34	0
-	+	33	30
-	+	19	86
-	+	19	76
-	+	33	0
-	+	34	0
-	+	19	73
-	+	97	22
-	+	41	14
-	+	19	0
-	+	20	52
-	+	36	0
-	+	35	16
 
 > ~/.config/newsbeuter/config
 	*	1528496980	0
@@ -5372,9 +6603,25 @@ $
 	*	1528317111	0
 	"	80	64
 
+> ~/.config/vim/bundle/vim-airline/autoload/airline/themes.vim
+	*	1528315579	0
+	"	1	0
+
+> ~/.config/vim/bundle/vim-airline/autoload/airline.vim
+	*	1528315512	0
+	"	1	0
+
 > ~/.config/vim/bundle/vim-airline-themes/autoload/airline/themes/powerlineish.vim
 	*	1528315384	0
 	"	6	0
+
+> ~/.config/vim/bundle/vim-airline-themes/plugin/airline-themes.vim
+	*	1528315316	0
+	"	1	0
+
+> ~/.config/vim/bundle/vim-airline/plugin/airline.vim
+	*	1528315270	0
+	"	163	0
 
 > ~/Downloads/xterm-333/vttests/fonts.sh
 	*	1528228320	0
@@ -5506,10 +6753,6 @@ $
 > ~/help
 	*	1528034368	0
 	"	1	0
-
-> /usr/share/vim/vim80/doc/visual.txt
-	*	1528033516	0
-	"	519	5
 
 > ~/Documents/tmp/todo.markdown
 	*	1528028860	0
@@ -5830,6 +7073,16 @@ $
 	.	17	33
 	+	17	33
 
+> ~/.local/usr/bin/backup-configs.sh
+	*	1527863306	0
+	"	20	0
+	^	33	26
+	.	20	0
+	+	41	15
+	+	10	0
+	+	33	25
+	+	20	0
+
 > ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
 	*	1527861757	0
 	"	81	0
@@ -5841,10 +7094,6 @@ $
 > ~/.profile
 	*	1527859069	0
 	"	19	0
-
-> ~/.config/surfraw/conf
-	*	1527857675	0
-	"	1	0
 
 > ~/.config/redshift.conf
 	*	1527857659	0
@@ -5904,17 +7153,9 @@ $
 	.	1	0
 	+	1	0
 
-> ~/Downloads/testfile.ltn
-	*	1527851378	0
-	"	1	0
-
 > ~/.vim/plugin/dragvisuals.vim
 	*	1527849450	0
 	"	12	3
-
-> /usr/share/vim/vim80/doc/starting.txt
-	*	1527848632	0
-	"	800	15
 
 > ~/.vim/customsnips/all.snippets
 	*	1527846629	0
@@ -6174,10 +7415,6 @@ $
 	+	14	0
 	+	18	16
 	+	20	0
-
-> ~/Documents/utf8-symbols-and-codes.md
-	*	1527780616	0
-	"	42	0
 
 > ~/.vim/bundle/vim-table-mode/doc/table-mode.txt
 	*	1527777454	0
