@@ -36,3 +36,7 @@ function direxists() {
 	fi
 }
 endsnippet
+
+snippet exitifempty "Exit if variable is empty"
+[ -z "${1:variable}" ] && exit
+endsnippet

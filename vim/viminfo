@@ -11,123 +11,161 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0/{
+~MSle0/^#
 
 # Last Substitute Search Pattern:
-~MSle0~&_
+~MSle0~&MYHOME
 
 # Last Substitute String:
-$|
+$XDG_CONFIG_HOME
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1555254732,,"wq"
+|2,0,1555352298,,"wq"
 :q
-|2,0,1555254419,,"q"
-:q!
-|2,0,1555254407,,"q!"
-:'<,'>s/_/|/g
-|2,0,1555237131,,"'<,'>s/_/|/g"
-:'<,'>s/}|/}_/g
-|2,0,1555237111,,"'<,'>s/}|/}_/g"
-:'<,'>s/:_/:|/g
-|2,0,1555236931,,"'<,'>s/:_/:|/g"
-:UltiSnipsEdit!
-|2,0,1555236853,,"UltiSnipsEdit!"
-:reg
-|2,0,1555236759,,"reg"
-:erg
-|2,0,1555236468,,"erg"
-:help Ultisnips
-|2,0,1555235645,,"help Ultisnips"
-:sav amores2-6-nums-exp.txt
-|2,0,1555252704,,"sav amores2-6-nums-exp.txt"
-:%s/\n\n/\r\r\r\r/
-|2,0,1555252673,,"%s/\\n\\n/\\r\\r\\r\\r/"
-:%s/\n/\r\r\r/
-|2,0,1555252655,,"%s/\\n/\\r\\r\\r/"
-:%s/\n/\n\n\n/
-|2,0,1555252636,,"%s/\\n/\\n\\n\\n/"
-:%s/\s*$//
-|2,0,1555243521,,"%s/\\s*$//"
-:tabnew
-|2,0,1555241528,,"tabnew"
-:e ~/.config/vim/bundle/vim-amores2/
-|2,0,1555240556,,"e ~/.config/vim/bundle/vim-amores2/"
-:newtab
-|2,0,1555240538,,"newtab"
-:'<,'>RWC
-|2,0,1555239612,,"'<,'>RWC"
-:s/10/12/g
-|2,0,1555239519,,"s/10/12/g"
-:qa
-|2,0,1555239484,,"qa"
-:USE!
-|2,0,1555234246,,"USE!"
-:help ultisnips
-|2,0,1555233624,,"help ultisnips"
-:UTE
-|2,0,1555233595,,"UTE"
-:ultisnips
-|2,0,1555233590,,"ultisnips"
+|2,0,1555351150,,"q"
+:qa!
+|2,0,1555350166,,"qa!"
 :wqa
-|2,0,1555190233,,"wqa"
-:sp amores2-12-translation.txt
-|2,0,1555189699,,"sp amores2-12-translation.txt"
+|2,0,1555350159,,"wqa"
+:qa
+|2,0,1555349866,,"qa"
+:set ft=sh
+|2,0,1555345770,,"set ft=sh"
 :w
-|2,0,1555189405,,"w"
-:wa
-|2,0,1555184990,,"wa"
-:sp amores2-10-translation.txt
-|2,0,1555180044,,"sp amores2-10-translation.txt"
-:sp amores2-6-translation.txt
-|2,0,1555177220,,"sp amores2-6-translation.txt"
-:help surround
-|2,0,1555176759,,"help surround"
-:surround
-|2,0,1555176683,,"surround"
-:sp ~/Documents/amores2/amores2-6-translation.txt
-|2,0,1555014169,,"sp ~/Documents/amores2/amores2-6-translation.txt"
-:e ~/Documents/amores2/amores2-6.txt
-|2,0,1554985578,,"e ~/Documents/amores2/amores2-6.txt"
-:e amores2-4-translation.txt
-|2,0,1554982725,,"e amores2-4-translation.txt"
-:sp
-|2,0,1554982716,,"sp"
-:e ~/.config/vim/bundle/vim-amores2/amores2vocab.txt
-|2,0,1554833391,,"e ~/.config/vim/bundle/vim-amores2/amores2vocab.txt"
-:e amores2-12.txt
-|2,0,1554833375,,"e amores2-12.txt"
-:help setpos
-|2,0,1554820959,,"help setpos"
-:help setcursorpos
-|2,0,1554820954,,"help setcursorpos"
-:help setcurs
-|2,0,1554820947,,"help setcurs"
-:%s/\(^[A-Z]\)/\l\1/c
-|2,0,1554820810,,"%s/\\(^[A-Z]\\)/\\l\\1/c"
-:.s/\(^[A-Z]\)/\l\1/c
-|2,0,1554820800,,".s/\\(^[A-Z]\\)/\\l\\1/c"
-:.s/\(^[A-Z]\)/\l\1/
-|2,0,1554820769,,".s/\\(^[A-Z]\\)/\\l\\1/"
-:.s/\(^[A-Z]\)/\l\u/
-|2,0,1554820753,,".s/\\(^[A-Z]\\)/\\l\\u/"
-:.s/(^[A-Z])/\l\u/
-|2,0,1554820684,,".s/(^[A-Z])/\\l\\u/"
-:s/(^[A-Z])/\l\u/
-|2,0,1554820655,,"s/(^[A-Z])/\\l\\u/"
-:s/^([A-Z])/\l\1/
-|2,0,1554820567,,"s/^([A-Z])/\\l\\1/"
-:help :s
-|2,0,1554820498,,"help :s"
+|2,0,1555345065,,"w"
+:%s/MYHOME/XDG_CONFIG_HOME/
+|2,0,1555345030,,"%s/MYHOME/XDG_CONFIG_HOME/"
+:%s/XDG_CONFIG_HOME/DOTFILES_DIR/
+|2,0,1555344991,,"%s/XDG_CONFIG_HOME/DOTFILES_DIR/"
+:reg
+|2,0,1555344798,,"reg"
+:%s/GITVAR/XDG_CONFIG_HOME/
+|2,0,1555344636,,"%s/GITVAR/XDG_CONFIG_HOME/"
+:g/^#/d
+|2,0,1555343945,,"g/^#/d"
+:sav dotfileslist
+|2,0,1555343921,,"sav dotfileslist"
+:UltiSnipsEdit!
+|2,0,1555343534,,"UltiSnipsEdit!"
+:q!
+|2,0,1555342428,,"q!"
+:w ~/.local/usr/bin/mvscript
+|2,0,1555342422,,"w ~/.local/usr/bin/mvscript"
+:call LookupAndLabel2()
+|2,0,1555334876,,"call LookupAndLabel2()"
+:'<,'>RWC
+|2,0,1555334837,,"'<,'>RWC"
+:messages
+|2,0,1555333103,,"messages"
+:call TestSplitAndKeep()
+|2,0,1555332794,,"call TestSplitAndKeep()"
+:s/\s\s*/ /g
+|2,0,1555330855,,"s/\\s\\s*/ /g"
+:tabnew
+|2,0,1555330843,,"tabnew"
+:e ~/Documents/amores2/amores2-10.txt
+|2,0,1555330836,,"e ~/Documents/amores2/amores2-10.txt"
+:message
+|2,0,1555329697,,"message"
+:s/\s*/ /g
+|2,0,1555328806,,"s/\\s*/ /g"
+:s/\s*/\s/g
+|2,0,1555328797,,"s/\\s*/\\s/g"
+:e ~/Documents/amores2/amores2-2.txt
+|2,0,1555328766,,"e ~/Documents/amores2/amores2-2.txt"
+:call TestSplit()
+|2,0,1555327671,,"call TestSplit()"
+:help add
+|2,0,1555327372,,"help add"
+:help substitute
+|2,0,1555327351,,"help substitute"
+:help pattern
+|2,0,1555325977,,"help pattern"
+:call TestDefinition()
+|2,0,1555325170,,"call TestDefinition()"
+:buffers
+|2,0,1555325123,,"buffers"
+:h
+|2,0,1555325106,,"h"
+:b1
+|2,0,1555325087,,"b1"
+:b5
+|2,0,1555325039,,"b5"
+:call TestD
+|2,0,1555324718,,"call TestD"
+:call TestHeadword()
+|2,0,1555324432,,"call TestHeadword()"
+:sav ~/.local/usr/bin/deffinder.sh
+|2,0,1555324143,,"sav ~/.local/usr/bin/deffinder.sh"
+:sav ~/.local/usr/bin/%
+|2,0,1555324110,,"sav ~/.local/usr/bin/%"
+:e ~/.config/vim/bundle/vim-amores2/deffinder.sh
+|2,0,1555324035,,"e ~/.config/vim/bundle/vim-amores2/deffinder.sh"
+:help input
+|2,0,1555321891,,"help input"
+:W
+|2,0,1555321577,,"W"
+:sav hermes2.sh
+|2,0,1555319609,,"sav hermes2.sh"
+:e ~/.config/vim/bundle/vim-amores2/hermes.sh
+|2,0,1555319572,,"e ~/.config/vim/bundle/vim-amores2/hermes.sh"
+:help 'exit
+|2,0,1555319096,,"help 'exit"
+:help exit'
+|2,0,1555319092,,"help exit'"
+:help exit
+|2,0,1555319070,,"help exit"
+:help isfname
+|2,0,1555318884,,"help isfname"
+:help empty
+|2,0,1555318686,,"help empty"
 
 # Search String History (newest to oldest):
+? MYHOME
+|2,1,1555345030,,"MYHOME"
+? XDG_CONFIG_HOME
+|2,1,1555344991,,"XDG_CONFIG_HOME"
+? GITVAR
+|2,1,1555344636,,"GITVAR"
+? ^#
+|2,1,1555343945,,"^#"
+? \S\zs\n\ze\S
+|2,1,1555334896,,"\\S\\zs\\n\\ze\\S"
+? , 
+|2,1,1555334891,,", "
+? \s*$
+|2,1,1555334891,,"\\s*$"
+?/Reali
+|2,1,1555333647,47,"Reali"
+??Looku
+|2,1,1555333586,63,"Looku"
+?/pad
+|2,1,1555333126,47,"pad"
+? \s\s*
+|2,1,1555330855,,"\\s\\s*"
+? \s*
+|2,1,1555328806,,"\\s*"
+??Look
+|2,1,1555328700,63,"Look"
+?/LookupAnd
+|2,1,1555325669,47,"LookupAnd"
+??LookupAndLabel
+|2,1,1555325597,63,"LookupAndLabel"
+??LookupandLabel
+|2,1,1555325589,63,"LookupandLabel"
+?/kk
+|2,1,1555324789,47,"kk"
+?/{
+|2,1,1555323687,47,"{"
+?/isf
+|2,1,1555318748,47,"isf"
+?/isfname
+|2,1,1555318725,47,"isfname"
 ? _
 |2,1,1555237131,,"_"
 ? }|
 |2,1,1555237111,,"}|"
-?/{
-|2,1,1555237056,47,"{"
 ? :_
 |2,1,1555236931,,":_"
 ?/\d
@@ -138,12 +176,6 @@ $|
 |2,1,1555252655,,"\\n"
 ?/\r
 |2,1,1555252600,47,"\\r"
-? \s*$
-|2,1,1555243521,,"\\s*$"
-? \S\zs\n\ze\S
-|2,1,1555243109,,"\\S\\zs\\n\\ze\\S"
-? , 
-|2,1,1555243098,,", "
 ?/^ni
 |2,1,1555241592,47,"^ni"
 ?/^e
@@ -190,38 +222,6 @@ $|
 |2,1,1554820474,,"^[A-Z]"
 ?/XII
 |2,1,1554819258,47,"XII"
-?/X:
-|2,1,1554819203,47,"X:"
-?/ VII
-|2,1,1554819146,47," VII"
-?/ VI
-|2,1,1554819133,47," VI"
-?/ VI 
-|2,1,1554819125,47," VI "
-?/V
-|2,1,1554818846,47,"V"
-?/^$
-|2,1,1554818379,47,"^$"
-?/VI
-|2,1,1554818369,47,"VI"
-?/   VI
-|2,1,1554818367,47,"   VI"
-?/<leader>e
-|2,1,1554809928,47,"<leader>e"
-??if
-|2,1,1554808699,63,"if"
-?/split
-|2,1,1554807732,47,"split"
-?/quid
-|2,1,1554815166,47,"quid"
-?/iuv
-|2,1,1554812786,47,"iuv"
-?/fee
-|2,1,1554812748,47,"fee"
-?/^s
-|2,1,1554767760,47,"^s"
-??\a
-|2,1,1554766441,63,"\\a"
 
 # Expression History (newest to oldest):
 =p
@@ -258,16 +258,30 @@ $|
 |2,2,1527944728,,"`($date)`"
 
 # Input Line History (newest to oldest):
+@$D
+|2,3,1555345085,,"$D"
+@Graecinus
+|2,3,1555334883,,"Graecinus"
+@n
+|2,3,1555334880,,"n"
+@Bagoas
+|2,3,1555329755,,"Bagoas"
+@0
+|2,3,1555329751,,"0"
+@1
+|2,3,1555329747,,"1"
+@in the power of
+|2,3,1555329742,,"in the power of"
+@a
+|2,3,1555323227,,"a"
+@asausage
+|2,3,1555323169,,"asausage"
 @order
 |2,3,1555242904,,"order"
 @Cupid
 |2,3,1555242895,,"Cupid"
-@0
-|2,3,1555242892,,"0"
 @heifer
 |2,3,1555242879,,"heifer"
-@1
-|2,3,1555242865,,"1"
 @bull
 |2,3,1555242836,,"bull"
 @husband
@@ -344,56 +358,65 @@ $|
 |2,3,1555187131,,"strength"
 @better
 |2,3,1555181932,,"better"
-@light ship
-|2,3,1555181238,,"light ship"
-@different
-|2,3,1555181223,,"different"
-@us
-|2,3,1555181119,,"us"
-@both
-|2,3,1555180730,,"both"
-@catch
-|2,3,1555180413,,"catch"
-@Graecinus
-|2,3,1555180160,,"Graecinus"
-@speak
-|2,3,1555179420,,"speak"
 
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	I
-|3,0,0,1,1,0,1555254488,"I"
+"0	CHAR	0
+	&
+|3,0,0,0,1,0,1555349680,"&"
 "1	LINE	0
-	I
-|3,0,1,1,1,0,1555243106,"I"
+	"$HOME/.bash_aliases                    $DOTFILES_DIR/home/bash_aliases"
+|3,0,1,1,1,0,1555346346,"\"$HOME/.bash_aliases                    $DOTFILES_DIR/home/bash_aliases\""
 "2	LINE	0
-	much
-|3,0,2,1,1,0,1555243104,"much"
+	"$HOME/.bash_aliases                    $DOTFILES_DIR/home/bash_aliases"
+|3,0,2,1,1,0,1555346341,"\"$HOME/.bash_aliases                    $DOTFILES_DIR/home/bash_aliases\""
 "3	LINE	0
-	which
-|3,0,3,1,1,0,1555243102,"which"
+	"$XDG_CONFIG_HOME/urlview               $DOTFILES_DIR/urlview/urlview"
+	"$XDG_CONFIG_HOME/vim/vimrc             $DOTFILES_DIR/vim/vimrc"
+	"$XDG_CONFIG_HOME/w3m/config            $DOTFILES_DIR/w3m/config"
+	"$XDG_CONFIG_HOME/w3m/keymap            $DOTFILES_DIR/w3m/keymap"
+|3,0,3,1,4,0,1555346336,"\"$XDG_CONFIG_HOME/urlview               $DOTFILES_DIR/urlview/urlview\"","\"$XDG_CONFIG_HOME/vim/vimrc             $DOTFILES_DIR/vim/vimrc\"","\"$XDG_CONFIG_HOME/w3m/config            $DOTFILES_DIR/w3m/config\"","\"$XDG_CONFIG_HOME/w3m/keymap            $DOTFILES_DIR/w3m/keymap\""
 "4	LINE	0
-	I
-|3,0,4,1,1,0,1555243100,"I"
+	"$HOME/.selected_editor                 $DOTFILES_DIR/home/selected_editor"
+	"$HOME/.profile                         $DOTFILES_DIR/home/profile"
+	"/usr/share/xsessions/dwm.desktop       $DOTFILES_DIR/various/dwm.desktop"
+	"/usr/local/bin/dwmstart                $DOTFILES_DIR/various/dwmstart"
+	"$HOME/.dwmsrc/config.mk                $DOTFILES_DIR/dwm/config.mk"
+	"$HOME/.stsrc/config.h                  $DOTFILES_DIR/st/config.h"
+	"$XDG_CONFIG_HOME/mpd/mpd.conf          $DOTFILES_DIR/mpd/mpd.conf"
+	"$XDG_CONFIG_HOME/mps-youtube/transcode $DOTFILES_DIR/mps-youtube/transcode"
+	"$XDG_CONFIG_HOME/ncmpcpp/config        $DOTFILES_DIR/ncmpcpp/config"
+	"$XDG_CONFIG_HOME/ncmpcpp/bindings      $DOTFILES_DIR/ncmpcpp/bindings"
+	"$XDG_CONFIG_HOME/newsbeuter/config     $DOTFILES_DIR/newsbeuter/config"
+	"$XDG_CONFIG_HOME/newsbeuter/urls       $DOTFILES_DIR/newsbeuter/urls"
+	"$XDG_CONFIG_HOME/ranger/commands.py    $DOTFILES_DIR/ranger/commands.py"
+	"$XDG_CONFIG_HOME/ranger/rc.conf        $DOTFILES_DIR/ranger/rc.conf"
+	"$XDG_CONFIG_HOME/ranger/rifle.conf     $DOTFILES_DIR/ranger/rifle.conf"
+	"$XDG_CONFIG_HOME/ranger/scope.sh       $DOTFILES_DIR/ranger/scope.sh"
+	"$XDG_CONFIG_HOME/redshift.conf         $DOTFILES_DIR/redshift/redshift/"
+	"$XDG_CONFIG_HOME/rtv/rtv.cfg           $DOTFILES_DIR/rtv/rtv.cfg"
+	"$XDG_CONFIG_HOME/surfraw/conf          $DOTFILES_DIR/surfraw/conf"
+	"$XDG_CONFIG_HOME/tmux/tmux.conf        $DOTFILES_DIR/tmux/tmux.conf"
+|3,0,4,1,20,0,1555346331,"\"$HOME/.selected_editor                 $DOTFILES_DIR/home/selected_editor\"","\"$HOME/.profile                         $DOTFILES_DIR/home/profile\"","\"/usr/share/xsessions/dwm.desktop       $DOTFILES_DIR/various/dwm.desktop\"","\"/usr/local/bin/dwmstart                $DOTFILES_DIR/various/dwmstart\"","\"$HOME/.dwmsrc/config.mk                $DOTFILES_DIR/dwm/config.mk\"",>70
+|<"\"$HOME/.stsrc/config.h                  $DOTFILES_DIR/st/config.h\"","\"$XDG_CONFIG_HOME/mpd/mpd.conf          $DOTFILES_DIR/mpd/mpd.conf\"","\"$XDG_CONFIG_HOME/mps-youtube/transcode $DOTFILES_DIR/mps-youtube/transcode\"","\"$XDG_CONFIG_HOME/ncmpcpp/config        $DOTFILES_DIR/ncmpcpp/config\"","\"$XDG_CONFIG_HOME/ncmpcpp/bindings      $DOTFILES_DIR/ncmpcpp/bindings\"","\"$XDG_CONFIG_HOME/newsbeuter/config     $DOTFILES_DIR/newsbeuter/config\"",>74
+|<"\"$XDG_CONFIG_HOME/newsbeuter/urls       $DOTFILES_DIR/newsbeuter/urls\"","\"$XDG_CONFIG_HOME/ranger/commands.py    $DOTFILES_DIR/ranger/commands.py\"","\"$XDG_CONFIG_HOME/ranger/rc.conf        $DOTFILES_DIR/ranger/rc.conf\"","\"$XDG_CONFIG_HOME/ranger/rifle.conf     $DOTFILES_DIR/ranger/rifle.conf\"","\"$XDG_CONFIG_HOME/ranger/scope.sh       $DOTFILES_DIR/ranger/scope.sh\"","\"$XDG_CONFIG_HOME/redshift.conf         $DOTFILES_DIR/redshift/redshift/\"",>70
+|<"\"$XDG_CONFIG_HOME/rtv/rtv.cfg           $DOTFILES_DIR/rtv/rtv.cfg\"","\"$XDG_CONFIG_HOME/surfraw/conf          $DOTFILES_DIR/surfraw/conf\"","\"$XDG_CONFIG_HOME/tmux/tmux.conf        $DOTFILES_DIR/tmux/tmux.conf\""
 "5	LINE	0
-	at mihi saevus amor somnos abrumpat inertes,:
-|3,0,5,1,1,0,1555243098,"at mihi saevus amor somnos abrumpat inertes,:"
+	"$HOME/.bashrc                          $DOTFILES_DIR/home/bashrc"
+|3,0,5,1,1,0,1555346319,"\"$HOME/.bashrc                          $DOTFILES_DIR/home/bashrc\""
 "6	LINE	0
-	courage
-|3,0,6,1,1,0,1555243040,"courage"
+	        #statements
+|3,0,6,1,1,0,1555346067,"        #statements"
 "7	LINE	0
-	at mihi saevus amor somnos abrumpat inertes,:
-|3,0,7,1,1,0,1555243037,"at mihi saevus amor somnos abrumpat inertes,:"
+	    #statements
+|3,0,7,1,1,0,1555345916,"    #statements"
 "8	LINE	0
-	at mihi saevus amor somnos abrumpat inertes,:
-|3,0,8,1,1,0,1555242949,"at mihi saevus amor somnos abrumpat inertes,:"
+	$XDG_CONFIG_HOME/w3m/keymap            $DOTFILES_DIR/w3m/keymap
+|3,0,8,1,1,0,1555345728,"$XDG_CONFIG_HOME/w3m/keymap            $DOTFILES_DIR/w3m/keymap"
 "9	LINE	0
-	on behalf of
-	in defence of
-	in proportion to
-|3,0,9,1,3,0,1555242934,"on behalf of","in defence of","in proportion to"
+	$XDG_CONFIG_HOME/w3m/config            $DOTFILES_DIR/w3m/config
+|3,0,9,1,1,0,1555345727,"$XDG_CONFIG_HOME/w3m/config            $DOTFILES_DIR/w3m/config"
 "a	LINE	0
 	
 	ante + acc. : before, in front of
@@ -417,8 +440,8 @@ $|
 	iq
 |3,0,18,0,1,0,1547326331,"iq"
 "j@	CHAR	0
-	yiw/{, ldiw"0P
-|3,2,19,0,1,0,1555237046,"yiw/{, ldiw\"0P"
+	IddO""€kb"jkj
+|3,2,19,0,1,0,1555345707,"IddO\"\"€kb\"jkj"
 "k	CHAR	0
 	kkkk
 |3,0,20,0,1,0,1538167511,"kkkk"
@@ -429,8 +452,8 @@ $|
 	oteme101€kb€kb€kb€kb€kb€kb€kbq€kbquq€kb€kb€kbjk
 |3,0,30,0,1,0,1527848174,"oteme101€kb€kb€kb€kb€kb€kb€kbq€kbquq€kb€kb€kbjk"
 "v	LINE	0
-	map gh cd ~
-|3,0,31,1,1,0,1554725777,"map gh cd ~"
+	    " echo topline_parts
+|3,0,31,1,1,0,1555334685,"    \" echo topline_parts"
 "w	CHAR	0
 	
 |3,0,32,0,1,0,1555180592,""
@@ -438,234 +461,916 @@ $|
 	
 |3,0,33,0,1,0,1554810086,""
 ""-	CHAR	0
-	 
-|3,1,36,0,1,0,1555254690," "
+	/
+|3,1,36,0,1,0,1555350225,"/"
 
 # File marks:
-'0  5  17  ~/.local/usr/bin/bookmarklauncher.sh
-|4,48,5,17,1555254732,"~/.local/usr/bin/bookmarklauncher.sh"
-'1  1  0  ~/Documents/amores2/bookmark-launcher:
-|4,49,1,0,1555254419,"~/Documents/amores2/bookmark-launcher:"
-'2  1  0  ~/Documents/amores2/bookmarklauncher:
-|4,50,1,0,1555254407,"~/Documents/amores2/bookmarklauncher:"
-'3  1  0  /tmp/tmpTsXEG6
-|4,51,1,0,1555253164,"/tmp/tmpTsXEG6"
-'4  4  9  /tmp/tmpqPC1G4
-|4,52,4,9,1555253161,"/tmp/tmpqPC1G4"
-'5  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,53,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
-'6  1  0  ~/Documents/amores2/amores2-12-nums.txt
-|4,54,1,0,1555243540,"~/Documents/amores2/amores2-12-nums.txt"
-'7  1  0  ~/Documents/amores2/amores2-12.txt
-|4,55,1,0,1555243442,"~/Documents/amores2/amores2-12.txt"
-'8  1  0  /tmp/bash-fc.I92t25
-|4,56,1,0,1555239522,"/tmp/bash-fc.I92t25"
-'9  3  0  ~/Documents/amores2/amores2-10.txt
-|4,57,3,0,1555239484,"~/Documents/amores2/amores2-10.txt"
+'0  1  3  ~/.dotfiles/vim/tmp/.gitignore
+|4,48,1,3,1555352298,"~/.dotfiles/vim/tmp/.gitignore"
+'1  1  0  ~/.dotfiles/scripts/numberthirdlines.awk
+|4,49,1,0,1555351150,"~/.dotfiles/scripts/numberthirdlines.awk"
+'2  1  0  ~/.dotfiles/scripts/longestline.awk
+|4,50,1,0,1555351142,"~/.dotfiles/scripts/longestline.awk"
+'3  1  0  ~/.local/usr/bin/backup-configs.sh
+|4,51,1,0,1555351056,"~/.local/usr/bin/backup-configs.sh"
+'4  1  32  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,52,1,32,1555350511,"~/.dotfiles/.git/COMMIT_EDITMSG"
+'5  23  75  ~/.local/usr/bin/dotfileslist
+|4,53,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+'6  1  3  ~/.config/redshift.conf
+|4,54,1,3,1555350166,"~/.config/redshift.conf"
+'7  1  0  ~/.stsrc.0.8.2/config.h
+|4,55,1,0,1555350159,"~/.stsrc.0.8.2/config.h"
+'8  1  3  ~/.config/redshift.conf
+|4,56,1,3,1555349888,"~/.config/redshift.conf"
+'9  1  0  ~/.stsrc/config.h
+|4,57,1,0,1555349866,"~/.stsrc/config.h"
 
 # Jumplist (newest first):
--'  5  17  ~/.local/usr/bin/bookmarklauncher.sh
-|4,39,5,17,1555254732,"~/.local/usr/bin/bookmarklauncher.sh"
--'  4  1  ~/.local/usr/bin/bookmarklauncher.sh
-|4,39,4,1,1555254508,"~/.local/usr/bin/bookmarklauncher.sh"
--'  1  0  ~/.local/usr/bin/bookmarklauncher.sh
-|4,39,1,0,1555254479,"~/.local/usr/bin/bookmarklauncher.sh"
--'  1  0  ~/Documents/amores2/bookmark-launcher:
-|4,39,1,0,1555254419,"~/Documents/amores2/bookmark-launcher:"
--'  1  0  ~/Documents/amores2/bookmark-launcher:
-|4,39,1,0,1555254419,"~/Documents/amores2/bookmark-launcher:"
--'  1  0  ~/Documents/amores2/bookmarklauncher:
-|4,39,1,0,1555254407,"~/Documents/amores2/bookmarklauncher:"
--'  1  0  ~/Documents/amores2/bookmarklauncher:
-|4,39,1,0,1555254407,"~/Documents/amores2/bookmarklauncher:"
--'  1  0  ~/Documents/amores2/bookmarklauncher:
-|4,39,1,0,1555254407,"~/Documents/amores2/bookmarklauncher:"
--'  1  0  ~/Documents/amores2/bookmarklauncher:
-|4,39,1,0,1555254407,"~/Documents/amores2/bookmarklauncher:"
--'  1  0  /tmp/tmpTsXEG6
-|4,39,1,0,1555253164,"/tmp/tmpTsXEG6"
--'  1  0  /tmp/tmpTsXEG6
-|4,39,1,0,1555253164,"/tmp/tmpTsXEG6"
--'  1  0  /tmp/tmpTsXEG6
-|4,39,1,0,1555253164,"/tmp/tmpTsXEG6"
--'  1  0  /tmp/tmpTsXEG6
-|4,39,1,0,1555253164,"/tmp/tmpTsXEG6"
--'  1  0  /tmp/tmpTsXEG6
-|4,39,1,0,1555253164,"/tmp/tmpTsXEG6"
--'  1  0  /tmp/tmpTsXEG6
-|4,39,1,0,1555253164,"/tmp/tmpTsXEG6"
--'  1  0  /tmp/tmpTsXEG6
-|4,39,1,0,1555253164,"/tmp/tmpTsXEG6"
--'  1  0  /tmp/tmpTsXEG6
-|4,39,1,0,1555253164,"/tmp/tmpTsXEG6"
--'  4  9  /tmp/tmpqPC1G4
-|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
--'  4  9  /tmp/tmpqPC1G4
-|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
--'  4  9  /tmp/tmpqPC1G4
-|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
--'  4  9  /tmp/tmpqPC1G4
-|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
--'  4  9  /tmp/tmpqPC1G4
-|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
--'  4  9  /tmp/tmpqPC1G4
-|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
--'  4  9  /tmp/tmpqPC1G4
-|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
--'  4  9  /tmp/tmpqPC1G4
-|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
--'  4  9  /tmp/tmpqPC1G4
-|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
--'  4  9  /tmp/tmpqPC1G4
-|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
--'  4  9  /tmp/tmpqPC1G4
-|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
--'  4  9  /tmp/tmpqPC1G4
-|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
--'  4  9  /tmp/tmpqPC1G4
-|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
--'  4  9  /tmp/tmpqPC1G4
-|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
--'  4  9  /tmp/tmpqPC1G4
-|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
--'  4  9  /tmp/tmpqPC1G4
-|4,39,4,9,1555253161,"/tmp/tmpqPC1G4"
--'  1  0  /tmp/tmpqPC1G4
-|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
--'  1  0  /tmp/tmpqPC1G4
-|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
--'  1  0  /tmp/tmpqPC1G4
-|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
--'  1  0  /tmp/tmpqPC1G4
-|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
--'  1  0  /tmp/tmpqPC1G4
-|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
--'  1  0  /tmp/tmpqPC1G4
-|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
--'  1  0  /tmp/tmpqPC1G4
-|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
--'  1  0  /tmp/tmpqPC1G4
-|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
--'  1  0  /tmp/tmpqPC1G4
-|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
--'  1  0  /tmp/tmpqPC1G4
-|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
--'  1  0  /tmp/tmpqPC1G4
-|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
--'  1  0  /tmp/tmpqPC1G4
-|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
--'  1  0  /tmp/tmpqPC1G4
-|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
--'  1  0  /tmp/tmpqPC1G4
-|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
--'  1  0  /tmp/tmpqPC1G4
-|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
--'  1  0  /tmp/tmpqPC1G4
-|4,39,1,0,1555253148,"/tmp/tmpqPC1G4"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  1  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,1,0,1555252707,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
--'  305  0  ~/Documents/amores2/amores2-6-nums-exp.txt
-|4,39,305,0,1555252685,"~/Documents/amores2/amores2-6-nums-exp.txt"
+-'  1  3  ~/.dotfiles/vim/tmp/.gitignore
+|4,39,1,3,1555352298,"~/.dotfiles/vim/tmp/.gitignore"
+-'  1  0  ~/.dotfiles/scripts/numberthirdlines.awk
+|4,39,1,0,1555351150,"~/.dotfiles/scripts/numberthirdlines.awk"
+-'  1  0  ~/.dotfiles/scripts/numberthirdlines.awk
+|4,39,1,0,1555351150,"~/.dotfiles/scripts/numberthirdlines.awk"
+-'  1  0  ~/.dotfiles/scripts/longestline.awk
+|4,39,1,0,1555351142,"~/.dotfiles/scripts/longestline.awk"
+-'  1  0  ~/.dotfiles/scripts/longestline.awk
+|4,39,1,0,1555351142,"~/.dotfiles/scripts/longestline.awk"
+-'  1  0  ~/.dotfiles/scripts/longestline.awk
+|4,39,1,0,1555351142,"~/.dotfiles/scripts/longestline.awk"
+-'  1  0  ~/.dotfiles/scripts/longestline.awk
+|4,39,1,0,1555351142,"~/.dotfiles/scripts/longestline.awk"
+-'  1  0  ~/.local/usr/bin/backup-configs.sh
+|4,39,1,0,1555351056,"~/.local/usr/bin/backup-configs.sh"
+-'  1  0  ~/.local/usr/bin/backup-configs.sh
+|4,39,1,0,1555351056,"~/.local/usr/bin/backup-configs.sh"
+-'  1  0  ~/.local/usr/bin/backup-configs.sh
+|4,39,1,0,1555351056,"~/.local/usr/bin/backup-configs.sh"
+-'  1  0  ~/.local/usr/bin/backup-configs.sh
+|4,39,1,0,1555351056,"~/.local/usr/bin/backup-configs.sh"
+-'  1  0  ~/.local/usr/bin/backup-configs.sh
+|4,39,1,0,1555351056,"~/.local/usr/bin/backup-configs.sh"
+-'  1  0  ~/.local/usr/bin/backup-configs.sh
+|4,39,1,0,1555351056,"~/.local/usr/bin/backup-configs.sh"
+-'  1  0  ~/.local/usr/bin/backup-configs.sh
+|4,39,1,0,1555351056,"~/.local/usr/bin/backup-configs.sh"
+-'  1  0  ~/.local/usr/bin/backup-configs.sh
+|4,39,1,0,1555351056,"~/.local/usr/bin/backup-configs.sh"
+-'  1  32  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,32,1555350511,"~/.dotfiles/.git/COMMIT_EDITMSG"
+-'  1  32  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,32,1555350511,"~/.dotfiles/.git/COMMIT_EDITMSG"
+-'  1  32  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,32,1555350511,"~/.dotfiles/.git/COMMIT_EDITMSG"
+-'  1  32  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,32,1555350511,"~/.dotfiles/.git/COMMIT_EDITMSG"
+-'  1  32  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,32,1555350511,"~/.dotfiles/.git/COMMIT_EDITMSG"
+-'  1  32  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,32,1555350511,"~/.dotfiles/.git/COMMIT_EDITMSG"
+-'  1  32  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,32,1555350511,"~/.dotfiles/.git/COMMIT_EDITMSG"
+-'  1  32  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,32,1555350511,"~/.dotfiles/.git/COMMIT_EDITMSG"
+-'  1  32  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,32,1555350511,"~/.dotfiles/.git/COMMIT_EDITMSG"
+-'  1  32  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,32,1555350511,"~/.dotfiles/.git/COMMIT_EDITMSG"
+-'  1  32  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,32,1555350511,"~/.dotfiles/.git/COMMIT_EDITMSG"
+-'  1  32  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,32,1555350511,"~/.dotfiles/.git/COMMIT_EDITMSG"
+-'  1  32  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,32,1555350511,"~/.dotfiles/.git/COMMIT_EDITMSG"
+-'  1  32  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,32,1555350511,"~/.dotfiles/.git/COMMIT_EDITMSG"
+-'  1  32  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,32,1555350511,"~/.dotfiles/.git/COMMIT_EDITMSG"
+-'  1  32  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,32,1555350511,"~/.dotfiles/.git/COMMIT_EDITMSG"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  23  75  ~/.local/usr/bin/dotfileslist
+|4,39,23,75,1555350234,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  0  ~/.local/usr/bin/dotfileslist
+|4,39,1,0,1555350215,"~/.local/usr/bin/dotfileslist"
+-'  1  3  ~/.config/redshift.conf
+|4,39,1,3,1555350166,"~/.config/redshift.conf"
+-'  1  3  ~/.config/redshift.conf
+|4,39,1,3,1555350166,"~/.config/redshift.conf"
+-'  1  3  ~/.config/redshift.conf
+|4,39,1,3,1555350166,"~/.config/redshift.conf"
+-'  1  3  ~/.config/redshift.conf
+|4,39,1,3,1555350166,"~/.config/redshift.conf"
+-'  1  3  ~/.config/redshift.conf
+|4,39,1,3,1555350166,"~/.config/redshift.conf"
 
 # History of marks within files (newest to oldest):
+
+> ~/.dotfiles/vim/tmp/.gitignore
+	*	1555352295	0
+	"	1	3
+	^	1	4
+	.	1	3
+	+	1	3
+
+> ~/.dotfiles/scripts/numberthirdlines.awk
+	*	1555351145	0
+	"	1	0
+
+> ~/.dotfiles/scripts/longestline.awk
+	*	1555351137	0
+	"	1	0
+
+> ~/.local/usr/bin/backup-configs.sh
+	*	1555351054	0
+	"	1	0
+	^	33	26
+	.	20	0
+	+	41	15
+	+	10	0
+	+	33	25
+	+	20	0
+
+> ~/.dotfiles/.git/COMMIT_EDITMSG
+	*	1555350509	0
+	"	1	32
+	^	1	33
+	.	1	33
+	+	1	33
+
+> ~/.local/usr/bin/dotfileslist
+	*	1555350230	0
+	"	23	75
+	^	23	76
+	.	23	75
+	+	32	15
+	+	31	0
+	+	31	25
+	+	31	0
+	+	32	0
+	+	31	0
+	+	31	61
+	+	31	59
+	+	31	68
+	+	31	61
+	+	31	63
+	+	31	64
+	+	31	62
+	+	31	65
+	+	31	61
+	+	31	64
+	+	31	62
+	+	31	65
+	+	31	58
+	+	31	59
+	+	31	61
+	+	31	63
+	+	31	57
+	+	31	62
+	+	32	0
+	+	31	58
+	+	31	0
+	+	1	10
+	+	3	17
+	+	32	0
+	+	31	0
+	+	4	66
+	+	5	71
+	+	6	65
+	+	7	74
+	+	8	66
+	+	9	73
+	+	15	68
+	+	16	70
+	+	22	69
+	+	28	63
+	+	29	64
+	+	30	64
+	+	32	0
+	+	33	0
+	+	33	2
+	+	33	0
+	+	33	17
+	+	35	0
+	+	36	0
+	+	35	15
+	+	36	20
+	+	34	15
+	+	36	16
+	+	34	27
+	+	3	12
+	+	33	25
+	+	34	10
+	+	36	22
+	+	23	75
+
+> ~/.config/redshift.conf
+	*	1555350160	0
+	"	1	3
+
+> ~/.stsrc.0.8.2/config.h
+	*	1555350153	0
+	"	1	0
+	^	8	33
+	.	172	0
+	+	8	25
+	+	172	0
+
+> ~/.dotfiles/st/config.h
+	*	1555350073	0
+	"	1	0
+	.	187	0
+	+	8	0
+	+	85	0
+	+	113	0
+	+	122	0
+	+	184	0
+	+	187	0
+
+> ~/.stsrc/config.h
+	*	1555349863	0
+	"	1	0
+	^	100	32
+	.	100	31
+	+	121	2
+	+	121	34
+	+	121	0
+	+	121	34
+	+	121	0
+	+	120	35
+	+	114	28
+	+	99	28
+	+	108	34
+	+	113	34
+	+	112	30
+	+	111	27
+	+	110	32
+	+	109	34
+	+	107	32
+	+	106	32
+	+	112	26
+	+	105	32
+	+	104	32
+	+	103	33
+	+	102	41
+	+	101	33
+	+	100	0
+	+	101	0
+	+	100	31
+
+> ~/.dwmsrc/config.mk
+	*	1555349855	0
+	"	1	0
+
+> ~/.dotfiles/dwm/config.mk
+	*	1555349845	0
+	"	4	0
+
+> ~/.bash_aliases
+	*	1555349837	0
+	"	54	0
+	^	54	37
+	.	54	36
+	+	84	24
+	+	84	0
+	+	84	19
+	+	84	44
+	+	84	35
+	+	84	21
+	+	84	0
+	+	43	17
+	+	44	0
+	+	84	43
+	+	84	35
+	+	84	30
+	+	84	47
+	+	84	0
+	+	84	21
+	+	84	0
+	+	84	52
+	+	84	0
+	+	84	4
+	+	84	0
+	+	84	28
+	+	84	24
+	+	84	28
+	+	84	23
+	+	84	20
+	+	84	37
+	+	84	29
+	+	84	26
+	+	84	31
+	+	84	0
+	+	84	17
+	+	84	0
+	+	84	12
+	+	84	0
+	+	84	9
+	+	84	0
+	+	84	152
+	+	84	3
+	+	84	60
+	+	84	41
+	+	84	158
+	+	84	0
+	+	84	29
+	+	84	25
+	+	84	39
+	+	84	30
+	+	84	33
+	+	84	32
+	+	84	33
+	+	84	24
+	+	84	27
+	+	84	26
+	+	84	33
+	+	84	36
+	+	84	16
+	+	84	0
+	+	84	1
+	+	84	17
+	+	84	0
+	+	84	20
+	+	84	36
+	+	74	0
+	+	73	0
+	+	84	0
+	+	20	0
+	+	95	22
+	+	69	0
+	+	68	0
+	+	69	73
+	+	196	0
+	+	197	26
+	+	197	96
+	+	197	87
+	+	197	24
+	+	197	84
+	+	197	81
+	+	197	13
+	+	197	0
+	+	197	13
+	+	197	9
+	+	197	84
+	+	197	77
+	+	197	92
+	+	197	55
+	+	197	83
+	+	197	90
+	+	197	26
+	+	197	70
+	+	197	77
+	+	197	70
+	+	198	0
+	+	199	15
+	+	206	26
+	+	205	22
+	+	211	0
+	+	209	10
+	+	47	0
+	+	40	19
+	+	14	38
+	+	54	36
+
+> ~/.dotfiles/home/bash_aliases
+	*	1555349822	0
+	"	54	0
+	.	54	0
+	+	54	0
+
+> ~/.local/usr/bin/difftester
+	*	1555349809	0
+	"	9	0
+	^	8	24
+	.	8	23
+	+	4	51
+	+	3	68
+	+	4	49
+	+	6	22
+	+	7	20
+	+	6	20
+	+	3	18
+	+	4	0
+	+	3	69
+	+	5	0
+	+	3	38
+	+	6	20
+	+	3	31
+	+	4	13
+	+	3	44
+	+	4	0
+	+	3	44
+	+	4	0
+	+	3	48
+	+	4	11
+	+	3	12
+	+	6	26
+	+	8	35
+	+	10	29
+	+	8	33
+	+	10	22
+	+	7	20
+	+	8	23
+
+> ~/test-c
+	*	1555349562	0
+	"	1	0
+	^	3	3
+	.	3	2
+	+	3	2
+
+> ~/test-d
+	*	1555349561	0
+	"	1	0
+	^	3	1
+	.	3	0
+	+	3	0
+
+> ~/test-a
+	*	1555349557	0
+	"	1	0
+	^	3	5
+	.	1	0
+	+	3	4
+	+	1	0
+
+> ~/test-b
+	*	1555349552	0
+	"	1	0
+	^	3	1
+	.	3	0
+	+	3	0
+
+> ~/.local/usr/bin/playlist-browser
+	*	1555349472	0
+	"	1	0
+	^	3	11
+	.	3	0
+	+	3	2
+	+	4	0
+	+	3	0
+
+> ~/test-c /home/simon/test-d
+	*	1555348813	0
+	"	1	0
+
+> ~/test-a /home/simon/test-b
+	*	1555348806	0
+	"	1	0
+
+> $HOME/test-d
+	*	1555348186	0
+	"	1	0
+
+> $HOME/test-c
+	*	1555348176	0
+	"	1	0
+
+> $HOME/test-b
+	*	1555348172	0
+	"	1	0
+
+> $HOME/test-a
+	*	1555348170	0
+	"	1	0
+
+> ~/.local/usr/bin/arraytester.sh
+	*	1555347963	0
+	"	2	0
+	^	9	0
+	.	4	0
+	+	9	0
+	+	4	0
+
+> ~/test-b,
+	*	1555347558	0
+	"	1	0
+
+> ~/.config/vim/customsnips/sh.snippets
+	*	1555343555	0
+	"	41	19
+	^	41	20
+	.	41	19
+	+	40	0
+	+	41	0
+	+	40	45
+	+	41	30
+	+	42	9
+	+	41	19
+
+> ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
+	*	1555343169	0
+	"	97	0
+
+> /tmp/bash-fc.YJqSeX
+	*	1555342423	0
+	"	2	38
+	^	2	39
+	.	2	38
+	+	2	19
+	+	1	10
+	+	2	38
+
+> ~/.config/vim/vimrc
+	*	1555335112	0
+	"	1015	24
+	^	1121	62
+	.	1110	0
+	+	854	19
+	+	852	27
+	+	854	23
+	+	859	38
+	+	852	21
+	+	854	27
+	+	864	0
+	+	859	0
+	+	852	0
+	+	854	0
+	+	863	0
+	+	797	0
+	+	753	0
+	+	754	0
+	+	793	0
+	+	886	0
+	+	855	24
+	+	856	0
+	+	868	0
+	+	867	0
+	+	868	0
+	+	857	0
+	+	867	0
+	+	866	30
+	+	867	26
+	+	865	26
+	+	871	58
+	+	873	58
+	+	828	33
+	+	830	46
+	+	833	0
+	+	831	73
+	+	829	33
+	+	827	14
+	+	830	21
+	+	830	22
+	+	830	29
+	+	831	29
+	+	829	17
+	+	830	21
+	+	831	17
+	+	832	29
+	+	829	0
+	+	827	0
+	+	838	53
+	+	853	39
+	+	865	0
+	+	867	0
+	+	870	21
+	+	871	50
+	+	878	60
+	+	871	55
+	+	873	58
+	+	1101	0
+	+	1115	0
+	+	1106	0
+	+	1116	8
+	+	1116	15
+	+	1116	76
+	+	1116	16
+	+	1120	0
+	+	1116	73
+	+	1120	0
+	+	1117	0
+	+	1118	0
+	+	1119	60
+	+	1120	11
+	+	1116	68
+	+	1122	0
+	+	1131	0
+	+	1127	0
+	+	1131	0
+	+	1130	0
+	+	1131	0
+	+	1114	12
+	+	1131	17
+	+	1119	80
+	+	1118	54
+	+	1131	0
+	+	1124	0
+	+	1129	0
+	+	1114	6
+	+	1124	13
+	+	1129	13
+	+	1122	69
+	+	1127	69
+	+	1114	7
+	+	1124	15
+	+	1129	15
+	+	1111	0
+	+	1110	0
+	+	1113	0
+	+	1120	36
+	+	1121	61
+	+	1113	0
+	+	1110	0
+
+> ~/Documents/amores2/amores2-10.txt
+	*	1555334912	0
+	"	2	0
+	^	113	9
+	.	26	0
+	+	17	0
+	+	18	0
+	+	20	0
+	+	25	0
+	+	21	0
+	+	23	0
+	+	24	0
+	+	26	0
+	+	27	0
+	+	29	0
+	+	30	0
+	+	32	0
+	+	33	0
+	+	35	0
+	+	36	0
+	+	35	0
+	+	34	0
+	+	38	0
+	+	39	0
+	+	41	0
+	+	42	0
+	+	43	0
+	+	44	0
+	+	45	0
+	+	44	64
+	+	48	0
+	+	47	0
+	+	50	0
+	+	51	0
+	+	53	0
+	+	54	0
+	+	56	0
+	+	57	0
+	+	59	0
+	+	60	0
+	+	50	0
+	+	53	0
+	+	56	0
+	+	62	57
+	+	63	0
+	+	65	0
+	+	66	0
+	+	62	0
+	+	65	0
+	+	68	0
+	+	69	0
+	+	71	0
+	+	68	10
+	+	72	0
+	+	74	0
+	+	75	0
+	+	77	0
+	+	78	0
+	+	77	0
+	+	80	0
+	+	81	0
+	+	83	0
+	+	84	0
+	+	86	0
+	+	87	0
+	+	89	0
+	+	90	0
+	+	91	0
+	+	93	0
+	+	89	0
+	+	92	0
+	+	95	0
+	+	96	0
+	+	91	0
+	+	92	0
+	+	98	0
+	+	99	0
+	+	101	0
+	+	102	0
+	+	104	0
+	+	105	0
+	+	107	0
+	+	108	0
+	+	110	0
+	+	111	0
+	+	113	0
+	+	104	0
+	+	98	0
+	+	86	0
+	+	59	0
+	+	41	0
+	+	26	0
+
+> ~/_Definitions_
+	*	1555334895	0
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	7
+	+	1	0
+	+	1	9
+	+	1	0
+	+	1	6
+	+	1	0
+	+	1	2
+	+	1	0
+	+	1	3
+	+	1	0
+	+	1	9
+	+	1	0
+	+	1	9
+	+	1	0
+	+	1	3
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+
+> ~/_Headwords_
+	*	1555334877	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/amores2/amores2-2.txt
+	*	1555329812	0
+	"	1	60
+	^	1	61
+	.	1	60
+	+	1	60
+
+> /usr/share/vim/vim80/doc/eval.txt
+	*	1555327376	0
+	"	2434	24
+	^	7412	12
+
+> /usr/share/vim/vim80/doc/pattern.txt
+	*	1555326910	0
+	"	504	13
+
+> ~/.local/usr/bin/deffinder.sh
+	*	1555325117	0
+	"	5	18
+	^	2	14
+	.	5	0
+	+	2	0
+	+	3	0
+	+	2	13
+	+	3	0
+	+	5	0
+
+> ~/.config/vim/bundle/vim-amores2/deffinder.sh
+	*	1555325057	0
+	"	3	12
+
+> ~/hermes2.sh
+	*	1555319640	0
+	"	3	7
+	^	2	8
+	.	2	7
+	+	2	40
+	+	4	0
+	+	2	7
+
+> /usr/share/vim/vim80/doc/editing.txt
+	*	1555319195	0
+	"	1186	0
+
+> /usr/share/vim/vim80/doc/options.txt
+	*	1555318928	0
+	"	4141	41
 
 > ~/.local/usr/bin/bookmarklauncher.sh
 	*	1555254729	0
@@ -907,99 +1612,6 @@ $|
 	"	1	0
 	.	1	0
 	+	1	0
-
-> ~/Documents/amores2/amores2-10.txt
-	*	1555239480	0
-	"	3	0
-	^	113	9
-	.	26	0
-	+	17	0
-	+	18	0
-	+	20	0
-	+	25	0
-	+	21	0
-	+	23	0
-	+	24	0
-	+	26	0
-	+	27	0
-	+	29	0
-	+	30	0
-	+	32	0
-	+	33	0
-	+	35	0
-	+	36	0
-	+	35	0
-	+	34	0
-	+	38	0
-	+	39	0
-	+	41	0
-	+	42	0
-	+	43	0
-	+	44	0
-	+	45	0
-	+	44	64
-	+	48	0
-	+	47	0
-	+	50	0
-	+	51	0
-	+	53	0
-	+	54	0
-	+	56	0
-	+	57	0
-	+	59	0
-	+	60	0
-	+	50	0
-	+	53	0
-	+	56	0
-	+	62	57
-	+	63	0
-	+	65	0
-	+	66	0
-	+	62	0
-	+	65	0
-	+	68	0
-	+	69	0
-	+	71	0
-	+	68	10
-	+	72	0
-	+	74	0
-	+	75	0
-	+	77	0
-	+	78	0
-	+	77	0
-	+	80	0
-	+	81	0
-	+	83	0
-	+	84	0
-	+	86	0
-	+	87	0
-	+	89	0
-	+	90	0
-	+	91	0
-	+	93	0
-	+	89	0
-	+	92	0
-	+	95	0
-	+	96	0
-	+	91	0
-	+	92	0
-	+	98	0
-	+	99	0
-	+	101	0
-	+	102	0
-	+	104	0
-	+	105	0
-	+	107	0
-	+	108	0
-	+	110	0
-	+	111	0
-	+	113	0
-	+	104	0
-	+	98	0
-	+	86	0
-	+	59	0
-	+	41	0
-	+	26	0
 
 > ~/Documents/amores2/amores2-10-translation.txt
 	*	1555239473	0
@@ -1374,199 +1986,9 @@ $|
 	*	1555176763	0
 	"	8	48
 
-> ~/.bash_aliases
-	*	1555161676	0
-	"	14	38
-	^	14	39
-	.	14	38
-	+	83	29
-	+	83	24
-	+	83	0
-	+	83	19
-	+	83	44
-	+	83	35
-	+	83	21
-	+	83	0
-	+	43	17
-	+	44	0
-	+	83	43
-	+	83	35
-	+	83	30
-	+	83	47
-	+	83	0
-	+	83	21
-	+	83	0
-	+	83	52
-	+	83	0
-	+	83	4
-	+	83	0
-	+	83	28
-	+	83	24
-	+	83	28
-	+	83	23
-	+	83	20
-	+	83	37
-	+	83	29
-	+	83	26
-	+	83	31
-	+	83	0
-	+	83	17
-	+	83	0
-	+	83	12
-	+	83	0
-	+	83	9
-	+	83	0
-	+	83	152
-	+	83	3
-	+	83	60
-	+	83	41
-	+	83	158
-	+	83	0
-	+	83	29
-	+	83	25
-	+	83	39
-	+	83	30
-	+	83	33
-	+	83	32
-	+	83	33
-	+	83	24
-	+	83	27
-	+	83	26
-	+	83	33
-	+	83	36
-	+	83	16
-	+	83	0
-	+	83	1
-	+	83	17
-	+	83	0
-	+	83	20
-	+	83	36
-	+	73	0
-	+	72	0
-	+	83	0
-	+	20	0
-	+	94	22
-	+	68	0
-	+	67	0
-	+	68	73
-	+	195	0
-	+	196	26
-	+	196	96
-	+	196	87
-	+	196	24
-	+	196	84
-	+	196	81
-	+	196	13
-	+	196	0
-	+	196	13
-	+	196	9
-	+	196	84
-	+	196	77
-	+	196	92
-	+	196	55
-	+	196	83
-	+	196	90
-	+	196	26
-	+	196	70
-	+	196	77
-	+	196	70
-	+	197	0
-	+	198	15
-	+	205	26
-	+	204	22
-	+	210	0
-	+	208	10
-	+	47	0
-	+	40	19
-	+	14	38
-
 > /usr/lib/surfraw/wikipedia
 	*	1555157754	0
 	"	5	0
-
-> ~/_Definitions_
-	*	1555014310	0
-	"	1	0
-	.	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	2	7
-	+	2	0
-	+	1	0
-	+	2	9
-	+	1	0
-	+	2	0
-	+	2	6
-	+	1	0
-	+	2	0
-	+	1	2
-	+	2	0
-	+	2	3
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	2	9
-	+	2	0
-	+	1	0
-	+	1	9
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	3
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-
-> ~/_Headwords_
-	*	1555012579	0
-	"	1	0
-	.	1	0
-	+	1	0
 
 > ~/Documents/amores2/amores2-4-nums.txt
 	*	1554984674	0
@@ -1770,120 +2192,9 @@ $|
 	+	6	0
 	+	10	22
 
-> ~/.config/vim/vimrc
-	*	1554837823	0
-	"	948	21
-	^	985	25
-	.	985	0
-	+	988	46
-	+	989	0
-	+	954	0
-	+	954	26
-	+	961	23
-	+	964	36
-	+	965	24
-	+	987	0
-	+	963	28
-	+	987	40
-	+	1002	0
-	+	991	32
-	+	991	35
-	+	964	35
-	+	991	0
-	+	992	35
-	+	993	25
-	+	996	27
-	+	994	18
-	+	1000	0
-	+	997	20
-	+	1014	0
-	+	1017	0
-	+	1018	0
-	+	998	16
-	+	1015	0
-	+	998	15
-	+	1000	0
-	+	999	8
-	+	997	10
-	+	999	12
-	+	1012	37
-	+	1019	23
-	+	1020	27
-	+	1012	7
-	+	995	42
-	+	1012	41
-	+	962	22
-	+	999	13
-	+	806	0
-	+	924	0
-	+	954	0
-	+	965	0
-	+	738	45
-	+	739	0
-	+	205	30
-	+	987	0
-	+	973	26
-	+	678	29
-	+	680	0
-	+	680	54
-	+	681	0
-	+	679	0
-	+	678	37
-	+	679	145
-	+	717	53
-	+	717	11
-	+	663	8
-	+	654	20
-	+	663	30
-	+	673	0
-	+	672	0
-	+	692	0
-	+	672	0
-	+	653	42
-	+	711	0
-	+	712	0
-	+	717	0
-	+	682	0
-	+	682	68
-	+	682	83
-	+	682	30
-	+	654	0
-	+	655	0
-	+	663	0
-	+	671	0
-	+	672	0
-	+	688	0
-	+	689	0
-	+	690	0
-	+	691	0
-	+	692	0
-	+	711	0
-	+	712	0
-	+	682	0
-	+	688	0
-	+	693	27
-	+	688	0
-	+	713	11
-	+	714	49
-	+	715	64
-	+	714	52
-	+	715	67
-	+	209	39
-	+	670	12
-	+	693	46
-	+	704	32
-	+	710	37
-	+	712	0
-	+	985	0
-
 > /usr/share/vim/vim80/doc/spell.txt
 	*	1554835194	0
 	"	154	20
-
-> /usr/share/vim/vim80/doc/eval.txt
-	*	1554820980	0
-	"	6798	42
-	^	7412	12
 
 > /usr/share/vim/vim80/doc/change.txt
 	*	1554820841	0
@@ -2097,10 +2408,6 @@ $|
 > ~/:b~
 	*	1554806385	0
 	"	1	0
-
-> /usr/share/vim/vim80/doc/options.txt
-	*	1554764820	0
-	"	2503	1
 
 > ~/.config/vim/bundle/vim-amores2/hermes.sh
 	*	1554763224	0
@@ -2688,10 +2995,6 @@ $|
 	*	1554415006	0
 	"	1347	26
 
-> /usr/share/vim/vim80/doc/editing.txt
-	*	1554413618	0
-	"	1102	12
-
 > /usr/share/vim/vim80/doc/cmdline.txt
 	*	1554410790	0
 	"	749	45
@@ -3116,14 +3419,6 @@ $|
 	+	78	0
 	+	215	0
 	+	238	0
-
-> ~/.stsrc.0.8.2/config.h
-	*	1553463086	0
-	"	172	0
-	^	8	33
-	.	172	0
-	+	8	25
-	+	172	0
 
 > /tmp/vifm.rename_85388698_00
 	*	1553462541	0
@@ -5241,37 +5536,6 @@ $|
 	*	1534495461	0
 	"	1	0
 
-> ~/.stsrc/config.h
-	*	1534494074	0
-	"	1	0
-	^	100	32
-	.	100	31
-	+	121	2
-	+	121	34
-	+	121	0
-	+	121	34
-	+	121	0
-	+	120	35
-	+	114	28
-	+	99	28
-	+	108	34
-	+	113	34
-	+	112	30
-	+	111	27
-	+	110	32
-	+	109	34
-	+	107	32
-	+	106	32
-	+	112	26
-	+	105	32
-	+	104	32
-	+	103	33
-	+	102	41
-	+	101	33
-	+	100	0
-	+	101	0
-	+	100	31
-
 > ~/.dotfiles/various/lightdm-gtk-greeter.conf
 	*	1534485985	0
 	"	1	0
@@ -5279,13 +5543,6 @@ $|
 > /usr/share/lightdm/lightdm-gtk-greeter.conf.d/02_custom.conf
 	*	1534461436	0
 	"	1	0
-
-> ~/.dotfiles/.git/COMMIT_EDITMSG
-	*	1534461145	0
-	"	1	13
-	^	1	14
-	.	1	13
-	+	1	13
 
 > ~/.dotfiles/various/dwmstart
 	*	1534460902	0
@@ -5352,10 +5609,6 @@ $|
 	"	53	0
 	.	1	0
 	+	1	0
-
-> /usr/share/vim/vim80/doc/pattern.txt
-	*	1534272920	0
-	"	212	0
 
 > ~/n
 	*	1534263732	0
@@ -7073,31 +7326,9 @@ $|
 	.	17	33
 	+	17	33
 
-> ~/.local/usr/bin/backup-configs.sh
-	*	1527863306	0
-	"	20	0
-	^	33	26
-	.	20	0
-	+	41	15
-	+	10	0
-	+	33	25
-	+	20	0
-
-> ~/.config/vim/bundle/vim-snippets/UltiSnips/sh.snippets
-	*	1527861757	0
-	"	81	0
-
-> ~/.config/vim/customsnips/sh.snippets
-	*	1527860351	0
-	"	35	0
-
 > ~/.profile
 	*	1527859069	0
 	"	19	0
-
-> ~/.config/redshift.conf
-	*	1527857659	0
-	"	1	3
 
 > ~/.config/mimeapps.list
 	*	1527857651	0
